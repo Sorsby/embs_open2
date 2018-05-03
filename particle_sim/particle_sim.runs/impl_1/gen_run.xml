@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1525305008">
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1525308592">
   <File Type="PWROPT-DCP" Name="design_1_wrapper_pwropt.dcp"/>
   <File Type="ROUTE-PWR" Name="design_1_wrapper_power_routed.rpt"/>
   <File Type="PA-TCL" Name="design_1_wrapper.tcl"/>
@@ -87,6 +87,14 @@
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/hardware/zybo_vga.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../zybo-vga-master/hardware/zybo_vga.xdc"/>
+        <Attr Name="ImportTime" Val="1489512085"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>
@@ -105,8 +113,13 @@
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_rst_ps7_0_50M_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_axi_gpio_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_axi_dynclk_0_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_v_axi4s_vid_out_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_axi_vdma_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_axi_smc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_rgb2vga_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_processing_system7_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_auto_pc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_xlslice_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_v_tc_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_xbar_0"/>
 </GenRun>

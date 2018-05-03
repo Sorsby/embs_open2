@@ -1,0 +1,1539 @@
+02:10:08 **** Build of project particle_sim_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/axivdma_v6_5/src"
+make -C ps7_cortexa9_0/libsrc/axivdma_v6_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/lwip202_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/lwip202_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_6/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/vtc_v7_2/src"
+make -C ps7_cortexa9_0/libsrc/vtc_v7_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/axivdma_v6_5/src"
+make -C ps7_cortexa9_0/libsrc/axivdma_v6_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling axivdma"
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling coresightps_dcc"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling emacps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/lwip202_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/lwip202_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling lwip src and adapter files"
+contrib/ports/xilinx/netif/xemacpsif.c: In function 'xemacpsif_init':
+contrib/ports/xilinx/netif/xemacpsif.c:728:16: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+  netif->output = xemacpsif_output;
+                ^
+In file included from ../../../include/xemacps.h:350:0,
+                 from ../../../include/netif/xemacpsif.h:59,
+                 from contrib/ports/xilinx/netif/xemacpsif_dma.c:39:
+contrib/ports/xilinx/netif/xemacpsif_dma.c: In function 'init_dma':
+../../../include/xemacps_hw.h:603:23: warning: 'bdrxterminate' may be used uninitialized in this function [-Wmaybe-uninitialized]
+ #define XEmacPs_Out32 Xil_Out32
+                       ^~~~~~~~~
+contrib/ports/xilinx/netif/xemacpsif_dma.c:558:14: note: 'bdrxterminate' was declared here
+  XEmacPs_Bd *bdrxterminate;
+              ^~~~~~~~~~~~~
+In file included from ../../../include/xemacps.h:351:0,
+                 from ../../../include/netif/xemacpsif.h:59,
+                 from contrib/ports/xilinx/netif/xemacpsif_dma.c:39:
+../../../include/xemacps_bd.h:144:12: warning: 'bdtxterminate' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  (*(u32 *)((UINTPTR)((void*)(BaseAddress)) + (u32)(Offset)))
+            ^
+contrib/ports/xilinx/netif/xemacpsif_dma.c:557:14: note: 'bdtxterminate' was declared here
+  XEmacPs_Bd *bdtxterminate;
+              ^~~~~~~~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling sdps"
+xsdps.c: In function 'XSdPs_FrameCmd':
+xsdps.c:1272:11: warning: this statement may fall through [-Wimplicit-fallthrough=]
+    RetVal |= RESP_R1 | (u32)XSDPS_DAT_PRESENT_SEL_MASK;
+xsdps.c:1273:3: note: here
+   case ACMD41:
+   ^~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_6/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling standalone"
+In file included from sleep.c:57:0:
+xtime_l.h:89:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from usleep.c:60:0:
+xtime_l.h:89:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xil_sleeptimer.c:54:0:
+xtime_l.h:89:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xtime_l.c:53:0:
+xtime_l.h:89:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling ttcps"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling usbps"
+"Running Make libs in ps7_cortexa9_0/libsrc/vtc_v7_2/src"
+make -C ps7_cortexa9_0/libsrc/vtc_v7_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling video timing controller"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+02:10:37 **** Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/echo.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/echo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/echo.d" -MT"src/echo.o" -o "src/echo.o" "../src/echo.c"
+'Finished building: ../src/echo.c'
+' '
+'Building file: ../src/i2c_access.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c_access.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/i2c_access.d" -MT"src/i2c_access.o" -o "src/i2c_access.o" "../src/i2c_access.c"
+'Finished building: ../src/i2c_access.c'
+' '
+'Building file: ../src/iic_phyreset.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_phyreset.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_phyreset.d" -MT"src/iic_phyreset.o" -o "src/iic_phyreset.o" "../src/iic_phyreset.c"
+'Finished building: ../src/iic_phyreset.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building file: ../src/platform_mb.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform_mb.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform_mb.d" -MT"src/platform_mb.o" -o "src/platform_mb.o" "../src/platform_mb.c"
+'Finished building: ../src/platform_mb.c'
+' '
+'Building file: ../src/platform_ppc.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform_ppc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform_ppc.d" -MT"src/platform_ppc.o" -o "src/platform_ppc.o" "../src/platform_ppc.c"
+'Finished building: ../src/platform_ppc.c'
+' '
+'Building file: ../src/platform_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform_zynq.d" -MT"src/platform_zynq.o" -o "src/platform_zynq.o" "../src/platform_zynq.c"
+'Finished building: ../src/platform_zynq.c'
+' '
+'Building file: ../src/platform_zynqmp.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform_zynqmp.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform_zynqmp.d" -MT"src/platform_zynqmp.o" -o "src/platform_zynqmp.o" "../src/platform_zynqmp.c"
+'Finished building: ../src/platform_zynqmp.c'
+' '
+'Building file: ../src/sfp.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sfp.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sfp.d" -MT"src/sfp.o" -o "src/sfp.o" "../src/sfp.c"
+'Finished building: ../src/sfp.c'
+' '
+'Building file: ../src/si5324.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/si5324.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/si5324.d" -MT"src/si5324.o" -o "src/si5324.o" "../src/si5324.c"
+'Finished building: ../src/si5324.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 110380	   3840	2218272	2332492	 23974c	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+02:10:40 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+02:12:05 **** Build of project particle_sim_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/axivdma_v6_5/src"
+make -C ps7_cortexa9_0/libsrc/axivdma_v6_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/lwip202_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/lwip202_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_6/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/vtc_v7_2/src"
+make -C ps7_cortexa9_0/libsrc/vtc_v7_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/axivdma_v6_5/src"
+make -C ps7_cortexa9_0/libsrc/axivdma_v6_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling axivdma"
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling coresightps_dcc"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling emacps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/lwip202_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/lwip202_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling lwip src and adapter files"
+contrib/ports/xilinx/netif/xemacpsif.c: In function 'xemacpsif_init':
+contrib/ports/xilinx/netif/xemacpsif.c:728:16: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+  netif->output = xemacpsif_output;
+                ^
+In file included from ../../../include/xemacps.h:350:0,
+                 from ../../../include/netif/xemacpsif.h:59,
+                 from contrib/ports/xilinx/netif/xemacpsif_dma.c:39:
+contrib/ports/xilinx/netif/xemacpsif_dma.c: In function 'init_dma':
+../../../include/xemacps_hw.h:603:23: warning: 'bdrxterminate' may be used uninitialized in this function [-Wmaybe-uninitialized]
+ #define XEmacPs_Out32 Xil_Out32
+                       ^~~~~~~~~
+contrib/ports/xilinx/netif/xemacpsif_dma.c:558:14: note: 'bdrxterminate' was declared here
+  XEmacPs_Bd *bdrxterminate;
+              ^~~~~~~~~~~~~
+In file included from ../../../include/xemacps.h:351:0,
+                 from ../../../include/netif/xemacpsif.h:59,
+                 from contrib/ports/xilinx/netif/xemacpsif_dma.c:39:
+../../../include/xemacps_bd.h:144:12: warning: 'bdtxterminate' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  (*(u32 *)((UINTPTR)((void*)(BaseAddress)) + (u32)(Offset)))
+            ^
+contrib/ports/xilinx/netif/xemacpsif_dma.c:557:14: note: 'bdtxterminate' was declared here
+  XEmacPs_Bd *bdtxterminate;
+              ^~~~~~~~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling sdps"
+xsdps.c: In function 'XSdPs_FrameCmd':
+xsdps.c:1272:11: warning: this statement may fall through [-Wimplicit-fallthrough=]
+    RetVal |= RESP_R1 | (u32)XSDPS_DAT_PRESENT_SEL_MASK;
+xsdps.c:1273:3: note: here
+   case ACMD41:
+   ^~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_6/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling standalone"
+In file included from sleep.c:57:0:
+xtime_l.h:89:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from usleep.c:60:0:
+xtime_l.h:89:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xil_sleeptimer.c:54:0:
+xtime_l.h:89:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xtime_l.c:53:0:
+xtime_l.h:89:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling ttcps"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling usbps"
+"Running Make libs in ps7_cortexa9_0/libsrc/vtc_v7_2/src"
+make -C ps7_cortexa9_0/libsrc/vtc_v7_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling video timing controller"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+02:12:32 **** Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/echo.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/echo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/echo.d" -MT"src/echo.o" -o "src/echo.o" "../src/echo.c"
+'Finished building: ../src/echo.c'
+' '
+'Building file: ../src/i2c_access.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c_access.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/i2c_access.d" -MT"src/i2c_access.o" -o "src/i2c_access.o" "../src/i2c_access.c"
+'Finished building: ../src/i2c_access.c'
+' '
+'Building file: ../src/iic_phyreset.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_phyreset.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_phyreset.d" -MT"src/iic_phyreset.o" -o "src/iic_phyreset.o" "../src/iic_phyreset.c"
+'Finished building: ../src/iic_phyreset.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building file: ../src/platform_mb.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform_mb.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform_mb.d" -MT"src/platform_mb.o" -o "src/platform_mb.o" "../src/platform_mb.c"
+'Finished building: ../src/platform_mb.c'
+' '
+'Building file: ../src/platform_ppc.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform_ppc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform_ppc.d" -MT"src/platform_ppc.o" -o "src/platform_ppc.o" "../src/platform_ppc.c"
+'Finished building: ../src/platform_ppc.c'
+' '
+'Building file: ../src/platform_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform_zynq.d" -MT"src/platform_zynq.o" -o "src/platform_zynq.o" "../src/platform_zynq.c"
+'Finished building: ../src/platform_zynq.c'
+' '
+'Building file: ../src/platform_zynqmp.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform_zynqmp.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform_zynqmp.d" -MT"src/platform_zynqmp.o" -o "src/platform_zynqmp.o" "../src/platform_zynqmp.c"
+'Finished building: ../src/platform_zynqmp.c'
+' '
+'Building file: ../src/sfp.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sfp.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sfp.d" -MT"src/sfp.o" -o "src/sfp.o" "../src/sfp.c"
+'Finished building: ../src/sfp.c'
+' '
+'Building file: ../src/si5324.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/si5324.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/si5324.d" -MT"src/si5324.o" -o "src/si5324.o" "../src/si5324.c"
+'Finished building: ../src/si5324.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 110380	   3840	2218272	2332492	 23974c	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+02:12:35 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+02:13:35 **** Clean-only build of configuration Debug for project particle_sim ****
+make clean 
+rm -rf  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o  ./src/echo.d ./src/i2c_access.d ./src/iic_phyreset.d ./src/main.d ./src/platform.d ./src/platform_mb.d ./src/platform_ppc.d ./src/platform_zynq.d ./src/platform_zynqmp.d ./src/sfp.d ./src/si5324.d  particle_sim.elf.size  particle_sim.elf
+' '
+
+****  of configuration Debug for project particle_sim ****
+
+Nothing to build for project particle_sim
+02:14:02 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+In file included from ../src/platform.c:8:0:
+../src/platform.h:12:63: warning: 'struct ip_addr' declared inside parameter list will not be visible outside of this definition or declaration
+ int init_platform(unsigned char *mac_ethernet_address, struct ip_addr *ipaddr, struct ip_addr *netmask);
+                                                               ^~~~~~~
+../src/platform.c:177:33: warning: 'struct ip_addr' declared inside parameter list will not be visible outside of this definition or declaration
+ void print_ip(char *msg, struct ip_addr *ip)  {
+                                 ^~~~~~~
+In file included from ../../particle_sim_bsp/ps7_cortexa9_0/include/lwip/ip_addr.h:43:0,
+                 from ../../particle_sim_bsp/ps7_cortexa9_0/include/lwip/netif.h:46,
+                 from ../../particle_sim_bsp/ps7_cortexa9_0/include/netif/xadapter.h:49,
+                 from ../src/platform.c:3:
+../src/platform.c: In function 'print_ip':
+../../particle_sim_bsp/ps7_cortexa9_0/include/lwip/ip4_addr.h:199:52: error: dereferencing pointer to incomplete type 'struct ip_addr'
+ #define ip4_addr1(ipaddr) (((const u8_t*)(&(ipaddr)->addr))[0])
+                                                    ^
+../src/platform.c:179:32: note: in expansion of macro 'ip4_addr1'
+  xil_printf("%d.%d.%d.%d\r\n", ip4_addr1(ip), ip4_addr2(ip), ip4_addr3(ip), ip4_addr4(ip));
+                                ^~~~~~~~~
+../src/platform.c: At top level:
+../src/platform.c:182:31: warning: 'struct ip_addr' declared inside parameter list will not be visible outside of this definition or declaration
+ void print_ip_settings(struct ip_addr *ip, struct ip_addr *mask, struct ip_addr *gw) {
+                               ^~~~~~~
+../src/platform.c: In function 'print_ip_settings':
+../src/platform.c:183:25: warning: passing argument 2 of 'print_ip' from incompatible pointer type [-Wincompatible-pointer-types]
+  print_ip("Board IP: ", ip);
+                         ^~
+../src/platform.c:177:6: note: expected 'struct ip_addr *' but argument is of type 'struct ip_addr *'
+ void print_ip(char *msg, struct ip_addr *ip)  {
+      ^~~~~~~~
+../src/platform.c:184:25: warning: passing argument 2 of 'print_ip' from incompatible pointer type [-Wincompatible-pointer-types]
+  print_ip("Netmask : ", mask);
+                         ^~~~
+../src/platform.c:177:6: note: expected 'struct ip_addr *' but argument is of type 'struct ip_addr *'
+ void print_ip(char *msg, struct ip_addr *ip)  {
+      ^~~~~~~~
+../src/platform.c:185:25: warning: passing argument 2 of 'print_ip' from incompatible pointer type [-Wincompatible-pointer-types]
+  print_ip("Gateway : ", gw);
+                         ^~
+../src/platform.c:177:6: note: expected 'struct ip_addr *' but argument is of type 'struct ip_addr *'
+ void print_ip(char *msg, struct ip_addr *ip)  {
+      ^~~~~~~~
+../src/platform.c: At top level:
+../src/platform.c:188:63: warning: 'struct ip_addr' declared inside parameter list will not be visible outside of this definition or declaration
+ int init_platform(unsigned char *mac_ethernet_address, struct ip_addr *ipaddr, struct ip_addr *netmask) {
+                                                               ^~~~~~~
+../src/platform.c:188:5: error: conflicting types for 'init_platform'
+ int init_platform(unsigned char *mac_ethernet_address, struct ip_addr *ipaddr, struct ip_addr *netmask) {
+     ^~~~~~~~~~~~~
+In file included from ../src/platform.c:8:0:
+../src/platform.h:12:5: note: previous declaration of 'init_platform' was here
+ int init_platform(unsigned char *mac_ethernet_address, struct ip_addr *ipaddr, struct ip_addr *netmask);
+     ^~~~~~~~~~~~~
+../src/platform.c: In function 'init_platform':
+../src/platform.c:189:17: error: storage size of 'gw' isn't known
+  struct ip_addr gw;
+                 ^~
+../src/platform.c:195:17: error: storage size of 'ipaddr_dhcp' isn't known
+  struct ip_addr ipaddr_dhcp;
+                 ^~~~~~~~~~~
+../src/platform.c:196:17: error: storage size of 'netmask_dhcp' isn't known
+  struct ip_addr netmask_dhcp;
+                 ^~~~~~~~~~~~
+../src/platform.c:200:11: error: dereferencing pointer to incomplete type 'struct ip_addr'
+     ipaddr->addr = 0;
+           ^~
+../src/platform.c:218:29: warning: passing argument 2 of 'xemac_add' from incompatible pointer type [-Wincompatible-pointer-types]
+  if (!xemac_add(echo_netif, ipaddr, netmask, &gw, mac_ethernet_address, PLATFORM_EMAC_BASEADDR)) {
+                             ^~~~~~
+In file included from ../src/platform.c:3:0:
+../../particle_sim_bsp/ps7_cortexa9_0/include/netif/xadapter.h:69:16: note: expected 'ip_addr_t * {aka struct ip4_addr *}' but argument is of type 'struct ip_addr *'
+ struct netif * xemac_add(struct netif *netif,
+                ^~~~~~~~~
+../src/platform.c:218:37: warning: passing argument 3 of 'xemac_add' from incompatible pointer type [-Wincompatible-pointer-types]
+  if (!xemac_add(echo_netif, ipaddr, netmask, &gw, mac_ethernet_address, PLATFORM_EMAC_BASEADDR)) {
+                                     ^~~~~~~
+In file included from ../src/platform.c:3:0:
+../../particle_sim_bsp/ps7_cortexa9_0/include/netif/xadapter.h:69:16: note: expected 'ip_addr_t * {aka struct ip4_addr *}' but argument is of type 'struct ip_addr *'
+ struct netif * xemac_add(struct netif *netif,
+                ^~~~~~~~~
+../src/platform.c:253:20: warning: passing argument 1 of 'print_ip_settings' from incompatible pointer type [-Wincompatible-pointer-types]
+  print_ip_settings(ipaddr, netmask, &gw);
+                    ^~~~~~
+../src/platform.c:182:6: note: expected 'struct ip_addr *' but argument is of type 'struct ip_addr *'
+ void print_ip_settings(struct ip_addr *ip, struct ip_addr *mask, struct ip_addr *gw) {
+      ^~~~~~~~~~~~~~~~~
+../src/platform.c:253:28: warning: passing argument 2 of 'print_ip_settings' from incompatible pointer type [-Wincompatible-pointer-types]
+  print_ip_settings(ipaddr, netmask, &gw);
+                            ^~~~~~~
+../src/platform.c:182:6: note: expected 'struct ip_addr *' but argument is of type 'struct ip_addr *'
+ void print_ip_settings(struct ip_addr *ip, struct ip_addr *mask, struct ip_addr *gw) {
+      ^~~~~~~~~~~~~~~~~
+../src/platform.c:196:17: warning: unused variable 'netmask_dhcp' [-Wunused-variable]
+  struct ip_addr netmask_dhcp;
+                 ^~~~~~~~~~~~
+../src/platform.c:195:17: warning: unused variable 'ipaddr_dhcp' [-Wunused-variable]
+  struct ip_addr ipaddr_dhcp;
+                 ^~~~~~~~~~~
+../src/platform.c:189:17: warning: unused variable 'gw' [-Wunused-variable]
+  struct ip_addr gw;
+                 ^~
+make: *** [src/platform.o] Error 1
+02:17:07 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+In file included from ../src/platform.c:8:0:
+../src/platform.h:12:63: warning: 'struct ip_addr' declared inside parameter list will not be visible outside of this definition or declaration
+ int init_platform(unsigned char *mac_ethernet_address, struct ip_addr *ipaddr, struct ip_addr *netmask);
+                                                               ^~~~~~~
+../src/platform.c:177:33: warning: 'struct ip_addr' declared inside parameter list will not be visible outside of this definition or declaration
+ void print_ip(char *msg, struct ip_addr *ip)  {
+                                 ^~~~~~~
+In file included from ../../particle_sim_bsp/ps7_cortexa9_0/include/lwip/ip_addr.h:43:0,
+                 from ../../particle_sim_bsp/ps7_cortexa9_0/include/lwip/netif.h:46,
+                 from ../../particle_sim_bsp/ps7_cortexa9_0/include/netif/xadapter.h:49,
+                 from ../src/platform.c:3:
+../src/platform.c: In function 'print_ip':
+../../particle_sim_bsp/ps7_cortexa9_0/include/lwip/ip4_addr.h:199:52: error: dereferencing pointer to incomplete type 'struct ip_addr'
+ #define ip4_addr1(ipaddr) (((const u8_t*)(&(ipaddr)->addr))[0])
+                                                    ^
+../src/platform.c:179:32: note: in expansion of macro 'ip4_addr1'
+  xil_printf("%d.%d.%d.%d\r\n", ip4_addr1(ip), ip4_addr2(ip), ip4_addr3(ip), ip4_addr4(ip));
+                                ^~~~~~~~~
+../src/platform.c: At top level:
+../src/platform.c:182:31: warning: 'struct ip_addr' declared inside parameter list will not be visible outside of this definition or declaration
+ void print_ip_settings(struct ip_addr *ip, struct ip_addr *mask, struct ip_addr *gw) {
+                               ^~~~~~~
+../src/platform.c: In function 'print_ip_settings':
+../src/platform.c:183:25: warning: passing argument 2 of 'print_ip' from incompatible pointer type [-Wincompatible-pointer-types]
+  print_ip("Board IP: ", ip);
+                         ^~
+../src/platform.c:177:6: note: expected 'struct ip_addr *' but argument is of type 'struct ip_addr *'
+ void print_ip(char *msg, struct ip_addr *ip)  {
+      ^~~~~~~~
+../src/platform.c:184:25: warning: passing argument 2 of 'print_ip' from incompatible pointer type [-Wincompatible-pointer-types]
+  print_ip("Netmask : ", mask);
+                         ^~~~
+../src/platform.c:177:6: note: expected 'struct ip_addr *' but argument is of type 'struct ip_addr *'
+ void print_ip(char *msg, struct ip_addr *ip)  {
+      ^~~~~~~~
+../src/platform.c:185:25: warning: passing argument 2 of 'print_ip' from incompatible pointer type [-Wincompatible-pointer-types]
+  print_ip("Gateway : ", gw);
+                         ^~
+../src/platform.c:177:6: note: expected 'struct ip_addr *' but argument is of type 'struct ip_addr *'
+ void print_ip(char *msg, struct ip_addr *ip)  {
+      ^~~~~~~~
+../src/platform.c: At top level:
+../src/platform.c:188:63: warning: 'struct ip_addr' declared inside parameter list will not be visible outside of this definition or declaration
+ int init_platform(unsigned char *mac_ethernet_address, struct ip_addr *ipaddr, struct ip_addr *netmask) {
+                                                               ^~~~~~~
+../src/platform.c:188:5: error: conflicting types for 'init_platform'
+ int init_platform(unsigned char *mac_ethernet_address, struct ip_addr *ipaddr, struct ip_addr *netmask) {
+     ^~~~~~~~~~~~~
+In file included from ../src/platform.c:8:0:
+../src/platform.h:12:5: note: previous declaration of 'init_platform' was here
+ int init_platform(unsigned char *mac_ethernet_address, struct ip_addr *ipaddr, struct ip_addr *netmask);
+     ^~~~~~~~~~~~~
+../src/platform.c: In function 'init_platform':
+../src/platform.c:189:17: error: storage size of 'gw' isn't known
+  struct ip_addr gw;
+                 ^~
+../src/platform.c:195:17: error: storage size of 'ipaddr_dhcp' isn't known
+  struct ip_addr ipaddr_dhcp;
+                 ^~~~~~~~~~~
+../src/platform.c:196:17: error: storage size of 'netmask_dhcp' isn't known
+  struct ip_addr netmask_dhcp;
+                 ^~~~~~~~~~~~
+../src/platform.c:200:11: error: dereferencing pointer to incomplete type 'struct ip_addr'
+     ipaddr->addr = 0;
+           ^~
+../src/platform.c:218:29: warning: passing argument 2 of 'xemac_add' from incompatible pointer type [-Wincompatible-pointer-types]
+  if (!xemac_add(echo_netif, ipaddr, netmask, &gw, mac_ethernet_address, PLATFORM_EMAC_BASEADDR)) {
+                             ^~~~~~
+In file included from ../src/platform.c:3:0:
+../../particle_sim_bsp/ps7_cortexa9_0/include/netif/xadapter.h:69:16: note: expected 'ip_addr_t * {aka struct ip4_addr *}' but argument is of type 'struct ip_addr *'
+ struct netif * xemac_add(struct netif *netif,
+                ^~~~~~~~~
+../src/platform.c:218:37: warning: passing argument 3 of 'xemac_add' from incompatible pointer type [-Wincompatible-pointer-types]
+  if (!xemac_add(echo_netif, ipaddr, netmask, &gw, mac_ethernet_address, PLATFORM_EMAC_BASEADDR)) {
+                                     ^~~~~~~
+In file included from ../src/platform.c:3:0:
+../../particle_sim_bsp/ps7_cortexa9_0/include/netif/xadapter.h:69:16: note: expected 'ip_addr_t * {aka struct ip4_addr *}' but argument is of type 'struct ip_addr *'
+ struct netif * xemac_add(struct netif *netif,
+                ^~~~~~~~~
+../src/platform.c:253:20: warning: passing argument 1 of 'print_ip_settings' from incompatible pointer type [-Wincompatible-pointer-types]
+  print_ip_settings(ipaddr, netmask, &gw);
+                    ^~~~~~
+../src/platform.c:182:6: note: expected 'struct ip_addr *' but argument is of type 'struct ip_addr *'
+ void print_ip_settings(struct ip_addr *ip, struct ip_addr *mask, struct ip_addr *gw) {
+      ^~~~~~~~~~~~~~~~~
+../src/platform.c:253:28: warning: passing argument 2 of 'print_ip_settings' from incompatible pointer type [-Wincompatible-pointer-types]
+  print_ip_settings(ipaddr, netmask, &gw);
+                            ^~~~~~~
+../src/platform.c:182:6: note: expected 'struct ip_addr *' but argument is of type 'struct ip_addr *'
+ void print_ip_settings(struct ip_addr *ip, struct ip_addr *mask, struct ip_addr *gw) {
+      ^~~~~~~~~~~~~~~~~
+../src/platform.c:196:17: warning: unused variable 'netmask_dhcp' [-Wunused-variable]
+  struct ip_addr netmask_dhcp;
+                 ^~~~~~~~~~~~
+../src/platform.c:195:17: warning: unused variable 'ipaddr_dhcp' [-Wunused-variable]
+  struct ip_addr ipaddr_dhcp;
+                 ^~~~~~~~~~~
+../src/platform.c:189:17: warning: unused variable 'gw' [-Wunused-variable]
+  struct ip_addr gw;
+                 ^~
+make: *** [src/platform.o] Error 1
+02:17:12 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+In file included from ../src/platform.c:8:0:
+../src/platform.h:12:63: warning: 'struct ip_addr' declared inside parameter list will not be visible outside of this definition or declaration
+ int init_platform(unsigned char *mac_ethernet_address, struct ip_addr *ipaddr, struct ip_addr *netmask);
+                                                               ^~~~~~~
+../src/platform.c:177:33: warning: 'struct ip_addr' declared inside parameter list will not be visible outside of this definition or declaration
+ void print_ip(char *msg, struct ip_addr *ip)  {
+                                 ^~~~~~~
+In file included from ../../particle_sim_bsp/ps7_cortexa9_0/include/lwip/ip_addr.h:43:0,
+                 from ../../particle_sim_bsp/ps7_cortexa9_0/include/lwip/netif.h:46,
+                 from ../../particle_sim_bsp/ps7_cortexa9_0/include/netif/xadapter.h:49,
+                 from ../src/platform.c:3:
+../src/platform.c: In function 'print_ip':
+../../particle_sim_bsp/ps7_cortexa9_0/include/lwip/ip4_addr.h:199:52: error: dereferencing pointer to incomplete type 'struct ip_addr'
+ #define ip4_addr1(ipaddr) (((const u8_t*)(&(ipaddr)->addr))[0])
+                                                    ^
+../src/platform.c:179:32: note: in expansion of macro 'ip4_addr1'
+  xil_printf("%d.%d.%d.%d\r\n", ip4_addr1(ip), ip4_addr2(ip), ip4_addr3(ip), ip4_addr4(ip));
+                                ^~~~~~~~~
+../src/platform.c: At top level:
+../src/platform.c:182:31: warning: 'struct ip_addr' declared inside parameter list will not be visible outside of this definition or declaration
+ void print_ip_settings(struct ip_addr *ip, struct ip_addr *mask, struct ip_addr *gw) {
+                               ^~~~~~~
+../src/platform.c: In function 'print_ip_settings':
+../src/platform.c:183:25: warning: passing argument 2 of 'print_ip' from incompatible pointer type [-Wincompatible-pointer-types]
+  print_ip("Board IP: ", ip);
+                         ^~
+../src/platform.c:177:6: note: expected 'struct ip_addr *' but argument is of type 'struct ip_addr *'
+ void print_ip(char *msg, struct ip_addr *ip)  {
+      ^~~~~~~~
+../src/platform.c:184:25: warning: passing argument 2 of 'print_ip' from incompatible pointer type [-Wincompatible-pointer-types]
+  print_ip("Netmask : ", mask);
+                         ^~~~
+../src/platform.c:177:6: note: expected 'struct ip_addr *' but argument is of type 'struct ip_addr *'
+ void print_ip(char *msg, struct ip_addr *ip)  {
+      ^~~~~~~~
+../src/platform.c:185:25: warning: passing argument 2 of 'print_ip' from incompatible pointer type [-Wincompatible-pointer-types]
+  print_ip("Gateway : ", gw);
+                         ^~
+../src/platform.c:177:6: note: expected 'struct ip_addr *' but argument is of type 'struct ip_addr *'
+ void print_ip(char *msg, struct ip_addr *ip)  {
+      ^~~~~~~~
+../src/platform.c: At top level:
+../src/platform.c:188:63: warning: 'struct ip_addr' declared inside parameter list will not be visible outside of this definition or declaration
+ int init_platform(unsigned char *mac_ethernet_address, struct ip_addr *ipaddr, struct ip_addr *netmask) {
+                                                               ^~~~~~~
+../src/platform.c:188:5: error: conflicting types for 'init_platform'
+ int init_platform(unsigned char *mac_ethernet_address, struct ip_addr *ipaddr, struct ip_addr *netmask) {
+     ^~~~~~~~~~~~~
+In file included from ../src/platform.c:8:0:
+../src/platform.h:12:5: note: previous declaration of 'init_platform' was here
+ int init_platform(unsigned char *mac_ethernet_address, struct ip_addr *ipaddr, struct ip_addr *netmask);
+     ^~~~~~~~~~~~~
+../src/platform.c: In function 'init_platform':
+../src/platform.c:189:17: error: storage size of 'gw' isn't known
+  struct ip_addr gw;
+                 ^~
+../src/platform.c:195:17: error: storage size of 'ipaddr_dhcp' isn't known
+  struct ip_addr ipaddr_dhcp;
+                 ^~~~~~~~~~~
+../src/platform.c:196:17: error: storage size of 'netmask_dhcp' isn't known
+  struct ip_addr netmask_dhcp;
+                 ^~~~~~~~~~~~
+../src/platform.c:200:11: error: dereferencing pointer to incomplete type 'struct ip_addr'
+     ipaddr->addr = 0;
+           ^~
+../src/platform.c:218:29: warning: passing argument 2 of 'xemac_add' from incompatible pointer type [-Wincompatible-pointer-types]
+  if (!xemac_add(echo_netif, ipaddr, netmask, &gw, mac_ethernet_address, PLATFORM_EMAC_BASEADDR)) {
+                             ^~~~~~
+In file included from ../src/platform.c:3:0:
+../../particle_sim_bsp/ps7_cortexa9_0/include/netif/xadapter.h:69:16: note: expected 'ip_addr_t * {aka struct ip4_addr *}' but argument is of type 'struct ip_addr *'
+ struct netif * xemac_add(struct netif *netif,
+                ^~~~~~~~~
+../src/platform.c:218:37: warning: passing argument 3 of 'xemac_add' from incompatible pointer type [-Wincompatible-pointer-types]
+  if (!xemac_add(echo_netif, ipaddr, netmask, &gw, mac_ethernet_address, PLATFORM_EMAC_BASEADDR)) {
+                                     ^~~~~~~
+In file included from ../src/platform.c:3:0:
+../../particle_sim_bsp/ps7_cortexa9_0/include/netif/xadapter.h:69:16: note: expected 'ip_addr_t * {aka struct ip4_addr *}' but argument is of type 'struct ip_addr *'
+ struct netif * xemac_add(struct netif *netif,
+                ^~~~~~~~~
+../src/platform.c:253:20: warning: passing argument 1 of 'print_ip_settings' from incompatible pointer type [-Wincompatible-pointer-types]
+  print_ip_settings(ipaddr, netmask, &gw);
+                    ^~~~~~
+../src/platform.c:182:6: note: expected 'struct ip_addr *' but argument is of type 'struct ip_addr *'
+ void print_ip_settings(struct ip_addr *ip, struct ip_addr *mask, struct ip_addr *gw) {
+      ^~~~~~~~~~~~~~~~~
+../src/platform.c:253:28: warning: passing argument 2 of 'print_ip_settings' from incompatible pointer type [-Wincompatible-pointer-types]
+  print_ip_settings(ipaddr, netmask, &gw);
+                            ^~~~~~~
+../src/platform.c:182:6: note: expected 'struct ip_addr *' but argument is of type 'struct ip_addr *'
+ void print_ip_settings(struct ip_addr *ip, struct ip_addr *mask, struct ip_addr *gw) {
+      ^~~~~~~~~~~~~~~~~
+../src/platform.c:196:17: warning: unused variable 'netmask_dhcp' [-Wunused-variable]
+  struct ip_addr netmask_dhcp;
+                 ^~~~~~~~~~~~
+../src/platform.c:195:17: warning: unused variable 'ipaddr_dhcp' [-Wunused-variable]
+  struct ip_addr ipaddr_dhcp;
+                 ^~~~~~~~~~~
+../src/platform.c:189:17: warning: unused variable 'gw' [-Wunused-variable]
+  struct ip_addr gw;
+                 ^~
+make: *** [src/platform.o] Error 1
+02:17:19 **** Clean-only build of configuration Debug for project particle_sim ****
+make clean 
+rm -rf  ./src/platform.o ./src/sfp.o ./src/si5324.o  ./src/platform.d ./src/sfp.d ./src/si5324.d  particle_sim.elf.size  particle_sim.elf
+' '
+02:17:19 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+In file included from ../src/platform.c:8:0:
+../src/platform.h:12:63: warning: 'struct ip_addr' declared inside parameter list will not be visible outside of this definition or declaration
+ int init_platform(unsigned char *mac_ethernet_address, struct ip_addr *ipaddr, struct ip_addr *netmask);
+                                                               ^~~~~~~
+../src/platform.c:177:33: warning: 'struct ip_addr' declared inside parameter list will not be visible outside of this definition or declaration
+ void print_ip(char *msg, struct ip_addr *ip)  {
+                                 ^~~~~~~
+In file included from ../../particle_sim_bsp/ps7_cortexa9_0/include/lwip/ip_addr.h:43:0,
+                 from ../../particle_sim_bsp/ps7_cortexa9_0/include/lwip/netif.h:46,
+                 from ../../particle_sim_bsp/ps7_cortexa9_0/include/netif/xadapter.h:49,
+                 from ../src/platform.c:3:
+../src/platform.c: In function 'print_ip':
+../../particle_sim_bsp/ps7_cortexa9_0/include/lwip/ip4_addr.h:199:52: error: dereferencing pointer to incomplete type 'struct ip_addr'
+ #define ip4_addr1(ipaddr) (((const u8_t*)(&(ipaddr)->addr))[0])
+                                                    ^
+../src/platform.c:179:32: note: in expansion of macro 'ip4_addr1'
+  xil_printf("%d.%d.%d.%d\r\n", ip4_addr1(ip), ip4_addr2(ip), ip4_addr3(ip), ip4_addr4(ip));
+                                ^~~~~~~~~
+../src/platform.c: At top level:
+../src/platform.c:182:31: warning: 'struct ip_addr' declared inside parameter list will not be visible outside of this definition or declaration
+ void print_ip_settings(struct ip_addr *ip, struct ip_addr *mask, struct ip_addr *gw) {
+                               ^~~~~~~
+../src/platform.c: In function 'print_ip_settings':
+../src/platform.c:183:25: warning: passing argument 2 of 'print_ip' from incompatible pointer type [-Wincompatible-pointer-types]
+  print_ip("Board IP: ", ip);
+                         ^~
+../src/platform.c:177:6: note: expected 'struct ip_addr *' but argument is of type 'struct ip_addr *'
+ void print_ip(char *msg, struct ip_addr *ip)  {
+      ^~~~~~~~
+../src/platform.c:184:25: warning: passing argument 2 of 'print_ip' from incompatible pointer type [-Wincompatible-pointer-types]
+  print_ip("Netmask : ", mask);
+                         ^~~~
+../src/platform.c:177:6: note: expected 'struct ip_addr *' but argument is of type 'struct ip_addr *'
+ void print_ip(char *msg, struct ip_addr *ip)  {
+      ^~~~~~~~
+../src/platform.c:185:25: warning: passing argument 2 of 'print_ip' from incompatible pointer type [-Wincompatible-pointer-types]
+  print_ip("Gateway : ", gw);
+                         ^~
+../src/platform.c:177:6: note: expected 'struct ip_addr *' but argument is of type 'struct ip_addr *'
+ void print_ip(char *msg, struct ip_addr *ip)  {
+      ^~~~~~~~
+../src/platform.c: At top level:
+../src/platform.c:188:63: warning: 'struct ip_addr' declared inside parameter list will not be visible outside of this definition or declaration
+ int init_platform(unsigned char *mac_ethernet_address, struct ip_addr *ipaddr, struct ip_addr *netmask) {
+                                                               ^~~~~~~
+../src/platform.c:188:5: error: conflicting types for 'init_platform'
+ int init_platform(unsigned char *mac_ethernet_address, struct ip_addr *ipaddr, struct ip_addr *netmask) {
+     ^~~~~~~~~~~~~
+In file included from ../src/platform.c:8:0:
+../src/platform.h:12:5: note: previous declaration of 'init_platform' was here
+ int init_platform(unsigned char *mac_ethernet_address, struct ip_addr *ipaddr, struct ip_addr *netmask);
+     ^~~~~~~~~~~~~
+../src/platform.c: In function 'init_platform':
+../src/platform.c:189:17: error: storage size of 'gw' isn't known
+  struct ip_addr gw;
+                 ^~
+../src/platform.c:195:17: error: storage size of 'ipaddr_dhcp' isn't known
+  struct ip_addr ipaddr_dhcp;
+                 ^~~~~~~~~~~
+../src/platform.c:196:17: error: storage size of 'netmask_dhcp' isn't known
+  struct ip_addr netmask_dhcp;
+                 ^~~~~~~~~~~~
+../src/platform.c:200:11: error: dereferencing pointer to incomplete type 'struct ip_addr'
+     ipaddr->addr = 0;
+           ^~
+../src/platform.c:218:29: warning: passing argument 2 of 'xemac_add' from incompatible pointer type [-Wincompatible-pointer-types]
+  if (!xemac_add(echo_netif, ipaddr, netmask, &gw, mac_ethernet_address, PLATFORM_EMAC_BASEADDR)) {
+                             ^~~~~~
+In file included from ../src/platform.c:3:0:
+../../particle_sim_bsp/ps7_cortexa9_0/include/netif/xadapter.h:69:16: note: expected 'ip_addr_t * {aka struct ip4_addr *}' but argument is of type 'struct ip_addr *'
+ struct netif * xemac_add(struct netif *netif,
+                ^~~~~~~~~
+../src/platform.c:218:37: warning: passing argument 3 of 'xemac_add' from incompatible pointer type [-Wincompatible-pointer-types]
+  if (!xemac_add(echo_netif, ipaddr, netmask, &gw, mac_ethernet_address, PLATFORM_EMAC_BASEADDR)) {
+                                     ^~~~~~~
+In file included from ../src/platform.c:3:0:
+../../particle_sim_bsp/ps7_cortexa9_0/include/netif/xadapter.h:69:16: note: expected 'ip_addr_t * {aka struct ip4_addr *}' but argument is of type 'struct ip_addr *'
+ struct netif * xemac_add(struct netif *netif,
+                ^~~~~~~~~
+../src/platform.c:253:20: warning: passing argument 1 of 'print_ip_settings' from incompatible pointer type [-Wincompatible-pointer-types]
+  print_ip_settings(ipaddr, netmask, &gw);
+                    ^~~~~~
+../src/platform.c:182:6: note: expected 'struct ip_addr *' but argument is of type 'struct ip_addr *'
+ void print_ip_settings(struct ip_addr *ip, struct ip_addr *mask, struct ip_addr *gw) {
+      ^~~~~~~~~~~~~~~~~
+../src/platform.c:253:28: warning: passing argument 2 of 'print_ip_settings' from incompatible pointer type [-Wincompatible-pointer-types]
+  print_ip_settings(ipaddr, netmask, &gw);
+                            ^~~~~~~
+../src/platform.c:182:6: note: expected 'struct ip_addr *' but argument is of type 'struct ip_addr *'
+ void print_ip_settings(struct ip_addr *ip, struct ip_addr *mask, struct ip_addr *gw) {
+      ^~~~~~~~~~~~~~~~~
+../src/platform.c:196:17: warning: unused variable 'netmask_dhcp' [-Wunused-variable]
+  struct ip_addr netmask_dhcp;
+                 ^~~~~~~~~~~~
+../src/platform.c:195:17: warning: unused variable 'ipaddr_dhcp' [-Wunused-variable]
+  struct ip_addr ipaddr_dhcp;
+                 ^~~~~~~~~~~
+../src/platform.c:189:17: warning: unused variable 'gw' [-Wunused-variable]
+  struct ip_addr gw;
+                 ^~
+make: *** [src/platform.o] Error 1
+02:17:24 **** Clean-only build of configuration Debug for project particle_sim ****
+make clean 
+rm -rf  ./src/platform.o ./src/sfp.o ./src/si5324.o  ./src/platform.d ./src/sfp.d ./src/si5324.d  particle_sim.elf.size  particle_sim.elf
+' '
+02:17:24 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+In file included from ../src/platform.c:8:0:
+../src/platform.h:12:63: warning: 'struct ip_addr' declared inside parameter list will not be visible outside of this definition or declaration
+ int init_platform(unsigned char *mac_ethernet_address, struct ip_addr *ipaddr, struct ip_addr *netmask);
+                                                               ^~~~~~~
+../src/platform.c:177:33: warning: 'struct ip_addr' declared inside parameter list will not be visible outside of this definition or declaration
+ void print_ip(char *msg, struct ip_addr *ip)  {
+                                 ^~~~~~~
+In file included from ../../particle_sim_bsp/ps7_cortexa9_0/include/lwip/ip_addr.h:43:0,
+                 from ../../particle_sim_bsp/ps7_cortexa9_0/include/lwip/netif.h:46,
+                 from ../../particle_sim_bsp/ps7_cortexa9_0/include/netif/xadapter.h:49,
+                 from ../src/platform.c:3:
+../src/platform.c: In function 'print_ip':
+../../particle_sim_bsp/ps7_cortexa9_0/include/lwip/ip4_addr.h:199:52: error: dereferencing pointer to incomplete type 'struct ip_addr'
+ #define ip4_addr1(ipaddr) (((const u8_t*)(&(ipaddr)->addr))[0])
+                                                    ^
+../src/platform.c:179:32: note: in expansion of macro 'ip4_addr1'
+  xil_printf("%d.%d.%d.%d\r\n", ip4_addr1(ip), ip4_addr2(ip), ip4_addr3(ip), ip4_addr4(ip));
+                                ^~~~~~~~~
+../src/platform.c: At top level:
+../src/platform.c:182:31: warning: 'struct ip_addr' declared inside parameter list will not be visible outside of this definition or declaration
+ void print_ip_settings(struct ip_addr *ip, struct ip_addr *mask, struct ip_addr *gw) {
+                               ^~~~~~~
+../src/platform.c: In function 'print_ip_settings':
+../src/platform.c:183:25: warning: passing argument 2 of 'print_ip' from incompatible pointer type [-Wincompatible-pointer-types]
+  print_ip("Board IP: ", ip);
+                         ^~
+../src/platform.c:177:6: note: expected 'struct ip_addr *' but argument is of type 'struct ip_addr *'
+ void print_ip(char *msg, struct ip_addr *ip)  {
+      ^~~~~~~~
+../src/platform.c:184:25: warning: passing argument 2 of 'print_ip' from incompatible pointer type [-Wincompatible-pointer-types]
+  print_ip("Netmask : ", mask);
+                         ^~~~
+../src/platform.c:177:6: note: expected 'struct ip_addr *' but argument is of type 'struct ip_addr *'
+ void print_ip(char *msg, struct ip_addr *ip)  {
+      ^~~~~~~~
+../src/platform.c:185:25: warning: passing argument 2 of 'print_ip' from incompatible pointer type [-Wincompatible-pointer-types]
+  print_ip("Gateway : ", gw);
+                         ^~
+../src/platform.c:177:6: note: expected 'struct ip_addr *' but argument is of type 'struct ip_addr *'
+ void print_ip(char *msg, struct ip_addr *ip)  {
+      ^~~~~~~~
+../src/platform.c: At top level:
+../src/platform.c:188:63: warning: 'struct ip_addr' declared inside parameter list will not be visible outside of this definition or declaration
+ int init_platform(unsigned char *mac_ethernet_address, struct ip_addr *ipaddr, struct ip_addr *netmask) {
+                                                               ^~~~~~~
+../src/platform.c:188:5: error: conflicting types for 'init_platform'
+ int init_platform(unsigned char *mac_ethernet_address, struct ip_addr *ipaddr, struct ip_addr *netmask) {
+     ^~~~~~~~~~~~~
+In file included from ../src/platform.c:8:0:
+../src/platform.h:12:5: note: previous declaration of 'init_platform' was here
+ int init_platform(unsigned char *mac_ethernet_address, struct ip_addr *ipaddr, struct ip_addr *netmask);
+     ^~~~~~~~~~~~~
+../src/platform.c: In function 'init_platform':
+../src/platform.c:189:17: error: storage size of 'gw' isn't known
+  struct ip_addr gw;
+                 ^~
+../src/platform.c:195:17: error: storage size of 'ipaddr_dhcp' isn't known
+  struct ip_addr ipaddr_dhcp;
+                 ^~~~~~~~~~~
+../src/platform.c:196:17: error: storage size of 'netmask_dhcp' isn't known
+  struct ip_addr netmask_dhcp;
+                 ^~~~~~~~~~~~
+../src/platform.c:200:11: error: dereferencing pointer to incomplete type 'struct ip_addr'
+     ipaddr->addr = 0;
+           ^~
+../src/platform.c:218:29: warning: passing argument 2 of 'xemac_add' from incompatible pointer type [-Wincompatible-pointer-types]
+  if (!xemac_add(echo_netif, ipaddr, netmask, &gw, mac_ethernet_address, PLATFORM_EMAC_BASEADDR)) {
+                             ^~~~~~
+In file included from ../src/platform.c:3:0:
+../../particle_sim_bsp/ps7_cortexa9_0/include/netif/xadapter.h:69:16: note: expected 'ip_addr_t * {aka struct ip4_addr *}' but argument is of type 'struct ip_addr *'
+ struct netif * xemac_add(struct netif *netif,
+                ^~~~~~~~~
+../src/platform.c:218:37: warning: passing argument 3 of 'xemac_add' from incompatible pointer type [-Wincompatible-pointer-types]
+  if (!xemac_add(echo_netif, ipaddr, netmask, &gw, mac_ethernet_address, PLATFORM_EMAC_BASEADDR)) {
+                                     ^~~~~~~
+In file included from ../src/platform.c:3:0:
+../../particle_sim_bsp/ps7_cortexa9_0/include/netif/xadapter.h:69:16: note: expected 'ip_addr_t * {aka struct ip4_addr *}' but argument is of type 'struct ip_addr *'
+ struct netif * xemac_add(struct netif *netif,
+                ^~~~~~~~~
+../src/platform.c:253:20: warning: passing argument 1 of 'print_ip_settings' from incompatible pointer type [-Wincompatible-pointer-types]
+  print_ip_settings(ipaddr, netmask, &gw);
+                    ^~~~~~
+../src/platform.c:182:6: note: expected 'struct ip_addr *' but argument is of type 'struct ip_addr *'
+ void print_ip_settings(struct ip_addr *ip, struct ip_addr *mask, struct ip_addr *gw) {
+      ^~~~~~~~~~~~~~~~~
+../src/platform.c:253:28: warning: passing argument 2 of 'print_ip_settings' from incompatible pointer type [-Wincompatible-pointer-types]
+  print_ip_settings(ipaddr, netmask, &gw);
+                            ^~~~~~~
+../src/platform.c:182:6: note: expected 'struct ip_addr *' but argument is of type 'struct ip_addr *'
+ void print_ip_settings(struct ip_addr *ip, struct ip_addr *mask, struct ip_addr *gw) {
+      ^~~~~~~~~~~~~~~~~
+../src/platform.c:196:17: warning: unused variable 'netmask_dhcp' [-Wunused-variable]
+  struct ip_addr netmask_dhcp;
+                 ^~~~~~~~~~~~
+../src/platform.c:195:17: warning: unused variable 'ipaddr_dhcp' [-Wunused-variable]
+  struct ip_addr ipaddr_dhcp;
+                 ^~~~~~~~~~~
+../src/platform.c:189:17: warning: unused variable 'gw' [-Wunused-variable]
+  struct ip_addr gw;
+                 ^~
+make: *** [src/platform.o] Error 1
+02:17:37 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+In file included from ../src/platform.c:8:0:
+../src/platform.h:12:63: warning: 'struct ip_addr' declared inside parameter list will not be visible outside of this definition or declaration
+ int init_platform(unsigned char *mac_ethernet_address, struct ip_addr *ipaddr, struct ip_addr *netmask);
+                                                               ^~~~~~~
+../src/platform.c:177:33: warning: 'struct ip_addr' declared inside parameter list will not be visible outside of this definition or declaration
+ void print_ip(char *msg, struct ip_addr *ip)  {
+                                 ^~~~~~~
+In file included from ../../particle_sim_bsp/ps7_cortexa9_0/include/lwip/ip_addr.h:43:0,
+                 from ../../particle_sim_bsp/ps7_cortexa9_0/include/lwip/netif.h:46,
+                 from ../../particle_sim_bsp/ps7_cortexa9_0/include/netif/xadapter.h:49,
+                 from ../src/platform.c:3:
+../src/platform.c: In function 'print_ip':
+../../particle_sim_bsp/ps7_cortexa9_0/include/lwip/ip4_addr.h:199:52: error: dereferencing pointer to incomplete type 'struct ip_addr'
+ #define ip4_addr1(ipaddr) (((const u8_t*)(&(ipaddr)->addr))[0])
+                                                    ^
+../src/platform.c:179:32: note: in expansion of macro 'ip4_addr1'
+  xil_printf("%d.%d.%d.%d\r\n", ip4_addr1(ip), ip4_addr2(ip), ip4_addr3(ip), ip4_addr4(ip));
+                                ^~~~~~~~~
+../src/platform.c: At top level:
+../src/platform.c:182:31: warning: 'struct ip_addr' declared inside parameter list will not be visible outside of this definition or declaration
+ void print_ip_settings(struct ip_addr *ip, struct ip_addr *mask, struct ip_addr *gw) {
+                               ^~~~~~~
+../src/platform.c: In function 'print_ip_settings':
+../src/platform.c:183:25: warning: passing argument 2 of 'print_ip' from incompatible pointer type [-Wincompatible-pointer-types]
+  print_ip("Board IP: ", ip);
+                         ^~
+../src/platform.c:177:6: note: expected 'struct ip_addr *' but argument is of type 'struct ip_addr *'
+ void print_ip(char *msg, struct ip_addr *ip)  {
+      ^~~~~~~~
+../src/platform.c:184:25: warning: passing argument 2 of 'print_ip' from incompatible pointer type [-Wincompatible-pointer-types]
+  print_ip("Netmask : ", mask);
+                         ^~~~
+../src/platform.c:177:6: note: expected 'struct ip_addr *' but argument is of type 'struct ip_addr *'
+ void print_ip(char *msg, struct ip_addr *ip)  {
+      ^~~~~~~~
+../src/platform.c:185:25: warning: passing argument 2 of 'print_ip' from incompatible pointer type [-Wincompatible-pointer-types]
+  print_ip("Gateway : ", gw);
+                         ^~
+../src/platform.c:177:6: note: expected 'struct ip_addr *' but argument is of type 'struct ip_addr *'
+ void print_ip(char *msg, struct ip_addr *ip)  {
+      ^~~~~~~~
+../src/platform.c: At top level:
+../src/platform.c:188:63: warning: 'struct ip_addr' declared inside parameter list will not be visible outside of this definition or declaration
+ int init_platform(unsigned char *mac_ethernet_address, struct ip_addr *ipaddr, struct ip_addr *netmask) {
+                                                               ^~~~~~~
+../src/platform.c:188:5: error: conflicting types for 'init_platform'
+ int init_platform(unsigned char *mac_ethernet_address, struct ip_addr *ipaddr, struct ip_addr *netmask) {
+     ^~~~~~~~~~~~~
+In file included from ../src/platform.c:8:0:
+../src/platform.h:12:5: note: previous declaration of 'init_platform' was here
+ int init_platform(unsigned char *mac_ethernet_address, struct ip_addr *ipaddr, struct ip_addr *netmask);
+     ^~~~~~~~~~~~~
+../src/platform.c: In function 'init_platform':
+../src/platform.c:189:17: error: storage size of 'gw' isn't known
+  struct ip_addr gw;
+                 ^~
+../src/platform.c:195:17: error: storage size of 'ipaddr_dhcp' isn't known
+  struct ip_addr ipaddr_dhcp;
+                 ^~~~~~~~~~~
+../src/platform.c:196:17: error: storage size of 'netmask_dhcp' isn't known
+  struct ip_addr netmask_dhcp;
+                 ^~~~~~~~~~~~
+../src/platform.c:200:11: error: dereferencing pointer to incomplete type 'struct ip_addr'
+     ipaddr->addr = 0;
+           ^~
+../src/platform.c:218:29: warning: passing argument 2 of 'xemac_add' from incompatible pointer type [-Wincompatible-pointer-types]
+  if (!xemac_add(echo_netif, ipaddr, netmask, &gw, mac_ethernet_address, PLATFORM_EMAC_BASEADDR)) {
+                             ^~~~~~
+In file included from ../src/platform.c:3:0:
+../../particle_sim_bsp/ps7_cortexa9_0/include/netif/xadapter.h:69:16: note: expected 'ip_addr_t * {aka struct ip4_addr *}' but argument is of type 'struct ip_addr *'
+ struct netif * xemac_add(struct netif *netif,
+                ^~~~~~~~~
+../src/platform.c:218:37: warning: passing argument 3 of 'xemac_add' from incompatible pointer type [-Wincompatible-pointer-types]
+  if (!xemac_add(echo_netif, ipaddr, netmask, &gw, mac_ethernet_address, PLATFORM_EMAC_BASEADDR)) {
+                                     ^~~~~~~
+In file included from ../src/platform.c:3:0:
+../../particle_sim_bsp/ps7_cortexa9_0/include/netif/xadapter.h:69:16: note: expected 'ip_addr_t * {aka struct ip4_addr *}' but argument is of type 'struct ip_addr *'
+ struct netif * xemac_add(struct netif *netif,
+                ^~~~~~~~~
+../src/platform.c:253:20: warning: passing argument 1 of 'print_ip_settings' from incompatible pointer type [-Wincompatible-pointer-types]
+  print_ip_settings(ipaddr, netmask, &gw);
+                    ^~~~~~
+../src/platform.c:182:6: note: expected 'struct ip_addr *' but argument is of type 'struct ip_addr *'
+ void print_ip_settings(struct ip_addr *ip, struct ip_addr *mask, struct ip_addr *gw) {
+      ^~~~~~~~~~~~~~~~~
+../src/platform.c:253:28: warning: passing argument 2 of 'print_ip_settings' from incompatible pointer type [-Wincompatible-pointer-types]
+  print_ip_settings(ipaddr, netmask, &gw);
+                            ^~~~~~~
+../src/platform.c:182:6: note: expected 'struct ip_addr *' but argument is of type 'struct ip_addr *'
+ void print_ip_settings(struct ip_addr *ip, struct ip_addr *mask, struct ip_addr *gw) {
+      ^~~~~~~~~~~~~~~~~
+../src/platform.c:196:17: warning: unused variable 'netmask_dhcp' [-Wunused-variable]
+  struct ip_addr netmask_dhcp;
+                 ^~~~~~~~~~~~
+../src/platform.c:195:17: warning: unused variable 'ipaddr_dhcp' [-Wunused-variable]
+  struct ip_addr ipaddr_dhcp;
+                 ^~~~~~~~~~~
+../src/platform.c:189:17: warning: unused variable 'gw' [-Wunused-variable]
+  struct ip_addr gw;
+                 ^~
+make: *** [src/platform.o] Error 1
+02:17:46 **** Clean-only build of configuration Debug for project particle_sim ****
+make clean 
+rm -rf  ./src/platform.o  ./src/platform.d  particle_sim.elf.size  particle_sim.elf
+' '
+02:17:46 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+In file included from ../src/platform.c:8:0:
+../src/platform.h:12:63: warning: 'struct ip_addr' declared inside parameter list will not be visible outside of this definition or declaration
+ int init_platform(unsigned char *mac_ethernet_address, struct ip_addr *ipaddr, struct ip_addr *netmask);
+                                                               ^~~~~~~
+../src/platform.c:177:33: warning: 'struct ip_addr' declared inside parameter list will not be visible outside of this definition or declaration
+ void print_ip(char *msg, struct ip_addr *ip)  {
+                                 ^~~~~~~
+In file included from ../../particle_sim_bsp/ps7_cortexa9_0/include/lwip/ip_addr.h:43:0,
+                 from ../../particle_sim_bsp/ps7_cortexa9_0/include/lwip/netif.h:46,
+                 from ../../particle_sim_bsp/ps7_cortexa9_0/include/netif/xadapter.h:49,
+                 from ../src/platform.c:3:
+../src/platform.c: In function 'print_ip':
+../../particle_sim_bsp/ps7_cortexa9_0/include/lwip/ip4_addr.h:199:52: error: dereferencing pointer to incomplete type 'struct ip_addr'
+ #define ip4_addr1(ipaddr) (((const u8_t*)(&(ipaddr)->addr))[0])
+                                                    ^
+../src/platform.c:179:32: note: in expansion of macro 'ip4_addr1'
+  xil_printf("%d.%d.%d.%d\r\n", ip4_addr1(ip), ip4_addr2(ip), ip4_addr3(ip), ip4_addr4(ip));
+                                ^~~~~~~~~
+../src/platform.c: At top level:
+../src/platform.c:182:31: warning: 'struct ip_addr' declared inside parameter list will not be visible outside of this definition or declaration
+ void print_ip_settings(struct ip_addr *ip, struct ip_addr *mask, struct ip_addr *gw) {
+                               ^~~~~~~
+../src/platform.c: In function 'print_ip_settings':
+../src/platform.c:183:25: warning: passing argument 2 of 'print_ip' from incompatible pointer type [-Wincompatible-pointer-types]
+  print_ip("Board IP: ", ip);
+                         ^~
+../src/platform.c:177:6: note: expected 'struct ip_addr *' but argument is of type 'struct ip_addr *'
+ void print_ip(char *msg, struct ip_addr *ip)  {
+      ^~~~~~~~
+../src/platform.c:184:25: warning: passing argument 2 of 'print_ip' from incompatible pointer type [-Wincompatible-pointer-types]
+  print_ip("Netmask : ", mask);
+                         ^~~~
+../src/platform.c:177:6: note: expected 'struct ip_addr *' but argument is of type 'struct ip_addr *'
+ void print_ip(char *msg, struct ip_addr *ip)  {
+      ^~~~~~~~
+../src/platform.c:185:25: warning: passing argument 2 of 'print_ip' from incompatible pointer type [-Wincompatible-pointer-types]
+  print_ip("Gateway : ", gw);
+                         ^~
+../src/platform.c:177:6: note: expected 'struct ip_addr *' but argument is of type 'struct ip_addr *'
+ void print_ip(char *msg, struct ip_addr *ip)  {
+      ^~~~~~~~
+../src/platform.c: At top level:
+../src/platform.c:188:63: warning: 'struct ip_addr' declared inside parameter list will not be visible outside of this definition or declaration
+ int init_platform(unsigned char *mac_ethernet_address, struct ip_addr *ipaddr, struct ip_addr *netmask) {
+                                                               ^~~~~~~
+../src/platform.c:188:5: error: conflicting types for 'init_platform'
+ int init_platform(unsigned char *mac_ethernet_address, struct ip_addr *ipaddr, struct ip_addr *netmask) {
+     ^~~~~~~~~~~~~
+In file included from ../src/platform.c:8:0:
+../src/platform.h:12:5: note: previous declaration of 'init_platform' was here
+ int init_platform(unsigned char *mac_ethernet_address, struct ip_addr *ipaddr, struct ip_addr *netmask);
+     ^~~~~~~~~~~~~
+../src/platform.c: In function 'init_platform':
+../src/platform.c:189:17: error: storage size of 'gw' isn't known
+  struct ip_addr gw;
+                 ^~
+../src/platform.c:195:17: error: storage size of 'ipaddr_dhcp' isn't known
+  struct ip_addr ipaddr_dhcp;
+                 ^~~~~~~~~~~
+../src/platform.c:196:17: error: storage size of 'netmask_dhcp' isn't known
+  struct ip_addr netmask_dhcp;
+                 ^~~~~~~~~~~~
+../src/platform.c:200:11: error: dereferencing pointer to incomplete type 'struct ip_addr'
+     ipaddr->addr = 0;
+           ^~
+../src/platform.c:218:29: warning: passing argument 2 of 'xemac_add' from incompatible pointer type [-Wincompatible-pointer-types]
+  if (!xemac_add(echo_netif, ipaddr, netmask, &gw, mac_ethernet_address, PLATFORM_EMAC_BASEADDR)) {
+                             ^~~~~~
+In file included from ../src/platform.c:3:0:
+../../particle_sim_bsp/ps7_cortexa9_0/include/netif/xadapter.h:69:16: note: expected 'ip_addr_t * {aka struct ip4_addr *}' but argument is of type 'struct ip_addr *'
+ struct netif * xemac_add(struct netif *netif,
+                ^~~~~~~~~
+../src/platform.c:218:37: warning: passing argument 3 of 'xemac_add' from incompatible pointer type [-Wincompatible-pointer-types]
+  if (!xemac_add(echo_netif, ipaddr, netmask, &gw, mac_ethernet_address, PLATFORM_EMAC_BASEADDR)) {
+                                     ^~~~~~~
+In file included from ../src/platform.c:3:0:
+../../particle_sim_bsp/ps7_cortexa9_0/include/netif/xadapter.h:69:16: note: expected 'ip_addr_t * {aka struct ip4_addr *}' but argument is of type 'struct ip_addr *'
+ struct netif * xemac_add(struct netif *netif,
+                ^~~~~~~~~
+../src/platform.c:253:20: warning: passing argument 1 of 'print_ip_settings' from incompatible pointer type [-Wincompatible-pointer-types]
+  print_ip_settings(ipaddr, netmask, &gw);
+                    ^~~~~~
+../src/platform.c:182:6: note: expected 'struct ip_addr *' but argument is of type 'struct ip_addr *'
+ void print_ip_settings(struct ip_addr *ip, struct ip_addr *mask, struct ip_addr *gw) {
+      ^~~~~~~~~~~~~~~~~
+../src/platform.c:253:28: warning: passing argument 2 of 'print_ip_settings' from incompatible pointer type [-Wincompatible-pointer-types]
+  print_ip_settings(ipaddr, netmask, &gw);
+                            ^~~~~~~
+../src/platform.c:182:6: note: expected 'struct ip_addr *' but argument is of type 'struct ip_addr *'
+ void print_ip_settings(struct ip_addr *ip, struct ip_addr *mask, struct ip_addr *gw) {
+      ^~~~~~~~~~~~~~~~~
+../src/platform.c:196:17: warning: unused variable 'netmask_dhcp' [-Wunused-variable]
+  struct ip_addr netmask_dhcp;
+                 ^~~~~~~~~~~~
+../src/platform.c:195:17: warning: unused variable 'ipaddr_dhcp' [-Wunused-variable]
+  struct ip_addr ipaddr_dhcp;
+                 ^~~~~~~~~~~
+../src/platform.c:189:17: warning: unused variable 'gw' [-Wunused-variable]
+  struct ip_addr gw;
+                 ^~
+make: *** [src/platform.o] Error 1
+02:18:48 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+In file included from ../src/platform.c:8:0:
+../src/platform.h:12:63: warning: 'struct ip_addr' declared inside parameter list will not be visible outside of this definition or declaration
+ int init_platform(unsigned char *mac_ethernet_address, struct ip_addr *ipaddr, struct ip_addr *netmask);
+                                                               ^~~~~~~
+../src/platform.c:177:33: warning: 'struct ip_addr' declared inside parameter list will not be visible outside of this definition or declaration
+ void print_ip(char *msg, struct ip_addr *ip)  {
+                                 ^~~~~~~
+In file included from ../../particle_sim_bsp/ps7_cortexa9_0/include/lwip/ip_addr.h:43:0,
+                 from ../../particle_sim_bsp/ps7_cortexa9_0/include/lwip/netif.h:46,
+                 from ../../particle_sim_bsp/ps7_cortexa9_0/include/netif/xadapter.h:49,
+                 from ../src/platform.c:3:
+../src/platform.c: In function 'print_ip':
+../../particle_sim_bsp/ps7_cortexa9_0/include/lwip/ip4_addr.h:199:52: error: dereferencing pointer to incomplete type 'struct ip_addr'
+ #define ip4_addr1(ipaddr) (((const u8_t*)(&(ipaddr)->addr))[0])
+                                                    ^
+../src/platform.c:179:32: note: in expansion of macro 'ip4_addr1'
+  xil_printf("%d.%d.%d.%d\r\n", ip4_addr1(ip), ip4_addr2(ip), ip4_addr3(ip), ip4_addr4(ip));
+                                ^~~~~~~~~
+../src/platform.c: At top level:
+../src/platform.c:182:31: warning: 'struct ip_addr' declared inside parameter list will not be visible outside of this definition or declaration
+ void print_ip_settings(struct ip_addr *ip, struct ip_addr *mask, struct ip_addr *gw) {
+                               ^~~~~~~
+../src/platform.c: In function 'print_ip_settings':
+../src/platform.c:183:25: warning: passing argument 2 of 'print_ip' from incompatible pointer type [-Wincompatible-pointer-types]
+  print_ip("Board IP: ", ip);
+                         ^~
+../src/platform.c:177:6: note: expected 'struct ip_addr *' but argument is of type 'struct ip_addr *'
+ void print_ip(char *msg, struct ip_addr *ip)  {
+      ^~~~~~~~
+../src/platform.c:184:25: warning: passing argument 2 of 'print_ip' from incompatible pointer type [-Wincompatible-pointer-types]
+  print_ip("Netmask : ", mask);
+                         ^~~~
+../src/platform.c:177:6: note: expected 'struct ip_addr *' but argument is of type 'struct ip_addr *'
+ void print_ip(char *msg, struct ip_addr *ip)  {
+      ^~~~~~~~
+../src/platform.c:185:25: warning: passing argument 2 of 'print_ip' from incompatible pointer type [-Wincompatible-pointer-types]
+  print_ip("Gateway : ", gw);
+                         ^~
+../src/platform.c:177:6: note: expected 'struct ip_addr *' but argument is of type 'struct ip_addr *'
+ void print_ip(char *msg, struct ip_addr *ip)  {
+      ^~~~~~~~
+../src/platform.c: At top level:
+../src/platform.c:188:63: warning: 'struct ip_addr' declared inside parameter list will not be visible outside of this definition or declaration
+ int init_platform(unsigned char *mac_ethernet_address, struct ip_addr *ipaddr, struct ip_addr *netmask) {
+                                                               ^~~~~~~
+../src/platform.c:188:5: error: conflicting types for 'init_platform'
+ int init_platform(unsigned char *mac_ethernet_address, struct ip_addr *ipaddr, struct ip_addr *netmask) {
+     ^~~~~~~~~~~~~
+In file included from ../src/platform.c:8:0:
+../src/platform.h:12:5: note: previous declaration of 'init_platform' was here
+ int init_platform(unsigned char *mac_ethernet_address, struct ip_addr *ipaddr, struct ip_addr *netmask);
+     ^~~~~~~~~~~~~
+../src/platform.c: In function 'init_platform':
+../src/platform.c:189:17: error: storage size of 'gw' isn't known
+  struct ip_addr gw;
+                 ^~
+../src/platform.c:195:17: error: storage size of 'ipaddr_dhcp' isn't known
+  struct ip_addr ipaddr_dhcp;
+                 ^~~~~~~~~~~
+../src/platform.c:196:17: error: storage size of 'netmask_dhcp' isn't known
+  struct ip_addr netmask_dhcp;
+                 ^~~~~~~~~~~~
+../src/platform.c:200:11: error: dereferencing pointer to incomplete type 'struct ip_addr'
+     ipaddr->addr = 0;
+           ^~
+../src/platform.c:218:29: warning: passing argument 2 of 'xemac_add' from incompatible pointer type [-Wincompatible-pointer-types]
+  if (!xemac_add(echo_netif, ipaddr, netmask, &gw, mac_ethernet_address, PLATFORM_EMAC_BASEADDR)) {
+                             ^~~~~~
+In file included from ../src/platform.c:3:0:
+../../particle_sim_bsp/ps7_cortexa9_0/include/netif/xadapter.h:69:16: note: expected 'ip_addr_t * {aka struct ip4_addr *}' but argument is of type 'struct ip_addr *'
+ struct netif * xemac_add(struct netif *netif,
+                ^~~~~~~~~
+../src/platform.c:218:37: warning: passing argument 3 of 'xemac_add' from incompatible pointer type [-Wincompatible-pointer-types]
+  if (!xemac_add(echo_netif, ipaddr, netmask, &gw, mac_ethernet_address, PLATFORM_EMAC_BASEADDR)) {
+                                     ^~~~~~~
+In file included from ../src/platform.c:3:0:
+../../particle_sim_bsp/ps7_cortexa9_0/include/netif/xadapter.h:69:16: note: expected 'ip_addr_t * {aka struct ip4_addr *}' but argument is of type 'struct ip_addr *'
+ struct netif * xemac_add(struct netif *netif,
+                ^~~~~~~~~
+../src/platform.c:253:20: warning: passing argument 1 of 'print_ip_settings' from incompatible pointer type [-Wincompatible-pointer-types]
+  print_ip_settings(ipaddr, netmask, &gw);
+                    ^~~~~~
+../src/platform.c:182:6: note: expected 'struct ip_addr *' but argument is of type 'struct ip_addr *'
+ void print_ip_settings(struct ip_addr *ip, struct ip_addr *mask, struct ip_addr *gw) {
+      ^~~~~~~~~~~~~~~~~
+../src/platform.c:253:28: warning: passing argument 2 of 'print_ip_settings' from incompatible pointer type [-Wincompatible-pointer-types]
+  print_ip_settings(ipaddr, netmask, &gw);
+                            ^~~~~~~
+../src/platform.c:182:6: note: expected 'struct ip_addr *' but argument is of type 'struct ip_addr *'
+ void print_ip_settings(struct ip_addr *ip, struct ip_addr *mask, struct ip_addr *gw) {
+      ^~~~~~~~~~~~~~~~~
+../src/platform.c:196:17: warning: unused variable 'netmask_dhcp' [-Wunused-variable]
+  struct ip_addr netmask_dhcp;
+                 ^~~~~~~~~~~~
+../src/platform.c:195:17: warning: unused variable 'ipaddr_dhcp' [-Wunused-variable]
+  struct ip_addr ipaddr_dhcp;
+                 ^~~~~~~~~~~
+../src/platform.c:189:17: warning: unused variable 'gw' [-Wunused-variable]
+  struct ip_addr gw;
+                 ^~
+make: *** [src/platform.o] Error 1
+02:19:08 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:3:0:
+../src/platform.h:12:63: warning: 'struct ip_addr' declared inside parameter list will not be visible outside of this definition or declaration
+ int init_platform(unsigned char *mac_ethernet_address, struct ip_addr *ipaddr, struct ip_addr *netmask);
+                                                               ^~~~~~~
+../src/main.c:7:77: warning: 'struct ip_addr' declared inside parameter list will not be visible outside of this definition or declaration
+ void udp_get_handler(void *arg, struct udp_pcb *pcb, struct pbuf *p, struct ip_addr *addr, u16_t port) {
+                                                                             ^~~~~~~
+../src/main.c: In function 'main':
+../src/main.c:20:75: error: invalid suffix "xXX" on integer constant
+     unsigned char mac_ethernet_address[] = {0x00, 0x11, 0x22, 0x33, 0x00, 0xXX}; // Put your own MAC address here!
+                                                                           ^~~~
+../src/main.c:31:24: warning: passing argument 2 of 'udp_recv' from incompatible pointer type [-Wincompatible-pointer-types]
+     udp_recv(recv_pcb, udp_get_handler, NULL);
+                        ^~~~~~~~~~~~~~~
+In file included from ../src/platform.h:10:0,
+                 from ../src/main.c:3:
+../../particle_sim_bsp/ps7_cortexa9_0/include/lwip/udp.h:123:18: note: expected 'udp_recv_fn {aka void (*)(void *, struct udp_pcb *, struct pbuf *, const struct ip4_addr *, short unsigned int)}' but argument is of type 'void (*)(void *, struct udp_pcb *, struct pbuf *, struct ip_addr *, u16_t) {aka void (*)(void *, struct udp_pcb *, struct pbuf *, struct ip_addr *, short unsigned int)}'
+ void             udp_recv       (struct udp_pcb *pcb, udp_recv_fn recv,
+                  ^~~~~~~~
+../src/main.c:37:61: error: 'message' undeclared (first use in this function)
+     struct pbuf * reply = pbuf_alloc(PBUF_TRANSPORT, strlen(message), PBUF_REF);
+                                                             ^~~~~~~
+../src/main.c:37:61: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:37:61: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+In file included from d:\xilinx\sdk\2018.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:29:0,
+                 from ../src/main.c:1:
+d:\xilinx\sdk\2018.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:33:9: note: expected 'const char *' but argument is of type 'unsigned char *'
+ size_t  _EXFUN(strlen,(const char *));
+         ^
+../src/main.c:39:25: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+     reply->len = strlen(message);
+                         ^~~~~~~
+In file included from d:\xilinx\sdk\2018.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:29:0,
+                 from ../src/main.c:1:
+d:\xilinx\sdk\2018.1\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:33:9: note: expected 'const char *' but argument is of type 'unsigned char *'
+ size_t  _EXFUN(strlen,(const char *));
+         ^
+make: *** [src/main.o] Error 1
+02:19:47 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:3:0:
+../src/platform.h:12:63: warning: 'struct ip_addr' declared inside parameter list will not be visible outside of this definition or declaration
+ int init_platform(unsigned char *mac_ethernet_address, struct ip_addr *ipaddr, struct ip_addr *netmask);
+                                                               ^~~~~~~
+../src/main.c:7:77: warning: 'struct ip_addr' declared inside parameter list will not be visible outside of this definition or declaration
+ void udp_get_handler(void *arg, struct udp_pcb *pcb, struct pbuf *p, struct ip_addr *addr, u16_t port) {
+                                                                             ^~~~~~~
+../src/main.c: In function 'main':
+../src/main.c:31:24: warning: passing argument 2 of 'udp_recv' from incompatible pointer type [-Wincompatible-pointer-types]
+     udp_recv(recv_pcb, udp_get_handler, NULL);
+                        ^~~~~~~~~~~~~~~
+In file included from ../src/platform.h:10:0,
+                 from ../src/main.c:3:
+../../particle_sim_bsp/ps7_cortexa9_0/include/lwip/udp.h:123:18: note: expected 'udp_recv_fn {aka void (*)(void *, struct udp_pcb *, struct pbuf *, const struct ip4_addr *, short unsigned int)}' but argument is of type 'void (*)(void *, struct udp_pcb *, struct pbuf *, struct ip_addr *, u16_t) {aka void (*)(void *, struct udp_pcb *, struct pbuf *, struct ip_addr *, short unsigned int)}'
+ void             udp_recv       (struct udp_pcb *pcb, udp_recv_fn recv,
+                  ^~~~~~~~
+../src/main.c:37:61: error: 'message' undeclared (first use in this function)
+     struct pbuf * reply = pbuf_alloc(PBUF_TRANSPORT, strlen(message), PBUF_REF);
+                                                             ^~~~~~~
+../src/main.c:37:61: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/main.o] Error 1
+02:43:21 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:3:0:
+../src/platform.h:12:63: warning: 'struct ip_addr' declared inside parameter list will not be visible outside of this definition or declaration
+ int init_platform(unsigned char *mac_ethernet_address, struct ip_addr *ipaddr, struct ip_addr *netmask);
+                                                               ^~~~~~~
+../src/main.c:7:77: warning: 'struct ip_addr' declared inside parameter list will not be visible outside of this definition or declaration
+ void udp_get_handler(void *arg, struct udp_pcb *pcb, struct pbuf *p, struct ip_addr *addr, u16_t port) {
+                                                                             ^~~~~~~
+../src/main.c: In function 'main':
+../src/main.c:31:24: warning: passing argument 2 of 'udp_recv' from incompatible pointer type [-Wincompatible-pointer-types]
+     udp_recv(recv_pcb, udp_get_handler, NULL);
+                        ^~~~~~~~~~~~~~~
+In file included from ../src/platform.h:10:0,
+                 from ../src/main.c:3:
+../../particle_sim_bsp/ps7_cortexa9_0/include/lwip/udp.h:123:18: note: expected 'udp_recv_fn {aka void (*)(void *, struct udp_pcb *, struct pbuf *, const struct ip4_addr *, short unsigned int)}' but argument is of type 'void (*)(void *, struct udp_pcb *, struct pbuf *, struct ip_addr *, u16_t) {aka void (*)(void *, struct udp_pcb *, struct pbuf *, struct ip_addr *, short unsigned int)}'
+ void             udp_recv       (struct udp_pcb *pcb, udp_recv_fn recv,
+                  ^~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+In file included from ../src/platform.c:8:0:
+../src/platform.h:12:63: warning: 'struct ip_addr' declared inside parameter list will not be visible outside of this definition or declaration
+ int init_platform(unsigned char *mac_ethernet_address, struct ip_addr *ipaddr, struct ip_addr *netmask);
+                                                               ^~~~~~~
+../src/platform.c:177:33: warning: 'struct ip_addr' declared inside parameter list will not be visible outside of this definition or declaration
+ void print_ip(char *msg, struct ip_addr *ip)  {
+                                 ^~~~~~~
+In file included from ../../particle_sim_bsp/ps7_cortexa9_0/include/lwip/ip_addr.h:43:0,
+                 from ../../particle_sim_bsp/ps7_cortexa9_0/include/lwip/netif.h:46,
+                 from ../../particle_sim_bsp/ps7_cortexa9_0/include/netif/xadapter.h:49,
+                 from ../src/platform.c:3:
+../src/platform.c: In function 'print_ip':
+../../particle_sim_bsp/ps7_cortexa9_0/include/lwip/ip4_addr.h:199:52: error: dereferencing pointer to incomplete type 'struct ip_addr'
+ #define ip4_addr1(ipaddr) (((const u8_t*)(&(ipaddr)->addr))[0])
+                                                    ^
+../src/platform.c:179:32: note: in expansion of macro 'ip4_addr1'
+  xil_printf("%d.%d.%d.%d\r\n", ip4_addr1(ip), ip4_addr2(ip), ip4_addr3(ip), ip4_addr4(ip));
+                                ^~~~~~~~~
+../src/platform.c: At top level:
+../src/platform.c:182:31: warning: 'struct ip_addr' declared inside parameter list will not be visible outside of this definition or declaration
+ void print_ip_settings(struct ip_addr *ip, struct ip_addr *mask, struct ip_addr *gw) {
+                               ^~~~~~~
+../src/platform.c: In function 'print_ip_settings':
+../src/platform.c:183:25: warning: passing argument 2 of 'print_ip' from incompatible pointer type [-Wincompatible-pointer-types]
+  print_ip("Board IP: ", ip);
+                         ^~
+../src/platform.c:177:6: note: expected 'struct ip_addr *' but argument is of type 'struct ip_addr *'
+ void print_ip(char *msg, struct ip_addr *ip)  {
+      ^~~~~~~~
+../src/platform.c:184:25: warning: passing argument 2 of 'print_ip' from incompatible pointer type [-Wincompatible-pointer-types]
+  print_ip("Netmask : ", mask);
+                         ^~~~
+../src/platform.c:177:6: note: expected 'struct ip_addr *' but argument is of type 'struct ip_addr *'
+ void print_ip(char *msg, struct ip_addr *ip)  {
+      ^~~~~~~~
+../src/platform.c:185:25: warning: passing argument 2 of 'print_ip' from incompatible pointer type [-Wincompatible-pointer-types]
+  print_ip("Gateway : ", gw);
+                         ^~
+../src/platform.c:177:6: note: expected 'struct ip_addr *' but argument is of type 'struct ip_addr *'
+ void print_ip(char *msg, struct ip_addr *ip)  {
+      ^~~~~~~~
+../src/platform.c: At top level:
+../src/platform.c:188:63: warning: 'struct ip_addr' declared inside parameter list will not be visible outside of this definition or declaration
+ int init_platform(unsigned char *mac_ethernet_address, struct ip_addr *ipaddr, struct ip_addr *netmask) {
+                                                               ^~~~~~~
+../src/platform.c:188:5: error: conflicting types for 'init_platform'
+ int init_platform(unsigned char *mac_ethernet_address, struct ip_addr *ipaddr, struct ip_addr *netmask) {
+     ^~~~~~~~~~~~~
+In file included from ../src/platform.c:8:0:
+../src/platform.h:12:5: note: previous declaration of 'init_platform' was here
+ int init_platform(unsigned char *mac_ethernet_address, struct ip_addr *ipaddr, struct ip_addr *netmask);
+     ^~~~~~~~~~~~~
+../src/platform.c: In function 'init_platform':
+../src/platform.c:189:17: error: storage size of 'gw' isn't known
+  struct ip_addr gw;
+                 ^~
+../src/platform.c:195:17: error: storage size of 'ipaddr_dhcp' isn't known
+  struct ip_addr ipaddr_dhcp;
+                 ^~~~~~~~~~~
+../src/platform.c:196:17: error: storage size of 'netmask_dhcp' isn't known
+  struct ip_addr netmask_dhcp;
+                 ^~~~~~~~~~~~
+../src/platform.c:200:11: error: dereferencing pointer to incomplete type 'struct ip_addr'
+     ipaddr->addr = 0;
+           ^~
+../src/platform.c:218:29: warning: passing argument 2 of 'xemac_add' from incompatible pointer type [-Wincompatible-pointer-types]
+  if (!xemac_add(echo_netif, ipaddr, netmask, &gw, mac_ethernet_address, PLATFORM_EMAC_BASEADDR)) {
+                             ^~~~~~
+In file included from ../src/platform.c:3:0:
+../../particle_sim_bsp/ps7_cortexa9_0/include/netif/xadapter.h:69:16: note: expected 'ip_addr_t * {aka struct ip4_addr *}' but argument is of type 'struct ip_addr *'
+ struct netif * xemac_add(struct netif *netif,
+                ^~~~~~~~~
+../src/platform.c:218:37: warning: passing argument 3 of 'xemac_add' from incompatible pointer type [-Wincompatible-pointer-types]
+  if (!xemac_add(echo_netif, ipaddr, netmask, &gw, mac_ethernet_address, PLATFORM_EMAC_BASEADDR)) {
+                                     ^~~~~~~
+In file included from ../src/platform.c:3:0:
+../../particle_sim_bsp/ps7_cortexa9_0/include/netif/xadapter.h:69:16: note: expected 'ip_addr_t * {aka struct ip4_addr *}' but argument is of type 'struct ip_addr *'
+ struct netif * xemac_add(struct netif *netif,
+                ^~~~~~~~~
+../src/platform.c:253:20: warning: passing argument 1 of 'print_ip_settings' from incompatible pointer type [-Wincompatible-pointer-types]
+  print_ip_settings(ipaddr, netmask, &gw);
+                    ^~~~~~
+../src/platform.c:182:6: note: expected 'struct ip_addr *' but argument is of type 'struct ip_addr *'
+ void print_ip_settings(struct ip_addr *ip, struct ip_addr *mask, struct ip_addr *gw) {
+      ^~~~~~~~~~~~~~~~~
+../src/platform.c:253:28: warning: passing argument 2 of 'print_ip_settings' from incompatible pointer type [-Wincompatible-pointer-types]
+  print_ip_settings(ipaddr, netmask, &gw);
+                            ^~~~~~~
+../src/platform.c:182:6: note: expected 'struct ip_addr *' but argument is of type 'struct ip_addr *'
+ void print_ip_settings(struct ip_addr *ip, struct ip_addr *mask, struct ip_addr *gw) {
+      ^~~~~~~~~~~~~~~~~
+../src/platform.c:196:17: warning: unused variable 'netmask_dhcp' [-Wunused-variable]
+  struct ip_addr netmask_dhcp;
+                 ^~~~~~~~~~~~
+../src/platform.c:195:17: warning: unused variable 'ipaddr_dhcp' [-Wunused-variable]
+  struct ip_addr ipaddr_dhcp;
+                 ^~~~~~~~~~~
+../src/platform.c:189:17: warning: unused variable 'gw' [-Wunused-variable]
+  struct ip_addr gw;
+                 ^~
+make: *** [src/platform.o] Error 1

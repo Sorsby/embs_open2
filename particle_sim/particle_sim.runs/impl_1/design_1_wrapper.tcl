@@ -71,6 +71,7 @@ set rc [catch {
   set_param project.singleFileAddWarning.threshold 0
   set_property webtalk.parent_dir C:/Users/Matthew/Desktop/embs_open2/particle_sim/particle_sim.cache/wt [current_project]
   set_property parent.project_path C:/Users/Matthew/Desktop/embs_open2/particle_sim/particle_sim.xpr [current_project]
+  set_property ip_repo_paths C:/Users/Matthew/Desktop/embs_open2/zybo-vga-master/hardware/zybo_vga_repo [current_project]
   set_property ip_output_repo C:/Users/Matthew/Desktop/embs_open2/particle_sim/particle_sim.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
@@ -79,6 +80,7 @@ set rc [catch {
   set_param project.isImplRun true
   add_files C:/Users/Matthew/Desktop/embs_open2/particle_sim/particle_sim.srcs/sources_1/bd/design_1/design_1.bd
   set_param project.isImplRun false
+  read_xdc C:/Users/Matthew/Desktop/embs_open2/particle_sim/particle_sim.srcs/constrs_1/imports/hardware/zybo_vga.xdc
   set_param project.isImplRun true
   link_design -top design_1_wrapper -part xc7z010clg400-1
   set_param project.isImplRun false

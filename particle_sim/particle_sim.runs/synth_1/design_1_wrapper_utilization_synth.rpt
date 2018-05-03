@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
-| Date         : Thu May  3 00:52:17 2018
+| Date         : Thu May  3 01:54:57 2018
 | Host         : MATTHEW-PC running 64-bit major release  (build 9200)
 | Command      : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
 | Design       : design_1_wrapper
@@ -90,7 +90,7 @@ Table of Contents
 +-----------------------------+------+-------+-----------+-------+
 |          Site Type          | Used | Fixed | Available | Util% |
 +-----------------------------+------+-------+-----------+-------+
-| Bonded IOB                  |    8 |     0 |       100 |  8.00 |
+| Bonded IOB                  |   18 |     0 |       100 | 18.00 |
 | Bonded IPADs                |    0 |     0 |         2 |  0.00 |
 | Bonded IOPADs               |    0 |     0 |       130 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |         2 |  0.00 |
@@ -146,8 +146,7 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| IBUF     |    8 |                  IO |
-| OBUFT    |    4 |                  IO |
+| OBUF     |   18 |                  IO |
 +----------+------+---------------------+
 
 
@@ -157,9 +156,16 @@ Table of Contents
 +---------------------------------+------+
 |             Ref Name            | Used |
 +---------------------------------+------+
+| design_1_xlslice_0_0            |    1 |
+| design_1_xbar_0                 |    1 |
+| design_1_v_tc_0_0               |    1 |
+| design_1_v_axi4s_vid_out_0_0    |    1 |
 | design_1_rst_ps7_0_50M_0        |    1 |
+| design_1_rgb2vga_0_0            |    1 |
 | design_1_processing_system7_0_0 |    1 |
-| design_1_axi_gpio_0_0           |    1 |
+| design_1_axi_vdma_0_0           |    1 |
+| design_1_axi_smc_0              |    1 |
+| design_1_axi_dynclk_0_3         |    1 |
 | design_1_auto_pc_0              |    1 |
 +---------------------------------+------+
 
