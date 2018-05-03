@@ -814,3 +814,6 @@ con
 connect -url tcp:127.0.0.1:3121
 ----------------End of Script----------------
 
+23:31:51 INFO  : Launching XSDB server: xsdb.bat -interactive C:\Users\Matthew\Desktop\embs_open2\particle_sim_lab\particle_sim_lab.sdk\temp_xsdb_launch_script.tcl
+23:31:53 INFO  : XSDB server has started successfully.
+23:31:53 INFO  : Processing command line option -hwspec C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper.hdf.

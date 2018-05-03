@@ -1,4 +1,3 @@
-activeuserprofiles=MATTHEW-PC;Team;pc767s
+activeuserprofiles=MATTHEW-PC;Team
 eclipse.preferences.version=1
-org.eclipse.rse.systemtype.local.systemType.defaultUserId=ms1516
-useridperkey=pc767s.Local\=ms1516;
+org.eclipse.rse.systemtype.local.systemType.defaultUserId=Matthew
