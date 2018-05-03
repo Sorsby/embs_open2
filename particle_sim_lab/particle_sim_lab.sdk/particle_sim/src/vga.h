@@ -12,4 +12,7 @@ void setupVGA();
 
 void updateFrame();
 
+void drawCircle(int startx, int starty, int colour);
+
+
 #endif /* SRC_VGA_H_ */

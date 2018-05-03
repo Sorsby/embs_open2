@@ -6,21 +6,25 @@
 # Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 # 
 
+echo "This script was generated under a different operating system."
+echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executing this script"
+exit
+
 if [ -z "$PATH" ]; then
-  PATH=/opt/york/cs/net/xilinx_vivado-2016.2_ise-14.7_x86-64-1/SDK/2016.2/bin:/opt/york/cs/net/xilinx_vivado-2016.2_ise-14.7_x86-64-1/Vivado/2016.2/ids_lite/ISE/bin/lin64:/opt/york/cs/net/xilinx_vivado-2016.2_ise-14.7_x86-64-1/Vivado/2016.2/bin
+  PATH=D:/Xilinx/SDK/2016.2/bin;D:/Xilinx/Vivado/2016.2/ids_lite/ISE/bin/nt64;D:/Xilinx/Vivado/2016.2/ids_lite/ISE/lib/nt64:D:/Xilinx/Vivado/2016.2/bin
 else
-  PATH=/opt/york/cs/net/xilinx_vivado-2016.2_ise-14.7_x86-64-1/SDK/2016.2/bin:/opt/york/cs/net/xilinx_vivado-2016.2_ise-14.7_x86-64-1/Vivado/2016.2/ids_lite/ISE/bin/lin64:/opt/york/cs/net/xilinx_vivado-2016.2_ise-14.7_x86-64-1/Vivado/2016.2/bin:$PATH
+  PATH=D:/Xilinx/SDK/2016.2/bin;D:/Xilinx/Vivado/2016.2/ids_lite/ISE/bin/nt64;D:/Xilinx/Vivado/2016.2/ids_lite/ISE/lib/nt64:D:/Xilinx/Vivado/2016.2/bin:$PATH
 fi
 export PATH
 
 if [ -z "$LD_LIBRARY_PATH" ]; then
-  LD_LIBRARY_PATH=/opt/york/cs/net/xilinx_vivado-2016.2_ise-14.7_x86-64-1/Vivado/2016.2/ids_lite/ISE/lib/lin64
+  LD_LIBRARY_PATH=
 else
-  LD_LIBRARY_PATH=/opt/york/cs/net/xilinx_vivado-2016.2_ise-14.7_x86-64-1/Vivado/2016.2/ids_lite/ISE/lib/lin64:$LD_LIBRARY_PATH
+  LD_LIBRARY_PATH=:$LD_LIBRARY_PATH
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/userfs/m/ms1516/w2k/embs_open2/particle_sim_lab/particle_sim_lab.runs/impl_1'
+HD_PWD='C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

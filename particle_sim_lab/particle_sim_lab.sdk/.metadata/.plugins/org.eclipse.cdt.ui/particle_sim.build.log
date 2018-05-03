@@ -1,8 +1,54 @@
-17:27:33 **** Incremental Build of configuration Debug for project particle_sim ****
+23:28:41 **** Auto Build of configuration Debug for project particle_sim ****
 make pre-build main-build 
 a9-linaro-pre-build-step
- 
-make: Nothing to be done for 'main-build'.
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:9:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^
+../src/main.c:16:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/vga.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/vga.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/vga.d" -MT"src/vga.o" -o "src/vga.o" "../src/vga.c"
+../src/vga.c: In function 'updateFrame':
+../src/vga.c:74:2: warning: implicit declaration of function 'drawCircle' [-Wimplicit-function-declaration]
+  drawCircle(0, 0, 0x00FF0000);
+  ^
+../src/vga.c:77:2: warning: implicit declaration of function 'Xil_DCacheFlush' [-Wimplicit-function-declaration]
+  Xil_DCacheFlush();
+  ^
+../src/vga.c: At top level:
+../src/vga.c:86:6: warning: conflicting types for 'drawCircle'
+ void drawCircle(int startx, int starty, int colour) {
+      ^
+../src/vga.c:74:2: note: previous implicit declaration of 'drawCircle' was here
+  drawCircle(0, 0, 0x00FF0000);
+  ^
+../src/vga.c: In function 'drawCircle':
+../src/vga.c:90:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   printf("%d", circlePixel);
+   ^
+../src/vga.c:90:3: warning: incompatible implicit declaration of built-in function 'printf'
+'Finished building: ../src/vga.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/main.o ./src/platform.o ./src/vga.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 106072	   2800	10394256	10503128	 a043d8	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
 
-17:27:33 Build Finished (took 313ms)
+23:28:41 Build Finished (took 775ms)
 

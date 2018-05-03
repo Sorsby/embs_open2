@@ -27,6 +27,13 @@ int xpos;
 int ypos;
 u32 buff;
 
+// Array to store relative pixel locations of circle
+int circle[21] = {-2881, -2880, -2879,
+				-1442, -1441, -1440, -1439, -1438,
+				-2, -1, 0, 1, 2,
+				1438, 1439, 1440, 1441, 1442,
+				2879, 2880, 2881};
+
 void setupVGA() {
 	// Initialise an array of pointers to the 2 frame buffers
 	int i;
@@ -64,7 +71,7 @@ void updateFrame() {
 	// Clear the frame to white
 	memset(frame, 0xFF, MAX_FRAME*4);
 
-	drawSquare(xpos, ypos, 32, 0x000000FF);
+	drawCircle(0, 0, 0x00FF0000);
 
 	// Flush everything out to DDR
 	Xil_DCacheFlush();
@@ -74,6 +81,14 @@ void updateFrame() {
 
 	// Wait for the f0x00FF0000rame to switch (after active frame is drawn) before continuing
 	DisplayWaitForSync(&dispCtrl);
+}
+
+void drawCircle(int startx, int starty, int colour) {
+	for (x = 0; x < 21; x++) {
+		int circlePixel = circle[x] + (y*stride + x);
+		frame[circlePixel] = colour;
+		printf("%d", circlePixel);
+	}
 }
 
 void drawSquare(int startx, int starty, int size, int colour) {

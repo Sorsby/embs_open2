@@ -806,3 +806,11 @@ con
 
 17:27:45 INFO  : Launch script is exported to file '/home/userfs/m/ms1516/w2k/embs_open2/particle_sim_lab/particle_sim_lab.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_on_local_particle_sim.elf.tcl'
 17:28:16 INFO  : Disconnected from the channel tcfchan#19.
+22:52:06 INFO  : Launching XSDB server: xsdb.bat -interactive C:\Users\Matthew\Desktop\embs_open2\particle_sim_lab\particle_sim_lab.sdk\temp_xsdb_launch_script.tcl
+22:52:12 INFO  : XSDB server has started successfully.
+22:52:15 INFO  : Processing command line option -hwspec C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper.hdf.
+23:00:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:00:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
