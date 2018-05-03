@@ -9,7 +9,7 @@ create_bd_cell -type hier vga
 
 # Create IP cores
 create_bd_cell -type ip -vlnv digilentinc.com:ip:axi_dynclk:1.0 vga/axi_dynclk_0
-create_bd_cell -type ip -vlnv xilinx.com:ip:axi_vdma:6.3 vga/axi_vdma_0
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_vdma:6.2 vga/axi_vdma_0
 create_bd_cell -type ip -vlnv xilinx.com:ip:v_tc:6.1 vga/v_tc_0
 create_bd_cell -type ip -vlnv xilinx.com:ip:v_axi4s_vid_out:4.0 vga/v_axi4s_vid_out_0
 create_bd_cell -type ip -vlnv digilentinc.com:ip:rgb2vga:1.0 vga/rgb2vga_0
