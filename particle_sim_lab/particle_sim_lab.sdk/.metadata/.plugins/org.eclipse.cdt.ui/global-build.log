@@ -5520,3 +5520,2301 @@ arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
  108796	   3072	10394288	10506156	 a04fac	particle_sim.elf
 'Finished building: particle_sim.elf.size'
 ' '
+01:52:28 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'freeMemory':
+../src/main.c:18:2: warning: implicit declaration of function 'free' [-Wimplicit-function-declaration]
+  free(particles);
+  ^
+../src/main.c:18:2: warning: incompatible implicit declaration of built-in function 'free'
+../src/main.c: In function 'populateSimulation':
+../src/main.c:23:2: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+  particles = malloc(num_particles * sizeof(struct Particle));
+  ^
+../src/main.c:23:14: warning: incompatible implicit declaration of built-in function 'malloc'
+  particles = malloc(num_particles * sizeof(struct Particle));
+              ^
+../src/main.c: In function 'main':
+../src/main.c:36:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^
+../src/main.c:44:3: warning: format '%d' expects argument of type 'int', but argument 2 has type 'float (*)()' [-Wformat=]
+   printf("%d", get_fps);
+   ^
+../src/main.c:44:3: warning: format '%d' expects argument of type 'int', but argument 2 has type 'float (*)()' [-Wformat=]
+../src/main.c:47:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^
+'Finished building: ../src/main.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 108804	   3072	10394288	10506164	 a04fb4	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+01:52:42 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'freeMemory':
+../src/main.c:18:2: warning: implicit declaration of function 'free' [-Wimplicit-function-declaration]
+  free(particles);
+  ^
+../src/main.c:18:2: warning: incompatible implicit declaration of built-in function 'free'
+../src/main.c: In function 'populateSimulation':
+../src/main.c:23:2: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+  particles = malloc(num_particles * sizeof(struct Particle));
+  ^
+../src/main.c:23:14: warning: incompatible implicit declaration of built-in function 'malloc'
+  particles = malloc(num_particles * sizeof(struct Particle));
+              ^
+../src/main.c: In function 'main':
+../src/main.c:36:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^
+../src/main.c:44:3: warning: format '%f' expects argument of type 'double', but argument 2 has type 'float (*)()' [-Wformat=]
+   printf("%f", get_fps);
+   ^
+../src/main.c:44:3: warning: format '%f' expects argument of type 'double', but argument 2 has type 'float (*)()' [-Wformat=]
+../src/main.c:47:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^
+'Finished building: ../src/main.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 108804	   3072	10394288	10506164	 a04fb4	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+01:52:52 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'freeMemory':
+../src/main.c:18:2: warning: implicit declaration of function 'free' [-Wimplicit-function-declaration]
+  free(particles);
+  ^
+../src/main.c:18:2: warning: incompatible implicit declaration of built-in function 'free'
+../src/main.c: In function 'populateSimulation':
+../src/main.c:23:2: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+  particles = malloc(num_particles * sizeof(struct Particle));
+  ^
+../src/main.c:23:14: warning: incompatible implicit declaration of built-in function 'malloc'
+  particles = malloc(num_particles * sizeof(struct Particle));
+              ^
+../src/main.c: In function 'main':
+../src/main.c:36:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^
+../src/main.c:44:3: warning: format '%d' expects argument of type 'int', but argument 2 has type 'float (*)()' [-Wformat=]
+   printf("%d", get_fps);
+   ^
+../src/main.c:44:3: warning: format '%d' expects argument of type 'int', but argument 2 has type 'float (*)()' [-Wformat=]
+../src/main.c:47:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^
+'Finished building: ../src/main.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 108804	   3072	10394288	10506164	 a04fb4	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+01:53:31 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'freeMemory':
+../src/main.c:18:2: warning: implicit declaration of function 'free' [-Wimplicit-function-declaration]
+  free(particles);
+  ^
+../src/main.c:18:2: warning: incompatible implicit declaration of built-in function 'free'
+../src/main.c: In function 'populateSimulation':
+../src/main.c:23:2: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+  particles = malloc(num_particles * sizeof(struct Particle));
+  ^
+../src/main.c:23:14: warning: incompatible implicit declaration of built-in function 'malloc'
+  particles = malloc(num_particles * sizeof(struct Particle));
+              ^
+../src/main.c: In function 'main':
+../src/main.c:36:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^
+../src/main.c:44:3: warning: format '%f' expects argument of type 'double', but argument 2 has type 'float (*)()' [-Wformat=]
+   printf("%1f", get_fps);
+   ^
+../src/main.c:44:3: warning: format '%f' expects argument of type 'double', but argument 2 has type 'float (*)()' [-Wformat=]
+../src/main.c:47:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^
+'Finished building: ../src/main.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 108804	   3072	10394288	10506164	 a04fb4	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+01:53:38 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'freeMemory':
+../src/main.c:18:2: warning: implicit declaration of function 'free' [-Wimplicit-function-declaration]
+  free(particles);
+  ^
+../src/main.c:18:2: warning: incompatible implicit declaration of built-in function 'free'
+../src/main.c: In function 'populateSimulation':
+../src/main.c:23:2: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+  particles = malloc(num_particles * sizeof(struct Particle));
+  ^
+../src/main.c:23:14: warning: incompatible implicit declaration of built-in function 'malloc'
+  particles = malloc(num_particles * sizeof(struct Particle));
+              ^
+../src/main.c: In function 'main':
+../src/main.c:36:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^
+../src/main.c:44:3: warning: format '%f' expects argument of type 'double', but argument 2 has type 'float (*)()' [-Wformat=]
+   printf("%f", get_fps);
+   ^
+../src/main.c:44:3: warning: format '%f' expects argument of type 'double', but argument 2 has type 'float (*)()' [-Wformat=]
+../src/main.c:47:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^
+'Finished building: ../src/main.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 108804	   3072	10394288	10506164	 a04fb4	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+01:53:47 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'freeMemory':
+../src/main.c:18:2: warning: implicit declaration of function 'free' [-Wimplicit-function-declaration]
+  free(particles);
+  ^
+../src/main.c:18:2: warning: incompatible implicit declaration of built-in function 'free'
+../src/main.c: In function 'populateSimulation':
+../src/main.c:23:2: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+  particles = malloc(num_particles * sizeof(struct Particle));
+  ^
+../src/main.c:23:14: warning: incompatible implicit declaration of built-in function 'malloc'
+  particles = malloc(num_particles * sizeof(struct Particle));
+              ^
+../src/main.c: In function 'main':
+../src/main.c:36:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^
+../src/main.c:47:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^
+'Finished building: ../src/main.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 108804	   3072	10394288	10506164	 a04fb4	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+01:58:37 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'freeMemory':
+../src/main.c:18:2: warning: implicit declaration of function 'free' [-Wimplicit-function-declaration]
+  free(particles);
+  ^
+../src/main.c:18:2: warning: incompatible implicit declaration of built-in function 'free'
+../src/main.c: In function 'populateSimulation':
+../src/main.c:23:2: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+  particles = malloc(num_particles * sizeof(struct Particle));
+  ^
+../src/main.c:23:14: warning: incompatible implicit declaration of built-in function 'malloc'
+  particles = malloc(num_particles * sizeof(struct Particle));
+              ^
+../src/main.c: In function 'main':
+../src/main.c:36:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^
+../src/main.c:48:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^
+'Finished building: ../src/main.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 108820	   3072	10394288	10506180	 a04fc4	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+02:03:38 **** Incremental Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+02:04:20 **** Incremental Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+02:05:25 **** Incremental Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+02:06:17 **** Incremental Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+02:06:25 **** Incremental Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+02:08:00 **** Incremental Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+02:08:52 **** Incremental Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+02:10:57 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'freeMemory':
+../src/main.c:18:2: warning: implicit declaration of function 'free' [-Wimplicit-function-declaration]
+  free(particles);
+  ^
+../src/main.c:18:2: warning: incompatible implicit declaration of built-in function 'free'
+../src/main.c: In function 'populateSimulation':
+../src/main.c:23:2: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+  particles = malloc(num_particles * sizeof(struct Particle));
+  ^
+../src/main.c:23:14: warning: incompatible implicit declaration of built-in function 'malloc'
+  particles = malloc(num_particles * sizeof(struct Particle));
+              ^
+../src/main.c: In function 'main':
+../src/main.c:36:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^
+../src/main.c:48:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^
+'Finished building: ../src/main.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 108764	   3072	10394288	10506124	 a04f8c	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+02:11:07 **** Incremental Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+02:12:51 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'freeMemory':
+../src/main.c:18:2: warning: implicit declaration of function 'free' [-Wimplicit-function-declaration]
+  free(particles);
+  ^
+../src/main.c:18:2: warning: incompatible implicit declaration of built-in function 'free'
+../src/main.c: In function 'populateSimulation':
+../src/main.c:23:2: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+  particles = malloc(num_particles * sizeof(struct Particle));
+  ^
+../src/main.c:23:14: warning: incompatible implicit declaration of built-in function 'malloc'
+  particles = malloc(num_particles * sizeof(struct Particle));
+              ^
+../src/main.c: In function 'main':
+../src/main.c:36:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^
+../src/main.c:48:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^
+'Finished building: ../src/main.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 108764	   3072	10394288	10506124	 a04f8c	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+02:12:56 **** Incremental Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+02:14:33 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'freeMemory':
+../src/main.c:18:2: warning: implicit declaration of function 'free' [-Wimplicit-function-declaration]
+  free(particles);
+  ^
+../src/main.c:18:2: warning: incompatible implicit declaration of built-in function 'free'
+../src/main.c: In function 'populateSimulation':
+../src/main.c:23:2: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+  particles = malloc(num_particles * sizeof(struct Particle));
+  ^
+../src/main.c:23:14: warning: incompatible implicit declaration of built-in function 'malloc'
+  particles = malloc(num_particles * sizeof(struct Particle));
+              ^
+../src/main.c: In function 'main':
+../src/main.c:36:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^
+../src/main.c:48:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^
+'Finished building: ../src/main.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 108764	   3072	10394288	10506124	 a04f8c	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+02:14:47 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'freeMemory':
+../src/main.c:18:2: warning: implicit declaration of function 'free' [-Wimplicit-function-declaration]
+  free(particles);
+  ^
+../src/main.c:18:2: warning: incompatible implicit declaration of built-in function 'free'
+../src/main.c: In function 'populateSimulation':
+../src/main.c:23:2: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+  particles = malloc(num_particles * sizeof(struct Particle));
+  ^
+../src/main.c:23:14: warning: incompatible implicit declaration of built-in function 'malloc'
+  particles = malloc(num_particles * sizeof(struct Particle));
+              ^
+../src/main.c: In function 'main':
+../src/main.c:36:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^
+../src/main.c:48:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^
+'Finished building: ../src/main.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 108700	   3072	10394288	10506060	 a04f4c	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+02:14:48 **** Incremental Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+02:16:27 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'freeMemory':
+../src/main.c:18:2: warning: implicit declaration of function 'free' [-Wimplicit-function-declaration]
+  free(particles);
+  ^
+../src/main.c:18:2: warning: incompatible implicit declaration of built-in function 'free'
+../src/main.c: In function 'populateSimulation':
+../src/main.c:23:2: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+  particles = malloc(num_particles * sizeof(struct Particle));
+  ^
+../src/main.c:23:14: warning: incompatible implicit declaration of built-in function 'malloc'
+  particles = malloc(num_particles * sizeof(struct Particle));
+              ^
+../src/main.c: In function 'main':
+../src/main.c:36:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^
+../src/main.c:48:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^
+'Finished building: ../src/main.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 108700	   3072	10394288	10506060	 a04f4c	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+02:18:10 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/vga.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/vga.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/vga.d" -MT"src/vga.o" -o "src/vga.o" "../src/vga.c"
+../src/vga.c: In function 'updateFrame':
+../src/vga.c:74:2: warning: implicit declaration of function 'drawCircle' [-Wimplicit-function-declaration]
+  drawCircle(0, 0, 0x00FF0000);
+  ^
+../src/vga.c:77:2: warning: implicit declaration of function 'Xil_DCacheFlush' [-Wimplicit-function-declaration]
+  Xil_DCacheFlush();
+  ^
+../src/vga.c: At top level:
+../src/vga.c:86:6: warning: conflicting types for 'drawCircle'
+ void drawCircle(int startx, int starty, int colour) {
+      ^
+../src/vga.c:74:2: note: previous implicit declaration of 'drawCircle' was here
+  drawCircle(0, 0, 0x00FF0000);
+  ^
+'Finished building: ../src/vga.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 108692	   3072	10394288	10506052	 a04f44	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+02:18:20 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'freeMemory':
+../src/main.c:18:2: warning: implicit declaration of function 'free' [-Wimplicit-function-declaration]
+  free(particles);
+  ^
+../src/main.c:18:2: warning: incompatible implicit declaration of built-in function 'free'
+../src/main.c: In function 'populateSimulation':
+../src/main.c:23:2: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+  particles = malloc(num_particles * sizeof(struct Particle));
+  ^
+../src/main.c:23:14: warning: incompatible implicit declaration of built-in function 'malloc'
+  particles = malloc(num_particles * sizeof(struct Particle));
+              ^
+../src/main.c: In function 'main':
+../src/main.c:36:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^
+../src/main.c:48:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^
+'Finished building: ../src/main.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 108756	   3072	10394288	10506116	 a04f84	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+02:18:31 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'freeMemory':
+../src/main.c:18:2: warning: implicit declaration of function 'free' [-Wimplicit-function-declaration]
+  free(particles);
+  ^
+../src/main.c:18:2: warning: incompatible implicit declaration of built-in function 'free'
+../src/main.c: In function 'populateSimulation':
+../src/main.c:23:2: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+  particles = malloc(num_particles * sizeof(struct Particle));
+  ^
+../src/main.c:23:14: warning: incompatible implicit declaration of built-in function 'malloc'
+  particles = malloc(num_particles * sizeof(struct Particle));
+              ^
+../src/main.c: In function 'main':
+../src/main.c:36:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^
+../src/main.c:42:3: error: incompatible type for argument 1 of 'updateSimulation'
+   updateSimulation(*particles, *attractors, num_particles, num_attractors);
+   ^
+In file included from ../src/main.c:7:0:
+../src/simulation.h:24:6: note: expected 'struct Particle *' but argument is of type 'struct Particle'
+ void updateSimulation(struct Particle *particles, struct Attractor *attractors,
+      ^
+../src/main.c:42:3: error: incompatible type for argument 2 of 'updateSimulation'
+   updateSimulation(*particles, *attractors, num_particles, num_attractors);
+   ^
+In file included from ../src/main.c:7:0:
+../src/simulation.h:24:6: note: expected 'struct Attractor *' but argument is of type 'struct Attractor'
+ void updateSimulation(struct Particle *particles, struct Attractor *attractors,
+      ^
+../src/main.c:48:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^
+make: *** [src/main.o] Error 1
+02:18:35 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'freeMemory':
+../src/main.c:18:2: warning: implicit declaration of function 'free' [-Wimplicit-function-declaration]
+  free(particles);
+  ^
+../src/main.c:18:2: warning: incompatible implicit declaration of built-in function 'free'
+../src/main.c: In function 'populateSimulation':
+../src/main.c:23:2: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+  particles = malloc(num_particles * sizeof(struct Particle));
+  ^
+../src/main.c:23:14: warning: incompatible implicit declaration of built-in function 'malloc'
+  particles = malloc(num_particles * sizeof(struct Particle));
+              ^
+../src/main.c: In function 'main':
+../src/main.c:36:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^
+../src/main.c:48:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^
+'Finished building: ../src/main.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 108756	   3072	10394288	10506116	 a04f84	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+02:18:46 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'freeMemory':
+../src/main.c:18:2: warning: implicit declaration of function 'free' [-Wimplicit-function-declaration]
+  free(particles);
+  ^
+../src/main.c:18:2: warning: incompatible implicit declaration of built-in function 'free'
+../src/main.c: In function 'populateSimulation':
+../src/main.c:23:2: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+  particles = malloc(num_particles * sizeof(struct Particle));
+  ^
+../src/main.c:23:14: warning: incompatible implicit declaration of built-in function 'malloc'
+  particles = malloc(num_particles * sizeof(struct Particle));
+              ^
+../src/main.c: In function 'main':
+../src/main.c:36:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^
+../src/main.c:42:20: warning: passing argument 1 of 'updateSimulation' from incompatible pointer type
+   updateSimulation(&particles, &attractors, num_particles, num_attractors);
+                    ^
+In file included from ../src/main.c:7:0:
+../src/simulation.h:24:6: note: expected 'struct Particle *' but argument is of type 'struct Particle **'
+ void updateSimulation(struct Particle *particles, struct Attractor *attractors,
+      ^
+../src/main.c:42:32: warning: passing argument 2 of 'updateSimulation' from incompatible pointer type
+   updateSimulation(&particles, &attractors, num_particles, num_attractors);
+                                ^
+In file included from ../src/main.c:7:0:
+../src/simulation.h:24:6: note: expected 'struct Attractor *' but argument is of type 'struct Attractor **'
+ void updateSimulation(struct Particle *particles, struct Attractor *attractors,
+      ^
+../src/main.c:48:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^
+'Finished building: ../src/main.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 108756	   3072	10394288	10506116	 a04f84	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+02:18:57 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'freeMemory':
+../src/main.c:18:2: warning: implicit declaration of function 'free' [-Wimplicit-function-declaration]
+  free(particles);
+  ^
+../src/main.c:18:2: warning: incompatible implicit declaration of built-in function 'free'
+../src/main.c: In function 'populateSimulation':
+../src/main.c:23:2: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+  particles = malloc(num_particles * sizeof(struct Particle));
+  ^
+../src/main.c:23:14: warning: incompatible implicit declaration of built-in function 'malloc'
+  particles = malloc(num_particles * sizeof(struct Particle));
+              ^
+../src/main.c: In function 'main':
+../src/main.c:36:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^
+../src/main.c:48:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^
+'Finished building: ../src/main.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 108756	   3072	10394288	10506116	 a04f84	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+02:19:20 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/simulation.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/simulation.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/simulation.d" -MT"src/simulation.o" -o "src/simulation.o" "../src/simulation.c"
+../src/simulation.c: In function 'updateSimulation':
+../src/simulation.c:56:2: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  printf("successful update");
+  ^
+../src/simulation.c:56:2: warning: incompatible implicit declaration of built-in function 'printf'
+'Finished building: ../src/simulation.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 108780	   3072	10394288	10506140	 a04f9c	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+02:19:31 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/simulation.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/simulation.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/simulation.d" -MT"src/simulation.o" -o "src/simulation.o" "../src/simulation.c"
+'Finished building: ../src/simulation.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 108780	   3072	10394288	10506140	 a04f9c	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+02:19:33 **** Incremental Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+02:21:00 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'freeMemory':
+../src/main.c:18:2: warning: implicit declaration of function 'free' [-Wimplicit-function-declaration]
+  free(particles);
+  ^
+../src/main.c:18:2: warning: incompatible implicit declaration of built-in function 'free'
+../src/main.c: In function 'populateSimulation':
+../src/main.c:23:2: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+  particles = malloc(num_particles * sizeof(struct Particle));
+  ^
+../src/main.c:23:14: warning: incompatible implicit declaration of built-in function 'malloc'
+  particles = malloc(num_particles * sizeof(struct Particle));
+              ^
+../src/main.c: In function 'main':
+../src/main.c:36:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^
+../src/main.c:48:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^
+'Finished building: ../src/main.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 108780	   3072	10394288	10506140	 a04f9c	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+02:21:03 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'freeMemory':
+../src/main.c:18:2: warning: implicit declaration of function 'free' [-Wimplicit-function-declaration]
+  free(particles);
+  ^
+../src/main.c:18:2: warning: incompatible implicit declaration of built-in function 'free'
+../src/main.c: In function 'populateSimulation':
+../src/main.c:23:2: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+  particles = malloc(num_particles * sizeof(struct Particle));
+  ^
+../src/main.c:23:14: warning: incompatible implicit declaration of built-in function 'malloc'
+  particles = malloc(num_particles * sizeof(struct Particle));
+              ^
+../src/main.c: In function 'main':
+../src/main.c:36:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^
+../src/main.c:48:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^
+'Finished building: ../src/main.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 108780	   3072	10394288	10506140	 a04f9c	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+02:21:22 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'freeMemory':
+../src/main.c:18:2: warning: implicit declaration of function 'free' [-Wimplicit-function-declaration]
+  free(particles);
+  ^
+../src/main.c:18:2: warning: incompatible implicit declaration of built-in function 'free'
+../src/main.c: In function 'populateSimulation':
+../src/main.c:23:2: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+  particles = malloc(num_particles * sizeof(struct Particle));
+  ^
+../src/main.c:23:14: warning: incompatible implicit declaration of built-in function 'malloc'
+  particles = malloc(num_particles * sizeof(struct Particle));
+              ^
+../src/main.c: In function 'main':
+../src/main.c:38:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^
+../src/main.c:50:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^
+'Finished building: ../src/main.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 108780	   3072	10394288	10506140	 a04f9c	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+02:22:08 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/simulation.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/simulation.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/simulation.d" -MT"src/simulation.o" -o "src/simulation.o" "../src/simulation.c"
+'Finished building: ../src/simulation.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 108780	   3072	10394288	10506140	 a04f9c	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+02:22:32 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/simulation.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/simulation.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/simulation.d" -MT"src/simulation.o" -o "src/simulation.o" "../src/simulation.c"
+'Finished building: ../src/simulation.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 108852	   3072	10394288	10506212	 a04fe4	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+02:22:37 **** Incremental Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+02:24:52 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/simulation.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/simulation.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/simulation.d" -MT"src/simulation.o" -o "src/simulation.o" "../src/simulation.c"
+'Finished building: ../src/simulation.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 108780	   3072	10394288	10506140	 a04f9c	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+02:25:49 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'freeMemory':
+../src/main.c:18:2: warning: implicit declaration of function 'free' [-Wimplicit-function-declaration]
+  free(particles);
+  ^
+../src/main.c:18:2: warning: incompatible implicit declaration of built-in function 'free'
+../src/main.c: In function 'populateSimulation':
+../src/main.c:23:2: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+  particles = malloc(num_particles * sizeof(struct Particle));
+  ^
+../src/main.c:23:14: warning: incompatible implicit declaration of built-in function 'malloc'
+  particles = malloc(num_particles * sizeof(struct Particle));
+              ^
+../src/main.c: In function 'main':
+../src/main.c:38:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^
+../src/main.c:50:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^
+'Finished building: ../src/main.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 108780	   3072	10394288	10506140	 a04f9c	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+02:26:21 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'freeMemory':
+../src/main.c:18:2: warning: implicit declaration of function 'free' [-Wimplicit-function-declaration]
+  free(particles);
+  ^
+../src/main.c:18:2: warning: incompatible implicit declaration of built-in function 'free'
+../src/main.c: In function 'populateSimulation':
+../src/main.c:23:2: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+  particles = malloc(num_particles * sizeof(struct Particle));
+  ^
+../src/main.c:23:14: warning: incompatible implicit declaration of built-in function 'malloc'
+  particles = malloc(num_particles * sizeof(struct Particle));
+              ^
+../src/main.c: In function 'main':
+../src/main.c:38:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^
+../src/main.c:50:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^
+'Finished building: ../src/main.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 108844	   3072	10394288	10506204	 a04fdc	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+02:26:33 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'freeMemory':
+../src/main.c:18:2: warning: implicit declaration of function 'free' [-Wimplicit-function-declaration]
+  free(particles);
+  ^
+../src/main.c:18:2: warning: incompatible implicit declaration of built-in function 'free'
+../src/main.c: In function 'populateSimulation':
+../src/main.c:23:2: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+  particles = malloc(num_particles * sizeof(struct Particle));
+  ^
+../src/main.c:23:14: warning: incompatible implicit declaration of built-in function 'malloc'
+  particles = malloc(num_particles * sizeof(struct Particle));
+              ^
+../src/main.c: In function 'main':
+../src/main.c:38:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^
+../src/main.c:49:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^
+'Finished building: ../src/main.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 108764	   3072	10394288	10506124	 a04f8c	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+02:26:58 **** Incremental Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+02:28:28 **** Incremental Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+02:29:41 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'freeMemory':
+../src/main.c:18:2: warning: implicit declaration of function 'free' [-Wimplicit-function-declaration]
+  free(particles);
+  ^
+../src/main.c:18:2: warning: incompatible implicit declaration of built-in function 'free'
+../src/main.c: In function 'populateSimulation':
+../src/main.c:23:2: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+  particles = malloc(num_particles * sizeof(struct Particle));
+  ^
+../src/main.c:23:14: warning: incompatible implicit declaration of built-in function 'malloc'
+  particles = malloc(num_particles * sizeof(struct Particle));
+              ^
+../src/main.c: In function 'main':
+../src/main.c:38:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^
+../src/main.c:49:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^
+'Finished building: ../src/main.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 108764	   3072	10394288	10506124	 a04f8c	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+02:29:44 **** Incremental Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+02:39:23 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:39:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^
+../src/main.c:50:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^
+'Finished building: ../src/main.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 108764	   3072	10394288	10506124	 a04f8c	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+02:39:43 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'populateSimulation':
+../src/main.c:24:9: warning: unused variable 'time' [-Wunused-variable]
+  time_t time;
+         ^
+../src/main.c: In function 'main':
+../src/main.c:41:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^
+../src/main.c:52:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^
+'Finished building: ../src/main.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 108764	   3072	10394288	10506124	 a04f8c	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+02:39:58 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'populateSimulation':
+../src/main.c:25:25: error: 't' undeclared (first use in this function)
+  srand((unsigned) time(&t));
+                         ^
+../src/main.c:25:25: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:25:19: error: called object 'time' is not a function or function pointer
+  srand((unsigned) time(&t));
+                   ^
+../src/main.c:24:9: note: declared here
+  time_t time;
+         ^
+../src/main.c: In function 'main':
+../src/main.c:42:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^
+../src/main.c:53:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^
+make: *** [src/main.o] Error 1
+02:40:15 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'populateSimulation':
+../src/main.c:25:2: warning: implicit declaration of function 'time' [-Wimplicit-function-declaration]
+  srand((unsigned) time(&t));
+  ^
+../src/main.c: In function 'main':
+../src/main.c:42:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^
+../src/main.c:53:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^
+'Finished building: ../src/main.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+d:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/v7-a/fpv3/hard\libc.a(lib_a-gettimeofdayr.o): In function `_gettimeofday_r':
+gettimeofdayr.c:(.text+0x24): undefined reference to `_gettimeofday'
+collect2.exe: error: ld returned 1 exit status
+make: *** [particle_sim.elf] Error 1
+02:40:47 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'populateSimulation':
+../src/main.c:25:2: warning: implicit declaration of function 'time' [-Wimplicit-function-declaration]
+  srand((unsigned) time(&t));
+  ^
+../src/main.c:27:6: warning: unused variable 'random_y' [-Wunused-variable]
+  int random_y = rand() % 900;
+      ^
+../src/main.c:26:6: warning: unused variable 'random_x' [-Wunused-variable]
+  int random_x = rand() % 1440;
+      ^
+../src/main.c: In function 'main':
+../src/main.c:44:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^
+../src/main.c:55:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^
+'Finished building: ../src/main.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+d:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/v7-a/fpv3/hard\libc.a(lib_a-gettimeofdayr.o): In function `_gettimeofday_r':
+gettimeofdayr.c:(.text+0x24): undefined reference to `_gettimeofday'
+collect2.exe: error: ld returned 1 exit status
+make: *** [particle_sim.elf] Error 1
+02:41:03 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'populateSimulation':
+../src/main.c:25:2: warning: implicit declaration of function 'time' [-Wimplicit-function-declaration]
+  srand((unsigned) time(&t));
+  ^
+../src/main.c: In function 'main':
+../src/main.c:44:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^
+../src/main.c:55:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^
+'Finished building: ../src/main.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+d:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/v7-a/fpv3/hard\libc.a(lib_a-gettimeofdayr.o): In function `_gettimeofday_r':
+gettimeofdayr.c:(.text+0x24): undefined reference to `_gettimeofday'
+collect2.exe: error: ld returned 1 exit status
+make: *** [particle_sim.elf] Error 1
+02:41:57 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'populateSimulation':
+../src/main.c:25:2: warning: implicit declaration of function 'time' [-Wimplicit-function-declaration]
+  srand((unsigned) time(&t));
+  ^
+../src/main.c: In function 'main':
+../src/main.c:46:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^
+../src/main.c:57:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^
+'Finished building: ../src/main.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+d:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/v7-a/fpv3/hard\libc.a(lib_a-gettimeofdayr.o): In function `_gettimeofday_r':
+gettimeofdayr.c:(.text+0x24): undefined reference to `_gettimeofday'
+collect2.exe: error: ld returned 1 exit status
+make: *** [particle_sim.elf] Error 1
+02:42:56 **** Incremental Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+d:/xilinx/sdk/2016.2/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/4.9.2/../../../../arm-none-eabi/lib/v7-a/fpv3/hard\libc.a(lib_a-gettimeofdayr.o): In function `_gettimeofday_r':
+gettimeofdayr.c:(.text+0x24): undefined reference to `_gettimeofday'
+collect2.exe: error: ld returned 1 exit status
+make: *** [particle_sim.elf] Error 1
+02:44:09 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'populateSimulation':
+../src/main.c:24:9: warning: unused variable 't' [-Wunused-variable]
+  time_t t;
+         ^
+../src/main.c: In function 'main':
+../src/main.c:45:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^
+../src/main.c:56:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^
+'Finished building: ../src/main.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 109132	   3072	10394288	10506492	 a050fc	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+02:44:12 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:43:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^
+../src/main.c:54:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^
+'Finished building: ../src/main.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 109132	   3072	10394288	10506492	 a050fc	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+02:44:12 **** Incremental Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+02:45:30 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:43:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^
+../src/main.c:54:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^
+'Finished building: ../src/main.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 109132	   3072	10394288	10506492	 a050fc	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+03:02:11 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/simulation.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/simulation.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/simulation.d" -MT"src/simulation.o" -o "src/simulation.o" "../src/simulation.c"
+'Finished building: ../src/simulation.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 109132	   3072	10394288	10506492	 a050fc	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+03:06:45 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/simulation.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/simulation.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/simulation.d" -MT"src/simulation.o" -o "src/simulation.o" "../src/simulation.c"
+'Finished building: ../src/simulation.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 109132	   3072	10394288	10506492	 a050fc	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+03:06:48 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/simulation.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/simulation.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/simulation.d" -MT"src/simulation.o" -o "src/simulation.o" "../src/simulation.c"
+'Finished building: ../src/simulation.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 109132	   3072	10394288	10506492	 a050fc	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+03:06:50 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/simulation.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/simulation.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/simulation.d" -MT"src/simulation.o" -o "src/simulation.o" "../src/simulation.c"
+'Finished building: ../src/simulation.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 109244	   3072	10394288	10506604	 a0516c	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+03:07:12 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:43:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^
+../src/main.c:54:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^
+'Finished building: ../src/main.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 109244	   3072	10394288	10506604	 a0516c	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+03:07:15 **** Incremental Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+03:14:28 **** Incremental Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+03:17:39 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/simulation.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/simulation.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/simulation.d" -MT"src/simulation.o" -o "src/simulation.o" "../src/simulation.c"
+'Finished building: ../src/simulation.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 109116	   3072	10394288	10506476	 a050ec	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+03:18:13 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/simulation.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/simulation.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/simulation.d" -MT"src/simulation.o" -o "src/simulation.o" "../src/simulation.c"
+'Finished building: ../src/simulation.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 109116	   3072	10394288	10506476	 a050ec	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+03:18:15 **** Incremental Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+03:21:08 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+03:21:19 **** Incremental Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+03:22:55 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:43:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^
+../src/main.c:54:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^
+'Finished building: ../src/main.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 109188	   3072	10394288	10506548	 a05134	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+03:24:10 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:44:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^
+../src/main.c:55:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^
+'Finished building: ../src/main.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 109196	   3072	10394288	10506556	 a0513c	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+03:24:17 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:45:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^
+../src/main.c:56:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^
+'Finished building: ../src/main.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 109196	   3072	10394288	10506556	 a0513c	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+03:24:21 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:45:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^
+../src/main.c:56:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^
+'Finished building: ../src/main.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 109212	   3072	10394288	10506572	 a0514c	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+03:24:22 **** Incremental Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+03:36:31 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/simulation.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/simulation.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/simulation.d" -MT"src/simulation.o" -o "src/simulation.o" "../src/simulation.c"
+'Finished building: ../src/simulation.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 109220	   3072	10394288	10506580	 a05154	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+03:38:57 **** Incremental Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+03:40:40 **** Incremental Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+03:42:55 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/simulation.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/simulation.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/simulation.d" -MT"src/simulation.o" -o "src/simulation.o" "../src/simulation.c"
+'Finished building: ../src/simulation.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 109220	   3072	10394288	10506580	 a05154	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+03:42:57 **** Incremental Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+03:44:16 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:45:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^
+../src/main.c:56:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^
+'Finished building: ../src/main.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 109220	   3072	10394288	10506580	 a05154	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+03:45:07 **** Incremental Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+03:46:56 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/simulation.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/simulation.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/simulation.d" -MT"src/simulation.o" -o "src/simulation.o" "../src/simulation.c"
+'Finished building: ../src/simulation.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 109292	   3072	10394288	10506652	 a0519c	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+03:47:01 **** Incremental Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+03:48:01 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/simulation.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/simulation.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/simulation.d" -MT"src/simulation.o" -o "src/simulation.o" "../src/simulation.c"
+../src/simulation.c: In function 'updateSimulation':
+../src/simulation.c:38:4: warning: implicit declaration of function 'sqrt' [-Wimplicit-function-declaration]
+    int d = sqrt(exp);
+    ^
+../src/simulation.c:38:12: warning: incompatible implicit declaration of built-in function 'sqrt'
+    int d = sqrt(exp);
+            ^
+'Finished building: ../src/simulation.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/simulation.o: In function `updateSimulation':
+C:\Users\Matthew\Desktop\embs_open2\particle_sim_lab\particle_sim_lab.sdk\particle_sim\Debug/../src/simulation.c:38: undefined reference to `sqrt'
+collect2.exe: error: ld returned 1 exit status
+make: *** [particle_sim.elf] Error 1
+03:48:13 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/simulation.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/simulation.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/simulation.d" -MT"src/simulation.o" -o "src/simulation.o" "../src/simulation.c"
+'Finished building: ../src/simulation.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/simulation.o: In function `updateSimulation':
+C:\Users\Matthew\Desktop\embs_open2\particle_sim_lab\particle_sim_lab.sdk\particle_sim\Debug/../src/simulation.c:39: undefined reference to `sqrt'
+collect2.exe: error: ld returned 1 exit status
+make: *** [particle_sim.elf] Error 1
+03:49:48 **** Clean-only build of configuration Debug for project particle_sim ****
+make clean 
+rm -rf  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o  ./src/zybo_vga/display_ctrl.d ./src/zybo_vga/dynclk.d  ./src/fps.d ./src/main.d ./src/platform.d ./src/simulation.d ./src/vga.d  particle_sim.elf.size  particle_sim.elf
+' '
+03:49:48 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/zybo_vga/display_ctrl.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/zybo_vga/display_ctrl.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/zybo_vga/display_ctrl.d" -MT"src/zybo_vga/display_ctrl.o" -o "src/zybo_vga/display_ctrl.o" "../src/zybo_vga/display_ctrl.c"
+'Finished building: ../src/zybo_vga/display_ctrl.c'
+' '
+'Building file: ../src/zybo_vga/dynclk.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/zybo_vga/dynclk.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/zybo_vga/dynclk.d" -MT"src/zybo_vga/dynclk.o" -o "src/zybo_vga/dynclk.o" "../src/zybo_vga/dynclk.c"
+'Finished building: ../src/zybo_vga/dynclk.c'
+' '
+'Building file: ../src/fps.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/fps.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fps.d" -MT"src/fps.o" -o "src/fps.o" "../src/fps.c"
+'Finished building: ../src/fps.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:45:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^
+../src/main.c:56:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building file: ../src/simulation.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/simulation.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/simulation.d" -MT"src/simulation.o" -o "src/simulation.o" "../src/simulation.c"
+'Finished building: ../src/simulation.c'
+' '
+'Building file: ../src/vga.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/vga.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/vga.d" -MT"src/vga.o" -o "src/vga.o" "../src/vga.c"
+../src/vga.c: In function 'updateFrame':
+../src/vga.c:74:2: warning: implicit declaration of function 'drawCircle' [-Wimplicit-function-declaration]
+  drawCircle(0, 0, 0x00FF0000);
+  ^
+../src/vga.c:77:2: warning: implicit declaration of function 'Xil_DCacheFlush' [-Wimplicit-function-declaration]
+  Xil_DCacheFlush();
+  ^
+../src/vga.c: At top level:
+../src/vga.c:86:6: warning: conflicting types for 'drawCircle'
+ void drawCircle(int startx, int starty, int colour) {
+      ^
+../src/vga.c:74:2: note: previous implicit declaration of 'drawCircle' was here
+  drawCircle(0, 0, 0x00FF0000);
+  ^
+'Finished building: ../src/vga.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 110116	   3072	10394288	10507476	 a054d4	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+03:49:51 **** Clean-only build of configuration Debug for project particle_sim ****
+make clean 
+rm -rf  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o  ./src/zybo_vga/display_ctrl.d ./src/zybo_vga/dynclk.d  ./src/fps.d ./src/main.d ./src/platform.d ./src/simulation.d ./src/vga.d  particle_sim.elf.size  particle_sim.elf
+' '
+03:49:51 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/zybo_vga/display_ctrl.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/zybo_vga/display_ctrl.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/zybo_vga/display_ctrl.d" -MT"src/zybo_vga/display_ctrl.o" -o "src/zybo_vga/display_ctrl.o" "../src/zybo_vga/display_ctrl.c"
+'Finished building: ../src/zybo_vga/display_ctrl.c'
+' '
+'Building file: ../src/zybo_vga/dynclk.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/zybo_vga/dynclk.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/zybo_vga/dynclk.d" -MT"src/zybo_vga/dynclk.o" -o "src/zybo_vga/dynclk.o" "../src/zybo_vga/dynclk.c"
+'Finished building: ../src/zybo_vga/dynclk.c'
+' '
+'Building file: ../src/fps.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/fps.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fps.d" -MT"src/fps.o" -o "src/fps.o" "../src/fps.c"
+'Finished building: ../src/fps.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:45:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^
+../src/main.c:56:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building file: ../src/simulation.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/simulation.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/simulation.d" -MT"src/simulation.o" -o "src/simulation.o" "../src/simulation.c"
+'Finished building: ../src/simulation.c'
+' '
+'Building file: ../src/vga.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/vga.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/vga.d" -MT"src/vga.o" -o "src/vga.o" "../src/vga.c"
+../src/vga.c: In function 'updateFrame':
+../src/vga.c:74:2: warning: implicit declaration of function 'drawCircle' [-Wimplicit-function-declaration]
+  drawCircle(0, 0, 0x00FF0000);
+  ^
+../src/vga.c:77:2: warning: implicit declaration of function 'Xil_DCacheFlush' [-Wimplicit-function-declaration]
+  Xil_DCacheFlush();
+  ^
+../src/vga.c: At top level:
+../src/vga.c:86:6: warning: conflicting types for 'drawCircle'
+ void drawCircle(int startx, int starty, int colour) {
+      ^
+../src/vga.c:74:2: note: previous implicit declaration of 'drawCircle' was here
+  drawCircle(0, 0, 0x00FF0000);
+  ^
+'Finished building: ../src/vga.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 110116	   3072	10394288	10507476	 a054d4	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+03:49:56 **** Incremental Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+03:51:19 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/simulation.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/simulation.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/simulation.d" -MT"src/simulation.o" -o "src/simulation.o" "../src/simulation.c"
+'Finished building: ../src/simulation.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 109924	   2816	10394288	10507028	 a05314	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+03:52:30 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:45:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^
+../src/main.c:56:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^
+'Finished building: ../src/main.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 109836	   2816	10394288	10506940	 a052bc	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+03:52:35 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/simulation.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/simulation.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/simulation.d" -MT"src/simulation.o" -o "src/simulation.o" "../src/simulation.c"
+'Finished building: ../src/simulation.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 109748	   2816	10394288	10506852	 a05264	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+03:53:16 **** Incremental Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+03:54:48 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:45:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^
+../src/main.c:56:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^
+'Finished building: ../src/main.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 109748	   2816	10394288	10506852	 a05264	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+03:54:53 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:45:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^
+../src/main.c:56:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^
+'Finished building: ../src/main.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 109748	   2816	10394288	10506852	 a05264	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+03:54:55 **** Incremental Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+03:56:04 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:45:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^
+../src/main.c:56:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^
+'Finished building: ../src/main.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 109748	   2816	10394288	10506852	 a05264	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+03:56:12 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:45:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^
+../src/main.c:56:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^
+'Finished building: ../src/main.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 109748	   2816	10394288	10506852	 a05264	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+03:56:13 **** Incremental Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+03:57:41 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:45:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^
+../src/main.c:56:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^
+'Finished building: ../src/main.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 109748	   2816	10394288	10506852	 a05264	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+03:57:43 **** Incremental Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.

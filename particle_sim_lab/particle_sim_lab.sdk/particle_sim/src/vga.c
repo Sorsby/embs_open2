@@ -87,7 +87,7 @@ void drawCircle(int startx, int starty, int colour) {
 	for (x = 0; x < 21; x++) {
 		int circlePixel = circle[x] + (y*stride + x);
 		frame[circlePixel] = colour;
-		printf("%d", circlePixel);
+//		printf("%d", circlePixel);
 	}
 }
 
