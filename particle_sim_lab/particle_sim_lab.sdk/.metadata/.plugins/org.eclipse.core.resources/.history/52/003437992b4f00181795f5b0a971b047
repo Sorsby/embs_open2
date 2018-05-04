@@ -1,0 +1,16 @@
+/*
+ * simulation.h
+ *
+ *  Created on: 3 May 2018
+ *      Author: Matthew
+ */
+
+#ifndef SRC_SIMULATION_H_
+#define SRC_SIMULATION_H_
+
+struct Particle[];
+struct Attractor[];
+
+void updateSimulation();
+
+#endif /* SRC_SIMULATION_H_ */

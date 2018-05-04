@@ -1,0 +1,23 @@
+/*
+ * simulation.c
+ *
+ *  Created on: 3 May 2018
+ *      Author: Matthew
+ */
+
+struct Particle {
+	int x;
+	int y;
+	int vx;
+	int vy;
+} particle;
+
+struct Attractor {
+	int x;
+	int y;
+	int g;
+};
+
+void updateSimulation(Particle[]* particles) {
+
+}

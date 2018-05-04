@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include "xil_types.h"
+#include "xil_cache.h"
+#include "xparameters.h"
+#include "zybo_vga/display_ctrl.h"
+#include "vga.h"
+#include "simulation.h"
+
+#define NUM_PARTICLES 1000
+#define NUM_ATTRACTORS 2
+
+Attractor attractors[NUM_ATTRACTORS];
+Particle particles[];
+
+
+void populateSimulation(struct particle *num_particles, struct particle *num_attractors) {
+
+}
+
+int main(void) {
+    init_platform();
+	setupVGA();
+
+	while (1) {
+		updateSimulation();
+		updateFrame();
+	}
+
+    cleanup_platform();
+	return 0;
+}

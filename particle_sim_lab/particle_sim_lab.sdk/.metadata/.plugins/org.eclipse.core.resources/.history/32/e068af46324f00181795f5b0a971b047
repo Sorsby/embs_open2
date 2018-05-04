@@ -1,0 +1,15 @@
+/*
+ * simulation.c
+ *
+ *  Created on: 3 May 2018
+ *      Author: Matthew
+ */
+
+int i;
+
+void updateSimulation(struct Particle *particles, struct Attractor *attractors, int num_particles, int num_attractors) {
+	for (i = 0; i < num_particles; i++) {
+		(particles[i]).x += (particles[i]).x + (particles[i]).vx;
+		particles[i].x->(particles[i]).x + (particles[i]).vx;
+	}
+}

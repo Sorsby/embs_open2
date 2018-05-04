@@ -1,0 +1,14 @@
+/*
+ * simulation.c
+ *
+ *  Created on: 3 May 2018
+ *      Author: Matthew
+ */
+
+int *i;
+
+void updateSimulation(struct Particle *particles, struct Attractor *attractors) {
+	for (i = particles; *i != 0; i++) {
+		(particles[i]).x += (particles[i]).x + (particles[i]).vx;
+	}
+}

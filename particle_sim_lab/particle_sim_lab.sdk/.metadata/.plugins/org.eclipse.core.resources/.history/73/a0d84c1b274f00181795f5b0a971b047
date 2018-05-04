@@ -1,0 +1,23 @@
+/*
+ * simulation.c
+ *
+ *  Created on: 3 May 2018
+ *      Author: Matthew
+ */
+
+typedef struct particle {
+	int x;
+	int y;
+	int vx;
+	int vy;
+};
+
+typedef struct attractor {
+	int x;
+	int y;
+	int g;
+};
+
+void updateSimulation(struct particle *particles, struct attractor *attractors) {
+
+}
