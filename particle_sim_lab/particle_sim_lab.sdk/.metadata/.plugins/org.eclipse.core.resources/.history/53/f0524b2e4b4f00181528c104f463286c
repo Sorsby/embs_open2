@@ -18,12 +18,9 @@ void updateSimulation(struct Particle *particles, struct Attractor *attractors,
 		p.x = p.x + p.vx;
 		p.y = p.y + p.vy;
 
-		// Bound the simulation
-		if (p.x <= 5 || p.x >= 1435) {
+		if (p.x <= 5 || p.x >= 1395) {
 			p.vx = 0;
-		} else if (p.y <= 5 || p.y >= 895) {
-			p.vy = 0;
-		}
+		} else if (p.y >= 895)
 //		printf("p %d|%d\n", p.x, p.y);
 
 		for (j = 0; j < num_attractors; j++) {

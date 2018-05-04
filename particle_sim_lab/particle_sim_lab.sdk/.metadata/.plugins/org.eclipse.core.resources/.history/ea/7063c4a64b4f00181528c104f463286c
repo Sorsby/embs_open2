@@ -19,7 +19,7 @@ void updateSimulation(struct Particle *particles, struct Attractor *attractors,
 		p.y = p.y + p.vy;
 
 		// Bound the simulation
-		if (p.x <= 5 || p.x >= 1435) {
+		if (p.x <= 5 || p.x >= 1395) {
 			p.vx = 0;
 		} else if (p.y <= 5 || p.y >= 895) {
 			p.vy = 0;
