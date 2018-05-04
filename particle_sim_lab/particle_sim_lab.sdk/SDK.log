@@ -1015,3 +1015,7 @@ java.lang.RuntimeException: The program file specified in the launch configurati
 03:57:49 INFO  : FPGA configured successfully with bitstream "C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_1/design_1_wrapper.bit"
 03:58:16 INFO  : ps7_init is completed.
 03:58:16 INFO  : ps7_post_config is completed.
+04:20:25 INFO  : System reset is completed.
+04:20:27 INFO  : FPGA configured successfully with bitstream "C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_1/design_1_wrapper.bit"
+04:20:52 INFO  : ps7_init is completed.
+04:20:53 INFO  : ps7_post_config is completed.

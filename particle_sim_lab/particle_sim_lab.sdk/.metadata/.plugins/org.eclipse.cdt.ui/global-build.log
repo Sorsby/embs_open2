@@ -8185,3 +8185,302 @@ arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
  110004	   2816	10394288	10507108	 a05364	particle_sim.elf
 'Finished building: particle_sim.elf.size'
 ' '
+04:18:15 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/vga.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/vga.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/vga.d" -MT"src/vga.o" -o "src/vga.o" "../src/vga.c"
+../src/vga.c: In function 'updateFrame':
+../src/vga.c:82:3: warning: implicit declaration of function 'drawCircle' [-Wimplicit-function-declaration]
+   drawCircle(particles[i].x, particles[i].y, 0x000000FF);
+   ^
+../src/vga.c:91:2: warning: implicit declaration of function 'Xil_DCacheFlush' [-Wimplicit-function-declaration]
+  Xil_DCacheFlush();
+  ^
+../src/vga.c: At top level:
+../src/vga.c:100:6: warning: conflicting types for 'drawCircle'
+ void drawCircle(int startx, int starty, int colour) {
+      ^
+../src/vga.c:82:3: note: previous implicit declaration of 'drawCircle' was here
+   drawCircle(particles[i].x, particles[i].y, 0x000000FF);
+   ^
+'Finished building: ../src/vga.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 110004	   2816	10394288	10507108	 a05364	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+04:18:28 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/vga.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/vga.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/vga.d" -MT"src/vga.o" -o "src/vga.o" "../src/vga.c"
+../src/vga.c: In function 'updateFrame':
+../src/vga.c:82:3: warning: implicit declaration of function 'drawCircle' [-Wimplicit-function-declaration]
+   drawCircle(particles[i].x, particles[i].y, BLUE);
+   ^
+../src/vga.c:91:2: warning: implicit declaration of function 'Xil_DCacheFlush' [-Wimplicit-function-declaration]
+  Xil_DCacheFlush();
+  ^
+../src/vga.c: At top level:
+../src/vga.c:100:6: warning: conflicting types for 'drawCircle'
+ void drawCircle(int startx, int starty, int colour) {
+      ^
+../src/vga.c:82:3: note: previous implicit declaration of 'drawCircle' was here
+   drawCircle(particles[i].x, particles[i].y, BLUE);
+   ^
+'Finished building: ../src/vga.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 110004	   2816	10394288	10507108	 a05364	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+04:18:41 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/vga.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/vga.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/vga.d" -MT"src/vga.o" -o "src/vga.o" "../src/vga.c"
+../src/vga.c: In function 'updateFrame':
+../src/vga.c:81:3: warning: implicit declaration of function 'drawCircle' [-Wimplicit-function-declaration]
+   drawCircle(particles[i].x, particles[i].y, BLUE);
+   ^
+../src/vga.c:89:2: warning: implicit declaration of function 'Xil_DCacheFlush' [-Wimplicit-function-declaration]
+  Xil_DCacheFlush();
+  ^
+../src/vga.c: At top level:
+../src/vga.c:98:6: warning: conflicting types for 'drawCircle'
+ void drawCircle(int startx, int starty, int colour) {
+      ^
+../src/vga.c:81:3: note: previous implicit declaration of 'drawCircle' was here
+   drawCircle(particles[i].x, particles[i].y, BLUE);
+   ^
+'Finished building: ../src/vga.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 110004	   2816	10394288	10507108	 a05364	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+04:18:44 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/vga.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/vga.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/vga.d" -MT"src/vga.o" -o "src/vga.o" "../src/vga.c"
+../src/vga.c: In function 'updateFrame':
+../src/vga.c:81:3: warning: implicit declaration of function 'drawCircle' [-Wimplicit-function-declaration]
+   drawCircle(particles[i].x, particles[i].y, BLUE);
+   ^
+../src/vga.c:88:2: warning: implicit declaration of function 'Xil_DCacheFlush' [-Wimplicit-function-declaration]
+  Xil_DCacheFlush();
+  ^
+../src/vga.c: At top level:
+../src/vga.c:97:6: warning: conflicting types for 'drawCircle'
+ void drawCircle(int startx, int starty, int colour) {
+      ^
+../src/vga.c:81:3: note: previous implicit declaration of 'drawCircle' was here
+   drawCircle(particles[i].x, particles[i].y, BLUE);
+   ^
+'Finished building: ../src/vga.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 110004	   2816	10394288	10507108	 a05364	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+04:19:02 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/vga.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/vga.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/vga.d" -MT"src/vga.o" -o "src/vga.o" "../src/vga.c"
+../src/vga.c: In function 'updateFrame':
+../src/vga.c:81:3: warning: implicit declaration of function 'drawCircle' [-Wimplicit-function-declaration]
+   drawCircle(particles[i].x, particles[i].y, BLUE);
+   ^
+../src/vga.c:88:2: warning: implicit declaration of function 'Xil_DCacheFlush' [-Wimplicit-function-declaration]
+  Xil_DCacheFlush();
+  ^
+../src/vga.c: At top level:
+../src/vga.c:97:41: error: unknown type name 'hex'
+ void drawCircle(int startx, int starty, hex colour) {
+                                         ^
+make: *** [src/vga.o] Error 1
+04:19:04 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/vga.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/vga.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/vga.d" -MT"src/vga.o" -o "src/vga.o" "../src/vga.c"
+../src/vga.c: In function 'updateFrame':
+../src/vga.c:81:3: warning: implicit declaration of function 'drawCircle' [-Wimplicit-function-declaration]
+   drawCircle(particles[i].x, particles[i].y, BLUE);
+   ^
+../src/vga.c:88:2: warning: implicit declaration of function 'Xil_DCacheFlush' [-Wimplicit-function-declaration]
+  Xil_DCacheFlush();
+  ^
+../src/vga.c: At top level:
+../src/vga.c:97:6: warning: conflicting types for 'drawCircle'
+ void drawCircle(int startx, int starty, int colour) {
+      ^
+../src/vga.c:81:3: note: previous implicit declaration of 'drawCircle' was here
+   drawCircle(particles[i].x, particles[i].y, BLUE);
+   ^
+'Finished building: ../src/vga.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 110004	   2816	10394288	10507108	 a05364	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+04:20:21 **** Incremental Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+04:22:49 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/vga.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/vga.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/vga.d" -MT"src/vga.o" -o "src/vga.o" "../src/vga.c"
+../src/vga.c: In function 'updateFrame':
+../src/vga.c:82:3: warning: implicit declaration of function 'drawCircle' [-Wimplicit-function-declaration]
+   drawCircle(particles[i].x, particles[i].y, BLUE);
+   ^
+../src/vga.c:89:2: warning: implicit declaration of function 'Xil_DCacheFlush' [-Wimplicit-function-declaration]
+  Xil_DCacheFlush();
+  ^
+../src/vga.c: At top level:
+../src/vga.c:98:6: warning: conflicting types for 'drawCircle'
+ void drawCircle(int startx, int starty, int colour) {
+      ^
+../src/vga.c:82:3: note: previous implicit declaration of 'drawCircle' was here
+   drawCircle(particles[i].x, particles[i].y, BLUE);
+   ^
+'Finished building: ../src/vga.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 110004	   2816	10394288	10507108	 a05364	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+04:23:46 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/vga.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/vga.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/vga.d" -MT"src/vga.o" -o "src/vga.o" "../src/vga.c"
+../src/vga.c: In function 'updateFrame':
+../src/vga.c:82:3: warning: implicit declaration of function 'drawCircle' [-Wimplicit-function-declaration]
+   drawCircle(particles[i].x, particles[i].y, BLUE);
+   ^
+../src/vga.c:85:7: warning: unused variable 'colour' [-Wunused-variable]
+   int colour = attractors[i].g > 0 ? GREEN : RED;
+       ^
+../src/vga.c:90:2: warning: implicit declaration of function 'Xil_DCacheFlush' [-Wimplicit-function-declaration]
+  Xil_DCacheFlush();
+  ^
+../src/vga.c: At top level:
+../src/vga.c:99:6: warning: conflicting types for 'drawCircle'
+ void drawCircle(int startx, int starty, int colour) {
+      ^
+../src/vga.c:82:3: note: previous implicit declaration of 'drawCircle' was here
+   drawCircle(particles[i].x, particles[i].y, BLUE);
+   ^
+'Finished building: ../src/vga.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 110068	   2816	10394288	10507172	 a053a4	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+04:23:54 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/vga.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/vga.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/vga.d" -MT"src/vga.o" -o "src/vga.o" "../src/vga.c"
+../src/vga.c: In function 'updateFrame':
+../src/vga.c:82:3: warning: implicit declaration of function 'drawCircle' [-Wimplicit-function-declaration]
+   drawCircle(particles[i].x, particles[i].y, BLUE);
+   ^
+../src/vga.c:90:2: warning: implicit declaration of function 'Xil_DCacheFlush' [-Wimplicit-function-declaration]
+  Xil_DCacheFlush();
+  ^
+../src/vga.c: At top level:
+../src/vga.c:99:6: warning: conflicting types for 'drawCircle'
+ void drawCircle(int startx, int starty, int colour) {
+      ^
+../src/vga.c:82:3: note: previous implicit declaration of 'drawCircle' was here
+   drawCircle(particles[i].x, particles[i].y, BLUE);
+   ^
+'Finished building: ../src/vga.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 110068	   2816	10394288	10507172	 a053a4	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '

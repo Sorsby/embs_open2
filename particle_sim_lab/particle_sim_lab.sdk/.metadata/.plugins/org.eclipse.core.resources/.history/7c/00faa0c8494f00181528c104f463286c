@@ -8,10 +8,6 @@
 #include "zybo_vga/display_ctrl.h"
 #include "simulation.h"
 
-#define RED 0x00FF0000
-#define BLUE 0x000000FF
-#define GREEN 0x0000FF00
-
 // Frame size (based on 1440x900 resolution, 32 bits per pixel)
 #define MAX_FRAME (1440*900)
 #define FRAME_STRIDE (1440*4)
@@ -78,12 +74,14 @@ void updateFrame(struct Particle *particles, struct Attractor *attractors,
 	memset(frame, 0xFF, MAX_FRAME*4);
 
 	int i;
+	//draw particles blue
 	for (i = 0; i < num_particles; i++) {
-		drawCircle(particles[i].x, particles[i].y, BLUE);
+		drawCircle(particles[i].x, particles[i].y, 0x000000FF);
 	}
+
+	//draw attractors red
 	for (i = 0; i < num_attractors; i++) {
-		int colour = attractors[i].g > 0 ? GREEN : RED;
-		drawCircle(attractors[i].x, attractors[i].y, colour);
+		drawCircle(attractors[i].x, attractors[i].y, 0x00FF0000);
 	}
 
 	// Flush everything out to DDR

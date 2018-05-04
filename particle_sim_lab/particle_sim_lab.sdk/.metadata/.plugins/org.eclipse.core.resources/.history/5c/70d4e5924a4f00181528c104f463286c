@@ -83,7 +83,7 @@ void updateFrame(struct Particle *particles, struct Attractor *attractors,
 	}
 	for (i = 0; i < num_attractors; i++) {
 		int colour = attractors[i].g > 0 ? GREEN : RED;
-		drawCircle(attractors[i].x, attractors[i].y, colour);
+		drawCircle(attractors[i].x, attractors[i].y, RED);
 	}
 
 	// Flush everything out to DDR
