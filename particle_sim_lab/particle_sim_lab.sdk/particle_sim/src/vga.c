@@ -9,8 +9,8 @@
 #include "simulation.h"
 
 #define RED 0x00FF0000
-#define BLUE 0x000000FF
-#define GREEN 0x0000FF00
+#define GREEN 0x000000FF
+#define BLUE 0x0000FF00
 
 // Frame size (based on 1440x900 resolution, 32 bits per pixel)
 #define MAX_FRAME (1440*900)
@@ -26,14 +26,20 @@ u32 width;
 u32 height;
 
 u32 *frame;
-int right;
-int down;
-int xpos;
-int ypos;
 u32 buff;
 
 // Array to store relative pixel locations of circle
 int circle[21] = {-2881, -2880, -2879, -1442, -1441, -1440, -1439, -1438, -2, -1, 0, 1, 2, 1438, 1439, 1440, 1441, 1442, 2879, 2880, 2881};
+
+void drawCircle(int startx, int starty, int colour) {
+	for (x = 0; x < 21; x++) {
+		int circlePixel = circle[x] + (starty*stride + startx);
+		if (circlePixel < 0 || circlePixel > MAX_FRAME) {
+			continue;
+		}
+		frame[circlePixel] = colour;
+	}
+}
 
 void setupVGA() {
 	// Initialise an array of pointers to the 2 frame buffers
@@ -57,10 +63,6 @@ void setupVGA() {
 	width = dispCtrl.vMode.width;
 	height = dispCtrl.vMode.height;
 
-	right = 1;
-	down = 1;
-	xpos = width/2;
-	ypos = height/2;
 	buff = dispCtrl.curFrame;
 }
 
@@ -90,14 +92,6 @@ void updateFrame(struct Particle *particles, struct Attractor *attractors,
 
 	// Wait for the f0x00FF0000rame to switch (after active frame is drawn) before continuing
 	DisplayWaitForSync(&dispCtrl);
-}
-
-void drawCircle(int startx, int starty, int colour) {
-	for (x = 0; x < 21; x++) {
-		int circlePixel = circle[x] + (y*stride + x);
-		frame[circlePixel] = colour;
-//		printf("%d", circlePixel);
-	}
 }
 
 void drawSquare(int startx, int starty, int size, int colour) {

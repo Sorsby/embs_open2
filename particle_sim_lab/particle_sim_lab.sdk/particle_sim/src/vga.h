@@ -5,6 +5,8 @@
  *      Author: ms1516
  */
 
+#include "simulation.h"
+
 #ifndef SRC_VGA_H_
 #define SRC_VGA_H_
 

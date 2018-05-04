@@ -19,4 +19,23 @@
 <entry path="D:\Xilinx\SDK\2016.2\tps\win64\jre\lib\endorsed"/>
 </endorsedDirs>
 </libraryInfo>
+<libraryInfo home="/opt/york/cs/net/xilinx_vivado-2016.2_ise-14.7_x86-64-1/SDK/2016.2/tps/lnx64" version="1.8.0_66">
+<bootpath>
+<entry path="/opt/york/cs/net/xilinx_vivado-2016.2_ise-14.7_x86-64-1/SDK/2016.2/tps/lnx64/jre/lib/resources.jar"/>
+<entry path="/opt/york/cs/net/xilinx_vivado-2016.2_ise-14.7_x86-64-1/SDK/2016.2/tps/lnx64/jre/lib/rt.jar"/>
+<entry path="/opt/york/cs/net/xilinx_vivado-2016.2_ise-14.7_x86-64-1/SDK/2016.2/tps/lnx64/jre/lib/sunrsasign.jar"/>
+<entry path="/opt/york/cs/net/xilinx_vivado-2016.2_ise-14.7_x86-64-1/SDK/2016.2/tps/lnx64/jre/lib/jsse.jar"/>
+<entry path="/opt/york/cs/net/xilinx_vivado-2016.2_ise-14.7_x86-64-1/SDK/2016.2/tps/lnx64/jre/lib/jce.jar"/>
+<entry path="/opt/york/cs/net/xilinx_vivado-2016.2_ise-14.7_x86-64-1/SDK/2016.2/tps/lnx64/jre/lib/charsets.jar"/>
+<entry path="/opt/york/cs/net/xilinx_vivado-2016.2_ise-14.7_x86-64-1/SDK/2016.2/tps/lnx64/jre/lib/jfr.jar"/>
+<entry path="/opt/york/cs/net/xilinx_vivado-2016.2_ise-14.7_x86-64-1/SDK/2016.2/tps/lnx64/jre/classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="/opt/york/cs/net/xilinx_vivado-2016.2_ise-14.7_x86-64-1/SDK/2016.2/tps/lnx64/jre/lib/ext"/>
+<entry path="/usr/java/packages/lib/ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="/opt/york/cs/net/xilinx_vivado-2016.2_ise-14.7_x86-64-1/SDK/2016.2/tps/lnx64/jre/lib/endorsed"/>
+</endorsedDirs>
+</libraryInfo>
 </libraryInfos>

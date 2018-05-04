@@ -1,0 +1,74 @@
+/*
+ * simulation.c
+ *
+ *  Created on: 3 May 2018
+ *      Author: Matthew
+ */
+#include "simulation.h"
+#include "stdio.h"
+#include "math.h"
+
+int i, j;
+
+void updateSimulation(struct Particle *particles, struct Attractor *attractors,
+		int num_particles, int num_attractors) {
+
+	for (i = 0; i < num_particles; i++) {
+		struct Particle p = particles[i];
+
+		printf("pv %f|%f\n", p.vx, p.vy);
+
+		particles[i].x = p.x + p.vx;
+		particles[i].y = p.y + p.vy;
+
+		// Bound the simulation
+		if (p.x <= 5 || p.x >= 1435) {
+			p.x = 770;
+			p.vx = 0;
+		} else if (p.y <= 5 || p.y >= 895) {
+			p.y = 450;
+			p.vy = 0;
+		}
+
+		printf("p %f|%f\n", p.x, p.y);
+
+		for (j = 0; j < num_attractors; j++) {
+			struct Attractor a = attractors[j];
+
+			printf("ax %d,%d\n", a.x, a.y);
+
+			float exp1 = (a.x - p.x);
+//			printf("exp1 %d\n", exp1);
+//			printf("ap %d,%d\n", a.x, p.x);
+			float exp2 = (a.y - p.y);
+//			printf("exp2 %d\n", exp2);
+//			printf("ap %d,%d\n", a.y, p.y);
+			float exp = exp1*exp1 + exp2*exp2;
+//			printf("exp %f\n", exp);
+			float d = sqrt(exp);
+//			printf("d %f\n", d);
+
+			float x_norm;
+			float y_norm;
+			if (d < 500) {
+				x_norm = (a.x - p.x)/d;
+				y_norm = (a.y - p.y)/d;
+
+				if (d < 1.0) {
+					x_norm = x_norm * a.g;
+					y_norm = y_norm * a.g;
+				} else {
+					x_norm = x_norm * (1/d) * a.g;
+					y_norm = y_norm * (1/d) * a.g;
+				}
+
+				printf("norm %f,%f\n", x_norm, y_norm);
+
+				particles[i].vx = p.vx + x_norm;
+				particles[i].vy = p.vy + y_norm;
+				printf("pv %f|%f\n", p.vx, p.vy);
+			}
+		}
+	}
+//	printf("successful update\n");
+}

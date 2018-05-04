@@ -9,16 +9,16 @@
 #define SRC_SIMULATION_H_
 
 struct Particle {
-	int x;
-	int y;
-	int vx;
-	int vy;
+	float x;
+	float y;
+	float vx;
+	float vy;
 };
 
 struct Attractor {
-	int x;
-	int y;
-	int g;
+	float x;
+	float y;
+	float g;
 };
 
 void updateSimulation(struct Particle *particles, struct Attractor *attractors,

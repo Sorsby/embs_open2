@@ -8,61 +8,88 @@
 #include "simulation.h"
 #include "fps.h"
 #include "xuartps_hw.h"
+#include "input.h"
 
 char input_byte;
 int has_params = 0;
 
 int i;
-int num_particles = 1000;
-int num_attractors = 50;
+int num_particles = 2000;
+int num_attractors = 10;
 
 struct Particle *particles;
 struct Attractor *attractors;
+
+void populateSimulation();
 
 void freeMemory() {
 	free(particles);
 	free(attractors);
 }
 
+void getParams() {
+	num_particles = readInput("Enter a number of particles: ");
+	num_attractors = readInput("Enter a number of attractors: ");
+	freeMemory();
+	populateSimulation();
+}
+
 void populateSimulation() {
+	puts("populate sim");
+	printf("p %d", num_particles);
+	printf("a %d", num_attractors);
 	particles = malloc(num_particles * sizeof(struct Particle));
 	attractors = malloc(num_attractors * sizeof(struct Attractor));
 
 	for (i = 0; i < num_particles; i++) {
 		int random_x = rand() % 1440;
 		int random_y = rand() % 900;
-//		printf("1 %d, %d\n", random_x, random_y);
-		struct Particle particle = {random_x, random_y, 0, 0};
+		struct Particle particle = {.x = random_x, .y = random_y, .vx = 0, .vy = 0};
 		particles[i] = particle;
 	}
+	puts("make particles");
 
 	for (i = 0; i < num_attractors; i++) {
 		int random_x = rand() % 1440;
 		int random_y = rand() % 900;
-//		printf("2 %d, %d\n", random_x, random_y);
-		struct Attractor attractor = {random_x, random_y, 1};
+		float random_g;
+		if (i >= num_attractors/2) {
+			random_g = (rand() % 1) + 1;
+		} else {
+			random_g = (rand() % 1) - 1.5;
+		}
+		struct Attractor attractor = {.x = random_x, .y = random_y, .g = random_g};
 		attractors[i] = attractor;
 	}
+	puts("make attractors");
 }
 
 int handleInput() {
     if(XUartPs_IsReceiveData(STDIN_BASEADDRESS)) {
-        input_byte = XUartPs_RecvByte(STDIN_BASEADDRESS);
-        XUartPs_SendByte(STDOUT_BASEADDRESS, input_byte);
+        XUartPs_RecvByte(STDIN_BASEADDRESS);
+        getParams();
     }
 }
 
 int main(void) {
     init_platform();
 
+    puts("\n\n\n");
+
 	setupVGA();
 	populateSimulation();
 
 	while (1) {
-		updateSimulation(particles, attractors, num_particles, num_attractors);
-		updateFrame(particles, attractors, num_particles, num_attractors);
+
+		handleInput();
+
+		updateSimulation(&particles[0], &attractors[0], num_particles, num_attractors);
+//		printf("x %f\n", particles[0].x);
+//		printf("vx %f\n", particles[0].vx);
+
+		updateFrame(&particles[0], &attractors[0], num_particles, num_attractors);
 		frame_timer();
-//		printf("%f\n", get_fps());
+		printf("FPS: %f\n", get_fps());
 	}
 
     cleanup_platform();

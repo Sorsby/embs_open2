@@ -1,0 +1,33 @@
+/*
+ * input.c
+ *
+ *  Created on: 4 May 2018
+ *      Author: ms1516
+ */
+
+#include "xuartps_hw.h"
+
+int readInput() {
+    if(XUartPs_IsReceiveData(STDIN_BASEADDRESS)) {
+    	char byte;
+        do {
+        	byte = XUartPs_RecvByte(STDIN_BASEADDRESS);
+            if (byte >= '0' && byte <= '9') {
+                if (!digitFound) {
+                    if (count == maxNumbers) {
+                        break; //prevent overflow!
+                    }
+                    numbers[++count] = (c - '0');
+                    digitFound = 1;
+                }
+                else {
+                    numbers[count] = numbers[count] * 10 + (c - '0');
+                }
+            }
+            else if (digitFound) {
+                digitFound = 0;
+            }
+        } while (byte != '\r');
+
+    }
+}

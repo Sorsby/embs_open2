@@ -1,0 +1,14 @@
+/*
+ * input.c
+ *
+ *  Created on: 4 May 2018
+ *      Author: ms1516
+ */
+
+#include "xuartps_hw.h"
+
+void getParams() {
+    if(XUartPs_IsReceiveData(STDIN_BASEADDRESS)) {
+        char byte = XUartPs_RecvByte(STDIN_BASEADDRESS);
+    }
+}
