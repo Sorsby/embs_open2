@@ -74,15 +74,15 @@ void updateFrame(struct Particle *particles, struct Attractor *attractors,
 	memset(frame, 0xFF, MAX_FRAME*4);
 
 	int i;
-	//draw particles blue
 	for (i = 0; i < num_particles; i++) {
 		drawCircle(particles[i].x, particles[i].y, 0x000000FF);
 	}
 
-	//draw attractors red
 	for (i = 0; i < num_attractors; i++) {
 		drawCircle(attractors[i].x, attractors[i].y, 0x00FF0000);
 	}
+
+	drawCircle(0, 0, 0x00FF0000);
 
 	// Flush everything out to DDR
 	Xil_DCacheFlush();

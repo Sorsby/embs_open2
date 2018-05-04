@@ -84,6 +84,8 @@ void updateFrame(struct Particle *particles, struct Attractor *attractors,
 		drawCircle(attractors[i].x, attractors[i].y, 0x00FF0000);
 	}
 
+	drawCircle(0, 0, 0x00FF0000);
+
 	// Flush everything out to DDR
 	Xil_DCacheFlush();
 

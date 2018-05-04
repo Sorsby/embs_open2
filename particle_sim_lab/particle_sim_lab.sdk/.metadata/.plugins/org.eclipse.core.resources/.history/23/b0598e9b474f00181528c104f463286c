@@ -48,7 +48,7 @@ int main(void) {
 
 	while (1) {
 		updateSimulation(particles, attractors, num_particles, num_attractors);
-		updateFrame(particles, attractors, num_particles, num_attractors);
+		updateFrame();
 		frame_timer();
 		printf("%f\n", get_fps());
 	}

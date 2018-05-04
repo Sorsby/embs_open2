@@ -6,7 +6,6 @@
  */
 
 #include "zybo_vga/display_ctrl.h"
-#include "simulation.h"
 
 // Frame size (based on 1440x900 resolution, 32 bits per pixel)
 #define MAX_FRAME (1440*900)
@@ -64,8 +63,7 @@ void setupVGA() {
 	buff = dispCtrl.curFrame;
 }
 
-void updateFrame(struct Particle *particles, struct Attractor *attractors,
-		int num_particles, int num_attractors) {
+void updateFrame() {
 	// Switch the frame we're modifying to be back buffer (1 to 0, or 0 to 1)
 	buff = !buff;
 	frame = dispCtrl.framePtr[buff];
@@ -73,16 +71,7 @@ void updateFrame(struct Particle *particles, struct Attractor *attractors,
 	// Clear the frame to white
 	memset(frame, 0xFF, MAX_FRAME*4);
 
-	int i;
-	//draw particles blue
-	for (i = 0; i < num_particles; i++) {
-		drawCircle(particles[i].x, particles[i].y, 0x000000FF);
-	}
-
-	//draw attractors red
-	for (i = 0; i < num_attractors; i++) {
-		drawCircle(attractors[i].x, attractors[i].y, 0x00FF0000);
-	}
+	drawCircle(0, 0, 0x00FF0000);
 
 	// Flush everything out to DDR
 	Xil_DCacheFlush();
