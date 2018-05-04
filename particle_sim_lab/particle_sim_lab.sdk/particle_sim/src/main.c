@@ -7,6 +7,10 @@
 #include "vga.h"
 #include "simulation.h"
 #include "fps.h"
+#include "xuartps_hw.h"
+
+char input_byte;
+int has_params = 0;
 
 int i;
 int num_particles = 1000;
@@ -41,8 +45,16 @@ void populateSimulation() {
 	}
 }
 
+int handleInput() {
+    if(XUartPs_IsReceiveData(STDIN_BASEADDRESS)) {
+        input_byte = XUartPs_RecvByte(STDIN_BASEADDRESS);
+        XUartPs_SendByte(STDOUT_BASEADDRESS, input_byte);
+    }
+}
+
 int main(void) {
     init_platform();
+
 	setupVGA();
 	populateSimulation();
 
@@ -50,7 +62,7 @@ int main(void) {
 		updateSimulation(particles, attractors, num_particles, num_attractors);
 		updateFrame(particles, attractors, num_particles, num_attractors);
 		frame_timer();
-		printf("%f\n", get_fps());
+//		printf("%f\n", get_fps());
 	}
 
     cleanup_platform();

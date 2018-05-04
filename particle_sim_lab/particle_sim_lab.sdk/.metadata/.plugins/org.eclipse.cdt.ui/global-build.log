@@ -8604,3 +8604,974 @@ arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
  110132	   2816	10394288	10507236	 a053e4	particle_sim.elf
 'Finished building: particle_sim.elf.size'
 ' '
+04:56:45 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/vga.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/vga.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/vga.d" -MT"src/vga.o" -o "src/vga.o" "../src/vga.c"
+../src/vga.c: In function 'updateFrame':
+../src/vga.c:78:3: warning: implicit declaration of function 'drawCircle' [-Wimplicit-function-declaration]
+   drawCircle(particles[i].x, particles[i].y, BLUE);
+   ^
+../src/vga.c:86:2: warning: implicit declaration of function 'Xil_DCacheFlush' [-Wimplicit-function-declaration]
+  Xil_DCacheFlush();
+  ^
+../src/vga.c: At top level:
+../src/vga.c:95:6: warning: conflicting types for 'drawCircle'
+ void drawCircle(int startx, int starty, int colour) {
+      ^
+../src/vga.c:78:3: note: previous implicit declaration of 'drawCircle' was here
+   drawCircle(particles[i].x, particles[i].y, BLUE);
+   ^
+'Finished building: ../src/vga.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 110132	   2816	10394288	10507236	 a053e4	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+04:56:54 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:7:0:
+../src/vga.h:14:3: warning: 'struct Attractor' declared inside parameter list
+   int num_particles, int num_attractors);
+   ^
+../src/vga.h:14:3: warning: its scope is only this definition or declaration, which is probably not what you want
+../src/vga.h:14:3: warning: 'struct Particle' declared inside parameter list
+../src/main.c: In function 'main':
+../src/main.c:46:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^
+../src/main.c:52:15: warning: passing argument 1 of 'updateFrame' from incompatible pointer type
+   updateFrame(particles, attractors, num_particles, num_attractors);
+               ^
+In file included from ../src/main.c:7:0:
+../src/vga.h:13:6: note: expected 'struct Particle *' but argument is of type 'struct Particle *'
+ void updateFrame(struct Particle *particles, struct Attractor *attractors,
+      ^
+../src/main.c:52:26: warning: passing argument 2 of 'updateFrame' from incompatible pointer type
+   updateFrame(particles, attractors, num_particles, num_attractors);
+                          ^
+In file included from ../src/main.c:7:0:
+../src/vga.h:13:6: note: expected 'struct Attractor *' but argument is of type 'struct Attractor *'
+ void updateFrame(struct Particle *particles, struct Attractor *attractors,
+      ^
+../src/main.c:57:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^
+'Finished building: ../src/main.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 110132	   2816	10394288	10507236	 a053e4	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+05:02:16 **** Incremental Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+05:03:29 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:7:0:
+../src/vga.h:14:3: warning: 'struct Attractor' declared inside parameter list
+   int num_particles, int num_attractors);
+   ^
+../src/vga.h:14:3: warning: its scope is only this definition or declaration, which is probably not what you want
+../src/vga.h:14:3: warning: 'struct Particle' declared inside parameter list
+../src/main.c: In function 'main':
+../src/main.c:46:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^
+../src/main.c:58:15: warning: passing argument 1 of 'updateFrame' from incompatible pointer type
+   updateFrame(particles, attractors, num_particles, num_attractors);
+               ^
+In file included from ../src/main.c:7:0:
+../src/vga.h:13:6: note: expected 'struct Particle *' but argument is of type 'struct Particle *'
+ void updateFrame(struct Particle *particles, struct Attractor *attractors,
+      ^
+../src/main.c:58:26: warning: passing argument 2 of 'updateFrame' from incompatible pointer type
+   updateFrame(particles, attractors, num_particles, num_attractors);
+                          ^
+In file included from ../src/main.c:7:0:
+../src/vga.h:13:6: note: expected 'struct Attractor *' but argument is of type 'struct Attractor *'
+ void updateFrame(struct Particle *particles, struct Attractor *attractors,
+      ^
+../src/main.c:63:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^
+'Finished building: ../src/main.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64024	   2424	10393584	10460032	 9f9b80	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+05:03:56 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:7:0:
+../src/vga.h:14:3: warning: 'struct Attractor' declared inside parameter list
+   int num_particles, int num_attractors);
+   ^
+../src/vga.h:14:3: warning: its scope is only this definition or declaration, which is probably not what you want
+../src/vga.h:14:3: warning: 'struct Particle' declared inside parameter list
+../src/main.c: In function 'main':
+../src/main.c:53:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^
+../src/main.c:62:15: warning: passing argument 1 of 'updateFrame' from incompatible pointer type
+   updateFrame(particles, attractors, num_particles, num_attractors);
+               ^
+In file included from ../src/main.c:7:0:
+../src/vga.h:13:6: note: expected 'struct Particle *' but argument is of type 'struct Particle *'
+ void updateFrame(struct Particle *particles, struct Attractor *attractors,
+      ^
+../src/main.c:62:26: warning: passing argument 2 of 'updateFrame' from incompatible pointer type
+   updateFrame(particles, attractors, num_particles, num_attractors);
+                          ^
+In file included from ../src/main.c:7:0:
+../src/vga.h:13:6: note: expected 'struct Attractor *' but argument is of type 'struct Attractor *'
+ void updateFrame(struct Particle *particles, struct Attractor *attractors,
+      ^
+../src/main.c:67:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^
+'Finished building: ../src/main.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64024	   2424	10393584	10460032	 9f9b80	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+05:04:16 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:7:0:
+../src/vga.h:14:3: warning: 'struct Attractor' declared inside parameter list
+   int num_particles, int num_attractors);
+   ^
+../src/vga.h:14:3: warning: its scope is only this definition or declaration, which is probably not what you want
+../src/vga.h:14:3: warning: 'struct Particle' declared inside parameter list
+../src/main.c: In function 'main':
+../src/main.c:53:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^
+../src/main.c:61:15: warning: passing argument 1 of 'updateFrame' from incompatible pointer type
+   updateFrame(particles, attractors, num_particles, num_attractors);
+               ^
+In file included from ../src/main.c:7:0:
+../src/vga.h:13:6: note: expected 'struct Particle *' but argument is of type 'struct Particle *'
+ void updateFrame(struct Particle *particles, struct Attractor *attractors,
+      ^
+../src/main.c:61:26: warning: passing argument 2 of 'updateFrame' from incompatible pointer type
+   updateFrame(particles, attractors, num_particles, num_attractors);
+                          ^
+In file included from ../src/main.c:7:0:
+../src/vga.h:13:6: note: expected 'struct Attractor *' but argument is of type 'struct Attractor *'
+ void updateFrame(struct Particle *particles, struct Attractor *attractors,
+      ^
+../src/main.c:66:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^
+../src/main.c: In function 'handleInput':
+../src/main.c:50:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64024	   2424	10393584	10460032	 9f9b80	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+05:04:44 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:7:0:
+../src/vga.h:14:3: warning: 'struct Attractor' declared inside parameter list
+   int num_particles, int num_attractors);
+   ^
+../src/vga.h:14:3: warning: its scope is only this definition or declaration, which is probably not what you want
+../src/vga.h:14:3: warning: 'struct Particle' declared inside parameter list
+../src/main.c: In function 'main':
+../src/main.c:56:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^
+../src/main.c:64:15: warning: passing argument 1 of 'updateFrame' from incompatible pointer type
+   updateFrame(particles, attractors, num_particles, num_attractors);
+               ^
+In file included from ../src/main.c:7:0:
+../src/vga.h:13:6: note: expected 'struct Particle *' but argument is of type 'struct Particle *'
+ void updateFrame(struct Particle *particles, struct Attractor *attractors,
+      ^
+../src/main.c:64:26: warning: passing argument 2 of 'updateFrame' from incompatible pointer type
+   updateFrame(particles, attractors, num_particles, num_attractors);
+                          ^
+In file included from ../src/main.c:7:0:
+../src/vga.h:13:6: note: expected 'struct Attractor *' but argument is of type 'struct Attractor *'
+ void updateFrame(struct Particle *particles, struct Attractor *attractors,
+      ^
+../src/main.c:69:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^
+../src/main.c: In function 'handleInput':
+../src/main.c:53:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64088	   2424	10393584	10460096	 9f9bc0	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+05:04:54 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:7:0:
+../src/vga.h:14:3: warning: 'struct Attractor' declared inside parameter list
+   int num_particles, int num_attractors);
+   ^
+../src/vga.h:14:3: warning: its scope is only this definition or declaration, which is probably not what you want
+../src/vga.h:14:3: warning: 'struct Particle' declared inside parameter list
+../src/main.c: In function 'main':
+../src/main.c:57:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^
+../src/main.c:65:15: warning: passing argument 1 of 'updateFrame' from incompatible pointer type
+   updateFrame(particles, attractors, num_particles, num_attractors);
+               ^
+In file included from ../src/main.c:7:0:
+../src/vga.h:13:6: note: expected 'struct Particle *' but argument is of type 'struct Particle *'
+ void updateFrame(struct Particle *particles, struct Attractor *attractors,
+      ^
+../src/main.c:65:26: warning: passing argument 2 of 'updateFrame' from incompatible pointer type
+   updateFrame(particles, attractors, num_particles, num_attractors);
+                          ^
+In file included from ../src/main.c:7:0:
+../src/vga.h:13:6: note: expected 'struct Attractor *' but argument is of type 'struct Attractor *'
+ void updateFrame(struct Particle *particles, struct Attractor *attractors,
+      ^
+../src/main.c:70:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^
+'Finished building: ../src/main.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64088	   2424	10393584	10460096	 9f9bc0	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+05:05:15 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:7:0:
+../src/vga.h:14:3: warning: 'struct Attractor' declared inside parameter list
+   int num_particles, int num_attractors);
+   ^
+../src/vga.h:14:3: warning: its scope is only this definition or declaration, which is probably not what you want
+../src/vga.h:14:3: warning: 'struct Particle' declared inside parameter list
+../src/main.c: In function 'main':
+../src/main.c:57:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^
+../src/main.c:66:15: warning: passing argument 1 of 'updateFrame' from incompatible pointer type
+   updateFrame(particles, attractors, num_particles, num_attractors);
+               ^
+In file included from ../src/main.c:7:0:
+../src/vga.h:13:6: note: expected 'struct Particle *' but argument is of type 'struct Particle *'
+ void updateFrame(struct Particle *particles, struct Attractor *attractors,
+      ^
+../src/main.c:66:26: warning: passing argument 2 of 'updateFrame' from incompatible pointer type
+   updateFrame(particles, attractors, num_particles, num_attractors);
+                          ^
+In file included from ../src/main.c:7:0:
+../src/vga.h:13:6: note: expected 'struct Attractor *' but argument is of type 'struct Attractor *'
+ void updateFrame(struct Particle *particles, struct Attractor *attractors,
+      ^
+../src/main.c:71:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^
+'Finished building: ../src/main.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64088	   2424	10393584	10460096	 9f9bc0	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+05:05:33 **** Incremental Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+05:08:24 **** Incremental Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+05:10:53 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:7:0:
+../src/vga.h:14:3: warning: 'struct Attractor' declared inside parameter list
+   int num_particles, int num_attractors);
+   ^
+../src/vga.h:14:3: warning: its scope is only this definition or declaration, which is probably not what you want
+../src/vga.h:14:3: warning: 'struct Particle' declared inside parameter list
+../src/main.c: In function 'main':
+../src/main.c:57:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^
+../src/main.c:65:16: warning: passing argument 1 of 'updateFrame' from incompatible pointer type
+    updateFrame(particles, attractors, num_particles, num_attractors);
+                ^
+In file included from ../src/main.c:7:0:
+../src/vga.h:13:6: note: expected 'struct Particle *' but argument is of type 'struct Particle *'
+ void updateFrame(struct Particle *particles, struct Attractor *attractors,
+      ^
+../src/main.c:65:27: warning: passing argument 2 of 'updateFrame' from incompatible pointer type
+    updateFrame(particles, attractors, num_particles, num_attractors);
+                           ^
+In file included from ../src/main.c:7:0:
+../src/vga.h:13:6: note: expected 'struct Attractor *' but argument is of type 'struct Attractor *'
+ void updateFrame(struct Particle *particles, struct Attractor *attractors,
+      ^
+../src/main.c:71:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^
+'Finished building: ../src/main.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64088	   2424	10393584	10460096	 9f9bc0	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+05:11:12 **** Incremental Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+05:14:47 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:7:0:
+../src/vga.h:14:3: warning: 'struct Attractor' declared inside parameter list
+   int num_particles, int num_attractors);
+   ^
+../src/vga.h:14:3: warning: its scope is only this definition or declaration, which is probably not what you want
+../src/vga.h:14:3: warning: 'struct Particle' declared inside parameter list
+../src/main.c: In function 'main':
+../src/main.c:57:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^
+../src/main.c:64:15: warning: passing argument 1 of 'updateFrame' from incompatible pointer type
+   updateFrame(particles, attractors, num_particles, num_attractors);
+               ^
+In file included from ../src/main.c:7:0:
+../src/vga.h:13:6: note: expected 'struct Particle *' but argument is of type 'struct Particle *'
+ void updateFrame(struct Particle *particles, struct Attractor *attractors,
+      ^
+../src/main.c:64:26: warning: passing argument 2 of 'updateFrame' from incompatible pointer type
+   updateFrame(particles, attractors, num_particles, num_attractors);
+                          ^
+In file included from ../src/main.c:7:0:
+../src/vga.h:13:6: note: expected 'struct Attractor *' but argument is of type 'struct Attractor *'
+ void updateFrame(struct Particle *particles, struct Attractor *attractors,
+      ^
+../src/main.c:69:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^
+'Finished building: ../src/main.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64088	   2424	10393584	10460096	 9f9bc0	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+05:18:09 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:7:0:
+../src/vga.h:14:3: warning: 'struct Attractor' declared inside parameter list
+   int num_particles, int num_attractors);
+   ^
+../src/vga.h:14:3: warning: its scope is only this definition or declaration, which is probably not what you want
+../src/vga.h:14:3: warning: 'struct Particle' declared inside parameter list
+../src/main.c: In function 'main':
+../src/main.c:59:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^
+../src/main.c:66:15: warning: passing argument 1 of 'updateFrame' from incompatible pointer type
+   updateFrame(particles, attractors, num_particles, num_attractors);
+               ^
+In file included from ../src/main.c:7:0:
+../src/vga.h:13:6: note: expected 'struct Particle *' but argument is of type 'struct Particle *'
+ void updateFrame(struct Particle *particles, struct Attractor *attractors,
+      ^
+../src/main.c:66:26: warning: passing argument 2 of 'updateFrame' from incompatible pointer type
+   updateFrame(particles, attractors, num_particles, num_attractors);
+                          ^
+In file included from ../src/main.c:7:0:
+../src/vga.h:13:6: note: expected 'struct Attractor *' but argument is of type 'struct Attractor *'
+ void updateFrame(struct Particle *particles, struct Attractor *attractors,
+      ^
+../src/main.c:71:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^
+'Finished building: ../src/main.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64088	   2424	10393584	10460096	 9f9bc0	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+05:18:27 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:7:0:
+../src/vga.h:14:3: warning: 'struct Attractor' declared inside parameter list
+   int num_particles, int num_attractors);
+   ^
+../src/vga.h:14:3: warning: its scope is only this definition or declaration, which is probably not what you want
+../src/vga.h:14:3: warning: 'struct Particle' declared inside parameter list
+../src/main.c: In function 'main':
+../src/main.c:59:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^
+../src/main.c:70:15: warning: passing argument 1 of 'updateFrame' from incompatible pointer type
+   updateFrame(particles, attractors, num_particles, num_attractors);
+               ^
+In file included from ../src/main.c:7:0:
+../src/vga.h:13:6: note: expected 'struct Particle *' but argument is of type 'struct Particle *'
+ void updateFrame(struct Particle *particles, struct Attractor *attractors,
+      ^
+../src/main.c:70:26: warning: passing argument 2 of 'updateFrame' from incompatible pointer type
+   updateFrame(particles, attractors, num_particles, num_attractors);
+                          ^
+In file included from ../src/main.c:7:0:
+../src/vga.h:13:6: note: expected 'struct Attractor *' but argument is of type 'struct Attractor *'
+ void updateFrame(struct Particle *particles, struct Attractor *attractors,
+      ^
+../src/main.c:75:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^
+'Finished building: ../src/main.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64088	   2424	10393584	10460096	 9f9bc0	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+05:21:07 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:7:0:
+../src/vga.h:14:3: warning: 'struct Attractor' declared inside parameter list
+   int num_particles, int num_attractors);
+   ^
+../src/vga.h:14:3: warning: its scope is only this definition or declaration, which is probably not what you want
+../src/vga.h:14:3: warning: 'struct Particle' declared inside parameter list
+../src/main.c: In function 'main':
+../src/main.c:57:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^
+../src/main.c:68:15: warning: passing argument 1 of 'updateFrame' from incompatible pointer type
+   updateFrame(particles, attractors, num_particles, num_attractors);
+               ^
+In file included from ../src/main.c:7:0:
+../src/vga.h:13:6: note: expected 'struct Particle *' but argument is of type 'struct Particle *'
+ void updateFrame(struct Particle *particles, struct Attractor *attractors,
+      ^
+../src/main.c:68:26: warning: passing argument 2 of 'updateFrame' from incompatible pointer type
+   updateFrame(particles, attractors, num_particles, num_attractors);
+                          ^
+In file included from ../src/main.c:7:0:
+../src/vga.h:13:6: note: expected 'struct Attractor *' but argument is of type 'struct Attractor *'
+ void updateFrame(struct Particle *particles, struct Attractor *attractors,
+      ^
+../src/main.c:73:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^
+'Finished building: ../src/main.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64088	   2424	10393584	10460096	 9f9bc0	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+05:21:44 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:7:0:
+../src/vga.h:14:3: warning: 'struct Attractor' declared inside parameter list
+   int num_particles, int num_attractors);
+   ^
+../src/vga.h:14:3: warning: its scope is only this definition or declaration, which is probably not what you want
+../src/vga.h:14:3: warning: 'struct Particle' declared inside parameter list
+../src/main.c: In function 'handleInput':
+../src/main.c:50:9: error: 'byte' undeclared (first use in this function)
+         byte = XUartPs_RecvByte(STDIN_BASEADDRESS);
+         ^
+../src/main.c:50:9: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c: In function 'main':
+../src/main.c:56:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^
+../src/main.c:59:13: error: expected expression before ')' token
+      switch()
+             ^
+../src/main.c:67:15: warning: passing argument 1 of 'updateFrame' from incompatible pointer type
+   updateFrame(particles, attractors, num_particles, num_attractors);
+               ^
+In file included from ../src/main.c:7:0:
+../src/vga.h:13:6: note: expected 'struct Particle *' but argument is of type 'struct Particle *'
+ void updateFrame(struct Particle *particles, struct Attractor *attractors,
+      ^
+../src/main.c:67:26: warning: passing argument 2 of 'updateFrame' from incompatible pointer type
+   updateFrame(particles, attractors, num_particles, num_attractors);
+                          ^
+In file included from ../src/main.c:7:0:
+../src/vga.h:13:6: note: expected 'struct Attractor *' but argument is of type 'struct Attractor *'
+ void updateFrame(struct Particle *particles, struct Attractor *attractors,
+      ^
+../src/main.c:72:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^
+../src/main.c: In function 'handleInput':
+../src/main.c:53:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/main.o] Error 1
+05:21:47 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:7:0:
+../src/vga.h:14:3: warning: 'struct Attractor' declared inside parameter list
+   int num_particles, int num_attractors);
+   ^
+../src/vga.h:14:3: warning: its scope is only this definition or declaration, which is probably not what you want
+../src/vga.h:14:3: warning: 'struct Particle' declared inside parameter list
+../src/main.c: In function 'handleInput':
+../src/main.c:51:46: error: 'byte' undeclared (first use in this function)
+         XUartPs_SendByte(STDOUT_BASEADDRESS, byte);
+                                              ^
+../src/main.c:51:46: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c: In function 'main':
+../src/main.c:56:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^
+../src/main.c:59:13: error: expected expression before ')' token
+      switch()
+             ^
+../src/main.c:67:15: warning: passing argument 1 of 'updateFrame' from incompatible pointer type
+   updateFrame(particles, attractors, num_particles, num_attractors);
+               ^
+In file included from ../src/main.c:7:0:
+../src/vga.h:13:6: note: expected 'struct Particle *' but argument is of type 'struct Particle *'
+ void updateFrame(struct Particle *particles, struct Attractor *attractors,
+      ^
+../src/main.c:67:26: warning: passing argument 2 of 'updateFrame' from incompatible pointer type
+   updateFrame(particles, attractors, num_particles, num_attractors);
+                          ^
+In file included from ../src/main.c:7:0:
+../src/vga.h:13:6: note: expected 'struct Attractor *' but argument is of type 'struct Attractor *'
+ void updateFrame(struct Particle *particles, struct Attractor *attractors,
+      ^
+../src/main.c:72:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^
+../src/main.c: In function 'handleInput':
+../src/main.c:53:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/main.o] Error 1
+05:21:51 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:7:0:
+../src/vga.h:14:3: warning: 'struct Attractor' declared inside parameter list
+   int num_particles, int num_attractors);
+   ^
+../src/vga.h:14:3: warning: its scope is only this definition or declaration, which is probably not what you want
+../src/vga.h:14:3: warning: 'struct Particle' declared inside parameter list
+../src/main.c: In function 'main':
+../src/main.c:56:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^
+../src/main.c:59:13: error: expected expression before ')' token
+      switch()
+             ^
+../src/main.c:67:15: warning: passing argument 1 of 'updateFrame' from incompatible pointer type
+   updateFrame(particles, attractors, num_particles, num_attractors);
+               ^
+In file included from ../src/main.c:7:0:
+../src/vga.h:13:6: note: expected 'struct Particle *' but argument is of type 'struct Particle *'
+ void updateFrame(struct Particle *particles, struct Attractor *attractors,
+      ^
+../src/main.c:67:26: warning: passing argument 2 of 'updateFrame' from incompatible pointer type
+   updateFrame(particles, attractors, num_particles, num_attractors);
+                          ^
+In file included from ../src/main.c:7:0:
+../src/vga.h:13:6: note: expected 'struct Attractor *' but argument is of type 'struct Attractor *'
+ void updateFrame(struct Particle *particles, struct Attractor *attractors,
+      ^
+../src/main.c:72:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^
+../src/main.c: In function 'handleInput':
+../src/main.c:53:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/main.o] Error 1
+05:22:01 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:7:0:
+../src/vga.h:14:3: warning: 'struct Attractor' declared inside parameter list
+   int num_particles, int num_attractors);
+   ^
+../src/vga.h:14:3: warning: its scope is only this definition or declaration, which is probably not what you want
+../src/vga.h:14:3: warning: 'struct Particle' declared inside parameter list
+../src/main.c: In function 'main':
+../src/main.c:56:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^
+../src/main.c:69:15: warning: passing argument 1 of 'updateFrame' from incompatible pointer type
+   updateFrame(particles, attractors, num_particles, num_attractors);
+               ^
+In file included from ../src/main.c:7:0:
+../src/vga.h:13:6: note: expected 'struct Particle *' but argument is of type 'struct Particle *'
+ void updateFrame(struct Particle *particles, struct Attractor *attractors,
+      ^
+../src/main.c:69:26: warning: passing argument 2 of 'updateFrame' from incompatible pointer type
+   updateFrame(particles, attractors, num_particles, num_attractors);
+                          ^
+In file included from ../src/main.c:7:0:
+../src/vga.h:13:6: note: expected 'struct Attractor *' but argument is of type 'struct Attractor *'
+ void updateFrame(struct Particle *particles, struct Attractor *attractors,
+      ^
+../src/main.c:74:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^
+../src/main.c: In function 'handleInput':
+../src/main.c:53:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64088	   2424	10393616	10460128	 9f9be0	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+05:22:48 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:7:0:
+../src/vga.h:14:3: warning: 'struct Attractor' declared inside parameter list
+   int num_particles, int num_attractors);
+   ^
+../src/vga.h:14:3: warning: its scope is only this definition or declaration, which is probably not what you want
+../src/vga.h:14:3: warning: 'struct Particle' declared inside parameter list
+../src/main.c: In function 'main':
+../src/main.c:56:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^
+../src/main.c:71:15: warning: passing argument 1 of 'updateFrame' from incompatible pointer type
+   updateFrame(particles, attractors, num_particles, num_attractors);
+               ^
+In file included from ../src/main.c:7:0:
+../src/vga.h:13:6: note: expected 'struct Particle *' but argument is of type 'struct Particle *'
+ void updateFrame(struct Particle *particles, struct Attractor *attractors,
+      ^
+../src/main.c:71:26: warning: passing argument 2 of 'updateFrame' from incompatible pointer type
+   updateFrame(particles, attractors, num_particles, num_attractors);
+                          ^
+In file included from ../src/main.c:7:0:
+../src/vga.h:13:6: note: expected 'struct Attractor *' but argument is of type 'struct Attractor *'
+ void updateFrame(struct Particle *particles, struct Attractor *attractors,
+      ^
+../src/main.c:76:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^
+../src/main.c: In function 'handleInput':
+../src/main.c:53:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 110324	   2816	10394288	10507428	 a054a4	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+05:22:59 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:7:0:
+../src/vga.h:14:3: warning: 'struct Attractor' declared inside parameter list
+   int num_particles, int num_attractors);
+   ^
+../src/vga.h:14:3: warning: its scope is only this definition or declaration, which is probably not what you want
+../src/vga.h:14:3: warning: 'struct Particle' declared inside parameter list
+../src/main.c: In function 'main':
+../src/main.c:56:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^
+../src/main.c:72:15: warning: passing argument 1 of 'updateFrame' from incompatible pointer type
+   updateFrame(particles, attractors, num_particles, num_attractors);
+               ^
+In file included from ../src/main.c:7:0:
+../src/vga.h:13:6: note: expected 'struct Particle *' but argument is of type 'struct Particle *'
+ void updateFrame(struct Particle *particles, struct Attractor *attractors,
+      ^
+../src/main.c:72:26: warning: passing argument 2 of 'updateFrame' from incompatible pointer type
+   updateFrame(particles, attractors, num_particles, num_attractors);
+                          ^
+In file included from ../src/main.c:7:0:
+../src/vga.h:13:6: note: expected 'struct Attractor *' but argument is of type 'struct Attractor *'
+ void updateFrame(struct Particle *particles, struct Attractor *attractors,
+      ^
+../src/main.c:77:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^
+../src/main.c: In function 'handleInput':
+../src/main.c:53:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 110324	   2816	10394288	10507428	 a054a4	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+05:23:09 **** Incremental Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+05:26:46 **** Auto Build of configuration Debug for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:7:0:
+../src/vga.h:14:3: warning: 'struct Attractor' declared inside parameter list
+   int num_particles, int num_attractors);
+   ^
+../src/vga.h:14:3: warning: its scope is only this definition or declaration, which is probably not what you want
+../src/vga.h:14:3: warning: 'struct Particle' declared inside parameter list
+../src/main.c: In function 'main':
+../src/main.c:56:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^
+../src/main.c:63:15: warning: passing argument 1 of 'updateFrame' from incompatible pointer type
+   updateFrame(particles, attractors, num_particles, num_attractors);
+               ^
+In file included from ../src/main.c:7:0:
+../src/vga.h:13:6: note: expected 'struct Particle *' but argument is of type 'struct Particle *'
+ void updateFrame(struct Particle *particles, struct Attractor *attractors,
+      ^
+../src/main.c:63:26: warning: passing argument 2 of 'updateFrame' from incompatible pointer type
+   updateFrame(particles, attractors, num_particles, num_attractors);
+                          ^
+In file included from ../src/main.c:7:0:
+../src/vga.h:13:6: note: expected 'struct Attractor *' but argument is of type 'struct Attractor *'
+ void updateFrame(struct Particle *particles, struct Attractor *attractors,
+      ^
+../src/main.c:68:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^
+../src/main.c: In function 'handleInput':
+../src/main.c:53:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/fps.o ./src/main.o ./src/platform.o ./src/simulation.o ./src/vga.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  64088	   2424	10393616	10460128	 9f9be0	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '

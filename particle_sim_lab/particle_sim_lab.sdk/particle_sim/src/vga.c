@@ -33,11 +33,7 @@ int ypos;
 u32 buff;
 
 // Array to store relative pixel locations of circle
-int circle[21] = {-2881, -2880, -2879,
-				-1442, -1441, -1440, -1439, -1438,
-				-2, -1, 0, 1, 2,
-				1438, 1439, 1440, 1441, 1442,
-				2879, 2880, 2881};
+int circle[21] = {-2881, -2880, -2879, -1442, -1441, -1440, -1439, -1438, -2, -1, 0, 1, 2, 1438, 1439, 1440, 1441, 1442, 2879, 2880, 2881};
 
 void setupVGA() {
 	// Initialise an array of pointers to the 2 frame buffers

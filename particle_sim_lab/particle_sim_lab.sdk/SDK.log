@@ -1019,3 +1019,24 @@ java.lang.RuntimeException: The program file specified in the launch configurati
 04:20:27 INFO  : FPGA configured successfully with bitstream "C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_1/design_1_wrapper.bit"
 04:20:52 INFO  : ps7_init is completed.
 04:20:53 INFO  : ps7_post_config is completed.
+05:02:20 INFO  : System reset is completed.
+05:02:21 INFO  : FPGA configured successfully with bitstream "C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_1/design_1_wrapper.bit"
+05:02:47 INFO  : ps7_init is completed.
+05:02:48 INFO  : ps7_post_config is completed.
+05:05:37 INFO  : System reset is completed.
+05:05:39 INFO  : FPGA configured successfully with bitstream "C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_1/design_1_wrapper.bit"
+05:06:05 INFO  : ps7_init is completed.
+05:06:05 INFO  : ps7_post_config is completed.
+05:08:25 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+05:08:29 INFO  : System reset is completed.
+05:08:31 INFO  : FPGA configured successfully with bitstream "C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_1/design_1_wrapper.bit"
+05:08:56 INFO  : ps7_init is completed.
+05:08:57 INFO  : ps7_post_config is completed.
+05:11:16 INFO  : System reset is completed.
+05:11:18 INFO  : FPGA configured successfully with bitstream "C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_1/design_1_wrapper.bit"
+05:11:44 INFO  : ps7_init is completed.
+05:11:44 INFO  : ps7_post_config is completed.
+05:23:13 INFO  : System reset is completed.
+05:23:15 INFO  : FPGA configured successfully with bitstream "C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_1/design_1_wrapper.bit"
+05:23:40 INFO  : ps7_init is completed.
+05:23:41 INFO  : ps7_post_config is completed.
