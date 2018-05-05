@@ -13917,3 +13917,2210 @@ arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
  185688	   4460	12638496	12828644	 c3bfe4	particle_sim.elf
 'Finished building: particle_sim.elf.size'
 ' '
+22:01:13 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+'Finished building: ../src/ethernet/ethernet.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 185796	   4460	12638496	12828752	 c3c050	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+22:02:22 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+'Finished building: ../src/ethernet/ethernet.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 185804	   4460	12638496	12828760	 c3c058	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+22:02:29 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+'Finished building: ../src/ethernet/ethernet.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 185804	   4460	12638496	12828760	 c3c058	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+22:02:50 **** Incremental Build of configuration Release for project particle_ethernet ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+22:02:51 **** Incremental Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+22:05:17 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+'Finished building: ../src/ethernet/ethernet.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 185724	   4460	12638496	12828680	 c3c008	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+22:05:40 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+'Finished building: ../src/ethernet/ethernet.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 185724	   4460	12638496	12828680	 c3c008	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+22:05:43 **** Incremental Build of configuration Release for project particle_ethernet ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+22:05:43 **** Incremental Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+22:07:45 **** Auto Build of configuration Release for project particle_ethernet ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: particle_ethernet.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_ethernet.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_ethernet.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_ethernet.elf  |tee "particle_ethernet.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 141864	   4228	2218272	2364364	 2413cc	particle_ethernet.elf
+'Finished building: particle_ethernet.elf.size'
+' '
+22:07:46 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+'Finished building: ../src/ethernet/ethernet.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 185724	   4460	12638496	12828680	 c3c008	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+22:08:01 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+'Finished building: ../src/ethernet/ethernet.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 185596	   4460	12638496	12828552	 c3bf88	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+22:11:04 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/util/util.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/util/util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/util/util.d" -MT"src/util/util.o" -o "src/util/util.o" "../src/util/util.c"
+'Finished building: ../src/util/util.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 185596	   4460	12638496	12828552	 c3bf88	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+22:13:18 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/util/util.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/util/util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/util/util.d" -MT"src/util/util.o" -o "src/util/util.o" "../src/util/util.c"
+'Finished building: ../src/util/util.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 185596	   4460	12638496	12828552	 c3bf88	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+22:17:02 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/util/util.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/util/util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/util/util.d" -MT"src/util/util.o" -o "src/util/util.o" "../src/util/util.c"
+../src/util/util.c: In function 'splitData':
+../src/util/util.c:20:22: warning: variable 'tofree' set but not used [-Wunused-but-set-variable]
+  char *token, *str, *tofree;
+                      ^
+'Finished building: ../src/util/util.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 185660	   4460	12638496	12828616	 c3bfc8	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+22:17:12 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/util/util.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/util/util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/util/util.d" -MT"src/util/util.o" -o "src/util/util.o" "../src/util/util.c"
+'Finished building: ../src/util/util.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 185660	   4460	12638496	12828616	 c3bfc8	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+22:21:38 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/util/util.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/util/util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/util/util.d" -MT"src/util/util.o" -o "src/util/util.o" "../src/util/util.c"
+../src/util/util.c: In function 'splitData':
+../src/util/util.c:27:4: warning: implicit declaration of function 'strToInt' [-Wimplicit-function-declaration]
+    dataLength = strToInt(token);
+    ^
+'Finished building: ../src/util/util.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 185724	   4460	12638496	12828680	 c3c008	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+22:21:47 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/util/util.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/util/util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/util/util.d" -MT"src/util/util.o" -o "src/util/util.o" "../src/util/util.c"
+../src/util/util.c: In function 'splitData':
+../src/util/util.c:27:4: warning: implicit declaration of function 'strToInt' [-Wimplicit-function-declaration]
+    dataLength = strToInt(token);
+    ^
+'Finished building: ../src/util/util.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+./src/util/util.o: In function `splitData':
+util.c:(.text+0x48): undefined reference to `strToInt'
+./src/ethernet/ethernet.o: In function `udp_numparts_get_handler':
+ethernet.c:(.text+0x1f8): undefined reference to `strToInt'
+collect2.exe: error: ld returned 1 exit status
+make: *** [particle_sim.elf] Error 1
+22:21:50 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/util/util.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/util/util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/util/util.d" -MT"src/util/util.o" -o "src/util/util.o" "../src/util/util.c"
+'Finished building: ../src/util/util.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 185724	   4460	12638496	12828680	 c3c008	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+22:22:17 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/util/util.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/util/util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/util/util.d" -MT"src/util/util.o" -o "src/util/util.o" "../src/util/util.c"
+'Finished building: ../src/util/util.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 185744	   4460	12638496	12828700	 c3c01c	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+22:22:38 **** Incremental Build of configuration Release for project particle_ethernet ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+22:22:38 **** Incremental Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+22:25:04 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+../src/ethernet/ethernet.c: In function 'udp_part_get_handler':
+../src/ethernet/ethernet.c:69:3: warning: implicit declaration of function 'splitData' [-Wimplicit-function-declaration]
+   splitData(payload);
+   ^
+'Finished building: ../src/ethernet/ethernet.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 185744	   4460	12638496	12828700	 c3c01c	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+22:25:17 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+'Finished building: ../src/ethernet/ethernet.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 185744	   4460	12638496	12828700	 c3c01c	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+22:25:23 **** Incremental Build of configuration Release for project particle_ethernet ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+22:25:23 **** Incremental Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+22:27:02 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/util/util.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/util/util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/util/util.d" -MT"src/util/util.o" -o "src/util/util.o" "../src/util/util.c"
+'Finished building: ../src/util/util.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 185724	   4460	12638496	12828680	 c3c008	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+22:31:20 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/util/util.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/util/util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/util/util.d" -MT"src/util/util.o" -o "src/util/util.o" "../src/util/util.c"
+../src/util/util.c: In function 'split':
+../src/util/util.c:65:7: warning: assignment discards 'const' qualifier from pointer target type
+     p = str;
+       ^
+../src/util/util.c:77:7: warning: assignment discards 'const' qualifier from pointer target type
+     p = str;
+       ^
+../src/util/util.c:97:7: warning: assignment discards 'const' qualifier from pointer target type
+     p = str;
+       ^
+'Finished building: ../src/util/util.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 186044	   4460	12638496	12829000	 c3c148	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+22:31:37 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+'Finished building: ../src/ethernet/ethernet.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 186044	   4460	12638496	12829000	 c3c148	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+22:32:37 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+'Finished building: ../src/ethernet/ethernet.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 186044	   4460	12638496	12829000	 c3c148	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+22:33:29 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+../src/ethernet/ethernet.c: In function 'udp_part_get_handler':
+../src/ethernet/ethernet.c:75:40: error: 'arr' undeclared (first use in this function)
+          printf("string #%d: %s\n", i, arr[i]);
+                                        ^
+../src/ethernet/ethernet.c:75:40: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/ethernet/ethernet.o] Error 1
+22:33:38 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+'Finished building: ../src/ethernet/ethernet.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 185996	   4460	12638496	12828952	 c3c118	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+22:33:40 **** Incremental Build of configuration Release for project particle_ethernet ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+22:33:40 **** Incremental Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+22:36:56 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+../src/ethernet/ethernet.c: In function 'udp_part_get_handler':
+../src/ethernet/ethernet.c:72:7: error: too few arguments to function 'split'
+   c = split(payload, ',', &data);
+       ^
+In file included from ../src/ethernet/ethernet.c:13:0:
+../src/ethernet/../util/util.h:15:5: note: declared here
+ int split(char * str, char delim, char ***array, int *length);
+     ^
+make: *** [src/ethernet/ethernet.o] Error 1
+22:37:00 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/util/util.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/util/util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/util/util.d" -MT"src/util/util.o" -o "src/util/util.o" "../src/util/util.c"
+'Finished building: ../src/util/util.c'
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+../src/ethernet/ethernet.c: In function 'udp_part_get_handler':
+../src/ethernet/ethernet.c:72:7: error: too few arguments to function 'split'
+   c = split(payload, ',', &data);
+       ^
+In file included from ../src/ethernet/ethernet.c:13:0:
+../src/ethernet/../util/util.h:15:5: note: declared here
+ int split(char * str, char delim, char ***array, int *length);
+     ^
+make: *** [src/ethernet/ethernet.o] Error 1
+22:38:27 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+../src/ethernet/ethernet.c: In function 'udp_part_get_handler':
+../src/ethernet/ethernet.c:76:3: warning: implicit declaration of function 'strdupt' [-Wimplicit-function-declaration]
+   tofree = data_cpy = strdupt(data);
+   ^
+../src/ethernet/ethernet.c:76:21: warning: assignment makes pointer from integer without a cast
+   tofree = data_cpy = strdupt(data);
+                     ^
+../src/ethernet/ethernet.c:78:8: error: too few arguments to function 'split'
+   rc = split()
+        ^
+In file included from ../src/ethernet/ethernet.c:13:0:
+../src/ethernet/../util/util.h:15:5: note: declared here
+ int split(char * str, char delim, char ***array, int *length);
+     ^
+../src/ethernet/ethernet.c:92:2: error: expected ';' before '}' token
+  }
+  ^
+../src/ethernet/ethernet.c:75:20: warning: variable 'tofree' set but not used [-Wunused-but-set-variable]
+   char *data_cpy, *tofree;
+                    ^
+../src/ethernet/ethernet.c:73:7: warning: variable 'rc' set but not used [-Wunused-but-set-variable]
+   int rc;
+       ^
+../src/ethernet/ethernet.c:72:7: warning: unused variable 'count' [-Wunused-variable]
+   int count = 0;
+       ^
+../src/ethernet/ethernet.c:71:7: warning: unused variable 'k' [-Wunused-variable]
+   int k = 0;
+       ^
+make: *** [src/ethernet/ethernet.o] Error 1
+22:38:45 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+../src/ethernet/ethernet.c: In function 'udp_part_get_handler':
+../src/ethernet/ethernet.c:76:3: warning: implicit declaration of function 'strdupt' [-Wimplicit-function-declaration]
+   tofree = data_cpy = strdupt(data);
+   ^
+../src/ethernet/ethernet.c:76:21: warning: assignment makes pointer from integer without a cast
+   tofree = data_cpy = strdupt(data);
+                     ^
+../src/ethernet/ethernet.c:78:8: error: too few arguments to function 'split'
+   rc = split()
+        ^
+In file included from ../src/ethernet/ethernet.c:13:0:
+../src/ethernet/../util/util.h:15:5: note: declared here
+ int split(char * str, char delim, char ***array, int *length);
+     ^
+../src/ethernet/ethernet.c:80:3: error: expected ';' before 'free'
+   free(tofree);
+   ^
+../src/ethernet/ethernet.c:75:20: warning: variable 'tofree' set but not used [-Wunused-but-set-variable]
+   char *data_cpy, *tofree;
+                    ^
+../src/ethernet/ethernet.c:73:7: warning: variable 'rc' set but not used [-Wunused-but-set-variable]
+   int rc;
+       ^
+../src/ethernet/ethernet.c:72:7: warning: unused variable 'count' [-Wunused-variable]
+   int count = 0;
+       ^
+../src/ethernet/ethernet.c:71:7: warning: unused variable 'k' [-Wunused-variable]
+   int k = 0;
+       ^
+make: *** [src/ethernet/ethernet.o] Error 1
+22:39:25 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+../src/ethernet/ethernet.c: In function 'udp_part_get_handler':
+../src/ethernet/ethernet.c:76:12: error: 'payload_cpy' undeclared (first use in this function)
+   tofree = payload_cpy = strdupt(payload);
+            ^
+../src/ethernet/ethernet.c:76:12: note: each undeclared identifier is reported only once for each function it appears in
+../src/ethernet/ethernet.c:76:3: warning: implicit declaration of function 'strdupt' [-Wimplicit-function-declaration]
+   tofree = payload_cpy = strdupt(payload);
+   ^
+../src/ethernet/ethernet.c:75:9: warning: unused variable 'data_cpy' [-Wunused-variable]
+   char *data_cpy, *tofree;
+         ^
+../src/ethernet/ethernet.c:73:7: warning: variable 'rc' set but not used [-Wunused-but-set-variable]
+   int rc;
+       ^
+../src/ethernet/ethernet.c:71:7: warning: unused variable 'k' [-Wunused-variable]
+   int k = 0;
+       ^
+make: *** [src/ethernet/ethernet.o] Error 1
+22:40:00 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+../src/ethernet/ethernet.c: In function 'udp_part_get_handler':
+../src/ethernet/ethernet.c:76:12: error: 'payload_cpy' undeclared (first use in this function)
+   tofree = payload_cpy = strdupt(payload);
+            ^
+../src/ethernet/ethernet.c:76:12: note: each undeclared identifier is reported only once for each function it appears in
+../src/ethernet/ethernet.c:76:3: warning: implicit declaration of function 'strdupt' [-Wimplicit-function-declaration]
+   tofree = payload_cpy = strdupt(payload);
+   ^
+../src/ethernet/ethernet.c:75:9: warning: unused variable 'data_cpy' [-Wunused-variable]
+   char *data_cpy, *tofree;
+         ^
+../src/ethernet/ethernet.c:73:7: warning: variable 'rc' set but not used [-Wunused-but-set-variable]
+   int rc;
+       ^
+make: *** [src/ethernet/ethernet.o] Error 1
+22:40:06 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+../src/ethernet/ethernet.c: In function 'udp_part_get_handler':
+../src/ethernet/ethernet.c:76:12: error: 'payload_cpy' undeclared (first use in this function)
+   tofree = payload_cpy = strdup(payload);
+            ^
+../src/ethernet/ethernet.c:76:12: note: each undeclared identifier is reported only once for each function it appears in
+../src/ethernet/ethernet.c:75:9: warning: unused variable 'data_cpy' [-Wunused-variable]
+   char *data_cpy, *tofree;
+         ^
+../src/ethernet/ethernet.c:73:7: warning: variable 'rc' set but not used [-Wunused-but-set-variable]
+   int rc;
+       ^
+make: *** [src/ethernet/ethernet.o] Error 1
+22:40:18 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+../src/ethernet/ethernet.c: In function 'udp_part_get_handler':
+../src/ethernet/ethernet.c:73:7: warning: variable 'rc' set but not used [-Wunused-but-set-variable]
+   int rc;
+       ^
+'Finished building: ../src/ethernet/ethernet.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 185904	   4460	12638496	12828860	 c3c0bc	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+22:40:31 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+'Finished building: ../src/ethernet/ethernet.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 185904	   4460	12638496	12828860	 c3c0bc	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+22:40:33 **** Incremental Build of configuration Release for project particle_ethernet ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+22:40:33 **** Incremental Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+22:42:17 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+'Finished building: ../src/ethernet/ethernet.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 185904	   4460	12638496	12828860	 c3c0bc	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+22:42:18 **** Incremental Build of configuration Release for project particle_ethernet ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+22:42:18 **** Incremental Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+22:42:54 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+'Finished building: ../src/ethernet/ethernet.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 185904	   4460	12638496	12828860	 c3c0bc	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+22:43:06 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/util/util.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/util/util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/util/util.d" -MT"src/util/util.o" -o "src/util/util.o" "../src/util/util.c"
+'Finished building: ../src/util/util.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 185968	   4460	12638496	12828924	 c3c0fc	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+22:43:12 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+'Finished building: ../src/ethernet/ethernet.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 185968	   4460	12638496	12828924	 c3c0fc	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+22:43:20 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+'Finished building: ../src/ethernet/ethernet.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 185968	   4460	12638496	12828924	 c3c0fc	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+22:43:50 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+../src/ethernet/ethernet.c: In function 'udp_part_get_handler':
+../src/ethernet/ethernet.c:74:20: warning: passing argument 1 of 'remove_all_chars' makes pointer from integer without a cast
+   remove_all_chars('.', payload);
+                    ^
+In file included from ../src/ethernet/ethernet.c:13:0:
+../src/ethernet/../util/util.h:16:6: note: expected 'char *' but argument is of type 'int'
+ void remove_all_chars(char* str, char c);
+      ^
+../src/ethernet/ethernet.c:74:25: warning: passing argument 2 of 'remove_all_chars' makes integer from pointer without a cast
+   remove_all_chars('.', payload);
+                         ^
+In file included from ../src/ethernet/ethernet.c:13:0:
+../src/ethernet/../util/util.h:16:6: note: expected 'char' but argument is of type 'char *'
+ void remove_all_chars(char* str, char c);
+      ^
+'Finished building: ../src/ethernet/ethernet.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 185968	   4460	12638496	12828924	 c3c0fc	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+22:44:16 **** Incremental Build of configuration Release for project particle_ethernet ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+22:44:17 **** Incremental Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+22:45:41 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+'Finished building: ../src/ethernet/ethernet.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 185968	   4460	12638496	12828924	 c3c0fc	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+22:45:43 **** Incremental Build of configuration Release for project particle_ethernet ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+22:45:43 **** Incremental Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+22:54:19 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/util/util.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/util/util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/util/util.d" -MT"src/util/util.o" -o "src/util/util.o" "../src/util/util.c"
+'Finished building: ../src/util/util.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 188136	   4460	12638496	12831092	 c3c974	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+22:54:23 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+In file included from ../src/ethernet/ethernet.c:13:0:
+../src/ethernet/../util/util.h:17:1: warning: return type defaults to 'int' [-Wreturn-type]
+ str_replace(char *target, const char *needle, const char *replacement)
+ ^
+../src/ethernet/ethernet.c: In function 'str_replace':
+../src/ethernet/ethernet.c:15:1: error: parameter 'ms1516_mac_address' is initialized
+ unsigned char ms1516_mac_address[] = { 0x00, 0x11, 0x22, 0x33, 0x00, 0x26 };
+ ^
+../src/ethernet/ethernet.c:15:1: warning: excess elements in scalar initializer
+../src/ethernet/ethernet.c:15:1: warning: (near initialization for 'ms1516_mac_address')
+../src/ethernet/ethernet.c:15:1: warning: excess elements in scalar initializer
+../src/ethernet/ethernet.c:15:1: warning: (near initialization for 'ms1516_mac_address')
+../src/ethernet/ethernet.c:15:1: warning: excess elements in scalar initializer
+../src/ethernet/ethernet.c:15:1: warning: (near initialization for 'ms1516_mac_address')
+../src/ethernet/ethernet.c:15:1: warning: excess elements in scalar initializer
+../src/ethernet/ethernet.c:15:1: warning: (near initialization for 'ms1516_mac_address')
+../src/ethernet/ethernet.c:15:1: warning: excess elements in scalar initializer
+../src/ethernet/ethernet.c:15:1: warning: (near initialization for 'ms1516_mac_address')
+../src/ethernet/ethernet.c:25:30: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ void requestScenario(int id) {
+                              ^
+../src/ethernet/ethernet.c:35:30: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ void requestPart(int partId) {
+                              ^
+../src/ethernet/ethernet.c:48:37: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   struct ip_addr *addr, u16_t port) {
+                                     ^
+../src/ethernet/ethernet.c:63:37: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   struct ip_addr *addr, u16_t port) {
+                                     ^
+../src/ethernet/ethernet.c:101:33: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ void sendMessage(char *message) {
+                                 ^
+../src/ethernet/ethernet.c:133:22: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ void setupEthernet() {
+                      ^
+In file included from ../src/ethernet/ethernet.c:13:0:
+../src/ethernet/../util/util.h:17:1: error: old-style parameter declarations in prototyped function definition
+ str_replace(char *target, const char *needle, const char *replacement)
+ ^
+../src/ethernet/ethernet.c:137:1: error: expected '{' at end of input
+ }
+ ^
+../src/ethernet/ethernet.c:137:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/ethernet/ethernet.o] Error 1
+22:54:26 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+../src/ethernet/ethernet.c: In function 'str_replace':
+../src/ethernet/ethernet.c:15:1: error: parameter 'ms1516_mac_address' is initialized
+ unsigned char ms1516_mac_address[] = { 0x00, 0x11, 0x22, 0x33, 0x00, 0x26 };
+ ^
+../src/ethernet/ethernet.c:15:1: warning: excess elements in scalar initializer
+../src/ethernet/ethernet.c:15:1: warning: (near initialization for 'ms1516_mac_address')
+../src/ethernet/ethernet.c:15:1: warning: excess elements in scalar initializer
+../src/ethernet/ethernet.c:15:1: warning: (near initialization for 'ms1516_mac_address')
+../src/ethernet/ethernet.c:15:1: warning: excess elements in scalar initializer
+../src/ethernet/ethernet.c:15:1: warning: (near initialization for 'ms1516_mac_address')
+../src/ethernet/ethernet.c:15:1: warning: excess elements in scalar initializer
+../src/ethernet/ethernet.c:15:1: warning: (near initialization for 'ms1516_mac_address')
+../src/ethernet/ethernet.c:15:1: warning: excess elements in scalar initializer
+../src/ethernet/ethernet.c:15:1: warning: (near initialization for 'ms1516_mac_address')
+../src/ethernet/ethernet.c:25:30: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ void requestScenario(int id) {
+                              ^
+../src/ethernet/ethernet.c:35:30: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ void requestPart(int partId) {
+                              ^
+../src/ethernet/ethernet.c:48:37: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   struct ip_addr *addr, u16_t port) {
+                                     ^
+../src/ethernet/ethernet.c:63:37: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   struct ip_addr *addr, u16_t port) {
+                                     ^
+../src/ethernet/ethernet.c:101:33: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ void sendMessage(char *message) {
+                                 ^
+../src/ethernet/ethernet.c:133:22: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ void setupEthernet() {
+                      ^
+In file included from ../src/ethernet/ethernet.c:13:0:
+../src/ethernet/../util/util.h:17:6: error: old-style parameter declarations in prototyped function definition
+ void str_replace(char *target, const char *needle, const char *replacement)
+      ^
+../src/ethernet/ethernet.c:137:1: error: expected '{' at end of input
+ }
+ ^
+make: *** [src/ethernet/ethernet.o] Error 1
+22:54:29 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+'Finished building: ../src/ethernet/ethernet.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 188136	   4460	12638496	12831092	 c3c974	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+22:54:50 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+'Finished building: ../src/ethernet/ethernet.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 188136	   4460	12638496	12831092	 c3c974	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+22:54:52 **** Incremental Build of configuration Release for project particle_ethernet ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+22:54:53 **** Incremental Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+22:57:53 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+'Finished building: ../src/ethernet/ethernet.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 188072	   4460	12638496	12831028	 c3c934	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+22:57:55 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+'Finished building: ../src/ethernet/ethernet.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 188136	   4460	12638496	12831092	 c3c974	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+22:58:03 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/util/util.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/util/util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/util/util.d" -MT"src/util/util.o" -o "src/util/util.o" "../src/util/util.c"
+'Finished building: ../src/util/util.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 185968	   4460	12638496	12828924	 c3c0fc	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+23:04:38 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/util/util.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/util/util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/util/util.d" -MT"src/util/util.o" -o "src/util/util.o" "../src/util/util.c"
+'Finished building: ../src/util/util.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 185968	   4460	12638496	12828924	 c3c0fc	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+23:04:41 **** Incremental Build of configuration Release for project particle_ethernet ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+23:04:41 **** Incremental Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+23:07:13 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/util/util.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/util/util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/util/util.d" -MT"src/util/util.o" -o "src/util/util.o" "../src/util/util.c"
+'Finished building: ../src/util/util.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 185968	   4460	12638496	12828924	 c3c0fc	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+23:07:17 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/util/util.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/util/util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/util/util.d" -MT"src/util/util.o" -o "src/util/util.o" "../src/util/util.c"
+'Finished building: ../src/util/util.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 185968	   4460	12638496	12828924	 c3c0fc	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+23:07:18 **** Incremental Build of configuration Release for project particle_ethernet ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+23:07:19 **** Incremental Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+23:13:29 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/util/util.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/util/util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/util/util.d" -MT"src/util/util.o" -o "src/util/util.o" "../src/util/util.c"
+../src/util/util.c: In function 'str_replace':
+../src/util/util.c:122:5: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+     for (count = 0; tmp = strstr(ins, rep); ++count) {
+     ^
+'Finished building: ../src/util/util.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 188268	   4460	12638496	12831224	 c3c9f8	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+23:13:38 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+In file included from ../src/ethernet/ethernet.c:13:0:
+../src/ethernet/../util/util.h:17:1: warning: data definition has no type or storage class
+ *str_replace(char *orig, char *rep, char *with);
+ ^
+../src/ethernet/../util/util.h:17:2: warning: type defaults to 'int' in declaration of 'str_replace' [-Wimplicit-int]
+ *str_replace(char *orig, char *rep, char *with);
+  ^
+'Finished building: ../src/ethernet/ethernet.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 188268	   4460	12638496	12831224	 c3c9f8	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+23:13:43 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+'Finished building: ../src/ethernet/ethernet.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 188268	   4460	12638496	12831224	 c3c9f8	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+23:13:48 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/util/util.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/util/util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/util/util.d" -MT"src/util/util.o" -o "src/util/util.o" "../src/util/util.c"
+../src/util/util.c: In function 'str_replace':
+../src/util/util.c:122:5: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+     for (count = 0; tmp = strstr(ins, rep); ++count) {
+     ^
+'Finished building: ../src/util/util.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 188268	   4460	12638496	12831224	 c3c9f8	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+23:15:17 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+../src/ethernet/ethernet.c: In function 'udp_part_get_handler':
+../src/ethernet/ethernet.c:75:27: warning: initialization from incompatible pointer type
+   char** dotsToReplace = {"...........", "......"};
+                           ^
+../src/ethernet/ethernet.c:75:27: warning: (near initialization for 'dotsToReplace')
+../src/ethernet/ethernet.c:75:3: warning: excess elements in scalar initializer
+   char** dotsToReplace = {"...........", "......"};
+   ^
+../src/ethernet/ethernet.c:75:3: warning: (near initialization for 'dotsToReplace')
+../src/ethernet/ethernet.c:75:10: warning: unused variable 'dotsToReplace' [-Wunused-variable]
+   char** dotsToReplace = {"...........", "......"};
+          ^
+'Finished building: ../src/ethernet/ethernet.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 188268	   4460	12638496	12831224	 c3c9f8	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+23:16:10 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+../src/ethernet/ethernet.c: In function 'udp_part_get_handler':
+../src/ethernet/ethernet.c:75:15: warning: variable 'dots' set but not used [-Wunused-but-set-variable]
+   const char *dots[2];
+               ^
+'Finished building: ../src/ethernet/ethernet.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 188268	   4460	12638496	12831224	 c3c9f8	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+23:17:11 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+../src/ethernet/ethernet.c: In function 'udp_part_get_handler':
+../src/ethernet/ethernet.c:81:25: warning: passing argument 2 of 'str_replace' discards 'const' qualifier from pointer target type
+    str_replace(payload, dots[d], ',');
+                         ^
+In file included from ../src/ethernet/ethernet.c:13:0:
+../src/ethernet/../util/util.h:17:8: note: expected 'char *' but argument is of type 'const char *'
+ char* *str_replace(char *orig, char *rep, char *with);
+        ^
+../src/ethernet/ethernet.c:81:34: warning: passing argument 3 of 'str_replace' makes pointer from integer without a cast
+    str_replace(payload, dots[d], ',');
+                                  ^
+In file included from ../src/ethernet/ethernet.c:13:0:
+../src/ethernet/../util/util.h:17:8: note: expected 'char *' but argument is of type 'int'
+ char* *str_replace(char *orig, char *rep, char *with);
+        ^
+'Finished building: ../src/ethernet/ethernet.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 188288	   4460	12638496	12831244	 c3ca0c	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+23:17:36 **** Incremental Build of configuration Release for project particle_ethernet ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+23:17:37 **** Incremental Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+23:19:01 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+../src/ethernet/ethernet.c: In function 'udp_part_get_handler':
+../src/ethernet/ethernet.c:79:24: warning: passing argument 2 of 'str_replace' discards 'const' qualifier from pointer target type
+   str_replace(payload, dots[0], ',');
+                        ^
+In file included from ../src/ethernet/ethernet.c:13:0:
+../src/ethernet/../util/util.h:17:8: note: expected 'char *' but argument is of type 'const char *'
+ char* *str_replace(char *orig, char *rep, char *with);
+        ^
+../src/ethernet/ethernet.c:79:33: warning: passing argument 3 of 'str_replace' makes pointer from integer without a cast
+   str_replace(payload, dots[0], ',');
+                                 ^
+In file included from ../src/ethernet/ethernet.c:13:0:
+../src/ethernet/../util/util.h:17:8: note: expected 'char *' but argument is of type 'int'
+ char* *str_replace(char *orig, char *rep, char *with);
+        ^
+'Finished building: ../src/ethernet/ethernet.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 188280	   4460	12638496	12831236	 c3ca04	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+23:19:31 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+../src/ethernet/ethernet.c: In function 'udp_part_get_handler':
+../src/ethernet/ethernet.c:79:24: warning: passing argument 2 of 'str_replace' discards 'const' qualifier from pointer target type
+   str_replace(payload, dots[0], ',');
+                        ^
+In file included from ../src/ethernet/ethernet.c:13:0:
+../src/ethernet/../util/util.h:17:8: note: expected 'char *' but argument is of type 'const char *'
+ char* *str_replace(char *orig, char *rep, char *with);
+        ^
+../src/ethernet/ethernet.c:79:33: warning: passing argument 3 of 'str_replace' makes pointer from integer without a cast
+   str_replace(payload, dots[0], ',');
+                                 ^
+In file included from ../src/ethernet/ethernet.c:13:0:
+../src/ethernet/../util/util.h:17:8: note: expected 'char *' but argument is of type 'int'
+ char* *str_replace(char *orig, char *rep, char *with);
+        ^
+../src/ethernet/ethernet.c:77:9: warning: unused variable 'attractor' [-Wunused-variable]
+   char* attractor = "......";
+         ^
+../src/ethernet/ethernet.c:76:9: warning: unused variable 'particle' [-Wunused-variable]
+   char* particle = "...........";
+         ^
+'Finished building: ../src/ethernet/ethernet.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 188268	   4460	12638496	12831224	 c3c9f8	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+23:19:50 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+../src/ethernet/ethernet.c: In function 'udp_part_get_handler':
+../src/ethernet/ethernet.c:78:34: warning: passing argument 3 of 'str_replace' makes pointer from integer without a cast
+   str_replace(payload, particle, ',');
+                                  ^
+In file included from ../src/ethernet/ethernet.c:13:0:
+../src/ethernet/../util/util.h:17:8: note: expected 'char *' but argument is of type 'int'
+ char* *str_replace(char *orig, char *rep, char *with);
+        ^
+../src/ethernet/ethernet.c:79:35: warning: passing argument 3 of 'str_replace' makes pointer from integer without a cast
+   str_replace(payload, attractor, ',');
+                                   ^
+In file included from ../src/ethernet/ethernet.c:13:0:
+../src/ethernet/../util/util.h:17:8: note: expected 'char *' but argument is of type 'int'
+ char* *str_replace(char *orig, char *rep, char *with);
+        ^
+'Finished building: ../src/ethernet/ethernet.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 188288	   4460	12638496	12831244	 c3ca0c	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+23:19:57 **** Incremental Build of configuration Release for project particle_ethernet ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+23:19:57 **** Incremental Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+23:20:10 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+'Finished building: ../src/ethernet/ethernet.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 188288	   4460	12638496	12831244	 c3ca0c	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+23:20:46 **** Incremental Build of configuration Release for project particle_ethernet ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+23:20:46 **** Incremental Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+23:24:44 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/util/util.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/util/util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/util/util.d" -MT"src/util/util.o" -o "src/util/util.o" "../src/util/util.c"
+'Finished building: ../src/util/util.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+./src/ethernet/ethernet.o: In function `udp_part_get_handler':
+ethernet.c:(.text+0x44): undefined reference to `str_replace'
+ethernet.c:(.text+0x5c): undefined reference to `str_replace'
+collect2.exe: error: ld returned 1 exit status
+make: *** [particle_sim.elf] Error 1
+23:24:50 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+../src/ethernet/ethernet.c: In function 'udp_part_get_handler':
+../src/ethernet/ethernet.c:78:3: warning: implicit declaration of function 'str_replace' [-Wimplicit-function-declaration]
+   str_replace(payload, particle, ",");
+   ^
+'Finished building: ../src/ethernet/ethernet.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+./src/ethernet/ethernet.o: In function `udp_part_get_handler':
+ethernet.c:(.text+0x44): undefined reference to `str_replace'
+ethernet.c:(.text+0x5c): undefined reference to `str_replace'
+collect2.exe: error: ld returned 1 exit status
+make: *** [particle_sim.elf] Error 1
+23:24:53 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+../src/ethernet/ethernet.c: In function 'udp_part_get_handler':
+../src/ethernet/ethernet.c:78:3: warning: implicit declaration of function 'str_replace' [-Wimplicit-function-declaration]
+   str_replace(payload, particle, ",");
+   ^
+'Finished building: ../src/ethernet/ethernet.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+./src/ethernet/ethernet.o: In function `udp_part_get_handler':
+ethernet.c:(.text+0x44): undefined reference to `str_replace'
+ethernet.c:(.text+0x5c): undefined reference to `str_replace'
+collect2.exe: error: ld returned 1 exit status
+make: *** [particle_sim.elf] Error 1
+23:24:57 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/util/util.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/util/util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/util/util.d" -MT"src/util/util.o" -o "src/util/util.o" "../src/util/util.c"
+'Finished building: ../src/util/util.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+./src/ethernet/ethernet.o: In function `udp_part_get_handler':
+ethernet.c:(.text+0x44): undefined reference to `str_replace'
+ethernet.c:(.text+0x5c): undefined reference to `str_replace'
+collect2.exe: error: ld returned 1 exit status
+make: *** [particle_sim.elf] Error 1
+23:25:26 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+'Finished building: ../src/ethernet/ethernet.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 188168	   4460	12638496	12831124	 c3c994	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+23:25:31 **** Incremental Build of configuration Release for project particle_ethernet ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+23:25:31 **** Incremental Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+23:27:33 **** Incremental Build of configuration Release for project particle_ethernet ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+23:27:33 **** Incremental Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+23:30:36 **** Incremental Build of configuration Release for project particle_ethernet ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+23:30:36 **** Incremental Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+23:33:34 **** Incremental Build of configuration Release for project particle_ethernet ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+23:33:34 **** Incremental Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+23:35:54 **** Incremental Build of configuration Release for project particle_ethernet ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+23:35:54 **** Incremental Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+23:42:12 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/util/util.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/util/util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/util/util.d" -MT"src/util/util.o" -o "src/util/util.o" "../src/util/util.c"
+'Finished building: ../src/util/util.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 188168	   4460	12638496	12831124	 c3c994	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+23:43:37 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/util/util.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/util/util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/util/util.d" -MT"src/util/util.o" -o "src/util/util.o" "../src/util/util.c"
+'Finished building: ../src/util/util.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 188168	   4460	12638496	12831124	 c3c994	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+23:43:54 **** Incremental Build of configuration Release for project particle_ethernet ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+23:43:54 **** Incremental Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+23:46:05 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/util/util.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/util/util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/util/util.d" -MT"src/util/util.o" -o "src/util/util.o" "../src/util/util.c"
+../src/util/util.c: In function 'str_replace':
+../src/util/util.c:121:5: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+     for (count = 0; tmp = strstr(ins, rep); ++count) {
+     ^
+'Finished building: ../src/util/util.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+./src/ethernet/ethernet.o: In function `udp_part_get_handler':
+ethernet.c:(.text+0x48): undefined reference to `replace_str'
+ethernet.c:(.text+0x64): undefined reference to `replace_str'
+collect2.exe: error: ld returned 1 exit status
+make: *** [particle_sim.elf] Error 1
+23:46:10 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+../src/ethernet/ethernet.c: In function 'udp_part_get_handler':
+../src/ethernet/ethernet.c:78:3: warning: implicit declaration of function 'replace_str' [-Wimplicit-function-declaration]
+   replace_str(payload, particle, ",", 0);
+   ^
+'Finished building: ../src/ethernet/ethernet.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+./src/ethernet/ethernet.o: In function `udp_part_get_handler':
+ethernet.c:(.text+0x48): undefined reference to `replace_str'
+ethernet.c:(.text+0x64): undefined reference to `replace_str'
+collect2.exe: error: ld returned 1 exit status
+make: *** [particle_sim.elf] Error 1
+23:46:30 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+../src/ethernet/ethernet.c: In function 'udp_part_get_handler':
+../src/ethernet/ethernet.c:78:3: error: too many arguments to function 'str_replace'
+   str_replace(payload, particle, ",", 0);
+   ^
+In file included from ../src/ethernet/ethernet.c:13:0:
+../src/ethernet/../util/util.h:17:7: note: declared here
+ char* str_replace(char *orig, char *rep, char *with);
+       ^
+../src/ethernet/ethernet.c:79:3: error: too many arguments to function 'str_replace'
+   str_replace(payload, attractor, ",", 0);
+   ^
+In file included from ../src/ethernet/ethernet.c:13:0:
+../src/ethernet/../util/util.h:17:7: note: declared here
+ char* str_replace(char *orig, char *rep, char *with);
+       ^
+make: *** [src/ethernet/ethernet.o] Error 1
+23:46:33 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+'Finished building: ../src/ethernet/ethernet.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 188288	   4460	12638496	12831244	 c3ca0c	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+23:46:35 **** Incremental Build of configuration Release for project particle_ethernet ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+23:46:36 **** Incremental Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+23:49:48 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/util/util.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/util/util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/util/util.d" -MT"src/util/util.o" -o "src/util/util.o" "../src/util/util.c"
+'Finished building: ../src/util/util.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+./src/ethernet/ethernet.o: In function `udp_part_get_handler':
+ethernet.c:(.text+0x44): undefined reference to `str_replace'
+ethernet.c:(.text+0x5c): undefined reference to `str_replace'
+collect2.exe: error: ld returned 1 exit status
+make: *** [particle_sim.elf] Error 1
+23:49:52 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+../src/ethernet/ethernet.c: In function 'udp_part_get_handler':
+../src/ethernet/ethernet.c:78:3: warning: implicit declaration of function 'str_replace' [-Wimplicit-function-declaration]
+   str_replace(payload, particle, ",");
+   ^
+'Finished building: ../src/ethernet/ethernet.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+./src/ethernet/ethernet.o: In function `udp_part_get_handler':
+ethernet.c:(.text+0x44): undefined reference to `str_replace'
+ethernet.c:(.text+0x5c): undefined reference to `str_replace'
+collect2.exe: error: ld returned 1 exit status
+make: *** [particle_sim.elf] Error 1
+23:51:24 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/util/util.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/util/util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/util/util.d" -MT"src/util/util.o" -o "src/util/util.o" "../src/util/util.c"
+'Finished building: ../src/util/util.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+./src/ethernet/ethernet.o: In function `udp_part_get_handler':
+ethernet.c:(.text+0x44): undefined reference to `str_replace'
+ethernet.c:(.text+0x5c): undefined reference to `str_replace'
+collect2.exe: error: ld returned 1 exit status
+make: *** [particle_sim.elf] Error 1
+23:51:36 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+../src/ethernet/ethernet.c: In function 'replaceString':
+../src/ethernet/ethernet.c:15:1: error: parameter 'ms1516_mac_address' is initialized
+ unsigned char ms1516_mac_address[] = { 0x00, 0x11, 0x22, 0x33, 0x00, 0x26 };
+ ^
+../src/ethernet/ethernet.c:15:1: warning: excess elements in scalar initializer
+../src/ethernet/ethernet.c:15:1: warning: (near initialization for 'ms1516_mac_address')
+../src/ethernet/ethernet.c:15:1: warning: excess elements in scalar initializer
+../src/ethernet/ethernet.c:15:1: warning: (near initialization for 'ms1516_mac_address')
+../src/ethernet/ethernet.c:15:1: warning: excess elements in scalar initializer
+../src/ethernet/ethernet.c:15:1: warning: (near initialization for 'ms1516_mac_address')
+../src/ethernet/ethernet.c:15:1: warning: excess elements in scalar initializer
+../src/ethernet/ethernet.c:15:1: warning: (near initialization for 'ms1516_mac_address')
+../src/ethernet/ethernet.c:15:1: warning: excess elements in scalar initializer
+../src/ethernet/ethernet.c:15:1: warning: (near initialization for 'ms1516_mac_address')
+../src/ethernet/ethernet.c:25:30: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ void requestScenario(int id) {
+                              ^
+../src/ethernet/ethernet.c:35:30: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ void requestPart(int partId) {
+                              ^
+../src/ethernet/ethernet.c:48:37: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   struct ip_addr *addr, u16_t port) {
+                                     ^
+../src/ethernet/ethernet.c:63:37: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   struct ip_addr *addr, u16_t port) {
+                                     ^
+../src/ethernet/ethernet.c:106:33: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ void sendMessage(char *message) {
+                                 ^
+../src/ethernet/ethernet.c:138:22: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ void setupEthernet() {
+                      ^
+In file included from ../src/ethernet/ethernet.c:13:0:
+../src/ethernet/../util/util.h:17:7: error: old-style parameter declarations in prototyped function definition
+ char* replaceString(const char *s, const char *oldW, const char *newW)
+       ^
+../src/ethernet/ethernet.c:142:1: error: expected '{' at end of input
+ }
+ ^
+../src/ethernet/ethernet.c:142:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/ethernet/ethernet.o] Error 1
+23:51:38 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+../src/ethernet/ethernet.c: In function 'udp_part_get_handler':
+../src/ethernet/ethernet.c:78:3: warning: implicit declaration of function 'str_replace' [-Wimplicit-function-declaration]
+   str_replace(payload, particle, ",");
+   ^
+'Finished building: ../src/ethernet/ethernet.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+./src/ethernet/ethernet.o: In function `udp_part_get_handler':
+ethernet.c:(.text+0x44): undefined reference to `str_replace'
+ethernet.c:(.text+0x5c): undefined reference to `str_replace'
+collect2.exe: error: ld returned 1 exit status
+make: *** [particle_sim.elf] Error 1
+23:51:44 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/util/util.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/util/util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/util/util.d" -MT"src/util/util.o" -o "src/util/util.o" "../src/util/util.c"
+'Finished building: ../src/util/util.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+./src/ethernet/ethernet.o: In function `udp_part_get_handler':
+ethernet.c:(.text+0x44): undefined reference to `str_replace'
+ethernet.c:(.text+0x5c): undefined reference to `str_replace'
+collect2.exe: error: ld returned 1 exit status
+make: *** [particle_sim.elf] Error 1
+23:53:20 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+../src/ethernet/ethernet.c: In function 'udp_part_get_handler':
+../src/ethernet/ethernet.c:77:9: warning: variable 'result' set but not used [-Wunused-but-set-variable]
+   char* result = NULL;
+         ^
+../src/ethernet/ethernet.c:76:9: warning: unused variable 'attractor' [-Wunused-variable]
+   char* attractor = "......";
+         ^
+'Finished building: ../src/ethernet/ethernet.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 188204	   4460	12638496	12831160	 c3c9b8	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+23:53:58 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+'Finished building: ../src/ethernet/ethernet.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 188212	   4460	12638496	12831168	 c3c9c0	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+23:54:07 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+'Finished building: ../src/ethernet/ethernet.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 188212	   4460	12638496	12831168	 c3c9c0	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+23:54:13 **** Incremental Build of configuration Release for project particle_ethernet ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+23:54:13 **** Incremental Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+23:55:05 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+'Finished building: ../src/ethernet/ethernet.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 188276	   4460	12638496	12831232	 c3ca00	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+23:55:17 **** Incremental Build of configuration Release for project particle_ethernet ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+23:55:17 **** Incremental Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+23:56:29 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+'Finished building: ../src/ethernet/ethernet.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 188276	   4460	12638496	12831232	 c3ca00	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+23:57:39 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/parser.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/parser.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/parser.d" -MT"src/ethernet/parser.o" -o "src/ethernet/parser.o" "../src/ethernet/parser.c"
+'Finished building: ../src/ethernet/parser.c'
+' '
+'Building target: particle_sim.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_ethernet_bsp/ps7_cortexa9_0/lib -o "particle_sim.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o ./src/ethernet/parser.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 188276	   4460	12638496	12831232	 c3ca00	particle_sim.elf
+'Finished building: particle_sim.elf.size'
+' '
+23:57:46 **** Auto Build of configuration Release for project particle_sim ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.

@@ -11,7 +11,7 @@
 #include "xil_printf.h"
 #include "xil_cache.h"
 
-void udp_get_handler(void *arg, struct udp_pcb *pcb, struct pbuf *p, struct ip_addr *addr, u16_t port) {
+void udp_numparts_get_handler(void *arg, struct udp_pcb *pcb, struct pbuf *p, struct ip_addr *addr, u16_t port) {
     if(p) { //Must check that a valid protocol control block was received
         printf("Message: %s\n", (char *)p->payload);
 
@@ -35,7 +35,7 @@ int main() {
     //Listen on port 51000
     udp_bind(recv_pcb, IP_ADDR_ANY, 51000);
     //Set up the receive handler
-    udp_recv(recv_pcb, udp_get_handler, NULL);
+    udp_recv(recv_pcb, udp_numparts_get_handler, NULL);
 
     char *message = "Ethernet test msg.";
     //Send an initial message

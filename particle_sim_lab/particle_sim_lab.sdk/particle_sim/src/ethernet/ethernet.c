@@ -44,36 +44,64 @@ void requestPart(int partId) {
 	sendMessage(message);
 }
 
-void udp_get_handler(void *arg, struct udp_pcb *pcb, struct pbuf *p,
+void udp_numparts_get_handler(void *arg, struct udp_pcb *pcb, struct pbuf *p,
 		struct ip_addr *addr, u16_t port) {
 	if (p) { //Must check that a valid protocol control block was received
 		char* payload = (char *) p->payload;
 		printf("Message: %s\n", payload);
 
-		char* type = getRequestType(payload);
-		puts(type);
-		if (strcmp(type, "NUMP") == 0) {
-			numParts = strToInt(getNumParts(payload));
+		numParts = strToInt(getNumParts(payload));
+		curPart = 0;
 
-			curPart = 0;
-			udp_remove(pcb);
-			requestPart(curPart);
-			pbuf_free(p);
-		} else if (strcmp(type, "PART") == 0) {
-			//process part
-			curPart += 1;
-			if (curPart > numParts - 1) {
-				//all parts received
-				//populate simulation
-			} else {
-				udp_remove(pcb);
-				requestPart(curPart);
-				pbuf_free(p);
-			}
+		udp_remove(pcb);
+		requestPart(curPart);
+		pbuf_free(p);
+	}
+}
 
+void udp_part_get_handler(void *arg, struct udp_pcb *pcb, struct pbuf *p,
+		struct ip_addr *addr, u16_t port) {
+	if (p) { //Must check that a valid protocol control block was received
+		char* payload = (char *) p->payload;
+		printf("Message: %s\n", payload);
+
+		//process part
+//		splitData(payload);
+		char **data;
+		int k = 0;
+		int count = 0;
+
+//		remove_all_chars(payload, '.');
+		char* particle = "...........";
+		char* attractor = "......";
+
+		char* result = NULL;
+		result = replaceString(payload, particle, ",");
+		result = replaceString(result, attractor, ",");
+
+		char *payload_cpy, *tofree;
+		tofree = payload_cpy = strdup(result);
+
+		split(payload_cpy, ',', &data, &count);
+		for (k = 0; k < count; k++) {
+			printf("%s\n", data[k]);
 		}
-	} else {
-		puts("invalid pcb recv");
+
+		free(result);
+		free(tofree);
+
+//		curPart += 1;
+//		if (curPart > numParts - 1) {
+//			//all parts received
+//			//populate simulation
+//			udp_remove(pcb);
+//			pbuf_free(p);
+//		} else {
+//			udp_remove(pcb);
+//			requestPart(curPart);
+//			pbuf_free(p);
+//		}
+
 	}
 }
 
@@ -86,20 +114,24 @@ void sendMessage(char *message) {
 
 	//Listen on port serverPort
 	udp_bind(recv_pcb, IP_ADDR_ANY, serverPort);
-	puts("bound recv pcb");
+
 	//Set up the receive handler
-	udp_recv(recv_pcb, udp_get_handler, NULL);
-	puts("set handler");
+	char* type = getRequestType(message);
+	if (strcmp(type, "GETPART") == 0) {
+		udp_recv(recv_pcb, udp_part_get_handler, NULL);
+	} else {
+		udp_recv(recv_pcb, udp_numparts_get_handler, NULL);
+	}
+
 	//Create a protocol control block (PCB)
 	struct udp_pcb *send_pcb = udp_new();
 	//Create a packet buffer
 	struct pbuf * reply = pbuf_alloc(PBUF_TRANSPORT, strlen(message), PBUF_REF);
 	reply->payload = message;
 	reply->len = strlen(message);
-	puts("constructed request");
+
 	//Send it and clean up
 	udp_sendto(send_pcb, reply, &serverIP, serverPort);
-	puts("sent request");
 
 	pbuf_free(reply);
 	udp_remove(send_pcb);
