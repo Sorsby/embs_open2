@@ -1,4 +1,4 @@
-01:03:05 **** Auto Build of configuration Release for project particle_sim ****
+21:59:35 **** Auto Build of configuration Release for project particle_sim ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
@@ -15,9 +15,9 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size particle_sim.elf  |tee "particle_sim.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 185012	   4460	12638496	12827968	 c3bd40	particle_sim.elf
+ 185688	   4460	12638496	12828644	 c3bfe4	particle_sim.elf
 'Finished building: particle_sim.elf.size'
 ' '
 
-01:03:06 Build Finished (took 834ms)
+21:59:36 Build Finished (took 733ms)
 

@@ -8,7 +8,8 @@
 #ifndef SRC_UTIL_UTIL_H_
 #define SRC_UTIL_UTIL_H_
 
-int responseStringToInt(char* response);
+int strToInt(char* response);
 char* getNumParts(char* response);
+char* getRequestType(char* response);
 
 #endif /* SRC_UTIL_UTIL_H_ */
