@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="14" Path="/home/userfs/m/ms1516/w2k/embs_open2/particle_sim_lab/particle_sim_lab.xpr">
+<Project Version="7" Minor="14" Path="C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="6d5c32f79c844686a5ecdafe88258f66"/>
@@ -112,6 +112,9 @@
     </Simulator>
     <Simulator Name="Riviera">
       <Option Name="Description" Val="Riviera-PRO Simulator"/>
+    </Simulator>
+    <Simulator Name="ActiveHDL">
+      <Option Name="Description" Val="Active-HDL Simulator"/>
     </Simulator>
   </Simulators>
   <Runs Version="1" Minor="10">
