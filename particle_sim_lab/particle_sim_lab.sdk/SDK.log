@@ -2897,3 +2897,97 @@ com.xilinx.sdk.targetmanager.TMException:
 16:38:00 INFO  : FPGA configured successfully with bitstream "C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_3/design_1_wrapper.bit"
 16:38:26 INFO  : ps7_init is completed.
 16:38:26 INFO  : ps7_post_config is completed.
+16:42:04 INFO  : System reset is completed.
+16:42:06 INFO  : FPGA configured successfully with bitstream "C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_3/design_1_wrapper.bit"
+16:42:32 INFO  : ps7_init is completed.
+16:42:32 INFO  : ps7_post_config is completed.
+16:43:57 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+16:44:01 INFO  : System reset is completed.
+16:44:03 INFO  : FPGA configured successfully with bitstream "C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_3/design_1_wrapper.bit"
+16:44:28 INFO  : ps7_init is completed.
+16:44:28 INFO  : ps7_post_config is completed.
+16:56:31 INFO  : System reset is completed.
+16:56:33 INFO  : FPGA configured successfully with bitstream "C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_3/design_1_wrapper.bit"
+16:56:58 INFO  : ps7_init is completed.
+16:56:59 INFO  : ps7_post_config is completed.
+17:00:18 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+17:00:22 INFO  : System reset is completed.
+17:00:23 INFO  : FPGA configured successfully with bitstream "C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_3/design_1_wrapper.bit"
+17:01:23 INFO  : Time out for XMD transaction is 60000
+If you want to increase the timeout value, goto Windows-> Preferences -> Xilinx SDK -> XMD Startup
+17:01:23 ERROR : Timeout occured while waiting to get reply for command "xconnect arm hw -cable type xilinx_tcf url TCP:localhost:12345 -debugdevice cpunr 1"
+17:01:23 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: 
+	at com.xilinx.sdk.targetmanager.internal.TM.connectToProcessor(TM.java:484)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:489)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:616)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+17:06:14 INFO  : System reset is completed.
+17:06:16 INFO  : FPGA configured successfully with bitstream "C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_3/design_1_wrapper.bit"
+17:06:41 INFO  : ps7_init is completed.
+17:06:41 INFO  : ps7_post_config is completed.
+17:09:10 INFO  : System reset is completed.
+17:09:12 INFO  : FPGA configured successfully with bitstream "C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_3/design_1_wrapper.bit"
+17:09:36 INFO  : ps7_init is completed.
+17:09:37 INFO  : ps7_post_config is completed.
+17:11:42 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+17:11:46 INFO  : System reset is completed.
+17:11:48 INFO  : FPGA configured successfully with bitstream "C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_3/design_1_wrapper.bit"
+17:12:12 INFO  : ps7_init is completed.
+17:12:13 INFO  : ps7_post_config is completed.
+17:16:13 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+17:16:19 INFO  : System reset is completed.
+17:16:20 INFO  : FPGA configured successfully with bitstream "C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_3/design_1_wrapper.bit"
+17:16:45 INFO  : ps7_init is completed.
+17:16:45 INFO  : ps7_post_config is completed.
+17:27:08 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: 
+    Failed to connect to Xilinx hw_server at TCP:localhost:12345
+.    Check if
+     1. the hw_server is running and correct TCP port is used
+     2. the board is powered on and JTAG cable is connected.
+
+	at com.xilinx.sdk.targetmanager.internal.TM.connectToProcessor(TM.java:484)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:464)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:616)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+17:28:04 INFO  : System reset is completed.
+17:28:06 INFO  : FPGA configured successfully with bitstream "C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_3/design_1_wrapper.bit"
+17:28:32 INFO  : ps7_init is completed.
+17:28:32 INFO  : ps7_post_config is completed.
+17:30:36 INFO  : System reset is completed.
+17:30:38 INFO  : FPGA configured successfully with bitstream "C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_3/design_1_wrapper.bit"
+17:31:04 INFO  : ps7_init is completed.
+17:31:04 INFO  : ps7_post_config is completed.
+17:38:17 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+17:38:21 INFO  : System reset is completed.
+17:38:22 INFO  : FPGA configured successfully with bitstream "C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_3/design_1_wrapper.bit"
+17:38:48 INFO  : ps7_init is completed.
+17:38:49 INFO  : ps7_post_config is completed.
+17:41:05 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+17:41:09 INFO  : System reset is completed.
+17:41:10 INFO  : FPGA configured successfully with bitstream "C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_3/design_1_wrapper.bit"
+17:41:36 INFO  : ps7_init is completed.
+17:41:37 INFO  : ps7_post_config is completed.
+17:49:03 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+17:49:07 INFO  : System reset is completed.
+17:49:09 INFO  : FPGA configured successfully with bitstream "C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_3/design_1_wrapper.bit"
+17:49:35 INFO  : ps7_init is completed.
+17:49:35 INFO  : ps7_post_config is completed.
+17:54:06 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+17:54:10 INFO  : System reset is completed.
+17:54:12 INFO  : FPGA configured successfully with bitstream "C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_3/design_1_wrapper.bit"
+17:54:38 INFO  : ps7_init is completed.
+17:54:38 INFO  : ps7_post_config is completed.

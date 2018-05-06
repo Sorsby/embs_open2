@@ -21,7 +21,6 @@ int serverPort;
 
 int scenarioId;
 int numParts = 0;
-int* parts;
 int nextPart = 0;
 int hasAllData = FALSE;
 
@@ -46,6 +45,7 @@ int stopTimer() {
 void requestScenario(int id) {
 	hasAllData = FALSE;
 	scenarioId = id;
+	nextPart = 0;
 	printf("Get ScenarioID: %d, from the server.\n", id);
 	char buffer[5];
 	char *message = NULL;
@@ -89,7 +89,6 @@ void udp_part_get_handler(void *arg, struct udp_pcb *pcb, struct pbuf *p,
 	if (p) {
 //		printf("Message: %s\n", (char *) p->payload);
 
-////		splitData(payload);
 //		char **data;
 //		int k = 0;
 //		int count = 0;
@@ -117,19 +116,19 @@ void udp_part_get_handler(void *arg, struct udp_pcb *pcb, struct pbuf *p,
 		udp_remove(pcb);
 		pbuf_free(p);
 
-		puts("cleared blocks n buffers");
 		if (nextPart == numParts) {
 			hasAllData = TRUE;
+			return;
 			//all parts received
 			//populate simulation
 		} else {
 			requestPart(nextPart);
 		}
-
 	}
 }
 
 void sendMessage(char *message) {
+	cleanup_ethernet_platform();
 
 	struct udp_pcb *recv_pcb = udp_new();
 	if (!recv_pcb) {
@@ -155,39 +154,12 @@ void sendMessage(char *message) {
 	reply->len = strlen(message);
 
 	//Send it and clean up
-	udp_sendto(send_pcb, reply, &serverIP, serverPort);
+	err_t er;
+	er = udp_sendto(send_pcb, reply, &serverIP, serverPort);
+	printf("error: %d\n", er);
 
 	pbuf_free(reply);
 	udp_remove(send_pcb);
-
-	int count = 0;
-	int elapsed = 0;
-	while(!hasAllData) {
-		startTimer();
-		printf("timer: %d\n", elapsed);
-		if (elapsed > 2000) {
-			puts("timeout");
-			udp_remove(recv_pcb);
-			break;
-		}
-		handle_ethernet();
-		count = stopTimer();
-		elapsed += (TIMER_START - count)/XPAR_CPU_CORTEXA9_0_CPU_CLK_FREQ_HZ;
-	}
-
-//	while(!hasAllData) {
-//		startTimer();
-//		if (elapsed > 100) {
-//			puts("timeout");
-//			udp_remove(recv_pcb);
-//			sendMessage(message);
-//			handle_ethernet();
-//			break;
-//		} else {
-//			handle_ethernet();
-//			elapsed += (TIMER_START - stopTimer()) / XPAR_CPU_CORTEXA9_0_CPU_CLK_FREQ_HZ;
-//		}
-//	}
 }
 
 void setupEthernet() {

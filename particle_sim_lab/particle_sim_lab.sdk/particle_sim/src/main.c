@@ -11,6 +11,7 @@
 #include "uart/input.h"
 #include "vga/vga.h"
 #include "ethernet/ethernet.h"
+#include "ethernet/ethernet_platform.h"
 
 #define TRUE 1
 #define FALSE 0
@@ -71,7 +72,7 @@ void populateSimulation() {
 //	puts("make attractors");
 }
 
-int handleInput() {
+void handleInput() {
 	if (XUartPs_IsReceiveData(STDIN_BASEADDRESS)) {
 		char byte = XUartPs_RecvByte(STDIN_BASEADDRESS);
 
@@ -94,7 +95,7 @@ int handleInput() {
 }
 
 int main(void) {
-	init_platform();
+//	init_platform();
 
 	puts("\n\n\n");
 
@@ -104,8 +105,8 @@ int main(void) {
 
 	while (1) {
 
-//		handle_ethernet();
 		handleInput();
+		handle_ethernet();
 
 		updateSimulation(&particles[0], &attractors[0], num_particles,
 				num_attractors);
@@ -118,7 +119,7 @@ int main(void) {
 		}
 	}
 
-	cleanup_platform();
+//	cleanup_platform();
 	cleanup_ethernet_platform();
 	freeMemory();
 	return 0;
