@@ -8,7 +8,7 @@
 #include <string.h>
 #include <stdlib.h>
 
-#define NUMPARTS_POSITION 3
+#define NUMPARTS_AND_PART_ID_POSITION 3
 
 #define PART_LENGTH_POSITION 4
 #define PART_DATA_POSITION 5
@@ -43,15 +43,27 @@ char* getRequestType(char* response) {
 	return token;
 }
 
-char* getNumParts(char *response) {
+char* getNumParts(char* response) {
 	char *token, *tofree, *str;
 	int pos;
 	tofree = str = strdup(response);
-	for (pos = 0; pos < NUMPARTS_POSITION; pos++) {
+	for (pos = 0; pos < NUMPARTS_AND_PART_ID_POSITION; pos++) {
 		token = strsep(&str, ",");
 	}
 	free(tofree);
 	return token;
+}
+
+int getNextPart(char* response) {
+	char *token, *tofree, *str;
+	int pos;
+	tofree = str = strdup(response);
+	for (pos = 0; pos < NUMPARTS_AND_PART_ID_POSITION; pos++) {
+		token = strsep(&str, ",");
+	}
+	int nextPart = strToInt(token) + 1;
+	free(tofree);
+	return nextPart;
 }
 
 int split(char * str, char delim, char ***array, int *length) {

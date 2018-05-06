@@ -11,5 +11,6 @@
 
 int init_ethernet_platform(unsigned char *mac_ethernet_address, struct ip_addr *ipaddr, struct ip_addr *netmask);
 void handle_ethernet();
+void cleanup_ethernet_platform();
 
 #endif

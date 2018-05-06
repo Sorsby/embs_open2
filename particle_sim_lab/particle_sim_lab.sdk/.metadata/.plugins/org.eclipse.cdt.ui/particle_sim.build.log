@@ -1,8 +1,8 @@
-23:57:46 **** Auto Build of configuration Release for project particle_sim ****
+16:37:54 **** Incremental Build of configuration Release for project particle_sim ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
 make: Nothing to be done for `main-build'.
 
-23:57:46 Build Finished (took 175ms)
+16:37:54 Build Finished (took 174ms)
 

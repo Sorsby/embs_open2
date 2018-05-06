@@ -10,6 +10,7 @@
 
 int strToInt(char* response);
 char* getNumParts(char* response);
+int getNextPart(char* response);
 char* getRequestType(char* response);
 void splitData(char* data);
 int split(char * str, char delim, char ***array, int *length);

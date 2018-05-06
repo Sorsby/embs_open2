@@ -104,7 +104,7 @@ int main(void) {
 
 	while (1) {
 
-		handle_ethernet();
+//		handle_ethernet();
 		handleInput();
 
 		updateSimulation(&particles[0], &attractors[0], num_particles,
