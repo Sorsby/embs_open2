@@ -47,7 +47,7 @@ void populateSimulationFromNetwork(int newNumParticles, int newNumAttractors,
 
 	memcpy(particles, newParticles, PARTICLE_ARRAY_SIZE);
 	memcpy(attractors, newAttractors, ATTRACTOR_ARRAY_SIZE);
-	freeEthernetMemory();
+	resetEthernet();
 }
 
 void populateSimulation() {

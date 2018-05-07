@@ -37,6 +37,8 @@ int numAttractors = 0;
 struct Particle *particles;
 struct Attractor *attractors;
 
+int networkInUse = FALSE;
+
 void sendMessage(char *message);
 
 void startTimer() {
@@ -54,7 +56,8 @@ void resetTimer() {
 	executionTime = 0;
 }
 
-void freeEthernetMemory() {
+void resetEthernet() {
+	networkInUse = FALSE;
 	numParticles = 0;
 	numAttractors = 0;
 	free(particles);
@@ -62,6 +65,7 @@ void freeEthernetMemory() {
 }
 
 void requestScenario(int id) {
+	networkInUse = TRUE;
 	scenarioId = id;
 	nextPart = 0;
 
@@ -248,10 +252,12 @@ void sendMessage(char *message) {
 }
 
 void handleEthernet() {
-	handle_ethernet();
-	if (getTimePassed() > 10.0) {
-		puts("Request timed out after 10 seconds, retrying.");
-		sendMessage(currentRequest);
+	if (networkInUse == TRUE) {
+		handle_ethernet();
+		if (getTimePassed() > 10.0) {
+			puts("Request timed out after 10 seconds, retrying.");
+			sendMessage(currentRequest);
+		}
 	}
 }
 

@@ -10,7 +10,7 @@
 
 void setupEthernet();
 void handleEthernet();
-void freeEthernetMemory();
+void resetEthernet();
 void requestScenario(int scenarioId);
 
 #endif /* SRC_ETHERNET_ETHERNET_H_ */
