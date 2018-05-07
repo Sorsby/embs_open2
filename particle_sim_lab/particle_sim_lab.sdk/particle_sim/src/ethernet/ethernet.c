@@ -22,7 +22,6 @@ int serverPort;
 int scenarioId;
 int numParts = 0;
 int nextPart = 0;
-int hasAllData = FALSE;
 
 XScuTimer timer;
 XScuTimer_Config *timercfg;
@@ -43,7 +42,6 @@ int stopTimer() {
 }
 
 void requestScenario(int id) {
-	hasAllData = FALSE;
 	scenarioId = id;
 	nextPart = 0;
 	printf("Get ScenarioID: %d, from the server.\n", id);
@@ -62,7 +60,6 @@ void requestPart(int partId) {
 	snprintf(bufferb, 5, "%04d", partId);
 	char *message = NULL;
 	sprintf(message, "GETPART,%s,%s", buffera, bufferb);
-	puts(message);
 	sendMessage(message);
 }
 
@@ -87,37 +84,14 @@ int getNext(cur) {
 void udp_part_get_handler(void *arg, struct udp_pcb *pcb, struct pbuf *p,
 		struct ip_addr *addr, u16_t port) {
 	if (p) {
-//		printf("Message: %s\n", (char *) p->payload);
+		printf("Message: %s\n", (char *) p->payload);
 
-//		char **data;
-//		int k = 0;
-//		int count = 0;
-//
-////		remove_all_chars(payload, '.');
-//		char* particle = "...........";
-//		char* attractor = "......";
-//
-//		char* result = NULL;
-//		result = replaceString(payload, particle, ",");
-//		result = replaceString(result, attractor, ",");
-//
-//		char *payload_cpy, *tofree;
-//		tofree = payload_cpy = strdup(result);
-//
-//		split(payload_cpy, ',', &data, &count);
-//		for (k = 0; k < count; k++) {
-//			printf("%s\n", data[k]);
-//		}
-//
-//		free(result);
-//		free(tofree);
 		nextPart = getNext(nextPart);
 
 		udp_remove(pcb);
 		pbuf_free(p);
 
 		if (nextPart == numParts) {
-			hasAllData = TRUE;
 			return;
 			//all parts received
 			//populate simulation
@@ -128,7 +102,6 @@ void udp_part_get_handler(void *arg, struct udp_pcb *pcb, struct pbuf *p,
 }
 
 void sendMessage(char *message) {
-	cleanup_ethernet_platform();
 
 	struct udp_pcb *recv_pcb = udp_new();
 	if (!recv_pcb) {

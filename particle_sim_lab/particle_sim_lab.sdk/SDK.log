@@ -2991,3 +2991,43 @@ com.xilinx.sdk.targetmanager.TMException:
 17:54:12 INFO  : FPGA configured successfully with bitstream "C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_3/design_1_wrapper.bit"
 17:54:38 INFO  : ps7_init is completed.
 17:54:38 INFO  : ps7_post_config is completed.
+00:47:56 INFO  : Launching XSDB server: xsdb.bat -interactive C:\Users\Matthew\Desktop\embs_open2\particle_sim_lab\particle_sim_lab.sdk\temp_xsdb_launch_script.tcl
+00:47:57 INFO  : XSDB server has started successfully.
+00:47:57 INFO  : Restoring global repository preferences: 
+		 C:\Users\Matthew\Desktop\embs_open2\ethernet-stuff\ethernetrepo
+00:47:57 INFO  : Processing command line option -hwspec C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper.hdf.
+00:47:57 ERROR : Error occurred while creating hardware platform design_1_wrapper_hw_platform_0 from sysdef
+org.eclipse.core.internal.resources.ResourceException: Resource '/design_1_wrapper_hw_platform_0/system.hdf' already exists.
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:313)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:300)
+	at org.eclipse.core.internal.resources.File.create(File.java:106)
+	at com.xilinx.sdk.hw.internal.HwProjectCreator.createHwProjectFromZip(HwProjectCreator.java:103)
+	at com.xilinx.sdk.hw.HwProjectUtil.internalCreate(HwProjectUtil.java:189)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:138)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:125)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:100)
+	at com.xilinx.sdk.startup.InitSDK.processHwSpecArgumentTask(InitSDK.java:436)
+	at com.xilinx.sdk.startup.InitSDK.access$7(InitSDK.java:418)
+	at com.xilinx.sdk.startup.InitSDK$12.run(InitSDK.java:369)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+00:47:57 ERROR : Unable to create Hardware Specification Project with specification file: C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper.hdf
+00:49:20 INFO  : System reset is completed.
+00:49:22 INFO  : FPGA configured successfully with bitstream "C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_3/design_1_wrapper.bit"
+00:49:48 INFO  : ps7_init is completed.
+00:49:49 INFO  : ps7_post_config is completed.
+00:51:45 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+00:51:49 INFO  : System reset is completed.
+00:51:51 INFO  : FPGA configured successfully with bitstream "C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_3/design_1_wrapper.bit"
+00:52:17 INFO  : ps7_init is completed.
+00:52:17 INFO  : ps7_post_config is completed.
+00:54:33 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+00:54:39 INFO  : System reset is completed.
+00:54:41 INFO  : FPGA configured successfully with bitstream "C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_3/design_1_wrapper.bit"
+00:55:07 INFO  : ps7_init is completed.
+00:55:07 INFO  : ps7_post_config is completed.
+00:56:07 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+00:56:12 INFO  : System reset is completed.
+00:56:13 INFO  : FPGA configured successfully with bitstream "C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_3/design_1_wrapper.bit"
+00:56:39 INFO  : ps7_init is completed.
+00:56:40 INFO  : ps7_post_config is completed.
+01:12:07 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
