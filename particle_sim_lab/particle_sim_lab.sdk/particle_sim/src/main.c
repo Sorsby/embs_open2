@@ -13,8 +13,8 @@
 #include "ethernet/ethernet.h"
 #include "ethernet/ethernet_platform.h"
 
-#define TRUE 1
-#define FALSE 0
+#define PARTICLE_ARRAY_SIZE 20000
+#define ATTRACTOR_ARRAY_SIZE 500
 
 char input_byte;
 int printFPS = FALSE;
@@ -40,12 +40,20 @@ void getParams() {
 	populateSimulation();
 }
 
+void populateSimulationFromNetwork(int newNumParticles, int newNumAttractors,
+		struct Particle *newParticles, struct Attractor *newAttractors) {
+	num_particles = newNumParticles;
+	num_attractors = newNumAttractors;
+	particles = newParticles;
+	attractors = newAttractors;
+}
+
 void populateSimulation() {
 //	puts("populate sim");
 //	printf("p %d", num_particles);
 //	printf("a %d", num_attractors);
-	particles = malloc(num_particles * sizeof(struct Particle));
-	attractors = malloc(num_attractors * sizeof(struct Attractor));
+	particles = malloc(PARTICLE_ARRAY_SIZE * sizeof(struct Particle));
+	attractors = malloc(ATTRACTOR_ARRAY_SIZE * sizeof(struct Attractor));
 
 	for (i = 0; i < num_particles; i++) {
 		int random_x = rand() % 1440;
@@ -82,11 +90,11 @@ void handleInput() {
 			requestScenario(
 					readInput("Enter the ScenarioID you wish to request:"));
 			break;
-		//toggle fps
+			//toggle fps
 		case 'f':
 			printFPS = !printFPS;
 			break;
-		//random init
+			//random init
 		case 'r':
 			getParams();
 			break;
