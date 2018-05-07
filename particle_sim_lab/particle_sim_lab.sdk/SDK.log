@@ -3387,3 +3387,88 @@ com.xilinx.sdk.targetmanager.TMException:
 21:11:23 INFO  : ps7_init is completed.
 21:11:23 INFO  : ps7_post_config is completed.
 21:15:20 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+21:16:23 INFO  : Launching XSDB server: xsdb.bat -interactive C:\Users\Matthew\Desktop\embs_open2\particle_sim_lab\particle_sim_lab.sdk\temp_xsdb_launch_script.tcl
+21:16:24 INFO  : XSDB server has started successfully.
+21:16:25 INFO  : Restoring global repository preferences: 
+		 C:\Users\Matthew\Desktop\embs_open2\ethernet-stuff\ethernetrepo
+21:16:25 INFO  : Processing command line option -hwspec C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper.hdf.
+21:16:25 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+21:28:16 WARN  : Unable to obtain port 2350 for use by XMD, java.net.SocketException: Unrecognized Windows Sockets error: 0: JVM_Bind
+21:28:21 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: 
+    Failed to connect to Xilinx hw_server at TCP:localhost:12345
+.    Check if
+     1. the hw_server is running and correct TCP port is used
+     2. the board is powered on and JTAG cable is connected.
+
+	at com.xilinx.sdk.targetmanager.internal.TM.connectToProcessor(TM.java:484)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:464)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:616)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+21:28:34 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+21:28:50 INFO  : Launching XSDB server: xsdb.bat -interactive C:\Users\Matthew\Desktop\embs_open2\particle_sim_lab\particle_sim_lab.sdk\temp_xsdb_launch_script.tcl
+21:28:51 INFO  : XSDB server has started successfully.
+21:28:51 INFO  : Restoring global repository preferences: 
+		 C:\Users\Matthew\Desktop\embs_open2\ethernet-stuff\ethernetrepo
+21:28:51 INFO  : Processing command line option -hwspec C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper.hdf.
+21:28:51 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+21:33:31 INFO  : System reset is completed.
+21:33:33 INFO  : FPGA configured successfully with bitstream "C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_1/design_1_wrapper.bit"
+21:33:59 INFO  : ps7_init is completed.
+21:34:00 INFO  : ps7_post_config is completed.
+21:40:26 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+21:40:30 INFO  : System reset is completed.
+21:40:32 INFO  : FPGA configured successfully with bitstream "C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_1/design_1_wrapper.bit"
+21:40:58 INFO  : ps7_init is completed.
+21:40:59 INFO  : ps7_post_config is completed.
+21:43:06 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+21:43:10 INFO  : System reset is completed.
+21:43:12 INFO  : FPGA configured successfully with bitstream "C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_1/design_1_wrapper.bit"
+21:43:38 INFO  : ps7_init is completed.
+21:43:39 INFO  : ps7_post_config is completed.
+21:44:22 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+21:44:26 INFO  : System reset is completed.
+21:44:28 INFO  : FPGA configured successfully with bitstream "C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_1/design_1_wrapper.bit"
+21:44:54 INFO  : ps7_init is completed.
+21:44:55 INFO  : ps7_post_config is completed.
+21:51:03 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+21:51:07 INFO  : System reset is completed.
+21:51:09 INFO  : FPGA configured successfully with bitstream "C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_1/design_1_wrapper.bit"
+21:51:35 INFO  : ps7_init is completed.
+21:51:35 INFO  : ps7_post_config is completed.
+21:51:56 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Unable to determine ELF start address: Unknown Error Occured
+    : C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/particle_sim/Release/particle_sim.elf
+
+	at com.xilinx.sdk.targetmanager.internal.TM.getStartAddress(TM.java:907)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(AppRunner.java:149)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:637)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+21:55:21 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+21:56:21 INFO  : Launching XSDB server: xsdb.bat -interactive C:\Users\Matthew\Desktop\embs_open2\particle_sim_lab\particle_sim_lab.sdk\temp_xsdb_launch_script.tcl
+21:56:23 INFO  : XSDB server has started successfully.
+21:56:23 INFO  : Restoring global repository preferences: 
+		 C:\Users\Matthew\Desktop\embs_open2\ethernet-stuff\ethernetrepo
+21:56:23 INFO  : Processing command line option -hwspec C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper.hdf.
+21:56:23 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+21:56:51 INFO  : System reset is completed.
+21:56:52 INFO  : FPGA configured successfully with bitstream "C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_1/design_1_wrapper.bit"
+21:57:19 INFO  : ps7_init is completed.
+21:57:20 INFO  : ps7_post_config is completed.
+22:00:08 INFO  : System reset is completed.
+22:00:10 INFO  : FPGA configured successfully with bitstream "C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_1/design_1_wrapper.bit"
+22:00:35 INFO  : ps7_init is completed.
+22:00:36 INFO  : ps7_post_config is completed.
+22:07:13 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

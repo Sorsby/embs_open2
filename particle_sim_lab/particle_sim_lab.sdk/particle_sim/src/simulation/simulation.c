@@ -65,9 +65,7 @@ void updateSimulation(struct Particle *particles, struct Attractor *attractors,
 				particles[i].vx = particles[i].vx + x_norm;
 				particles[i].vy = particles[i].vy + y_norm;
 
-//				printf("vx %f\n", particles[i].vx);
 			}
 		}
 	}
-//	printf("successful update\n");
 }

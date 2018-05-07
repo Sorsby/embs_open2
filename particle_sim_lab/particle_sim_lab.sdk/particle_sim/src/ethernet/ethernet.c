@@ -11,7 +11,7 @@
 #include "xil_cache.h"
 #include "ethernet_platform.h"
 #include "../util/util.h"
-#include <xscutimer.h>
+#include "xtime_l.h"
 #include "../simulation/simulation.h"
 #include "../main.h"
 
@@ -28,9 +28,9 @@ int serverPort;
 int scenarioId;
 int numParts = 0;
 int nextPart = 0;
+char* currentRequest;
 
-XScuTimer timer;
-XScuTimer_Config *timercfg;
+XTime startTime, endTime, executionTime;
 
 int numParticles = 0;
 int numAttractors = 0;
@@ -40,19 +40,23 @@ struct Attractor *attractors;
 void sendMessage(char *message);
 
 void startTimer() {
-	timercfg = XScuTimer_LookupConfig(XPAR_SCUTIMER_DEVICE_ID);
-	XScuTimer_CfgInitialize(&timer, timercfg, timercfg->BaseAddr);
-
-	XScuTimer_LoadTimer(&timer, TIMER_START);
-	XScuTimer_Start(&timer);
+	XTime_GetTime(&startTime);
 }
 
-int stopTimer() {
-	XScuTimer_Stop(&timer);
-	return XScuTimer_GetCounterValue(&timer);
+float getTimePassed() {
+	XTime_GetTime(&endTime);
+	return 1.0 * executionTime / COUNTS_PER_SECOND;
+}
+
+void resetTimer() {
+	startTime = 0;
+	endTime = 0;
+	executionTime = 0;
 }
 
 void freeEthernetMemory() {
+	numParticles = 0;
+	numAttractors = 0;
 	free(particles);
 	free(attractors);
 }
@@ -60,13 +64,13 @@ void freeEthernetMemory() {
 void requestScenario(int id) {
 	scenarioId = id;
 	nextPart = 0;
-	freeEthernetMemory();
 
 	printf("Get ScenarioID: %d, from the server.\n", id);
 	char buffer[5];
-	char *message = NULL;
+	char message[13];
 	snprintf(buffer, 5, "%04d", id);
 	sprintf(message, "NUMPARTS,%s", buffer);
+
 	sendMessage(message);
 }
 
@@ -76,8 +80,9 @@ void requestPart(int partId) {
 	char bufferb[5];
 	snprintf(buffera, 5, "%04d", scenarioId);
 	snprintf(bufferb, 5, "%04d", partId);
-	char *message = NULL;
+	char message[18];
 	sprintf(message, "GETPART,%s,%s", buffera, bufferb);
+
 	sendMessage(message);
 }
 
@@ -85,6 +90,8 @@ void udp_numparts_get_handler(void *arg, struct udp_pcb *pcb, struct pbuf *p,
 		struct ip_addr *addr, u16_t port) {
 	if (p) {
 		printf("Message: %s\n", (char *) p->payload);
+		free(currentRequest);
+		resetTimer();
 
 		numParts = strToInt(getNumParts((char *) p->payload));
 		particles = malloc(PARTICLE_ARRAY_SIZE * sizeof(struct Particle));
@@ -105,6 +112,9 @@ void udp_part_get_handler(void *arg, struct udp_pcb *pcb, struct pbuf *p,
 		struct ip_addr *addr, u16_t port) {
 	if (p) {
 //		printf("Message: %s\n", (char *) p->payload);
+		free(currentRequest);
+		resetTimer();
+
 		char response[2000];
 		strcpy(response, (char *) p->payload);
 
@@ -150,6 +160,7 @@ void udp_part_get_handler(void *arg, struct udp_pcb *pcb, struct pbuf *p,
 						.vx = 0, .vy = 0 };
 				particles[numParticles] = particle;
 				numParticles += 1;
+
 				break;
 			case 'A':
 				strncpy(attractor, pResponseParser, 17);
@@ -171,12 +182,17 @@ void udp_part_get_handler(void *arg, struct udp_pcb *pcb, struct pbuf *p,
 						atoi(g) };
 				attractors[numAttractors] = attractor;
 				numAttractors += 1;
+
 				break;
 			}
 			objectCount += 1;
 			pResponseParser += 22;
+
+
+
 		}
 
+//		free(pResponseParser);
 		nextPart = getNext(nextPart);
 		udp_remove(pcb);
 		pbuf_free(p);
@@ -224,8 +240,19 @@ void sendMessage(char *message) {
 	er = udp_sendto(send_pcb, reply, &serverIP, serverPort);
 //	printf("error: %d\n", er);
 
+	strcpy(currentRequest, message);
+	startTimer();
+
 	pbuf_free(reply);
 	udp_remove(send_pcb);
+}
+
+void handleEthernet() {
+	handle_ethernet();
+	if (getTimePassed() > 10.0) {
+		puts("Request timed out after 10 seconds, retrying.");
+		sendMessage(currentRequest);
+	}
 }
 
 void setupEthernet() {

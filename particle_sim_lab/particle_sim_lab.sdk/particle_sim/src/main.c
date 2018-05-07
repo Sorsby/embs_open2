@@ -44,14 +44,13 @@ void populateSimulationFromNetwork(int newNumParticles, int newNumAttractors,
 		struct Particle *newParticles, struct Attractor *newAttractors) {
 	num_particles = newNumParticles;
 	num_attractors = newNumAttractors;
-	particles = newParticles;
-	attractors = newAttractors;
+
+	memcpy(particles, newParticles, PARTICLE_ARRAY_SIZE);
+	memcpy(attractors, newAttractors, ATTRACTOR_ARRAY_SIZE);
+	freeEthernetMemory();
 }
 
 void populateSimulation() {
-//	puts("populate sim");
-//	printf("p %d", num_particles);
-//	printf("a %d", num_attractors);
 	particles = malloc(PARTICLE_ARRAY_SIZE * sizeof(struct Particle));
 	attractors = malloc(ATTRACTOR_ARRAY_SIZE * sizeof(struct Attractor));
 
@@ -62,7 +61,6 @@ void populateSimulation() {
 				.vy = 0 };
 		particles[i] = particle;
 	}
-//	puts("make particles");
 
 	for (i = 0; i < num_attractors; i++) {
 		int random_x = rand() % 1440;
@@ -77,7 +75,6 @@ void populateSimulation() {
 				random_g };
 		attractors[i] = attractor;
 	}
-//	puts("make attractors");
 }
 
 void handleInput() {
@@ -114,7 +111,7 @@ int main(void) {
 	while (1) {
 
 		handleInput();
-		handle_ethernet();
+		handleEthernet();
 
 		updateSimulation(&particles[0], &attractors[0], num_particles,
 				num_attractors);

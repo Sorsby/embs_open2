@@ -9,6 +9,8 @@
 #define SRC_ETHERNET_ETHERNET_H_
 
 void setupEthernet();
+void handleEthernet();
+void freeEthernetMemory();
 void requestScenario(int scenarioId);
 
 #endif /* SRC_ETHERNET_ETHERNET_H_ */
