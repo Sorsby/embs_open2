@@ -14,6 +14,7 @@
 #include "xtime_l.h"
 #include "../simulation/simulation.h"
 #include "../main.h"
+#include "../def.h"
 
 #define TIMER_START 500000000
 #define PARTICLE_ARRAY_SIZE 20000
@@ -36,6 +37,8 @@ int numParticles = 0;
 int numAttractors = 0;
 struct Particle *particles;
 struct Attractor *attractors;
+
+int ram[60000];
 
 int networkInUse = FALSE;
 
@@ -101,6 +104,7 @@ void udp_numparts_get_handler(void *arg, struct udp_pcb *pcb, struct pbuf *p,
 		particles = malloc(PARTICLE_ARRAY_SIZE * sizeof(struct Particle));
 		attractors = malloc(ATTRACTOR_ARRAY_SIZE * sizeof(struct Attractor));
 
+
 		udp_remove(pcb);
 		pbuf_free(p);
 
@@ -136,6 +140,8 @@ void udp_part_get_handler(void *arg, struct udp_pcb *pcb, struct pbuf *p,
 		//loop length of data
 		int objectCount = 0;
 		while (objectCount < (dataLength / DATA_OBJECT_LENGTH)) {
+			int ramOffset;
+
 			char particle[12];
 			char attractor[17];
 
@@ -162,6 +168,13 @@ void udp_part_get_handler(void *arg, struct udp_pcb *pcb, struct pbuf *p,
 
 				struct Particle particle = { .x = atoi(x), .y = atoi(y),
 						.vx = 0, .vy = 0 };
+
+				ramOffset = numParticles * PARTICLE_SIZE;
+				ram[ramOffset] = atoi(x);
+				ram[ramOffset + 1] = atoi(y);
+				ram[ramOffset + 2] = 0;
+				ram[ramOffset + 3] = 0;
+
 				particles[numParticles] = particle;
 				numParticles += 1;
 
@@ -182,8 +195,14 @@ void udp_part_get_handler(void *arg, struct udp_pcb *pcb, struct pbuf *p,
 				strncpy(g, pg, 5);
 				g[4] = '\0';
 
-				struct Attractor attractor = { .x = atof(x), .y = atoi(y), .g =
-						atoi(g) };
+				struct Attractor attractor = { .x = atoi(x), .y = atoi(y), .g =
+						atof(g) };
+
+				ramOffset = PARTICLE_END + numAttractors * ATTRACTOR_SIZE;
+				ram[ramOffset + 1] = atoi(x);
+				ram[ramOffset + 2] = atoi(y);
+				ram[ramOffset + 3] = (int)(atof(g)*FLOAT_ACCURACY);
+
 				attractors[numAttractors] = attractor;
 				numAttractors += 1;
 
@@ -204,7 +223,8 @@ void udp_part_get_handler(void *arg, struct udp_pcb *pcb, struct pbuf *p,
 		if (nextPart == numParts) {
 			printf("num particles: %d\n", numParticles);
 			printf("num attractor: %d\n", numAttractors);
-			populateSimulationFromNetwork(numParticles, numAttractors, particles, attractors);
+//			populateSimulationFromNetwork(numParticles, numAttractors, particles, attractors);
+			populateSimulationFromNetworkArray(ram, numParticles, numAttractors);
 			return;
 			//all parts received
 			//populate simulation

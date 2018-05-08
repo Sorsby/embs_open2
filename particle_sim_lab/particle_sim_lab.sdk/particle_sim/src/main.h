@@ -11,4 +11,7 @@
 void populateSimulationFromNetwork(int newNumParticles, int newNumAttractors,
 		struct Particle *newParticles, struct Attractor *newAttractors);
 
+void populateSimulationFromNetworkArray(int newRam[60000], int newNumParticles,
+		int newNumAttractors);
+
 #endif /* SRC_MAIN_H_ */

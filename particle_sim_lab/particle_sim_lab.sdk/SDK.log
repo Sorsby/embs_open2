@@ -3571,3 +3571,21 @@ java.lang.RuntimeException: Failed to download ELF file
 22:41:17 INFO  : ps7_init is completed.
 22:41:17 INFO  : ps7_post_config is completed.
 22:43:09 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+00:09:22 INFO  : Launching XSDB server: xsdb.bat -interactive C:\Users\Matthew\Desktop\embs_open2\particle_sim_lab\particle_sim_lab.sdk\temp_xsdb_launch_script.tcl
+00:09:23 INFO  : XSDB server has started successfully.
+00:09:23 INFO  : Restoring global repository preferences: 
+		 C:\Users\Matthew\Desktop\embs_open2\ethernet-stuff\ethernetrepo
+00:09:23 INFO  : Processing command line option -hwspec C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper.hdf.
+05:10:43 INFO  : System reset is completed.
+05:10:44 INFO  : FPGA configured successfully with bitstream "C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_1/design_1_wrapper.bit"
+05:11:09 INFO  : ps7_init is completed.
+05:11:10 INFO  : ps7_post_config is completed.
+05:15:29 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+05:15:33 INFO  : System reset is completed.
+05:15:34 INFO  : FPGA configured successfully with bitstream "C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_1/design_1_wrapper.bit"
+05:15:59 INFO  : ps7_init is completed.
+05:16:00 INFO  : ps7_post_config is completed.
+05:20:55 INFO  : System reset is completed.
+05:20:57 INFO  : FPGA configured successfully with bitstream "C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+05:21:21 INFO  : ps7_init is completed.
+05:21:22 INFO  : ps7_post_config is completed.

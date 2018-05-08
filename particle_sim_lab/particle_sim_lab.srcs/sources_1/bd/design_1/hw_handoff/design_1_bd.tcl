@@ -44,7 +44,6 @@ if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
 set list_projs [get_projects -quiet]
 if { $list_projs eq "" } {
    create_project project_1 myproj -part xc7z010clg400-1
-   set_property BOARD_PART digilentinc.com:zybo:part0:1.0 [current_project]
 }
 
 
@@ -418,6 +417,14 @@ CONFIG.PCW_FPGA1_PERIPHERAL_FREQMHZ {50} \
 CONFIG.PCW_FPGA2_PERIPHERAL_FREQMHZ {50} \
 CONFIG.PCW_FPGA3_PERIPHERAL_FREQMHZ {50} \
 CONFIG.PCW_FPGA_FCLK0_ENABLE {1} \
+CONFIG.PCW_FTM_CTI_IN0 {<Select>} \
+CONFIG.PCW_FTM_CTI_IN1 {<Select>} \
+CONFIG.PCW_FTM_CTI_IN2 {<Select>} \
+CONFIG.PCW_FTM_CTI_IN3 {<Select>} \
+CONFIG.PCW_FTM_CTI_OUT0 {<Select>} \
+CONFIG.PCW_FTM_CTI_OUT1 {<Select>} \
+CONFIG.PCW_FTM_CTI_OUT2 {<Select>} \
+CONFIG.PCW_FTM_CTI_OUT3 {<Select>} \
 CONFIG.PCW_GPIO_EMIO_GPIO_ENABLE {0} \
 CONFIG.PCW_GPIO_EMIO_GPIO_IO {<Select>} \
 CONFIG.PCW_GPIO_MIO_GPIO_ENABLE {1} \
@@ -930,6 +937,8 @@ CONFIG.PCW_USB_RESET_POLARITY {Active Low} \
 CONFIG.PCW_USB_RESET_SELECT {<Select>} \
 CONFIG.PCW_USE_CROSS_TRIGGER {0} \
 CONFIG.PCW_USE_S_AXI_HP1 {1} \
+CONFIG.PCW_USE_S_AXI_HP2 {0} \
+CONFIG.PCW_USE_S_AXI_HP3 {0} \
 CONFIG.PCW_WDT_PERIPHERAL_CLKSRC {CPU_1X} \
 CONFIG.PCW_WDT_PERIPHERAL_DIVISOR0 {1} \
 CONFIG.PCW_WDT_PERIPHERAL_ENABLE {0} \
@@ -1056,6 +1065,14 @@ CONFIG.PCW_FPGA1_PERIPHERAL_FREQMHZ.VALUE_SRC {DEFAULT} \
 CONFIG.PCW_FPGA2_PERIPHERAL_FREQMHZ.VALUE_SRC {DEFAULT} \
 CONFIG.PCW_FPGA3_PERIPHERAL_FREQMHZ.VALUE_SRC {DEFAULT} \
 CONFIG.PCW_FPGA_FCLK0_ENABLE.VALUE_SRC {DEFAULT} \
+CONFIG.PCW_FTM_CTI_IN0.VALUE_SRC {DEFAULT} \
+CONFIG.PCW_FTM_CTI_IN1.VALUE_SRC {DEFAULT} \
+CONFIG.PCW_FTM_CTI_IN2.VALUE_SRC {DEFAULT} \
+CONFIG.PCW_FTM_CTI_IN3.VALUE_SRC {DEFAULT} \
+CONFIG.PCW_FTM_CTI_OUT0.VALUE_SRC {DEFAULT} \
+CONFIG.PCW_FTM_CTI_OUT1.VALUE_SRC {DEFAULT} \
+CONFIG.PCW_FTM_CTI_OUT2.VALUE_SRC {DEFAULT} \
+CONFIG.PCW_FTM_CTI_OUT3.VALUE_SRC {DEFAULT} \
 CONFIG.PCW_GPIO_EMIO_GPIO_ENABLE.VALUE_SRC {DEFAULT} \
 CONFIG.PCW_GPIO_EMIO_GPIO_IO.VALUE_SRC {DEFAULT} \
 CONFIG.PCW_GPIO_MIO_GPIO_IO.VALUE_SRC {DEFAULT} \
@@ -1501,23 +1518,23 @@ preplace portBus vga_red -pg 1 -y 290 -defaultsOSRD
 preplace portBus vga_blue -pg 1 -y 330 -defaultsOSRD
 preplace inst vga -pg 1 -lvl 3 -y 320 -defaultsOSRD
 preplace inst rst_processing_system7_0_50M -pg 1 -lvl 1 -y 550 -defaultsOSRD
-preplace inst processing_system7_0_axi_periph -pg 1 -lvl 2 -y 290 -defaultsOSRD
 preplace inst processing_system7_0 -pg 1 -lvl 4 -y 150 -defaultsOSRD
+preplace inst processing_system7_0_axi_periph -pg 1 -lvl 2 -y 290 -defaultsOSRD
 preplace netloc processing_system7_0_DDR 1 4 1 NJ
-preplace netloc vga_M00_AXI 1 3 1 990
-preplace netloc vga_vga_green 1 3 2 NJ 320 NJ
+preplace netloc vga_M00_AXI 1 3 1 970
+preplace netloc vga_vga_green 1 3 2 NJ 310 NJ
 preplace netloc processing_system7_0_axi_periph_M00_AXI 1 2 1 N
-preplace netloc rst_processing_system7_0_50M_interconnect_aresetn 1 1 2 370 480 NJ
+preplace netloc rst_processing_system7_0_50M_interconnect_aresetn 1 1 2 360 460 NJ
 preplace netloc vga_vga_hsync 1 3 2 NJ 350 NJ
-preplace netloc processing_system7_0_M_AXI_GP0 1 1 4 370 10 NJ 10 NJ 10 1450
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 4 380 10 NJ 10 NJ 10 1440
 preplace netloc vga_vga_blue 1 3 2 NJ 330 NJ
-preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 5 20 450 NJ 450 NJ 210 NJ 300 1450
-preplace netloc rst_processing_system7_0_50M_peripheral_aresetn 1 1 2 390 470 NJ
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 5 30 450 NJ 450 NJ 450 NJ 450 1440
+preplace netloc rst_processing_system7_0_50M_peripheral_aresetn 1 1 2 380 470 NJ
 preplace netloc processing_system7_0_axi_periph_M02_AXI 1 2 1 N
-preplace netloc vga_vga_red 1 3 2 NJ 310 NJ
+preplace netloc vga_vga_red 1 3 2 NJ 300 NJ
 preplace netloc vga_vga_vsync 1 3 2 NJ 370 NJ
 preplace netloc processing_system7_0_FIXED_IO 1 4 1 NJ
-preplace netloc processing_system7_0_FCLK_CLK0 1 0 5 30 460 380 460 670 200 1010 290 1460
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 5 20 370 370 130 680 160 980 290 1450
 preplace netloc processing_system7_0_axi_periph_M01_AXI 1 2 1 N
 levelinfo -pg 1 0 200 530 840 1230 1500 -top 0 -bot 640
 ",

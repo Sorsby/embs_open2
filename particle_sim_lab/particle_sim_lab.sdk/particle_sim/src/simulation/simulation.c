@@ -8,8 +8,68 @@
 
 #include "stdio.h"
 #include "math.h"
+#include "../def.h"
 
 int i, j;
+
+void updateSimulationArray(int ram[60000], int num_particles,
+		int num_attractors) {
+	for (i = 0; i < num_particles * PARTICLE_SIZE; i += PARTICLE_SIZE) {
+		int *px = &ram[i];
+		int *py = &ram[i + 1];
+		int *pvx = &ram[i + 2];
+		int *pvy = &ram[i + 3];
+
+		*px = *px + *pvx;
+		*py = *py + *pvy;
+
+		if (*px <= 5) {
+			*px = 5;
+			*pvx = 0;
+		}
+		if (*py <= 5) {
+			*py = 5;
+			*pvy = 0;
+		}
+		if (*px >= 1435) {
+			*px = 1435;
+			*pvx = 0;
+		}
+		if (*py >= 895) {
+			*py = 895;
+			*pvy = 0;
+		}
+
+		for (j = 0; j < num_attractors * ATTRACTOR_SIZE; j += ATTRACTOR_SIZE) {
+			int *ax = &ram[PARTICLE_END + j + 1];
+			int *ay = &ram[PARTICLE_END + j + 2];
+			int *g = &ram[PARTICLE_END + j + 3];
+
+			float exp1 = (*ax - *px);
+			float exp2 = (*ax - *py);
+			float exp = exp1 * exp1 + exp2 * exp2;
+			float d = sqrt(exp);
+
+			float x_norm;
+			float y_norm;
+			if (d < 500) {
+				x_norm = (*ax - *ax) / d;
+				y_norm = (*ay - *ay) / d;
+
+				if (d < 1.0) {
+					x_norm = x_norm * (*g) / FLOAT_ACCURACY;
+					y_norm = y_norm * (*g) / FLOAT_ACCURACY;
+				} else {
+					x_norm = x_norm * (1 / d) * ((*g) / FLOAT_ACCURACY);
+					y_norm = y_norm * (1 / d) * ((*g) / FLOAT_ACCURACY);
+				}
+
+				*pvx = *pvx + (int) (x_norm * FLOAT_ACCURACY);
+				*pvy = *pvy + (int) (y_norm * FLOAT_ACCURACY);
+			}
+		}
+	}
+}
 
 void updateSimulation(struct Particle *particles, struct Attractor *attractors,
 		int num_particles, int num_attractors) {

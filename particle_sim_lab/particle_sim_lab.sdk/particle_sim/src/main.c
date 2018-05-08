@@ -12,9 +12,9 @@
 #include "vga/vga.h"
 #include "ethernet/ethernet.h"
 #include "ethernet/ethernet_platform.h"
+#include "def.h"
 
-#define PARTICLE_ARRAY_SIZE 20000
-#define ATTRACTOR_ARRAY_SIZE 500
+int ram[60000];
 
 char input_byte;
 int printFPS = FALSE;
@@ -23,59 +23,99 @@ int i;
 int num_particles = 2000;
 int num_attractors = 10;
 
-struct Particle *particles;
-struct Attractor *attractors;
+//struct Particle *particles;
+//struct Attractor *attractors;
 
 void populateSimulation();
+void populateSimulationArray();
 
-void freeMemory() {
-	free(particles);
-	free(attractors);
-}
+//void freeMemory() {
+//	free(particles);
+//	free(attractors);
+//}
 
 void getParams() {
 	num_particles = readInput("Enter a number of particles:");
 	num_attractors = readInput("Enter a number of attractors:");
-	freeMemory();
-	populateSimulation();
+//	freeMemory();
+//	populateSimulation();
+	populateSimulationArray();
 }
 
-void populateSimulationFromNetwork(int newNumParticles, int newNumAttractors,
-		struct Particle *newParticles, struct Attractor *newAttractors) {
+void populateSimulationArray() {
+	for (i = 0; i < num_particles * PARTICLE_SIZE; i += PARTICLE_SIZE) {
+		int random_x = rand() % 1440 + 1;
+		int random_y = rand() % 900 + 1;
+
+		ram[i] = random_x;
+		ram[i + 1] = random_y;
+		ram[i + 2] = 0;
+		ram[i + 3] = 0;
+	}
+
+	for (i = 0; i < num_attractors * ATTRACTOR_SIZE; i += ATTRACTOR_SIZE) {
+		int random_x = rand() % 1440 + 1;
+		int random_y = rand() % 900 + 1;
+
+		int random_g;
+		if (i >= num_attractors / 2) {
+			random_g = (rand() % (10 * (int) FLOAT_ACCURACY + 1))
+					+ 10 * FLOAT_ACCURACY;
+		} else {
+			random_g = (rand() % (5 * (int) FLOAT_ACCURACY + 1))
+					- 10 * FLOAT_ACCURACY;
+		}
+
+		ram[PARTICLE_END + i + 1] = random_x;
+		ram[PARTICLE_END + i + 2] = random_y;
+		ram[PARTICLE_END + i + 3] = random_g;
+	}
+}
+
+void populateSimulationFromNetworkArray(int newRam[60000], int newNumParticles,
+		int newNumAttractors) {
 	num_particles = newNumParticles;
 	num_attractors = newNumAttractors;
-
-	memcpy(particles, newParticles, PARTICLE_ARRAY_SIZE);
-	memcpy(attractors, newAttractors, ATTRACTOR_ARRAY_SIZE);
+	memcpy(ram, newRam, 60000);
 	resetEthernet();
 }
 
-void populateSimulation() {
-	particles = malloc(PARTICLE_ARRAY_SIZE * sizeof(struct Particle));
-	attractors = malloc(ATTRACTOR_ARRAY_SIZE * sizeof(struct Attractor));
+//void populateSimulationFromNetwork(int newNumParticles, int newNumAttractors,
+//		struct Particle *newParticles, struct Attractor *newAttractors) {
+//	num_particles = newNumParticles;
+//	num_attractors = newNumAttractors;
+//
+//	memcpy(particles, newParticles, PARTICLE_ARRAY_SIZE);
+//	memcpy(attractors, newAttractors, ATTRACTOR_ARRAY_SIZE);
+//	resetEthernet();
+//}
 
-	for (i = 0; i < num_particles; i++) {
-		int random_x = rand() % 1440;
-		int random_y = rand() % 900;
-		struct Particle particle = { .x = random_x, .y = random_y, .vx = 0,
-				.vy = 0 };
-		particles[i] = particle;
-	}
-
-	for (i = 0; i < num_attractors; i++) {
-		int random_x = rand() % 1440;
-		int random_y = rand() % 900;
-		float random_g;
-		if (i >= num_attractors / 2) {
-			random_g = (rand() % 1) + 1;
-		} else {
-			random_g = (rand() % 1) - 1.5;
-		}
-		struct Attractor attractor = { .x = random_x, .y = random_y, .g =
-				random_g };
-		attractors[i] = attractor;
-	}
-}
+//void populateSimulation() {
+//	particles = malloc(PARTICLE_ARRAY_SIZE * sizeof(struct Particle));
+//	attractors = malloc(ATTRACTOR_ARRAY_SIZE * sizeof(struct Attractor));
+//
+//	for (i = 0; i < num_particles; i++) {
+//		int random_x = rand() % 1440;
+//		int random_y = rand() % 900;
+//		struct Particle particle = { .x = random_x, .y = random_y, .vx = 0,
+//				.vy = 0 };
+//		particles[i] = particle;
+//	}
+//
+//	for (i = 0; i < num_attractors; i++) {
+//		int random_x = rand() % 1440;
+//		int random_y = rand() % 900;
+//		float random_g;
+//		if (i >= num_attractors / 2) {
+//			random_g = (rand() % 1) + 1;
+//		} else {
+//			random_g = (rand() % 1) - 1.5;
+//		}
+//		struct Attractor attractor = { .x = random_x, .y = random_y, .g =
+//				random_g };
+//		attractors[i] = attractor;
+//	}
+//}
 
 void handleInput() {
 	if (XUartPs_IsReceiveData(STDIN_BASEADDRESS)) {
@@ -106,17 +146,20 @@ int main(void) {
 
 	setupVGA();
 	setupEthernet();
-	populateSimulation();
+//	populateSimulation();
+	populateSimulationArray();
 
 	while (1) {
 
 		handleInput();
 		handleEthernet();
 
-		updateSimulation(&particles[0], &attractors[0], num_particles,
-				num_attractors);
-		updateFrame(&particles[0], &attractors[0], num_particles,
-				num_attractors);
+//		updateSimulation(&particles[0], &attractors[0], num_particles,
+//				num_attractors);
+		updateSimulationArray(ram, num_particles, num_attractors);
+//		updateFrame(&particles[0], &attractors[0], num_particles,
+//				num_attractors);
+		updateFrameFromArray(ram, num_particles, num_attractors);
 		frame_timer();
 
 		if (printFPS) {
@@ -126,6 +169,6 @@ int main(void) {
 
 //	cleanup_platform();
 	cleanup_ethernet_platform();
-	freeMemory();
+//	freeMemory();
 	return 0;
 }

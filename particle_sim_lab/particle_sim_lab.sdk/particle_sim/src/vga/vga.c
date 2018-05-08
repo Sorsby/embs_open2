@@ -7,6 +7,7 @@
 
 #include "../simulation/simulation.h"
 #include "../zybo_vga/display_ctrl.h"
+#include "../def.h"
 
 #define RED 0x00FF0000
 #define GREEN 0x000000FF
@@ -28,7 +29,7 @@ u32 height;
 u32 *frame;
 u32 buff;
 
-// Array to store relative pixel locations of circle
+// stores relative positions around pixel required to draw a circle
 int circle[21] = { -2881, -2880, -2879, -1442, -1441, -1440, -1439, -1438, -2,
 		-1, 0, 1, 2, 1438, 1439, 1440, 1441, 1442, 2879, 2880, 2881 };
 
@@ -50,7 +51,7 @@ void setupVGA() {
 
 	// Initialise the display controller
 	DisplayInitialize(&dispCtrl, XPAR_AXIVDMA_0_DEVICE_ID, XPAR_VTC_0_DEVICE_ID,
-			XPAR_VGA_AXI_DYNCLK_0_BASEADDR, pFrames, FRAME_STRIDE);
+	XPAR_VGA_AXI_DYNCLK_0_BASEADDR, pFrames, FRAME_STRIDE);
 
 	// Start with the first frame buffer (of two)
 	DisplayChangeFrame(&dispCtrl, 0);
@@ -66,6 +67,33 @@ void setupVGA() {
 	height = dispCtrl.vMode.height;
 
 	buff = dispCtrl.curFrame;
+}
+
+void updateFrameFromArray(int ram[60000], int num_particles, int num_attractors) {
+	// Switch the frame we're modifying to be back buffer (1 to 0, or 0 to 1)
+	buff = !buff;
+	frame = dispCtrl.framePtr[buff];
+
+	// Clear the frame to white
+	memset(frame, 0xFF, MAX_FRAME * 4);
+
+	int i;
+	for (i = 0; i < (num_particles * PARTICLE_SIZE); i += PARTICLE_SIZE) {
+		drawCircle(ram[i], ram[i + 1], BLUE);
+	}
+	for (i = 0; i < (num_attractors * ATTRACTOR_SIZE); i += ATTRACTOR_SIZE) {
+		int colour = ram[PARTICLE_END + i + 3] > 0 ? GREEN : RED;
+		drawCircle(ram[PARTICLE_END + i + 1], ram[PARTICLE_END + i + 2], colour);
+	}
+
+	// Flush everything out to DDR
+	Xil_DCacheFlush();
+
+	// Switch active frame to the back buffer
+	DisplayChangeFrame(&dispCtrl, buff);
+
+	// Wait for the f0x00FF0000rame to switch (after active frame is drawn) before continuing
+	DisplayWaitForSync(&dispCtrl);
 }
 
 void updateFrame(struct Particle *particles, struct Attractor *attractors,
