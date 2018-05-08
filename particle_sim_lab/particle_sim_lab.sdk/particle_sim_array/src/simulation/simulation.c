@@ -13,53 +13,53 @@
 int i, j;
 
 void updateSimulationArray(float* ram, int num_particles, int num_attractors) {
-	for (i = 0; i < num_particles; i++) {
-		int ramOffset = i * PARTICLE_SIZE;
+	for (i = 0; i < num_particles * PARTICLE_SIZE; i += PARTICLE_SIZE) {
 
-		float px = ram[ramOffset];
-		float py = ram[ramOffset + 1];
-		float pvx = ram[ramOffset + 2];
-		float pvy = ram[ramOffset + 3];
+		float* px = &ram[i];
+		float* py = &ram[i + 1];
+		float* pvx = &ram[i + 2];
+		float* pvy = &ram[i + 3];
 
-		px = px + pvx;
-		py = py + pvy;
+		*px += *pvx;
+		*py += *pvy;
 
-		if (px <= 5) {
-			px = 5;
-			pvx = 0;
+		if (*px <= 0) {
+			*px = 0;
+			*pvx = 0;
 		}
-		if (py <= 5) {
-			py = 5;
-			pvy = 0;
+		if (*py <= 0) {
+			*py = 0;
+			*pvy = 0;
 		}
-		if (px >= 1435) {
-			px = 1435;
-			pvx = 0;
+		if (*px >= 1440) {
+			*px = 1440;
+			*pvx = 0;
 		}
-		if (py >= 895) {
-			py = 895;
-			pvy = 0;
+		if (*py >= 900) {
+			*py = 900;
+			*pvy = 0;
 		}
 
-		for (j = 0; j < num_attractors; j++) {
-			int ramOffset = j * ATTRACTOR_SIZE;
+		for (j = PARTICLE_END;
+				j < PARTICLE_END + (num_attractors * ATTRACTOR_SIZE); j +=
+						ATTRACTOR_SIZE) {
 
-			float ax = ram[ramOffset + 1];
-			float ay = ram[ramOffset + 2];
-			float g = ram[ramOffset + 3];
+			float ax = ram[j + 1];
+			float ay = ram[j + 2];
+			float g = ram[j + 3];
 
-			printf("a, x: %f, y: %f\n", ax, ay);
-
-			float exp1 = (ax - px);
-			float exp2 = (ax - py);
+			float exp1 = (ax - *px);
+			float exp2 = (ay - *py);
 			float exp = exp1 * exp1 + exp2 * exp2;
 			float d = sqrt(exp);
+
+//			printf("d: %f", d);
 
 			float x_norm;
 			float y_norm;
 			if (d < 500) {
-				x_norm = (ax - px) / d;
-				y_norm = (ay - py) / d;
+				x_norm = (ax - *px) / d;
+				y_norm = (ay - *py) / d;
 
 				if (d < 1.0) {
 					x_norm = x_norm * g;
@@ -69,10 +69,8 @@ void updateSimulationArray(float* ram, int num_particles, int num_attractors) {
 					y_norm = y_norm * (1 / d) * g;
 				}
 
-//				printf("norm x: %f, y: %f\n", x_norm, y_norm);
-
-				pvx = pvx + x_norm;
-				pvy = pvy + y_norm;
+				*pvx += x_norm;
+				*pvy += y_norm;
 			}
 		}
 	}

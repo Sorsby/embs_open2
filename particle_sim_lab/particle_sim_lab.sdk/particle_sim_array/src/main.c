@@ -15,38 +15,34 @@
 #include "def.h"
 #include "util/util.h"
 
+#include "xtoplevel.h"
+#include "xil_cache.h"
+
 float ram[RAM_SIZE];
+XToplevel hls;
 
 char input_byte;
 int printFPS = FALSE;
+int readyToSimulate = TRUE;
 
 int i;
 int num_particles = 2000;
 int num_attractors = 10;
 
-//struct Particle *particles;
-//struct Attractor *attractors;
-
 void populateSimulation();
 void populateSimulationArray();
-
-//void freeMemory() {
-//	free(particles);
-//	free(attractors);
-//}
 
 void getParams() {
 	num_particles = readInput("Enter a number of particles:");
 	num_attractors = readInput("Enter a number of attractors:");
-//	freeMemory();
-//	populateSimulation();
+	memset(ram, 0, RAM_SIZE);
 	populateSimulationArray();
 }
 
 void populateSimulationArray() {
 	for (i = 0; i < num_particles * PARTICLE_SIZE; i += PARTICLE_SIZE) {
-		int random_x = rand() % 1440 + 1;
-		int random_y = rand() % 900 + 1;
+		float random_x = rand() % 1440;
+		float random_y = rand() % 900;
 
 		ram[i] = random_x;
 		ram[i + 1] = random_y;
@@ -54,15 +50,15 @@ void populateSimulationArray() {
 		ram[i + 3] = 0;
 	}
 
-	for (i = 0; i < num_attractors * ATTRACTOR_SIZE; i += ATTRACTOR_SIZE) {
-		int random_x = rand() % 1440 + 1;
-		int random_y = rand() % 900 + 1;
+	for (i = PARTICLE_END; i < PARTICLE_END + (num_attractors * ATTRACTOR_SIZE); i += ATTRACTOR_SIZE) {
+		float random_x = rand() % 1440;
+		float random_y = rand() % 900;
 
-		float random_g = rand() % 2 + 1;
+		float random_g = 2;
 
-		ram[PARTICLE_END + i + 1] = random_x;
-		ram[PARTICLE_END + i + 2] = random_y;
-		ram[PARTICLE_END + i + 3] = random_g;
+		ram[i + 1] = random_x;
+		ram[i + 2] = random_y;
+		ram[i + 3] = random_g;
 	}
 }
 
@@ -71,45 +67,9 @@ void populateSimulationFromNetworkArray(float* newRam, int newNumParticles,
 	num_particles = newNumParticles;
 	num_attractors = newNumAttractors;
 	memcpy(ram, newRam, RAM_SIZE);
+	readyToSimulate = TRUE;
 	resetEthernet();
 }
-
-//void populateSimulationFromNetwork(int newNumParticles, int newNumAttractors,
-//		struct Particle *newParticles, struct Attractor *newAttractors) {
-//	num_particles = newNumParticles;
-//	num_attractors = newNumAttractors;
-//
-//	memcpy(particles, newParticles, PARTICLE_ARRAY_SIZE);
-//	memcpy(attractors, newAttractors, ATTRACTOR_ARRAY_SIZE);
-//	resetEthernet();
-//}
-
-//void populateSimulation() {
-//	particles = malloc(PARTICLE_ARRAY_SIZE * sizeof(struct Particle));
-//	attractors = malloc(ATTRACTOR_ARRAY_SIZE * sizeof(struct Attractor));
-//
-//	for (i = 0; i < num_particles; i++) {
-//		int random_x = rand() % 1440;
-//		int random_y = rand() % 900;
-//		struct Particle particle = { .x = random_x, .y = random_y, .vx = 0,
-//				.vy = 0 };
-//		particles[i] = particle;
-//	}
-//
-//	for (i = 0; i < num_attractors; i++) {
-//		int random_x = rand() % 1440;
-//		int random_y = rand() % 900;
-//		float random_g;
-//		if (i >= num_attractors / 2) {
-//			random_g = (rand() % 1) + 1;
-//		} else {
-//			random_g = (rand() % 1) - 1.5;
-//		}
-//		struct Attractor attractor = { .x = random_x, .y = random_y, .g =
-//				random_g };
-//		attractors[i] = attractor;
-//	}
-//}
 
 void handleInput() {
 	if (XUartPs_IsReceiveData(STDIN_BASEADDRESS)) {
@@ -118,6 +78,7 @@ void handleInput() {
 		switch (byte) {
 		//networked init
 		case 'e':
+			readyToSimulate = FALSE;
 			requestScenario(
 					readInput("Enter the ScenarioID you wish to request:"));
 			break;
@@ -129,39 +90,46 @@ void handleInput() {
 		case 'r':
 			getParams();
 			break;
+		case 'x':
+			puts("User interrupt request");
+			readyToSimulate = TRUE;
+			resetEthernet();
+			break;
 		}
 	}
 }
 
 int main(void) {
-//	init_platform();
-
 	puts("\n\n\n");
 
 	setupVGA();
 	setupEthernet();
-//	populateSimulation();
 	populateSimulationArray();
+//    XToplevel_Initialize(&hls, XPAR_TOPLEVEL_0_DEVICE_ID);
+//    XToplevel_Set_ram(&hls, &ram);
 
 	while (1) {
 		handleInput();
 		handleEthernet();
 
-//		updateSimulation(&particles[0], &attractors[0], num_particles,
-//				num_attractors);
-		updateSimulationArray(ram, num_particles, num_attractors);
-//		updateFrame(&particles[0], &attractors[0], num_particles,
-//				num_attractors);
-		updateFrameFromArray(ram, num_particles, num_attractors);
-		frame_timer();
+		if (readyToSimulate == TRUE) {
+//		    XToplevel_Set_numP(&hls, num_particles);
+//		    XToplevel_Set_numA(&hls, num_attractors);
+//
+//		    XToplevel_Start(&hls);
+//		    while(!XToplevel_IsDone(&hls));
+//			Xil_DCacheFlush();
+
+			updateSimulationArray(ram, num_particles, num_attractors);
+			updateFrameFromArray(ram, num_particles, num_attractors);
+			frame_timer();
+		}
 
 		if (printFPS) {
 			printf("FPS: %f\n", get_fps());
 		}
 	}
 
-//	cleanup_platform();
 	cleanup_ethernet_platform();
-//	freeMemory();
 	return 0;
 }

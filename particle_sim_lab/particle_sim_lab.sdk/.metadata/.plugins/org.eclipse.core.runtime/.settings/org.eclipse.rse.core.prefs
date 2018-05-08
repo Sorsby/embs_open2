@@ -1,4 +1,4 @@
-activeuserprofiles=MATTHEW-PC;Team
+activeuserprofiles=MATTHEW-PC;Team;pc833s
 eclipse.preferences.version=1
 org.eclipse.rse.systemtype.local.systemType.defaultUserId=Matthew
-useridperkey=MATTHEW-PC.Local\=Matthew;
+useridperkey=MATTHEW-PC.Local\=Matthew;pc833s.Local\=Matthew;

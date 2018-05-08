@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
   <source>
-    <originFiles name="toplevel.cpp" path="C:\Users\Matthew\Desktop\embs_open2\particle_sim_hls\toplevel.cpp"/>
-    <originFiles name="toplevel.h" path="C:\Users\Matthew\Desktop\embs_open2\particle_sim_hls\toplevel.h"/>
+    <originFiles name="toplevel.h" path="/home/userfs/m/ms1516/w2k/embs_open2/particle_sim_hls/toplevel.h"/>
+    <originFiles name="toplevel.cpp" path="/home/userfs/m/ms1516/w2k/embs_open2/particle_sim_hls/toplevel.cpp"/>
   </source>
   <testbench>
-    <originFiles name="testbench.cpp" path="C:\Users\Matthew\Desktop\embs_open2\particle_sim_hls\testbench.cpp"/>
+    <originFiles name="testbench.cpp" path="/home/userfs/m/ms1516/w2k/embs_open2/particle_sim_hls/testbench.cpp"/>
   </testbench>
 </autopilotfilemapping:AutoPilotFileMapping>

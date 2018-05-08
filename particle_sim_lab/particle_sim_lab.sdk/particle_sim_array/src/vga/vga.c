@@ -21,7 +21,7 @@ DisplayCtrl dispCtrl; // Display driver struct
 u32 frameBuf[DISPLAY_NUM_FRAMES][MAX_FRAME]; // Frame buffers for video data
 void *pFrames[DISPLAY_NUM_FRAMES]; // Array of pointers to the frame buffers
 
-int x, y;
+int x, y, i, count;
 u32 stride;
 u32 width;
 u32 height;
@@ -36,7 +36,7 @@ int circle[21] = { -2881, -2880, -2879, -1442, -1441, -1440, -1439, -1438, -2,
 void drawCircle(int startx, int starty, int colour) {
 	for (x = 0; x < 21; x++) {
 		int circlePixel = circle[x] + (starty * stride + startx);
-		if (circlePixel < 0 || circlePixel > MAX_FRAME) {
+		if (circlePixel <= 0 || circlePixel >= MAX_FRAME) {
 			continue;
 		}
 		frame[circlePixel] = colour;
@@ -77,13 +77,12 @@ void updateFrameFromArray(float* ram, int num_particles, int num_attractors) {
 	// Clear the frame to white
 	memset(frame, 0xFF, MAX_FRAME * 4);
 
-	int i;
-	for (i = 0; i < (num_particles * PARTICLE_SIZE); i += PARTICLE_SIZE) {
+	for (i = 0; i < num_particles * PARTICLE_SIZE; i += PARTICLE_SIZE) {
 		drawCircle(ram[i], ram[i + 1], BLUE);
 	}
-	for (i = 0; i < (num_attractors * ATTRACTOR_SIZE); i += ATTRACTOR_SIZE) {
-		int colour = ram[PARTICLE_END + i + 3] > 0 ? GREEN : RED;
-		drawCircle(ram[PARTICLE_END + i + 1], ram[PARTICLE_END + i + 2], colour);
+	for (i = PARTICLE_END; i < PARTICLE_END + (num_attractors * ATTRACTOR_SIZE); i += ATTRACTOR_SIZE) {
+		int colour = ram[i + 3] > 0 ? GREEN : RED;
+		drawCircle(ram[i + 1], ram[i + 2], colour);
 	}
 
 	// Flush everything out to DDR
@@ -96,33 +95,33 @@ void updateFrameFromArray(float* ram, int num_particles, int num_attractors) {
 	DisplayWaitForSync(&dispCtrl);
 }
 
-void updateFrame(struct Particle *particles, struct Attractor *attractors,
-		int num_particles, int num_attractors) {
-	// Switch the frame we're modifying to be back buffer (1 to 0, or 0 to 1)
-	buff = !buff;
-	frame = dispCtrl.framePtr[buff];
-
-	// Clear the frame to white
-	memset(frame, 0xFF, MAX_FRAME * 4);
-
-	int i;
-	for (i = 0; i < num_particles; i++) {
-		drawCircle(particles[i].x, particles[i].y, BLUE);
-	}
-	for (i = 0; i < num_attractors; i++) {
-		int colour = attractors[i].g > 0 ? GREEN : RED;
-		drawCircle(attractors[i].x, attractors[i].y, colour);
-	}
-
-	// Flush everything out to DDR
-	Xil_DCacheFlush();
-
-	// Switch active frame to the back buffer
-	DisplayChangeFrame(&dispCtrl, buff);
-
-	// Wait for the f0x00FF0000rame to switch (after active frame is drawn) before continuing
-	DisplayWaitForSync(&dispCtrl);
-}
+//void updateFrame(struct Particle *particles, struct Attractor *attractors,
+//		int num_particles, int num_attractors) {
+//	// Switch the frame we're modifying to be back buffer (1 to 0, or 0 to 1)
+//	buff = !buff;
+//	frame = dispCtrl.framePtr[buff];
+//
+//	// Clear the frame to white
+//	memset(frame, 0xFF, MAX_FRAME * 4);
+//
+//	int i;
+//	for (i = 0; i < num_particles; i++) {
+//		drawCircle(particles[i].x, particles[i].y, BLUE);
+//	}
+//	for (i = 0; i < num_attractors; i++) {
+//		int colour = attractors[i].g > 0 ? GREEN : RED;
+//		drawCircle(attractors[i].x, attractors[i].y, colour);
+//	}
+//
+//	// Flush everything out to DDR
+//	Xil_DCacheFlush();
+//
+//	// Switch active frame to the back buffer
+//	DisplayChangeFrame(&dispCtrl, buff);
+//
+//	// Wait for the f0x00FF0000rame to switch (after active frame is drawn) before continuing
+//	DisplayWaitForSync(&dispCtrl);
+//}
 
 void drawSquare(int startx, int starty, int size, int colour) {
 	for (x = startx; x < startx + size; x++) {

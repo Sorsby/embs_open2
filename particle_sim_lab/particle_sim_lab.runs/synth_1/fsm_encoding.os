@@ -5,6 +5,21 @@
        {{000 00001} {001 00010} {010 00100} {011 01000} {100 10000} }
 
  add_fsm_encoding \
+       {axi_data_fifo_v2_1_8_axic_reg_srl_fifo.state} \
+       { }  \
+       {{00 0100} {01 1000} {10 0001} {11 0010} }
+
+ add_fsm_encoding \
+       {axi_data_fifo_v2_1_8_axic_reg_srl_fifo__parameterized0.state} \
+       { }  \
+       {{00 0100} {01 1000} {10 0001} {11 0010} }
+
+ add_fsm_encoding \
+       {axi_data_fifo_v2_1_8_axic_reg_srl_fifo__parameterized1.state} \
+       { }  \
+       {{00 0100} {01 1000} {10 0001} {11 0010} }
+
+ add_fsm_encoding \
        {axi_vdma_sm.dmacntrl_cs} \
        { }  \
        {{000 000} {001 001} {010 010} {011 101} {100 011} {101 100} }

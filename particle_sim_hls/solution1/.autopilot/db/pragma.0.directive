@@ -32,5 +32,19 @@
 <option name="bundle" value="AXILiteS"/>
 </pragma>
 </directive>
+<directive functionLabel="" functionName="toplevel" label="">
+<pragma name="LOOP_TRIPCOUNT">
+<option name="min" value="0"/>
+<option name="max" value="12000"/>
+<option name="avg" value="12000"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="toplevel" label="">
+<pragma name="LOOP_TRIPCOUNT">
+<option name="min" value="0"/>
+<option name="max" value="104"/>
+<option name="avg" value="104"/>
+</pragma>
+</directive>
 </sourceFile>
 </AutoPilot:ProjectResources>

@@ -25,6 +25,7 @@
 unsigned char ms1516_mac_address[] = { 0x00, 0x11, 0x22, 0x33, 0x00, 0x26 };
 ip_addr_t serverIP;
 int serverPort;
+int hasAllData = FALSE;
 
 int scenarioId;
 int numParts = 0;
@@ -38,7 +39,7 @@ int numAttractors = 0;
 //struct Particle *particles;
 //struct Attractor *attractors;
 
-float ram[60000];
+float ram[RAM_SIZE];
 
 int networkInUse = FALSE;
 
@@ -50,6 +51,7 @@ void startTimer() {
 
 float getTimePassed() {
 	XTime_GetTime(&endTime);
+	executionTime = (endTime - startTime);
 	return 1.0 * executionTime / COUNTS_PER_SECOND;
 }
 
@@ -60,9 +62,11 @@ void resetTimer() {
 }
 
 void resetEthernet() {
-	networkInUse = FALSE;
 	numParticles = 0;
 	numAttractors = 0;
+	networkInUse = FALSE;
+	udp_remove(recv_pcb);
+	resetTimer();
 //	free(particles);
 //	free(attractors);
 }
@@ -71,6 +75,7 @@ void requestScenario(int id) {
 	networkInUse = TRUE;
 	scenarioId = id;
 	nextPart = 0;
+	numParts = 0;
 
 	printf("Get ScenarioID: %d, from the server.\n", id);
 	char buffer[5];
@@ -97,13 +102,9 @@ void udp_numparts_get_handler(void *arg, struct udp_pcb *pcb, struct pbuf *p,
 		struct ip_addr *addr, u16_t port) {
 	if (p) {
 		printf("Message: %s\n", (char *) p->payload);
-		free(currentRequest);
 		resetTimer();
 
 		numParts = strToInt(getNumParts((char *) p->payload));
-//		particles = malloc(PARTICLE_ARRAY_SIZE * sizeof(struct Particle));
-//		attractors = malloc(ATTRACTOR_ARRAY_SIZE * sizeof(struct Attractor));
-
 
 		udp_remove(pcb);
 		pbuf_free(p);
@@ -112,15 +113,14 @@ void udp_numparts_get_handler(void *arg, struct udp_pcb *pcb, struct pbuf *p,
 	}
 }
 
-int getNext( cur) {
+int getNext(cur) {
 	return cur + 1;
 }
 
 void udp_part_get_handler(void *arg, struct udp_pcb *pcb, struct pbuf *p,
 		struct ip_addr *addr, u16_t port) {
 	if (p) {
-//		printf("Message: %s\n", (char *) p->payload);
-		free(currentRequest);
+		printf("Message: %s\n", (char *) p->payload);
 		resetTimer();
 
 		char response[2000];
@@ -215,7 +215,6 @@ void udp_part_get_handler(void *arg, struct udp_pcb *pcb, struct pbuf *p,
 
 		}
 
-//		free(pResponseParser);
 		nextPart = getNext(nextPart);
 		udp_remove(pcb);
 		pbuf_free(p);
@@ -223,9 +222,8 @@ void udp_part_get_handler(void *arg, struct udp_pcb *pcb, struct pbuf *p,
 		if (nextPart == numParts) {
 			printf("num particles: %d\n", numParticles);
 			printf("num attractor: %d\n", numAttractors);
-//			populateSimulationFromNetwork(numParticles, numAttractors, particles, attractors);
 			populateSimulationFromNetworkArray(ram, numParticles, numAttractors);
-			return;
+			hasAllData = TRUE;
 			//all parts received
 			//populate simulation
 		} else {
@@ -260,11 +258,10 @@ void sendMessage(char *message) {
 	reply->len = strlen(message);
 
 	//Send it and clean up
-	err_t er;
-	er = udp_sendto(send_pcb, reply, &serverIP, serverPort);
+	udp_sendto(send_pcb, reply, &serverIP, serverPort);
+	udp_sendto(send_pcb, reply, &serverIP, serverPort);
 //	printf("error: %d\n", er);
 
-	strcpy(currentRequest, message);
 	startTimer();
 
 	pbuf_free(reply);
@@ -274,9 +271,10 @@ void sendMessage(char *message) {
 void handleEthernet() {
 	if (networkInUse == TRUE) {
 		handle_ethernet();
-		if (getTimePassed() > 10.0) {
-			puts("Request timed out after 10 seconds, retrying.");
-			sendMessage(currentRequest);
+		if (hasAllData == FALSE && getTimePassed() > 5.0) {
+			puts("Request timed out after 5 seconds, retrying.");
+			resetEthernet();
+			requestScenario(scenarioId);
 		}
 	}
 }

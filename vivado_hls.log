@@ -1,33 +1,42 @@
-INFO: [HLS 200-10] Running 'D:/Xilinx/Vivado_HLS/2016.2/bin/unwrapped/win64.o/vivado_hls.exe'
-INFO: [HLS 200-10] For user 'Matthew' on host 'matthew-pc' (Windows NT_amd64 version 6.2) on Tue May 08 06:17:29 +0100 2018
-INFO: [HLS 200-10] In directory 'C:/Users/Matthew/Desktop/embs_open2'
-INFO: [HLS 200-10] Opening project 'C:/Users/Matthew/Desktop/embs_open2/particle_sim_hls'.
-INFO: [HLS 200-10] Adding design file 'particle_sim_hls/toplevel.cpp' to the project
-INFO: [HLS 200-10] Adding design file 'particle_sim_hls/toplevel.h' to the project
-INFO: [HLS 200-10] Adding test bench file 'particle_sim_hls/testbench.cpp' to the project
-INFO: [HLS 200-10] Opening solution 'C:/Users/Matthew/Desktop/embs_open2/particle_sim_hls/solution1'.
+INFO: [HLS 200-10] Running '/opt/york/cs/net/xilinx_vivado-2016.2_ise-14.7_x86-64-1/Vivado_HLS/2016.2/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'ms1516' on host 'pc833s.cs.york.ac.uk' (Linux_x86_64 version 4.4.0-122-generic) on Tue May 08 14:39:16 BST 2018
+INFO: [HLS 200-10] On os Ubuntu 16.04.4 LTS
+INFO: [HLS 200-10] In directory '/home/userfs/m/ms1516/w2k/embs_open2'
+INFO: [HLS 200-10] Opening project '/home/userfs/m/ms1516/w2k/embs_open2/particle_sim_hls'.
+INFO: [HLS 200-10] Opening solution '/home/userfs/m/ms1516/w2k/embs_open2/particle_sim_hls/solution1'.
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 INFO: [HLS 200-10] Setting target device to 'xc7z010clg400-1'
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-INFO: [HLS 200-10] Analyzing design file 'particle_sim_hls/toplevel.cpp' ... 
-INFO: [HLS 200-10] Validating synthesis directives ...
-WARNING: [HLS 200-40] Directive 'UNROLL' cannot be applied: Label 'updatePosLopp' does not exist in function 'updateParticlePositions'. 
-INFO: [HLS 200-10] Starting code transformations ...
-INFO: [XFORM 203-603] Inlining function 'updateParticlePositions' into 'toplevel' (particle_sim_hls/toplevel.cpp:22).
-INFO: [HLS 200-10] Checking synthesizability ...
-CRITICAL WARNING: [SYNCHK 200-75] particle_sim_hls/toplevel.cpp:9: function 'toplevel' returns a pointer value; please inline this function or change return to an argument.
-INFO: [SYNCHK 200-10] 1 error(s), 0 warning(s).
-CRITICAL WARNING: [HLS 200-70] Synthesizability check failed.
-INFO: [HLS 200-111] Elapsed time: 8.071 seconds; current memory usage: 65.3 MB.
-command 'ap_source' returned error code
-    while executing
-"source C:/Users/Matthew/Desktop/embs_open2/particle_sim_hls/solution1/csynth.tcl"
-    invoked from within
-"hls::main C:/Users/Matthew/Desktop/embs_open2/particle_sim_hls/solution1/csynth.tcl"
-    ("uplevel" body line 1)
-    invoked from within
-"uplevel 1 hls::main {*}$args"
-    (procedure "hls_proc" line 5)
-    invoked from within
-"hls_proc $argv"
-INFO: [HLS 200-112] Total elapsed time: 8.85 seconds; peak memory usage: 65.3 MB.
+INFO: [IMPL 213-8] Exporting RTL as an IP in IP-XACT.
+
+****** Vivado v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/york/cs/net/xilinx_vivado-2016.2_ise-14.7_x86-64-1/Vivado/2016.2/data/ip'.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'toplevel_ap_faddfsub_3_full_dsp_32'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'toplevel_ap_faddfsub_3_full_dsp_32'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'toplevel_ap_fadd_3_full_dsp_32'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'toplevel_ap_fadd_3_full_dsp_32'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'toplevel_ap_fmul_2_max_dsp_32'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'toplevel_ap_fmul_2_max_dsp_32'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'toplevel_ap_fdiv_14_no_dsp_32'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'toplevel_ap_fdiv_14_no_dsp_32'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'toplevel_ap_fcmp_0_no_dsp_32'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'toplevel_ap_fcmp_0_no_dsp_32'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'toplevel_ap_fsqrt_10_no_dsp_32'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'toplevel_ap_fsqrt_10_no_dsp_32'...
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source /home/userfs/m/ms1516/w2k/embs_open2/particle_sim_hls/solution1/impl/ip/tmp.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Tue May  8 14:39:56 2018...
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/york/cs/net/xilinx_vivado-2016.2_ise-14.7_x86-64-1/Vivado/2016.2/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Tue May  8 14:39:57 2018...

@@ -421,6 +421,25 @@
 
 /******************************************************************/
 
+/* Definitions for driver TOPLEVEL */
+#define XPAR_XTOPLEVEL_NUM_INSTANCES 1
+
+/* Definitions for peripheral TOPLEVEL_0 */
+#define XPAR_TOPLEVEL_0_DEVICE_ID 0
+#define XPAR_TOPLEVEL_0_S_AXI_AXILITES_BASEADDR 0x43C20000
+#define XPAR_TOPLEVEL_0_S_AXI_AXILITES_HIGHADDR 0x43C2FFFF
+
+
+/******************************************************************/
+
+/* Canonical definitions for peripheral TOPLEVEL_0 */
+#define XPAR_XTOPLEVEL_0_DEVICE_ID XPAR_TOPLEVEL_0_DEVICE_ID
+#define XPAR_XTOPLEVEL_0_S_AXI_AXILITES_BASEADDR 0x43C20000
+#define XPAR_XTOPLEVEL_0_S_AXI_AXILITES_HIGHADDR 0x43C2FFFF
+
+
+/******************************************************************/
+
 /* Definitions for driver TTCPS */
 #define XPAR_XTTCPS_NUM_INSTANCES 3
 

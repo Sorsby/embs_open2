@@ -6,6 +6,18 @@
         <directive functionName="updateParticlePositions" label="updatePosLopp" functionLabel="">
             <pragma name="UNROLL"/>
         </directive>
+        <directive functionName="toplevel" label="toplevel_label0" functionLabel="">
+            <pragma name="PIPELINE"/>
+        </directive>
+        <directive functionName="toplevel" label="calculateVelocityLoop" functionLabel="">
+            <pragma name="PIPELINE"/>
+        </directive>
+        <directive functionName="toplevel" label="updateParticleLoop" functionLabel="">
+            <pragma name="UNROLL"/>
+        </directive>
+        <directive functionName="toplevel" label="calculateVelocityLoop" functionLabel="">
+            <pragma name="LOOP_FLATTEN"/>
+        </directive>
     </sourceFile>
 </AutoPilot:ProjectResources>
 

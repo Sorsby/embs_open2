@@ -7,26 +7,4 @@ Copyright (C) 1986-2016 Xilinx, Inc. All Rights Reserved.
 
 @I [SYN-201] Setting up clock 'default' with a period of 10ns.
 @I [HLS-10] Setting target device to 'xc7z010clg400-1'
-@I [SYN-201] Setting up clock 'default' with a period of 10ns.
-@I [HLS-10] Analyzing design file 'particle_sim_hls/toplevel.cpp' ... 
-@I [HLS-10] Validating synthesis directives ...
-@W [HLS-40] Directive 'UNROLL' cannot be applied: Label 'updatePosLopp' does not exist in function 'updateParticlePositions'. 
-@I [HLS-10] Starting code transformations ...
-@I [XFORM-603] Inlining function 'updateParticlePositions' into 'toplevel' (particle_sim_hls/toplevel.cpp:22).
-@I [HLS-10] Checking synthesizability ...
-@E [SYNCHK-75] particle_sim_hls/toplevel.cpp:9: function 'toplevel' returns a pointer value; please inline this function or change return to an argument.
-@I [SYNCHK-10] 1 error(s), 0 warning(s).
-@E [HLS-70] Synthesizability check failed.
-@I [HLS-111] Elapsed time: 8.071 seconds; current memory usage: 65.3 MB.
-command 'ap_source' returned error code
-    while executing
-"source C:/Users/Matthew/Desktop/embs_open2/particle_sim_hls/solution1/csynth.tcl"
-    invoked from within
-"hls::main C:/Users/Matthew/Desktop/embs_open2/particle_sim_hls/solution1/csynth.tcl"
-    ("uplevel" body line 1)
-    invoked from within
-"uplevel 1 hls::main {*}$args"
-    (procedure "hls_proc" line 5)
-    invoked from within
-"hls_proc $argv"
-@I [HLS-112] Total elapsed time: 8.85 seconds; peak memory usage: 65.3 MB.
+@I [IMPL-8] Exporting RTL as an IP in IP-XACT.

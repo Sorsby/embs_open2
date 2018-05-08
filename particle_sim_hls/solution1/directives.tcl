@@ -5,3 +5,7 @@
 ############################################################
 set_directive_inline "updateParticlePositions"
 set_directive_unroll "updateParticlePositions/updatePosLopp"
+set_directive_pipeline "toplevel/toplevel_label0"
+set_directive_pipeline "toplevel/calculateVelocityLoop"
+set_directive_unroll "toplevel/updateParticleLoop"
+set_directive_loop_flatten "toplevel/calculateVelocityLoop"
