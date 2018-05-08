@@ -1,4 +1,9 @@
-22:24:23 **** Incremental Build of configuration Release for project particle_sim_array ****
+22:27:53 **** Incremental Build of configuration Release for project particle_sim_array ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+22:27:59 **** Incremental Build of configuration Release for project particle_sim_array ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '

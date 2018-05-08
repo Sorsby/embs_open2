@@ -7,10 +7,26 @@
 #include "simulation.h"
 
 #include "stdio.h"
-#include "math.h"
 #include "../def.h"
 
 int i, j;
+
+float Q_rsqrt( float number )
+{
+	long i;
+	float x2, y;
+	const float threehalfs = 1.5F;
+
+	x2 = number * 0.5F;
+	y  = number;
+	i  = * ( long * ) &y;                       // evil floating point bit level hacking
+	i  = 0x5f3759df - ( i >> 1 );               // what the fuck?
+	y  = * ( float * ) &i;
+	y  = y * ( threehalfs - ( x2 * y * y ) );   // 1st iteration
+//	y  = y * ( threehalfs - ( x2 * y * y ) );   // 2nd iteration, this can be removed
+
+	return y;
+}
 
 void updateSimulationArray(float* ram, int num_particles, int num_attractors) {
 	for (i = 0; i < num_particles * PARTICLE_SIZE; i += PARTICLE_SIZE) {
@@ -51,14 +67,16 @@ void updateSimulationArray(float* ram, int num_particles, int num_attractors) {
 			float exp1 = (ax - *px);
 			float exp2 = (ay - *py);
 			float exp = exp1 * exp1 + exp2 * exp2;
-			float d = sqrt(exp);
+			float inverse_sqrt = Q_rsqrt(exp);
+			float d = 1/inverse_sqrt;
+//			float d = sqrt(exp);
 
 //			printf("d: %f", d);
 
 			float x_norm;
 			float y_norm;
 			if (d < 500) {
-				x_norm = (ax - *px) / d;
+				x_norm = (ax - *px) * d;
 				y_norm = (ay - *py) / d;
 
 				if (d < 1.0) {

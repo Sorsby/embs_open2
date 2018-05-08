@@ -5079,3 +5079,8 @@ Design is not opened in the current session.
 22:22:07 INFO  : FPGA configured successfully with bitstream "C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
 22:22:33 INFO  : ps7_init is completed.
 22:22:34 INFO  : ps7_post_config is completed.
+22:27:59 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+22:28:03 INFO  : System reset is completed.
+22:28:05 INFO  : FPGA configured successfully with bitstream "C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+22:28:31 INFO  : ps7_init is completed.
+22:28:32 INFO  : ps7_post_config is completed.
