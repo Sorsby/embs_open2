@@ -52,6 +52,11 @@
 			<location>C:/Users/Matthew/Desktop/embs_open2/particle_sim_hls/toplevel.h</location>
 		</link>
 		<link>
+			<name>testbench/testbench.cpp</name>
+			<type>1</type>
+			<location>C:/Users/Matthew/Desktop/embs_open2/particle_sim_hls/testbench.cpp</location>
+		</link>
+		<link>
 			<name>solution1/constraints/.xml.directive</name>
 			<type>1</type>
 			<location>C:/Users/Matthew/Desktop/embs_open2/particle_sim_hls/solution1/solution1.directive</location>

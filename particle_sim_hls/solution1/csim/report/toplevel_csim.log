@@ -1,0 +1,7 @@
+   Compiling ../../../testbench.cpp in debug mode
+   Compiling ../../../toplevel.cpp in debug mode
+../../../toplevel.cpp: In function 'uint32* toplevel(uint32*, uint32*, uint32*)':
+../../../toplevel.cpp:9:57: error: new declaration 'uint32* toplevel(uint32*, uint32*, uint32*)'
+../../../toplevel.h:21:8: error: ambiguates old declaration 'uint32 toplevel(uint32*, uint32*, uint32*)'
+make: *** [obj/toplevel.o] Error 1
+CRITICAL WARNING: [SIM 1] 'csim_design' failed: compilation error(s).

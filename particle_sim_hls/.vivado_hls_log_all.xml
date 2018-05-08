@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="CRITICAL WARNING: [HLS 200-70] Synthesizability check failed." projectName="particle_sim_hls" solutionName="solution1" date="2018-05-08T06:17:37.244+0100" type="Warning"/>
+        <logs message="CRITICAL WARNING: [SYNCHK 200-75] particle_sim_hls/toplevel.cpp:9: function 'toplevel' returns a pointer value; please inline this function or change return to an argument." projectName="particle_sim_hls" solutionName="solution1" date="2018-05-08T06:17:37.188+0100" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Directive 'UNROLL' cannot be applied: Label 'updatePosLopp' does not exist in function 'updateParticlePositions'. " projectName="particle_sim_hls" solutionName="solution1" date="2018-05-08T06:17:36.954+0100" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

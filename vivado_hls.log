@@ -1,28 +1,33 @@
 INFO: [HLS 200-10] Running 'D:/Xilinx/Vivado_HLS/2016.2/bin/unwrapped/win64.o/vivado_hls.exe'
-INFO: [HLS 200-10] For user 'Matthew' on host 'matthew-pc' (Windows NT_amd64 version 6.2) on Tue May 08 03:02:25 +0100 2018
+INFO: [HLS 200-10] For user 'Matthew' on host 'matthew-pc' (Windows NT_amd64 version 6.2) on Tue May 08 06:17:29 +0100 2018
 INFO: [HLS 200-10] In directory 'C:/Users/Matthew/Desktop/embs_open2'
 INFO: [HLS 200-10] Opening project 'C:/Users/Matthew/Desktop/embs_open2/particle_sim_hls'.
 INFO: [HLS 200-10] Adding design file 'particle_sim_hls/toplevel.cpp' to the project
 INFO: [HLS 200-10] Adding design file 'particle_sim_hls/toplevel.h' to the project
+INFO: [HLS 200-10] Adding test bench file 'particle_sim_hls/testbench.cpp' to the project
 INFO: [HLS 200-10] Opening solution 'C:/Users/Matthew/Desktop/embs_open2/particle_sim_hls/solution1'.
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 INFO: [HLS 200-10] Setting target device to 'xc7z010clg400-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 INFO: [HLS 200-10] Analyzing design file 'particle_sim_hls/toplevel.cpp' ... 
 INFO: [HLS 200-10] Validating synthesis directives ...
-WARNING: [HLS 200-40] Directive 'PIPELINE' cannot be applied: Function 'updateParticleVelocities' does not exist in any synthesis source file.
-WARNING: [HLS 200-40] Directive 'PIPELINE' cannot be applied: Function 'updateParticleVelocities' does not exist in any synthesis source file.
-WARNING: [HLS 200-40] Directive 'PIPELINE' cannot be applied: Label 'updateVelocities' does not exist in function 'toplevel'. 
+WARNING: [HLS 200-40] Directive 'UNROLL' cannot be applied: Label 'updatePosLopp' does not exist in function 'updateParticlePositions'. 
 INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-603] Inlining function 'updateParticlePositions' into 'toplevel' (particle_sim_hls/toplevel.cpp:22).
 INFO: [HLS 200-10] Checking synthesizability ...
-INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'toplevel' (particle_sim_hls/toplevel.cpp:13).
-INFO: [XFORM 203-501] Unrolling loop 'readploop' (particle_sim_hls/toplevel.cpp:18) in function 'toplevel' completely.
-WARNING: [XFORM 203-504] Stop unrolling loop 'readploop' (particle_sim_hls/toplevel.cpp:18) in function 'toplevel' because it may cause large runtime and excessive memory usage due to increase in code size. Please avoid unrolling the loop or form sub-functions for code in the loop body.
-INFO: [XFORM 203-101] Partitioning array 'attractors.x'  in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'attractors.y'  in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'attractors.g'  in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'particles.x'  in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'particles.y'  in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'particles.vx'  in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'particles.vy'  in dimension 1 completely.
-INFO: [ANALYSIS 214-1] Tool encounters 160004 load/store instructions to analyze which may result in long runtime.
-CRITICAL WARNING: [HLS 200-70] Failed building synthesis data model.
+CRITICAL WARNING: [SYNCHK 200-75] particle_sim_hls/toplevel.cpp:9: function 'toplevel' returns a pointer value; please inline this function or change return to an argument.
+INFO: [SYNCHK 200-10] 1 error(s), 0 warning(s).
+CRITICAL WARNING: [HLS 200-70] Synthesizability check failed.
+INFO: [HLS 200-111] Elapsed time: 8.071 seconds; current memory usage: 65.3 MB.
+command 'ap_source' returned error code
+    while executing
+"source C:/Users/Matthew/Desktop/embs_open2/particle_sim_hls/solution1/csynth.tcl"
+    invoked from within
+"hls::main C:/Users/Matthew/Desktop/embs_open2/particle_sim_hls/solution1/csynth.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 1 hls::main {*}$args"
+    (procedure "hls_proc" line 5)
+    invoked from within
+"hls_proc $argv"
+INFO: [HLS 200-112] Total elapsed time: 8.85 seconds; peak memory usage: 65.3 MB.

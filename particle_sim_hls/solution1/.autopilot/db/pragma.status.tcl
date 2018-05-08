@@ -1,0 +1,2 @@
+lappend pragmaStatus0 {pragma "INLINE" source "C:/Users/Matthew/Desktop/embs_open2/particle_sim_hls/toplevel.cpp" location "updateParticlePositions" found 1 funcFound 1 applied 1 ambiguous 0 reason "null"}
+lappend pragmaStatus1 {pragma "UNROLL" source "C:/Users/Matthew/Desktop/embs_open2/particle_sim_hls/toplevel.cpp" location "updateParticlePositions/updatePosLopp" found 0 funcFound 1 applied 0 ambiguous 0 reason "Directive 'UNROLL' cannot be applied: Label 'updatePosLopp' does not exist in function 'updateParticlePositions'. "}

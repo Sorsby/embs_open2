@@ -4,5 +4,7 @@
     <originFiles name="toplevel.cpp" path="C:\Users\Matthew\Desktop\embs_open2\particle_sim_hls\toplevel.cpp"/>
     <originFiles name="toplevel.h" path="C:\Users\Matthew\Desktop\embs_open2\particle_sim_hls\toplevel.h"/>
   </source>
-  <testbench/>
+  <testbench>
+    <originFiles name="testbench.cpp" path="C:\Users\Matthew\Desktop\embs_open2\particle_sim_hls\testbench.cpp"/>
+  </testbench>
 </autopilotfilemapping:AutoPilotFileMapping>
