@@ -13,8 +13,9 @@
 #include "ethernet/ethernet.h"
 #include "ethernet/ethernet_platform.h"
 #include "def.h"
+#include "util/util.h"
 
-int ram[RAM_SIZE];
+float ram[RAM_SIZE];
 
 char input_byte;
 int printFPS = FALSE;
@@ -57,14 +58,7 @@ void populateSimulationArray() {
 		int random_x = rand() % 1440 + 1;
 		int random_y = rand() % 900 + 1;
 
-		int random_g;
-		if (i >= num_attractors / 2) {
-			random_g = (rand() % (10 * (int) FLOAT_ACCURACY + 1))
-					+ 10 * FLOAT_ACCURACY;
-		} else {
-			random_g = (rand() % (5 * (int) FLOAT_ACCURACY + 1))
-					- 10 * FLOAT_ACCURACY;
-		}
+		float random_g = rand() % 2 + 1;
 
 		ram[PARTICLE_END + i + 1] = random_x;
 		ram[PARTICLE_END + i + 2] = random_y;
@@ -72,7 +66,7 @@ void populateSimulationArray() {
 	}
 }
 
-void populateSimulationFromNetworkArray(int* newRam, int newNumParticles,
+void populateSimulationFromNetworkArray(float* newRam, int newNumParticles,
 		int newNumAttractors) {
 	num_particles = newNumParticles;
 	num_attractors = newNumAttractors;
@@ -150,18 +144,15 @@ int main(void) {
 	populateSimulationArray();
 
 	while (1) {
-
 		handleInput();
 		handleEthernet();
 
 //		updateSimulation(&particles[0], &attractors[0], num_particles,
 //				num_attractors);
-		puts("start sim");
-		updateSimulationArray(&ram[0], num_particles, num_attractors);
+		updateSimulationArray(ram, num_particles, num_attractors);
 //		updateFrame(&particles[0], &attractors[0], num_particles,
 //				num_attractors);
-		puts("start draw");
-		updateFrameFromArray(&ram[0], num_particles, num_attractors);
+		updateFrameFromArray(ram, num_particles, num_attractors);
 		frame_timer();
 
 		if (printFPS) {

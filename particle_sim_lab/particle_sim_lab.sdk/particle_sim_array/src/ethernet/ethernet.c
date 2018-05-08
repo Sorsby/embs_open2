@@ -38,7 +38,7 @@ int numAttractors = 0;
 //struct Particle *particles;
 //struct Attractor *attractors;
 
-int ram[60000];
+float ram[60000];
 
 int networkInUse = FALSE;
 
@@ -201,7 +201,7 @@ void udp_part_get_handler(void *arg, struct udp_pcb *pcb, struct pbuf *p,
 				ramOffset = PARTICLE_END + numAttractors * ATTRACTOR_SIZE;
 				ram[ramOffset + 1] = atoi(x);
 				ram[ramOffset + 2] = atoi(y);
-				ram[ramOffset + 3] = (int)(atof(g)*FLOAT_ACCURACY);
+				ram[ramOffset + 3] = atof(g);
 
 //				attractors[numAttractors] = attractor;
 				numAttractors += 1;

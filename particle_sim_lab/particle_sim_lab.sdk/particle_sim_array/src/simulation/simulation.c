@@ -10,69 +10,69 @@
 #include "math.h"
 #include "../def.h"
 
-#define ABS(X)  ((X>=0)? X : -(x) )
-#define ROUND(X)  (X>=0)? (int) (X + 0.5) : (int)-(ABS(X) +0.5)
-
 int i, j;
 
-void updateSimulationArray(int* ram, int num_particles,
-		int num_attractors) {
-	puts("simulating...");
-	for (i = 0; i < num_particles * PARTICLE_SIZE; i += PARTICLE_SIZE) {
-		int *px = &ram[i];
-		int *py = &ram[i + 1];
-		int *pvx = &ram[i + 2];
-		int *pvy = &ram[i + 3];
+void updateSimulationArray(float* ram, int num_particles, int num_attractors) {
+	for (i = 0; i < num_particles; i++) {
+		int ramOffset = i * PARTICLE_SIZE;
 
-		*px = *px + *pvx;
-		*py = *py + *pvy;
+		float px = ram[ramOffset];
+		float py = ram[ramOffset + 1];
+		float pvx = ram[ramOffset + 2];
+		float pvy = ram[ramOffset + 3];
 
-		printf("pos x: %d, y: %d\n", *px, *py);
+		px = px + pvx;
+		py = py + pvy;
 
-		if (*px <= 5) {
-			*px = 5;
-			*pvx = 0;
+		if (px <= 5) {
+			px = 5;
+			pvx = 0;
 		}
-		if (*py <= 5) {
-			*py = 5;
-			*pvy = 0;
+		if (py <= 5) {
+			py = 5;
+			pvy = 0;
 		}
-		if (*px >= 1435) {
-			*px = 1435;
-			*pvx = 0;
+		if (px >= 1435) {
+			px = 1435;
+			pvx = 0;
 		}
-		if (*py >= 895) {
-			*py = 895;
-			*pvy = 0;
+		if (py >= 895) {
+			py = 895;
+			pvy = 0;
 		}
 
-		for (j = 0; j < num_attractors * ATTRACTOR_SIZE; j += ATTRACTOR_SIZE) {
-			int *ax = &ram[PARTICLE_END + j + 1];
-			int *ay = &ram[PARTICLE_END + j + 2];
-			int *g = &ram[PARTICLE_END + j + 3];
+		for (j = 0; j < num_attractors; j++) {
+			int ramOffset = j * ATTRACTOR_SIZE;
 
-			float exp1 = (*ax - *px);
-			float exp2 = (*ax - *py);
+			float ax = ram[ramOffset + 1];
+			float ay = ram[ramOffset + 2];
+			float g = ram[ramOffset + 3];
+
+			printf("a, x: %f, y: %f\n", ax, ay);
+
+			float exp1 = (ax - px);
+			float exp2 = (ax - py);
 			float exp = exp1 * exp1 + exp2 * exp2;
 			float d = sqrt(exp);
 
 			float x_norm;
 			float y_norm;
 			if (d < 500) {
-				x_norm = (*ax - *ax) / d;
-				y_norm = (*ay - *ay) / d;
+				x_norm = (ax - px) / d;
+				y_norm = (ay - py) / d;
 
 				if (d < 1.0) {
-					x_norm = x_norm * (*g) / FLOAT_ACCURACY;
-					y_norm = y_norm * (*g) / FLOAT_ACCURACY;
+					x_norm = x_norm * g;
+					y_norm = y_norm * g;
 				} else {
-					x_norm = x_norm * (1 / d) * ((*g) / FLOAT_ACCURACY);
-					y_norm = y_norm * (1 / d) * ((*g) / FLOAT_ACCURACY);
+					x_norm = x_norm * (1 / d) * g;
+					y_norm = y_norm * (1 / d) * g;
 				}
 
-				*pvx = *pvx + round(x_norm);
-				*pvy = *pvy + round(y_norm);
-				printf("velocity x: %d, y: %d\n", *pvx, *pvy);
+//				printf("norm x: %f, y: %f\n", x_norm, y_norm);
+
+				pvx = pvx + x_norm;
+				pvy = pvy + y_norm;
 			}
 		}
 	}

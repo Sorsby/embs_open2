@@ -10,6 +10,17 @@
 
 #define NUMPARTS_AND_PART_ID_POSITION 3
 
+// Returns uniformly distributed random numbers from [0.0, 1.0].
+float uniform0to1Random() {
+    float r = rand();
+    return r / ((float)RAND_MAX + 1);
+}
+
+// Returns uniformly distributed random numbers from [-10.0, 10.0].
+float myRandom(float min, float max) {
+  return (max - min) * uniform0to1Random() - max;
+}
+
 int strToInt(char* str) {
 	return (int) strtol(str, (char **) NULL, 10);
 }

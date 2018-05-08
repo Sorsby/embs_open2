@@ -69,7 +69,7 @@ void setupVGA() {
 	buff = dispCtrl.curFrame;
 }
 
-void updateFrameFromArray(int* ram, int num_particles, int num_attractors) {
+void updateFrameFromArray(float* ram, int num_particles, int num_attractors) {
 	// Switch the frame we're modifying to be back buffer (1 to 0, or 0 to 1)
 	buff = !buff;
 	frame = dispCtrl.framePtr[buff];

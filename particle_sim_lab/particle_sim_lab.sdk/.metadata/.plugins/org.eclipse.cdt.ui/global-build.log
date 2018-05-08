@@ -1,278 +1,9 @@
-07:21:28 **** Incremental Build of configuration Release for project particle_sim_array ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/zybo_vga/display_ctrl.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/zybo_vga/display_ctrl.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/zybo_vga/display_ctrl.d" -MT"src/zybo_vga/display_ctrl.o" -o "src/zybo_vga/display_ctrl.o" "../src/zybo_vga/display_ctrl.c"
-'Finished building: ../src/zybo_vga/display_ctrl.c'
-' '
-'Building file: ../src/zybo_vga/dynclk.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/zybo_vga/dynclk.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/zybo_vga/dynclk.d" -MT"src/zybo_vga/dynclk.o" -o "src/zybo_vga/dynclk.o" "../src/zybo_vga/dynclk.c"
-'Finished building: ../src/zybo_vga/dynclk.c'
-' '
-'Building file: ../src/vga/vga.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/vga/vga.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/vga/vga.d" -MT"src/vga/vga.o" -o "src/vga/vga.o" "../src/vga/vga.c"
-../src/vga/vga.c: In function 'updateFrameFromArray':
-../src/vga/vga.c:90:2: warning: implicit declaration of function 'Xil_DCacheFlush' [-Wimplicit-function-declaration]
-  Xil_DCacheFlush();
-  ^
-'Finished building: ../src/vga/vga.c'
-' '
-'Building file: ../src/util/util.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/util/util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/util/util.d" -MT"src/util/util.o" -o "src/util/util.o" "../src/util/util.c"
-'Finished building: ../src/util/util.c'
-' '
-'Building file: ../src/uart/input.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/uart/input.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/uart/input.d" -MT"src/uart/input.o" -o "src/uart/input.o" "../src/uart/input.c"
-'Finished building: ../src/uart/input.c'
-' '
-'Building file: ../src/simulation/simulation.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/simulation/simulation.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/simulation/simulation.d" -MT"src/simulation/simulation.o" -o "src/simulation/simulation.o" "../src/simulation/simulation.c"
-'Finished building: ../src/simulation/simulation.c'
-' '
-'Building file: ../src/fps/fps.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/fps/fps.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fps/fps.d" -MT"src/fps/fps.o" -o "src/fps/fps.o" "../src/fps/fps.c"
-'Finished building: ../src/fps/fps.c'
-' '
-'Building file: ../src/ethernet/ethernet.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
-../src/ethernet/ethernet.c: In function 'sendMessage':
-../src/ethernet/ethernet.c:263:8: warning: variable 'er' set but not used [-Wunused-but-set-variable]
-  err_t er;
-        ^
-'Finished building: ../src/ethernet/ethernet.c'
-' '
-'Building file: ../src/ethernet/ethernet_platform.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet_platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet_platform.d" -MT"src/ethernet/ethernet_platform.o" -o "src/ethernet/ethernet_platform.o" "../src/ethernet/ethernet_platform.c"
-'Finished building: ../src/ethernet/ethernet_platform.c'
-' '
-'Building file: ../src/main.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-'Finished building: ../src/main.c'
-' '
-'Building file: ../src/platform.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
-'Finished building: ../src/platform.c'
-' '
-'Building target: particle_sim_array.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim_array.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
-./src/simulation/simulation.o: In function `updateSimulationArray':
-simulation.c:(.text+0x288): undefined reference to `sqrt'
-collect2.exe: error: ld returned 1 exit status
-make: *** [particle_sim_array.elf] Error 1
-07:21:52 **** Clean-only build of configuration Release for project particle_sim_array ****
-make clean 
-rm -rf  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o  ./src/zybo_vga/display_ctrl.d ./src/zybo_vga/dynclk.d  ./src/vga/vga.d  ./src/util/util.d  ./src/uart/input.d  ./src/simulation/simulation.d  ./src/fps/fps.d  ./src/ethernet/ethernet.d ./src/ethernet/ethernet_platform.d  ./src/main.d ./src/platform.d  particle_sim_array.elf.size  particle_sim_array.elf
-' '
-07:21:52 **** Auto Build of configuration Release for project particle_sim_array ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/zybo_vga/display_ctrl.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/zybo_vga/display_ctrl.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/zybo_vga/display_ctrl.d" -MT"src/zybo_vga/display_ctrl.o" -o "src/zybo_vga/display_ctrl.o" "../src/zybo_vga/display_ctrl.c"
-'Finished building: ../src/zybo_vga/display_ctrl.c'
-' '
-'Building file: ../src/zybo_vga/dynclk.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/zybo_vga/dynclk.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/zybo_vga/dynclk.d" -MT"src/zybo_vga/dynclk.o" -o "src/zybo_vga/dynclk.o" "../src/zybo_vga/dynclk.c"
-'Finished building: ../src/zybo_vga/dynclk.c'
-' '
-'Building file: ../src/vga/vga.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/vga/vga.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/vga/vga.d" -MT"src/vga/vga.o" -o "src/vga/vga.o" "../src/vga/vga.c"
-../src/vga/vga.c: In function 'updateFrameFromArray':
-../src/vga/vga.c:90:2: warning: implicit declaration of function 'Xil_DCacheFlush' [-Wimplicit-function-declaration]
-  Xil_DCacheFlush();
-  ^
-'Finished building: ../src/vga/vga.c'
-' '
-'Building file: ../src/util/util.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/util/util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/util/util.d" -MT"src/util/util.o" -o "src/util/util.o" "../src/util/util.c"
-'Finished building: ../src/util/util.c'
-' '
-'Building file: ../src/uart/input.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/uart/input.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/uart/input.d" -MT"src/uart/input.o" -o "src/uart/input.o" "../src/uart/input.c"
-'Finished building: ../src/uart/input.c'
-' '
-'Building file: ../src/simulation/simulation.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/simulation/simulation.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/simulation/simulation.d" -MT"src/simulation/simulation.o" -o "src/simulation/simulation.o" "../src/simulation/simulation.c"
-'Finished building: ../src/simulation/simulation.c'
-' '
-'Building file: ../src/fps/fps.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/fps/fps.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fps/fps.d" -MT"src/fps/fps.o" -o "src/fps/fps.o" "../src/fps/fps.c"
-'Finished building: ../src/fps/fps.c'
-' '
-'Building file: ../src/ethernet/ethernet.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
-../src/ethernet/ethernet.c: In function 'sendMessage':
-../src/ethernet/ethernet.c:263:8: warning: variable 'er' set but not used [-Wunused-but-set-variable]
-  err_t er;
-        ^
-'Finished building: ../src/ethernet/ethernet.c'
-' '
-'Building file: ../src/ethernet/ethernet_platform.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet_platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet_platform.d" -MT"src/ethernet/ethernet_platform.o" -o "src/ethernet/ethernet_platform.o" "../src/ethernet/ethernet_platform.c"
-'Finished building: ../src/ethernet/ethernet_platform.c'
-' '
-'Building file: ../src/main.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-'Finished building: ../src/main.c'
-' '
-'Building file: ../src/platform.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
-'Finished building: ../src/platform.c'
-' '
-'Building target: particle_sim_array.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim_array.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
-'Finished building target: particle_sim_array.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size particle_sim_array.elf  |tee "particle_sim_array.elf.size"
-   text	   data	    bss	    dec	    hex	filename
- 188052	   4460	12638512	12831024	 c3c930	particle_sim_array.elf
-'Finished building: particle_sim_array.elf.size'
-' '
-07:21:54 **** Clean-only build of configuration Release for project particle_sim_array ****
-make clean 
-rm -rf  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o  ./src/zybo_vga/display_ctrl.d ./src/zybo_vga/dynclk.d  ./src/vga/vga.d  ./src/util/util.d  ./src/uart/input.d  ./src/simulation/simulation.d  ./src/fps/fps.d  ./src/ethernet/ethernet.d ./src/ethernet/ethernet_platform.d  ./src/main.d ./src/platform.d  particle_sim_array.elf.size  particle_sim_array.elf
-' '
-07:21:54 **** Auto Build of configuration Release for project particle_sim_array ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/zybo_vga/display_ctrl.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/zybo_vga/display_ctrl.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/zybo_vga/display_ctrl.d" -MT"src/zybo_vga/display_ctrl.o" -o "src/zybo_vga/display_ctrl.o" "../src/zybo_vga/display_ctrl.c"
-'Finished building: ../src/zybo_vga/display_ctrl.c'
-' '
-'Building file: ../src/zybo_vga/dynclk.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/zybo_vga/dynclk.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/zybo_vga/dynclk.d" -MT"src/zybo_vga/dynclk.o" -o "src/zybo_vga/dynclk.o" "../src/zybo_vga/dynclk.c"
-'Finished building: ../src/zybo_vga/dynclk.c'
-' '
-'Building file: ../src/vga/vga.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/vga/vga.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/vga/vga.d" -MT"src/vga/vga.o" -o "src/vga/vga.o" "../src/vga/vga.c"
-../src/vga/vga.c: In function 'updateFrameFromArray':
-../src/vga/vga.c:90:2: warning: implicit declaration of function 'Xil_DCacheFlush' [-Wimplicit-function-declaration]
-  Xil_DCacheFlush();
-  ^
-'Finished building: ../src/vga/vga.c'
-' '
-'Building file: ../src/util/util.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/util/util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/util/util.d" -MT"src/util/util.o" -o "src/util/util.o" "../src/util/util.c"
-'Finished building: ../src/util/util.c'
-' '
-'Building file: ../src/uart/input.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/uart/input.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/uart/input.d" -MT"src/uart/input.o" -o "src/uart/input.o" "../src/uart/input.c"
-'Finished building: ../src/uart/input.c'
-' '
-'Building file: ../src/simulation/simulation.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/simulation/simulation.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/simulation/simulation.d" -MT"src/simulation/simulation.o" -o "src/simulation/simulation.o" "../src/simulation/simulation.c"
-'Finished building: ../src/simulation/simulation.c'
-' '
-'Building file: ../src/fps/fps.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/fps/fps.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fps/fps.d" -MT"src/fps/fps.o" -o "src/fps/fps.o" "../src/fps/fps.c"
-'Finished building: ../src/fps/fps.c'
-' '
-'Building file: ../src/ethernet/ethernet.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
-../src/ethernet/ethernet.c: In function 'sendMessage':
-../src/ethernet/ethernet.c:263:8: warning: variable 'er' set but not used [-Wunused-but-set-variable]
-  err_t er;
-        ^
-'Finished building: ../src/ethernet/ethernet.c'
-' '
-'Building file: ../src/ethernet/ethernet_platform.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet_platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet_platform.d" -MT"src/ethernet/ethernet_platform.o" -o "src/ethernet/ethernet_platform.o" "../src/ethernet/ethernet_platform.c"
-'Finished building: ../src/ethernet/ethernet_platform.c'
-' '
-'Building file: ../src/main.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-'Finished building: ../src/main.c'
-' '
-'Building file: ../src/platform.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
-'Finished building: ../src/platform.c'
-' '
-'Building target: particle_sim_array.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim_array.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
-'Finished building target: particle_sim_array.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size particle_sim_array.elf  |tee "particle_sim_array.elf.size"
-   text	   data	    bss	    dec	    hex	filename
- 188052	   4460	12638512	12831024	 c3c930	particle_sim_array.elf
-'Finished building: particle_sim_array.elf.size'
-' '
-07:22:17 **** Incremental Build of configuration Debug for project particle_sim ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/zybo_vga/display_ctrl.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/zybo_vga/display_ctrl.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_ethernet_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/zybo_vga/display_ctrl.d" -MT"src/zybo_vga/display_ctrl.o" -o "src/zybo_vga/display_ctrl.o" "../src/zybo_vga/display_ctrl.c"
-In file included from ../src/zybo_vga/display_ctrl.c:67:0:
-../src/zybo_vga/display_ctrl.h:58:23: fatal error: xil_types.h: No such file or directory
- #include "xil_types.h"
-                       ^
-compilation terminated.
-make: *** [src/zybo_vga/display_ctrl.o] Error 1
-07:22:17 **** Incremental Build of configuration Release for project particle_sim_array ****
+09:52:23 **** Incremental Build of configuration Release for project particle_sim_array ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
 make: Nothing to be done for `main-build'.
-07:23:04 **** Incremental Build of configuration Release for project particle_sim_array ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for `main-build'.
-07:25:57 **** Auto Build of configuration Release for project particle_sim_array ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/simulation/simulation.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/simulation/simulation.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/simulation/simulation.d" -MT"src/simulation/simulation.o" -o "src/simulation/simulation.o" "../src/simulation/simulation.c"
-../src/simulation/simulation.c: In function 'updateSimulationArray':
-../src/simulation/simulation.c:74:32: error: expected ';' before ')' token
-     *pvy = *pvy + round(y_norm));
-                                ^
-../src/simulation/simulation.c:74:32: error: expected statement before ')' token
-make: *** [src/simulation/simulation.o] Error 1
-07:26:02 **** Auto Build of configuration Release for project particle_sim_array ****
+09:53:41 **** Auto Build of configuration Release for project particle_sim_array ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
@@ -289,191 +20,42 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size particle_sim_array.elf  |tee "particle_sim_array.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 188268	   4460	12638512	12831240	 c3ca08	particle_sim_array.elf
+ 195536	   4460	12638496	12838492	 c3e65c	particle_sim_array.elf
 'Finished building: particle_sim_array.elf.size'
 ' '
-07:26:04 **** Incremental Build of configuration Release for project particle_sim_array ****
+09:54:00 **** Auto Build of configuration Release for project particle_sim_array ****
 make pre-build main-build 
 a9-linaro-pre-build-step
-' '
-make: Nothing to be done for `main-build'.
-07:27:20 **** Clean-only build of configuration Release for project particle_sim_array ****
-make clean 
-rm -rf  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o  ./src/zybo_vga/display_ctrl.d ./src/zybo_vga/dynclk.d  ./src/vga/vga.d  ./src/util/util.d  ./src/uart/input.d  ./src/simulation/simulation.d  ./src/fps/fps.d  ./src/ethernet/ethernet.d ./src/ethernet/ethernet_platform.d  ./src/main.d ./src/platform.d  particle_sim_array.elf.size  particle_sim_array.elf
-' '
-07:27:20 **** Clean-only build of project particle_sim_bsp ****
-make -k clean 
-rm -f ps7_cortexa9_0/lib/libxil.a
-07:27:20 **** Build of project particle_sim_bsp ****
-make -k all 
-"Running Make include in ps7_cortexa9_0/libsrc/axivdma_v6_1/src"
-make -C ps7_cortexa9_0/libsrc/axivdma_v6_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
-"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src"
-make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
-"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_2/src"
-make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
-"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
-make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
-"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
-make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
-"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
-"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_2/src"
-make -C ps7_cortexa9_0/libsrc/emacps_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
-"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_1/src"
-make -C ps7_cortexa9_0/libsrc/gpiops_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
-"Running Make include in ps7_cortexa9_0/libsrc/lwip141_v1_7/src"
-make -C ps7_cortexa9_0/libsrc/lwip141_v1_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
-"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
-make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
-"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_3/src"
-make -C ps7_cortexa9_0/libsrc/scugic_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
-"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
-"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
-"Running Make include in ps7_cortexa9_0/libsrc/sdps_v2_8/src"
-make -C ps7_cortexa9_0/libsrc/sdps_v2_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
-"Running Make include in ps7_cortexa9_0/libsrc/standalone_v5_5/src"
-make -C ps7_cortexa9_0/libsrc/standalone_v5_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
-"Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_1/src"
-make -C ps7_cortexa9_0/libsrc/ttcps_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
-"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_1/src"
-make -C ps7_cortexa9_0/libsrc/uartps_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
-"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
-make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
-"Running Make include in ps7_cortexa9_0/libsrc/vtc_v7_1/src"
-make -C ps7_cortexa9_0/libsrc/vtc_v7_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
-"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
-make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
-"Running Make libs in ps7_cortexa9_0/libsrc/axivdma_v6_1/src"
-make -C ps7_cortexa9_0/libsrc/axivdma_v6_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
-"Compiling axivdma"
-arm-none-eabi-ar: creating ../../../lib/libxil.a
-"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src"
-make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
-"Compiling coresightps_dcc"
-"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_2/src"
-make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
-"Compiling cpu_cortexa9"
-"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
-make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
-"Compiling ddrps"
-"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
-make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
-"Compiling devcfg"
-"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/dmaps_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
-"Compiling dmaps"
-"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_2/src"
-make -C ps7_cortexa9_0/libsrc/emacps_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
-"Compiling emacps"
-"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_1/src"
-make -C ps7_cortexa9_0/libsrc/gpiops_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
-"Compiling gpiops"
-"Running Make libs in ps7_cortexa9_0/libsrc/lwip141_v1_7/src"
-make -C ps7_cortexa9_0/libsrc/lwip141_v1_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
-"Compiling lwip src and adapter files"
-"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
-make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
-"Compiling qspips"
-"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_3/src"
-make -C ps7_cortexa9_0/libsrc/scugic_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
-"Compiling scugic"
-"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
-"Compiling scutimer"
-"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
-make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
-"Compiling scuwdt"
-"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v2_8/src"
-make -C ps7_cortexa9_0/libsrc/sdps_v2_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
-"Compiling sdps"
-"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v5_5/src"
-make -C ps7_cortexa9_0/libsrc/standalone_v5_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
-"Compiling standalone"
-"Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_1/src"
-make -C ps7_cortexa9_0/libsrc/ttcps_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
-"Compiling ttcps"
-"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_1/src"
-make -C ps7_cortexa9_0/libsrc/uartps_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
-"Compiling uartps"
-"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
-make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
-"Compiling usbps"
-"Running Make libs in ps7_cortexa9_0/libsrc/vtc_v7_1/src"
-make -C ps7_cortexa9_0/libsrc/vtc_v7_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
-"Compiling video timing controller"
-"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
-make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
-"Compiling xadcps"
-'Finished building libraries'
-07:27:35 **** Build of configuration Release for project particle_sim_array ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-'Building file: ../src/zybo_vga/display_ctrl.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/zybo_vga/display_ctrl.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/zybo_vga/display_ctrl.d" -MT"src/zybo_vga/display_ctrl.o" -o "src/zybo_vga/display_ctrl.o" "../src/zybo_vga/display_ctrl.c"
-'Finished building: ../src/zybo_vga/display_ctrl.c'
-' '
-'Building file: ../src/zybo_vga/dynclk.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/zybo_vga/dynclk.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/zybo_vga/dynclk.d" -MT"src/zybo_vga/dynclk.o" -o "src/zybo_vga/dynclk.o" "../src/zybo_vga/dynclk.c"
-'Finished building: ../src/zybo_vga/dynclk.c'
-' '
-'Building file: ../src/vga/vga.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/vga/vga.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/vga/vga.d" -MT"src/vga/vga.o" -o "src/vga/vga.o" "../src/vga/vga.c"
-../src/vga/vga.c: In function 'updateFrameFromArray':
-../src/vga/vga.c:90:2: warning: implicit declaration of function 'Xil_DCacheFlush' [-Wimplicit-function-declaration]
-  Xil_DCacheFlush();
-  ^
-'Finished building: ../src/vga/vga.c'
-' '
-'Building file: ../src/util/util.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/util/util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/util/util.d" -MT"src/util/util.o" -o "src/util/util.o" "../src/util/util.c"
-'Finished building: ../src/util/util.c'
-' '
-'Building file: ../src/uart/input.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/uart/input.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/uart/input.d" -MT"src/uart/input.o" -o "src/uart/input.o" "../src/uart/input.c"
-'Finished building: ../src/uart/input.c'
-' '
-'Building file: ../src/simulation/simulation.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/simulation/simulation.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/simulation/simulation.d" -MT"src/simulation/simulation.o" -o "src/simulation/simulation.o" "../src/simulation/simulation.c"
-'Finished building: ../src/simulation/simulation.c'
-' '
-'Building file: ../src/fps/fps.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/fps/fps.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fps/fps.d" -MT"src/fps/fps.o" -o "src/fps/fps.o" "../src/fps/fps.c"
-'Finished building: ../src/fps/fps.c'
-' '
-'Building file: ../src/ethernet/ethernet.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
-../src/ethernet/ethernet.c: In function 'sendMessage':
-../src/ethernet/ethernet.c:263:8: warning: variable 'er' set but not used [-Wunused-but-set-variable]
-  err_t er;
-        ^
-'Finished building: ../src/ethernet/ethernet.c'
-' '
-'Building file: ../src/ethernet/ethernet_platform.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet_platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet_platform.d" -MT"src/ethernet/ethernet_platform.o" -o "src/ethernet/ethernet_platform.o" "../src/ethernet/ethernet_platform.c"
-'Finished building: ../src/ethernet/ethernet_platform.c'
 ' '
 'Building file: ../src/main.c'
 'Invoking: ARM v7 gcc compiler'
 arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
 'Finished building: ../src/main.c'
 ' '
-'Building file: ../src/platform.c'
+'Building target: particle_sim_array.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim_array.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim_array.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim_array.elf  |tee "particle_sim_array.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 195536	   4460	12638496	12838492	 c3e65c	particle_sim_array.elf
+'Finished building: particle_sim_array.elf.size'
+' '
+09:54:01 **** Incremental Build of configuration Release for project particle_sim_array ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+09:57:26 **** Auto Build of configuration Release for project particle_sim_array ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
 'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
-'Finished building: ../src/platform.c'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
 ' '
 'Building target: particle_sim_array.elf'
 'Invoking: ARM v7 gcc linker'
@@ -483,6 +65,61 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size particle_sim_array.elf  |tee "particle_sim_array.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 188268	   4460	12638512	12831240	 c3ca08	particle_sim_array.elf
+ 195600	   4460	12638496	12838556	 c3e69c	particle_sim_array.elf
 'Finished building: particle_sim_array.elf.size'
 ' '
+09:57:28 **** Incremental Build of configuration Release for project particle_sim_array ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+09:59:20 **** Auto Build of configuration Release for project particle_sim_array ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: particle_sim_array.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim_array.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim_array.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim_array.elf  |tee "particle_sim_array.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 195536	   4460	12638496	12838492	 c3e65c	particle_sim_array.elf
+'Finished building: particle_sim_array.elf.size'
+' '
+09:59:22 **** Incremental Build of configuration Release for project particle_sim_array ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+10:01:37 **** Auto Build of configuration Release for project particle_sim_array ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/simulation/simulation.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/simulation/simulation.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/simulation/simulation.d" -MT"src/simulation/simulation.o" -o "src/simulation/simulation.o" "../src/simulation/simulation.c"
+'Finished building: ../src/simulation/simulation.c'
+' '
+'Building target: particle_sim_array.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim_array.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim_array.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim_array.elf  |tee "particle_sim_array.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 195548	   4460	12638496	12838504	 c3e668	particle_sim_array.elf
+'Finished building: particle_sim_array.elf.size'
+' '
+10:01:39 **** Incremental Build of configuration Release for project particle_sim_array ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
