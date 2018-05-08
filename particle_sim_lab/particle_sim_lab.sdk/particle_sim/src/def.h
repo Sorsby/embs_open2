@@ -8,6 +8,7 @@
 #ifndef SRC_DEF_H_
 #define SRC_DEF_H_
 
+#define RAM_SIZE 60000;
 #define PARTICLE_ARRAY_SIZE 20000
 #define ATTRACTOR_ARRAY_SIZE 500
 

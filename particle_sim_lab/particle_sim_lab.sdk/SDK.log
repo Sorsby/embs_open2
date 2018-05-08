@@ -3624,3 +3624,9 @@ Reason: unable to find hardware specification file/project C:/Users/Matthew/Desk
 05:26:38 INFO  : Restoring global repository preferences: 
 		 C:\Users\Matthew\Desktop\embs_open2\ethernet-stuff\ethernetrepo
 05:26:38 INFO  : Processing command line option -hwspec C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper.hdf.
+05:31:39 INFO  : Launching XSDB server: xsdb.bat -interactive C:\Users\Matthew\Desktop\embs_open2\particle_sim_lab\particle_sim_lab.sdk\temp_xsdb_launch_script.tcl
+05:31:40 INFO  : XSDB server has started successfully.
+05:31:40 INFO  : Restoring global repository preferences: 
+		 C:\Users\Matthew\Desktop\embs_open2\ethernet-stuff\ethernetrepo
+05:31:40 INFO  : Processing command line option -hwspec C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper.hdf.
+05:31:40 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.

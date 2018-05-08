@@ -12221,3 +12221,27 @@ Note: Frame Delay must be less than or equal to Frame Buffers or an undefined re
 },
 "vga_v_tc_0": {},
 }]. Thread: main
+!SESSION 2018-05-08 05:31:35.109 -----------------------------------------------
+eclipse.buildId=2016.2
+java.version=1.8.0_66
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-05-08 05:31:40.332
+!MESSAGE XSDB Command: [::hsi::utils::init_repo], Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-05-08 05:31:40.536
+!MESSAGE XSDB command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-05-08 05:31:40.541
+!MESSAGE XSDB Command: [::hsi::utils::add_repo "C:/Users/Matthew/Desktop/embs_open2/ethernet-stuff/ethernetrepo"], Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-05-08 05:31:40.554
+!MESSAGE XSDB command with result: [::hsi::utils::add_repo "C:/Users/Matthew/Desktop/embs_open2/ethernet-stuff/ethernetrepo"], Result: [null, ]. Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-05-08 05:31:40.588
+!MESSAGE XSDB Command: [::hsi::utils::openhw C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-05-08 05:31:42.599
+!MESSAGE XSDB command with result: [::hsi::utils::openhw C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
