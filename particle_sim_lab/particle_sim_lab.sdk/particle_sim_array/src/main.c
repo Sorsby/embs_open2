@@ -35,8 +35,9 @@ void populateSimulationArray();
 void getParams() {
 	num_particles = readInput("Enter a number of particles:");
 	num_attractors = readInput("Enter a number of attractors:");
-	memset(ram, 0, RAM_SIZE);
+	readyToSimulate = FALSE;
 	populateSimulationArray();
+	readyToSimulate = TRUE;
 }
 
 void populateSimulationArray() {
@@ -67,8 +68,8 @@ void populateSimulationFromNetworkArray(float* newRam, int newNumParticles,
 	num_particles = newNumParticles;
 	num_attractors = newNumAttractors;
 	memcpy(ram, newRam, RAM_SIZE);
-	readyToSimulate = TRUE;
 	resetEthernet();
+	readyToSimulate = TRUE;
 }
 
 void handleInput() {
@@ -92,8 +93,8 @@ void handleInput() {
 			break;
 		case 'x':
 			puts("User interrupt request");
-			readyToSimulate = TRUE;
 			resetEthernet();
+			readyToSimulate = TRUE;
 			break;
 		}
 	}

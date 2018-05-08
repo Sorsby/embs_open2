@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version     : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
-| Date             : Tue May  8 14:57:31 2018
-| Host             : pc833s.cs.york.ac.uk running 64-bit Ubuntu 16.04.4 LTS
+| Tool Version     : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date             : Tue May 08 19:11:08 2018
+| Host             : MATTHEW-PC running 64-bit major release  (build 9200)
 | Command          : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
 | Design           : design_1_wrapper
 | Device           : xc7z010clg400-1
@@ -30,8 +30,8 @@ Table of Contents
 ----------
 
 +--------------------------+--------+
-| Total On-Chip Power (W)  | 1.932  |
-| Dynamic (W)              | 1.794  |
+| Total On-Chip Power (W)  | 1.931  |
+| Dynamic (W)              | 1.793  |
 | Device Static (W)        | 0.138  |
 | Effective TJA (C/W)      | 11.5   |
 | Max Ambient (C)          | 62.7   |
@@ -49,23 +49,23 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.032 |        6 |       --- |             --- |
-| Slice Logic              |     0.033 |    21326 |       --- |             --- |
-|   LUT as Logic           |     0.027 |     6907 |     17600 |           39.24 |
+| Clocks                   |     0.031 |        6 |       --- |             --- |
+| Slice Logic              |     0.033 |    20492 |       --- |             --- |
+|   LUT as Logic           |     0.027 |     6616 |     17600 |           37.59 |
 |   CARRY4                 |     0.003 |      635 |      4400 |           14.43 |
-|   Register               |     0.003 |    10638 |     35200 |           30.22 |
+|   Register               |     0.003 |    10256 |     35200 |           29.14 |
 |   LUT as Shift Register  |    <0.001 |      359 |      6000 |            5.98 |
 |   F7/F8 Muxes            |    <0.001 |      140 |     17600 |            0.80 |
-|   LUT as Distributed RAM |    <0.001 |       20 |      6000 |            0.33 |
-|   Others                 |     0.000 |     1214 |       --- |             --- |
-| Signals                  |     0.043 |    15986 |       --- |             --- |
+|   LUT as Distributed RAM |    <0.001 |       12 |      6000 |            0.20 |
+|   Others                 |     0.000 |     1150 |       --- |             --- |
+| Signals                  |     0.043 |    15388 |       --- |             --- |
 | Block RAM                |     0.005 |      6.5 |        60 |           10.83 |
 | MMCM                     |     0.107 |        1 |         2 |           50.00 |
 | DSPs                     |     0.008 |       10 |        80 |           12.50 |
 | I/O                      |     0.001 |       18 |       100 |           18.00 |
 | PS7                      |     1.565 |        1 |       --- |             --- |
 | Static Power             |     0.138 |          |           |                 |
-| Total                    |     1.932 |          |           |                 |
+| Total                    |     1.931 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -75,7 +75,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.130 |       0.122 |      0.008 |
+| Vccint    |       1.000 |     0.129 |       0.121 |      0.008 |
 | Vccaux    |       1.800 |     0.071 |       0.059 |      0.012 |
 | Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -154,7 +154,7 @@ Table of Contents
 +--------------------------------------------------------------------------------------------+-----------+
 | Name                                                                                       | Power (W) |
 +--------------------------------------------------------------------------------------------+-----------+
-| design_1_wrapper                                                                           |     1.794 |
+| design_1_wrapper                                                                           |     1.793 |
 |   design_1_i                                                                               |     1.792 |
 |     axi_mem_intercon                                                                       |     0.004 |
 |       s00_couplers                                                                         |     0.004 |
@@ -581,7 +581,7 @@ Table of Contents
 |                     LOGIC.RND2                                                             |    <0.001 |
 |                     RND_BIT_GEN                                                            |    <0.001 |
 |                       NORM_1_OR_0.STRUCT_REQ.GENERAL.RND1                                  |    <0.001 |
-|         toplevel_fmul_32ns_32ns_32_4_max_dsp_U3                                            |     0.006 |
+|         toplevel_fmul_32ns_32ns_32_4_max_dsp_U3                                            |     0.005 |
 |           toplevel_ap_fmul_2_max_dsp_32_u                                                  |     0.005 |
 |             U0                                                                             |     0.005 |
 |               i_synth                                                                      |     0.005 |
@@ -605,7 +605,7 @@ Table of Contents
 |                   MULT                                                                     |     0.003 |
 |                     DSP48E1_SPD_SGL_VARIANT.FIX_MULT                                       |     0.003 |
 |                       DSP1                                                                 |     0.001 |
-|                       DSP2                                                                 |     0.002 |
+|                       DSP2                                                                 |     0.001 |
 |                   OP                                                                       |    <0.001 |
 |                   R_AND_R                                                                  |    <0.001 |
 |                     LAT_OPT.FULL.R_AND_R                                                   |    <0.001 |
@@ -651,7 +651,7 @@ Table of Contents
 |                       i_pipe                                                               |    <0.001 |
 |                     STATE_DELAY                                                            |    <0.001 |
 |                       i_pipe                                                               |    <0.001 |
-|                   i_mant_calc.MANT_SQRT                                                    |     0.012 |
+|                   i_mant_calc.MANT_SQRT                                                    |     0.011 |
 |                     Q_MANT_LP_DEL                                                          |    <0.001 |
 |                       i_pipe                                                               |    <0.001 |
 |                     RM_MANT_LP_DEL                                                         |    <0.001 |
@@ -757,11 +757,11 @@ Table of Contents
 |         U0                                                                                 |     0.109 |
 |           Inst_mmcme2_drp                                                                  |     0.108 |
 |           axi_dynclk_S00_AXI_inst                                                          |     0.001 |
-|       axi_mem_intercon                                                                     |     0.002 |
-|         m00_couplers                                                                       |     0.001 |
-|           auto_pc                                                                          |     0.001 |
-|             inst                                                                           |     0.001 |
-|               gen_axi4_axi3.axi3_conv_inst                                                 |     0.001 |
+|       axi_mem_intercon                                                                     |    <0.001 |
+|         s00_couplers                                                                       |    <0.001 |
+|           auto_pc                                                                          |    <0.001 |
+|             inst                                                                           |    <0.001 |
+|               gen_axi4_axi3.axi3_conv_inst                                                 |    <0.001 |
 |                 USE_READ.USE_SPLIT_R.read_addr_inst                                        |    <0.001 |
 |                   USE_R_CHANNEL.cmd_queue                                                  |    <0.001 |
 |                     inst                                                                   |    <0.001 |
@@ -780,60 +780,9 @@ Table of Contents
 |                                 gdm.dm_gen.dm                                              |    <0.001 |
 |                                   RAM_reg_0_31_0_0                                         |    <0.001 |
 |                               rstblk                                                       |    <0.001 |
-|                 USE_WRITE.USE_SPLIT_W.write_resp_inst                                      |    <0.001 |
-|                 USE_WRITE.write_addr_inst                                                  |    <0.001 |
-|                   USE_BURSTS.cmd_queue                                                     |    <0.001 |
-|                     inst                                                                   |    <0.001 |
-|                       fifo_gen_inst                                                        |    <0.001 |
-|                         inst_fifo_gen                                                      |    <0.001 |
-|                           gconvfifo.rf                                                     |    <0.001 |
-|                             grf.rf                                                         |    <0.001 |
-|                               gntv_or_sync_fifo.gl0.rd                                     |    <0.001 |
-|                                 gr1.gr1_int.rfwft                                          |    <0.001 |
-|                                 grss.rsts                                                  |    <0.001 |
-|                                 rpntr                                                      |    <0.001 |
-|                               gntv_or_sync_fifo.gl0.wr                                     |    <0.001 |
-|                                 gwss.wsts                                                  |    <0.001 |
-|                                 wpntr                                                      |    <0.001 |
-|                               gntv_or_sync_fifo.mem                                        |    <0.001 |
-|                                 gdm.dm_gen.dm                                              |    <0.001 |
-|                                   RAM_reg_0_31_0_5                                         |    <0.001 |
-|                               rstblk                                                       |    <0.001 |
-|                   USE_B_CHANNEL.cmd_b_queue                                                |    <0.001 |
-|                     inst                                                                   |    <0.001 |
-|                       fifo_gen_inst                                                        |    <0.001 |
-|                         inst_fifo_gen                                                      |    <0.001 |
-|                           gconvfifo.rf                                                     |    <0.001 |
-|                             grf.rf                                                         |    <0.001 |
-|                               gntv_or_sync_fifo.gl0.rd                                     |    <0.001 |
-|                                 gr1.gr1_int.rfwft                                          |    <0.001 |
-|                                 grss.rsts                                                  |    <0.001 |
-|                                 rpntr                                                      |    <0.001 |
-|                               gntv_or_sync_fifo.gl0.wr                                     |    <0.001 |
-|                                 gwss.wsts                                                  |    <0.001 |
-|                                 wpntr                                                      |    <0.001 |
-|                               gntv_or_sync_fifo.mem                                        |    <0.001 |
-|                                 gdm.dm_gen.dm                                              |    <0.001 |
-|                                   RAM_reg_0_31_0_4                                         |    <0.001 |
-|                               rstblk                                                       |    <0.001 |
-|                 USE_WRITE.write_data_inst                                                  |    <0.001 |
-|         xbar                                                                               |    <0.001 |
-|           inst                                                                             |    <0.001 |
-|             gen_samd.crossbar_samd                                                         |    <0.001 |
-|               addr_arbiter_ar                                                              |    <0.001 |
-|               gen_decerr_slave.decerr_slave_inst                                           |    <0.001 |
-|               gen_master_slots[0].gen_mi_write.wdata_mux_w                                 |     0.000 |
-|                 gen_wmux.wmux_aw_fifo                                                      |     0.000 |
-|               gen_master_slots[0].reg_slice_mi                                             |    <0.001 |
-|                 b_pipe                                                                     |    <0.001 |
-|                 r_pipe                                                                     |    <0.001 |
-|               gen_master_slots[1].reg_slice_mi                                             |    <0.001 |
-|                 b_pipe                                                                     |    <0.001 |
-|               gen_master_slots[2].reg_slice_mi                                             |    <0.001 |
-|                 r_pipe                                                                     |    <0.001 |
-|               gen_slave_slots[0].gen_si_read.si_transactor_ar                              |    <0.001 |
-|       axi_vdma_0                                                                           |     0.008 |
-|         U0                                                                                 |     0.008 |
+|                 USE_READ.USE_SPLIT_R.read_data_inst                                        |    <0.001 |
+|       axi_vdma_0                                                                           |     0.009 |
+|         U0                                                                                 |     0.009 |
 |           AXI_LITE_REG_INTERFACE_I                                                         |     0.002 |
 |             GEN_AXI_LITE_IF.AXI_LITE_IF_I                                                  |     0.002 |
 |               GEN_LITE_IS_ASYNC.GEN_MM2S_ONLY_ASYNC_LITE_ACCESS.LITE_WVALID_MM2S_CDC_I     |    <0.001 |
@@ -980,7 +929,7 @@ Table of Contents
 |             AXI4_LITE_INTERFACE.CORE_MUX0                                                  |     0.001 |
 |             AXI4_LITE_INTERFACE.GENR_MUX0                                                  |     0.003 |
 |             AXI4_LITE_INTERFACE.SYNC2PROCCLK_I                                             |    <0.001 |
-|             AXI4_LITE_INTERFACE.SYNC2VIDCLK_I                                              |     0.002 |
+|             AXI4_LITE_INTERFACE.SYNC2VIDCLK_I                                              |     0.003 |
 |       xlslice_0                                                                            |     0.000 |
 +--------------------------------------------------------------------------------------------+-----------+
 
