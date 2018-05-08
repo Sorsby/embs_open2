@@ -3740,3 +3740,5 @@ com.xilinx.sdk.targetmanager.TMException:
 07:23:33 INFO  : ps7_post_config is completed.
 07:26:08 INFO  : System reset is completed.
 07:26:10 INFO  : FPGA configured successfully with bitstream "C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+07:26:35 INFO  : ps7_init is completed.
+07:26:35 INFO  : ps7_post_config is completed.

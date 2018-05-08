@@ -1,4 +1,4 @@
-07:10:37 **** Build of project particle_sim_bsp ****
+07:27:20 **** Build of project particle_sim_bsp ****
 make -k all 
 "Running Make include in ps7_cortexa9_0/libsrc/axivdma_v6_1/src"
 make -C ps7_cortexa9_0/libsrc/axivdma_v6_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
@@ -103,5 +103,5 @@ make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm
 "Compiling xadcps"
 'Finished building libraries'
 
-07:10:50 Build Finished (took 13s.244ms)
+07:27:35 Build Finished (took 14s.440ms)
 
