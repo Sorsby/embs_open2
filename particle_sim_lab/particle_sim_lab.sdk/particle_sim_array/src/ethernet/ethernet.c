@@ -32,6 +32,7 @@ int numAttractors = 0;
 
 float ram[RAM_SIZE];
 int networkInUse = FALSE;
+int isRetryRequest = FALSE;
 
 void sendMessage(char *message);
 void udp_part_get_handler(void *arg, struct udp_pcb *pcb, struct pbuf *p,
@@ -43,6 +44,9 @@ void startTimer() {
 
 float getTimePassed() {
 	XTime_GetTime(&endTime);
+	if (startTime == 0) {
+		return 0;
+	}
 	executionTime = (endTime - startTime);
 	return 1.0 * executionTime / COUNTS_PER_SECOND;
 }
@@ -84,6 +88,9 @@ void requestScenario(int id) {
  * Builds string and sends message for GETPART request
  */
 int requestPart(int partId) {
+	if (nextPart > partId)
+		return nextPart;
+
 	printf("Getting part: %d\n", partId);
 	char buffera[5];
 	char bufferb[5];
@@ -105,6 +112,11 @@ void udp_part_get_handler(void *arg, struct udp_pcb *pcb, struct pbuf *p,
 		struct ip_addr *addr, u16_t port) {
 	if (p) {
 		printf("Message: %s\n", (char *) p->payload);
+
+		if (isRetryRequest == TRUE) {
+			isRetryRequest = FALSE;
+			return;
+		}
 		resetTimer();
 
 		char response[2000];
@@ -200,8 +212,6 @@ void udp_part_get_handler(void *arg, struct udp_pcb *pcb, struct pbuf *p,
 			pbuf_free(p);
 
 			if (nextPart == numParts) {
-				nextPart = requestPart(nextPart);
-			} else if (nextPart > numParts) {
 				printf("num particles: %d\n", numParticles);
 				printf("num attractor: %d\n", numAttractors);
 				populateSimulationFromNetworkArray(ram, numParticles,
@@ -245,6 +255,12 @@ void sendMessage(char *message) {
 void handleEthernet() {
 	if (networkInUse == TRUE) {
 		handle_ethernet();
+		if (getTimePassed() > 5.0) {
+			puts("No response for 5 seconds, retrying...");
+			resetTimer();
+			isRetryRequest = TRUE;
+			sendMessage(currentRequest);
+		}
 	}
 }
 
