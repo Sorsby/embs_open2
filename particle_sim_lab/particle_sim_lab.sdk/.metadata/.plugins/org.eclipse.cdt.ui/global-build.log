@@ -1,21 +1,88 @@
-03:24:06 **** Incremental Build of configuration Release for project particle_sim_array ****
+05:37:47 **** Clean-only build of configuration Release for project particle_sim_array ****
+make clean 
+rm -rf  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o  ./src/zybo_vga/display_ctrl.d ./src/zybo_vga/dynclk.d  ./src/vga/vga.d  ./src/util/util.d  ./src/uart/input.d  ./src/simulation/simulation.d  ./src/fps/fps.d  ./src/ethernet/ethernet.d ./src/ethernet/ethernet_platform.d  ./src/main.d ./src/platform.d  particle_sim_array.elf.size  particle_sim_array.elf
+' '
+05:37:47 **** Incremental Build of configuration Release for project particle_sim_array ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
-make: Nothing to be done for `main-build'.
-03:24:09 **** Incremental Build of configuration Release for project particle_sim_array ****
-make pre-build main-build 
-a9-linaro-pre-build-step
+'Building file: ../src/zybo_vga/display_ctrl.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/zybo_vga/display_ctrl.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/zybo_vga/display_ctrl.d" -MT"src/zybo_vga/display_ctrl.o" -o "src/zybo_vga/display_ctrl.o" "../src/zybo_vga/display_ctrl.c"
+'Finished building: ../src/zybo_vga/display_ctrl.c'
 ' '
-make: Nothing to be done for `main-build'.
-03:26:50 **** Auto Build of configuration Release for project particle_sim_array ****
-make pre-build main-build 
-a9-linaro-pre-build-step
+'Building file: ../src/zybo_vga/dynclk.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/zybo_vga/dynclk.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/zybo_vga/dynclk.d" -MT"src/zybo_vga/dynclk.o" -o "src/zybo_vga/dynclk.o" "../src/zybo_vga/dynclk.c"
+'Finished building: ../src/zybo_vga/dynclk.c'
+' '
+'Building file: ../src/vga/vga.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/vga/vga.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/vga/vga.d" -MT"src/vga/vga.o" -o "src/vga/vga.o" "../src/vga/vga.c"
+../src/vga/vga.c: In function 'updateFrameFromArray':
+../src/vga/vga.c:82:2: warning: implicit declaration of function 'Xil_DCacheFlush' [-Wimplicit-function-declaration]
+  Xil_DCacheFlush();
+  ^
+'Finished building: ../src/vga/vga.c'
+' '
+'Building file: ../src/util/util.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/util/util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/util/util.d" -MT"src/util/util.o" -o "src/util/util.o" "../src/util/util.c"
+'Finished building: ../src/util/util.c'
+' '
+'Building file: ../src/uart/input.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/uart/input.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/uart/input.d" -MT"src/uart/input.o" -o "src/uart/input.o" "../src/uart/input.c"
+'Finished building: ../src/uart/input.c'
+' '
+'Building file: ../src/simulation/simulation.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/simulation/simulation.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/simulation/simulation.d" -MT"src/simulation/simulation.o" -o "src/simulation/simulation.o" "../src/simulation/simulation.c"
+../src/simulation/simulation.c: In function 'Q_rsqrt':
+../src/simulation/simulation.c:19:2: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  i  = * ( long * ) &y;                       // evil floating point bit level hacking
+  ^
+../src/simulation/simulation.c:21:2: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  y  = * ( float * ) &i;
+  ^
+'Finished building: ../src/simulation/simulation.c'
+' '
+'Building file: ../src/fps/fps.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/fps/fps.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fps/fps.d" -MT"src/fps/fps.o" -o "src/fps/fps.o" "../src/fps/fps.c"
+'Finished building: ../src/fps/fps.c'
 ' '
 'Building file: ../src/ethernet/ethernet.c'
 'Invoking: ARM v7 gcc compiler'
 arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+In file included from ../src/ethernet/ethernet.c:9:0:
+../src/ethernet/../main.h:5:41: warning: 'struct Attractor' declared inside parameter list
+   struct Particle *newParticles, struct Attractor *newAttractors);
+                                         ^
+../src/ethernet/../main.h:5:41: warning: its scope is only this definition or declaration, which is probably not what you want
+../src/ethernet/../main.h:5:41: warning: 'struct Particle' declared inside parameter list
 'Finished building: ../src/ethernet/ethernet.c'
+' '
+'Building file: ../src/ethernet/ethernet_platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet_platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet_platform.d" -MT"src/ethernet/ethernet_platform.o" -o "src/ethernet/ethernet_platform.o" "../src/ethernet/ethernet_platform.c"
+'Finished building: ../src/ethernet/ethernet_platform.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:12:0:
+../src/vga/vga.h:9:3: warning: 'struct Attractor' declared inside parameter list
+   int num_particles, int num_attractors);
+   ^
+../src/vga/vga.h:9:3: warning: its scope is only this definition or declaration, which is probably not what you want
+../src/vga/vga.h:9:3: warning: 'struct Particle' declared inside parameter list
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
 ' '
 'Building target: particle_sim_array.elf'
 'Invoking: ARM v7 gcc linker'
@@ -25,16 +92,6 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size particle_sim_array.elf  |tee "particle_sim_array.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 194872	   4460	12638496	12837828	 c3e3c4	particle_sim_array.elf
+ 194808	   4460	12638496	12837764	 c3e384	particle_sim_array.elf
 'Finished building: particle_sim_array.elf.size'
 ' '
-03:26:52 **** Incremental Build of configuration Release for project particle_sim_array ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for `main-build'.
-03:29:52 **** Incremental Build of configuration Release for project particle_sim_array ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for `main-build'.

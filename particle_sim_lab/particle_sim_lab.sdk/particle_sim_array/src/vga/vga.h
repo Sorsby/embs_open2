@@ -1,10 +1,3 @@
-/*
- * vga.h
- *
- *  Created on: 3 May 2018
- *      Author: ms1516
- */
-
 #include "../simulation/simulation.h"
 
 #ifndef SRC_VGA_H_

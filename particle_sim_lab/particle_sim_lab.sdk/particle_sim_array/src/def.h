@@ -1,10 +1,3 @@
-/*
- * def.h
- *
- *  Created on: 8 May 2018
- *      Author: Matthew
- */
-
 #ifndef SRC_DEF_H_
 #define SRC_DEF_H_
 

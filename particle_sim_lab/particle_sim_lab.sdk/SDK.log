@@ -5121,3 +5121,51 @@ Design is not opened in the current session.
 03:29:58 INFO  : FPGA configured successfully with bitstream "C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
 03:30:22 INFO  : ps7_init is completed.
 03:30:22 INFO  : ps7_post_config is completed.
+04:12:56 INFO  : Launching XSDB server: xsdb.bat -interactive C:\Users\Matthew\Desktop\embs_open2\particle_sim_lab\particle_sim_lab.sdk\temp_xsdb_launch_script.tcl
+04:12:58 INFO  : XSDB server has started successfully.
+04:12:59 INFO  : Restoring global repository preferences: 
+		 C:\Users\Matthew\Desktop\embs_open2\ethernet-stuff\ethernetrepo
+04:12:59 INFO  : Processing command line option -hwspec C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper.hdf.
+04:14:24 INFO  : System reset is completed.
+04:14:26 INFO  : FPGA configured successfully with bitstream "C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+04:15:26 INFO  : Time out for XMD transaction is 60000
+If you want to increase the timeout value, goto Windows-> Preferences -> Xilinx SDK -> XMD Startup
+04:15:26 ERROR : Timeout occured while waiting to get reply for command "xconnect arm hw -cable type xilinx_tcf url TCP:localhost:12345 -debugdevice cpunr 1"
+04:15:26 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: 
+	at com.xilinx.sdk.targetmanager.internal.TM.connectToProcessor(TM.java:484)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:489)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:616)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+04:17:22 INFO  : Time out for XMD transaction is 60000
+If you want to increase the timeout value, goto Windows-> Preferences -> Xilinx SDK -> XMD Startup
+04:17:22 ERROR : Timeout occured while waiting to get reply for command "source C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl"
+04:17:22 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error while sourcing C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl : 
+	at com.xilinx.sdk.targetmanager.internal.TM.sourceTcl(TM.java:1021)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:441)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(XilinxAppLaunchConfigurationDelegate.java:616)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:309)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+04:18:15 INFO  : Launching XSDB server: xsdb.bat -interactive C:\Users\Matthew\Desktop\embs_open2\particle_sim_lab\particle_sim_lab.sdk\temp_xsdb_launch_script.tcl
+04:18:16 INFO  : XSDB server has started successfully.
+04:18:21 INFO  : Restoring global repository preferences: 
+		 C:\Users\Matthew\Desktop\embs_open2\ethernet-stuff\ethernetrepo
+04:18:21 INFO  : Processing command line option -hwspec C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper.hdf.
+04:18:21 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+04:25:03 WARN  : Unable to obtain port 2350 for use by XMD, java.net.SocketException: Unrecognized Windows Sockets error: 0: JVM_Bind
+04:25:10 INFO  : System reset is completed.
+04:25:12 INFO  : FPGA configured successfully with bitstream "C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+04:25:37 INFO  : ps7_init is completed.
+04:25:38 INFO  : ps7_post_config is completed.

@@ -1,10 +1,3 @@
-/*
- * fps.c
- *
- *  Created on: 4 May 2018
- *      Author: Matthew
- */
-
 #include <xscutimer.h>
 #include <limits.h>
 #include "xtime_l.h"

@@ -32,6 +32,9 @@ int num_attractors = 10;
 void populateSimulation();
 void populateSimulationArray();
 
+/*
+ * Read input params from uart and populate the simulation with those values
+ */
 void getParams() {
 	num_particles = readInput("Enter a number of particles:");
 	num_attractors = readInput("Enter a number of attractors:");
@@ -40,6 +43,9 @@ void getParams() {
 	readyToSimulate = TRUE;
 }
 
+/*
+ * Populate simulation with random data
+ */
 void populateSimulationArray() {
 	for (i = 0; i < num_particles * PARTICLE_SIZE; i += PARTICLE_SIZE) {
 		float random_x = rand() % 1440;
@@ -69,6 +75,9 @@ void populateSimulationArray() {
 	}
 }
 
+/*
+ * Use networked data to populate the scenario
+ */
 void populateSimulationFromNetworkArray(float* newRam, int newNumParticles,
 		int newNumAttractors) {
 	num_particles = newNumParticles;
@@ -78,6 +87,9 @@ void populateSimulationFromNetworkArray(float* newRam, int newNumParticles,
 	readyToSimulate = TRUE;
 }
 
+/*
+ * Handles the different input shortcut keys
+ */
 void handleInput() {
 	if (XUartPs_IsReceiveData(STDIN_BASEADDRESS)) {
 		char byte = XUartPs_RecvByte(STDIN_BASEADDRESS);
@@ -106,6 +118,9 @@ void handleInput() {
 	}
 }
 
+/*
+ * Main program loop
+ */
 int main(void) {
 	puts("\n\n\n");
 
@@ -126,6 +141,7 @@ int main(void) {
 //		    XToplevel_Start(&hls);
 //		    while(!XToplevel_IsDone(&hls));
 //			Xil_DCacheFlush();
+//My HLS implementation was slower than in software ????!!!! I lost time due to using structs so didn't manage to fix
 
 			updateSimulationArray(ram, num_particles, num_attractors);
 			updateFrameFromArray(ram, num_particles, num_attractors);

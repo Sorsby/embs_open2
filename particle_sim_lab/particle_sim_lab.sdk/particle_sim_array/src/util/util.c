@@ -1,9 +1,3 @@
-/*
- * util.c
- *
- *  Created on: 4 May 2018
- *      Author: Matthew
- */
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -21,10 +15,16 @@ float myRandom(float min, float max) {
   return (max - min) * uniform0to1Random() - max;
 }
 
+/*
+ * Convert string to int
+ */
 int strToInt(char* str) {
 	return (int) strtol(str, (char **) NULL, 10);
 }
 
+/*
+ * Gets the first param of a request i.e. the type of the request
+ */
 char* getRequestType(char* response) {
 	char *token, *str, *tofree;
 	tofree = str = strdup(response);
@@ -33,6 +33,9 @@ char* getRequestType(char* response) {
 	return token;
 }
 
+/*
+ * Get the number of parts from a NUMP response
+ */
 char* getNumParts(char* response) {
 	char *token, *tofree, *str;
 	int pos;
@@ -42,16 +45,4 @@ char* getNumParts(char* response) {
 	}
 	free(tofree);
 	return token;
-}
-
-int getNextPart(char* response) {
-	char *token, *tofree, *str;
-	int pos;
-	tofree = str = strdup(response);
-	for (pos = 0; pos < NUMPARTS_AND_PART_ID_POSITION; pos++) {
-		token = strsep(&str, ",");
-	}
-	int nextPart = strToInt(token) + 1;
-	free(tofree);
-	return nextPart;
 }

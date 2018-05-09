@@ -1,13 +1,9 @@
-/*
- * input.c
- *
- *  Created on: 4 May 2018
- *      Author: ms1516
- */
-
 #include "xuartps_hw.h"
 #include "stdio.h"
 
+/*
+ * Read uart input byte by byte and convert to number
+ */
 int readInput(char *prompt) {
 	int num = 0;
 	puts(prompt);

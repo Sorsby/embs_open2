@@ -1,9 +1,3 @@
-/*
- * simulation.c
- *
- *  Created on: 3 May 2018
- *      Author: Matthew
- */
 #include "simulation.h"
 
 #include "stdio.h"
@@ -11,6 +5,9 @@
 
 int i, j;
 
+/*
+ * Fast inverse sqrt func
+ */
 float Q_rsqrt( float number )
 {
 	long i;
@@ -28,6 +25,9 @@ float Q_rsqrt( float number )
 	return y;
 }
 
+/*
+ * Update the stored particles x and y pos from their velocities.
+ */
 void updateSimulationArray(float* ram, int num_particles, int num_attractors) {
 	for (i = 0; i < num_particles * PARTICLE_SIZE; i += PARTICLE_SIZE) {
 

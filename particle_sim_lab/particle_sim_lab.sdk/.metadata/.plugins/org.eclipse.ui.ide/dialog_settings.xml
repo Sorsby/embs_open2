@@ -12,8 +12,8 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
-			<item value="/home/userfs/m/ms1516/w2k/embs_open2/particle_sim_lab/particle_sim_lab.sdk"/>
 			<item value="C:\Users\Matthew\Desktop\embs_open2\particle_sim_lab\particle_sim_lab.sdk"/>
+			<item value="/home/userfs/m/ms1516/w2k/embs_open2/particle_sim_lab/particle_sim_lab.sdk"/>
 			<item value="C:\Users\Matthew\Desktop\embs_open2\particle_sim_lab\particle_sim_lab.sdk\particle_sim"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">

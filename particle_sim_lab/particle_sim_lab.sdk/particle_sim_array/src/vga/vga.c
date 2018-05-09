@@ -1,10 +1,3 @@
-/*
- * vga.c
- *
- *  Created on: 3 May 2018
- *      Author: ms1516
- */
-
 #include "../simulation/simulation.h"
 #include "../zybo_vga/display_ctrl.h"
 #include "../def.h"

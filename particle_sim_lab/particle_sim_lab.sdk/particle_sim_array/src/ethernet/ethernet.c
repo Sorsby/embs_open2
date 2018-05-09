@@ -1,10 +1,3 @@
-/*
- * ethernet.c
- *
- *  Created on: 4 May 2018
- *      Author: Matthew
- */
-
 #include <stdio.h>
 #include "xparameters.h"
 #include "xil_printf.h"
@@ -61,12 +54,18 @@ void resetTimer() {
 	executionTime = 0;
 }
 
+/*
+ * Clears recv buffer and flags
+ */
 void resetEthernet() {
 	udp_remove(recv_pcb);
 	networkInUse = FALSE;
 	hasAllData = FALSE;
 }
 
+/*
+ * Builds string and sends message for NUMPARTS request
+ */
 void requestScenario(int id) {
 	recv_pcb = udp_new();
 	if (!recv_pcb) {
@@ -90,6 +89,9 @@ void requestScenario(int id) {
 	sendMessage(message);
 }
 
+/*
+ * Builds string and sends message for GETPART request
+ */
 int requestPart(int partId) {
 	printf("Getting part: %d\n", partId);
 	char buffera[5];
@@ -104,25 +106,10 @@ int requestPart(int partId) {
 	return nextPart + 1;
 }
 
-//void udp_numparts_get_handler(void *arg, struct udp_pcb *pcb, struct pbuf *p,
-//		struct ip_addr *addr, u16_t port) {
-//	if (p) {
-//		printf("Message: %s\n", (char *) p->payload);
-//		resetTimer();
-//
-//		numParts = strToInt(getNumParts((char *) p->payload));
-//
-//		udp_remove(pcb);
-//		pbuf_free(p);
-//
-//		requestPart(0);
-//	}
-//}
-
-int getNext( cur) {
-	return cur + 1;
-}
-
+/*
+ * Handler for udp receive
+ * Also parses the data didn't have time to factor out/things are fragile
+ */
 void udp_part_get_handler(void *arg, struct udp_pcb *pcb, struct pbuf *p,
 		struct ip_addr *addr, u16_t port) {
 	if (p) {
@@ -237,6 +224,9 @@ void udp_part_get_handler(void *arg, struct udp_pcb *pcb, struct pbuf *p,
 	}
 }
 
+/*
+ * Sends UDP message
+ */
 void sendMessage(char *message) {
 	//Create a protocol control block (PCB)
 	struct udp_pcb *send_pcb = udp_new();
@@ -256,6 +246,9 @@ void sendMessage(char *message) {
 	udp_remove(send_pcb);
 }
 
+/*
+ * Handle timeouts and receive loop
+ */
 void handleEthernet() {
 	if (networkInUse == TRUE) {
 		handle_ethernet();
@@ -268,6 +261,9 @@ void handleEthernet() {
 	}
 }
 
+/*
+ * Setup inital network params
+ */
 void setupEthernet() {
 	init_ethernet_platform(ms1516_mac_address, NULL, NULL);
 	IP4_ADDR(&serverIP, 192, 168, 10, 1);
