@@ -43,7 +43,7 @@ set SCTraceOption "all"
 set TargetInfo "xc7z010:clg400:-1"
 set SourceFiles {sc {} c ../toplevel.cpp}
 set SourceFlags {sc {} c {{}}}
-set DirectiveFile {/home/userfs/m/ms1516/w2k/embs_open2/particle_sim_hls/solution1/solution1.directive}
+set DirectiveFile {C:/Users/Matthew/Desktop/embs_open2/particle_sim_hls/solution1/solution1.directive}
 set TBFiles {verilog ../testbench.cpp bc ../testbench.cpp vhdl ../testbench.cpp sc ../testbench.cpp cas ../testbench.cpp c {}}
 set SpecLanguage "C"
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}

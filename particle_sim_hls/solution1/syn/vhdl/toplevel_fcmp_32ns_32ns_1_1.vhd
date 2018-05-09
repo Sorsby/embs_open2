@@ -10,7 +10,7 @@ use ieee.std_logic_1164.all;
 
 entity toplevel_fcmp_32ns_32ns_1_1 is
     generic (
-        ID         : integer := 6;
+        ID         : integer := 5;
         NUM_STAGE  : integer := 1;
         din0_WIDTH : integer := 32;
         din1_WIDTH : integer := 32;

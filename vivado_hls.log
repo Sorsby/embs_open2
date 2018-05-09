@@ -1,42 +1,78 @@
-INFO: [HLS 200-10] Running '/opt/york/cs/net/xilinx_vivado-2016.2_ise-14.7_x86-64-1/Vivado_HLS/2016.2/bin/unwrapped/lnx64.o/vivado_hls'
-INFO: [HLS 200-10] For user 'ms1516' on host 'pc833s.cs.york.ac.uk' (Linux_x86_64 version 4.4.0-122-generic) on Tue May 08 14:39:16 BST 2018
-INFO: [HLS 200-10] On os Ubuntu 16.04.4 LTS
-INFO: [HLS 200-10] In directory '/home/userfs/m/ms1516/w2k/embs_open2'
-INFO: [HLS 200-10] Opening project '/home/userfs/m/ms1516/w2k/embs_open2/particle_sim_hls'.
-INFO: [HLS 200-10] Opening solution '/home/userfs/m/ms1516/w2k/embs_open2/particle_sim_hls/solution1'.
+INFO: [HLS 200-10] Running 'D:/Xilinx/Vivado_HLS/2016.2/bin/unwrapped/win64.o/vivado_hls.exe'
+INFO: [HLS 200-10] For user 'Matthew' on host 'matthew-pc' (Windows NT_amd64 version 6.2) on Wed May 09 02:41:18 +0100 2018
+INFO: [HLS 200-10] In directory 'C:/Users/Matthew/Desktop/embs_open2'
+INFO: [HLS 200-10] Opening project 'C:/Users/Matthew/Desktop/embs_open2/particle_sim_hls'.
+INFO: [HLS 200-10] Adding design file 'particle_sim_hls/toplevel.cpp' to the project
+INFO: [HLS 200-10] Adding design file 'particle_sim_hls/toplevel.h' to the project
+INFO: [HLS 200-10] Adding test bench file 'particle_sim_hls/testbench.cpp' to the project
+INFO: [HLS 200-10] Opening solution 'C:/Users/Matthew/Desktop/embs_open2/particle_sim_hls/solution1'.
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 INFO: [HLS 200-10] Setting target device to 'xc7z010clg400-1'
-INFO: [IMPL 213-8] Exporting RTL as an IP in IP-XACT.
-
-****** Vivado v2016.2 (64-bit)
-  **** SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
-  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
-
-source run_ippack.tcl -notrace
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/york/cs/net/xilinx_vivado-2016.2_ise-14.7_x86-64-1/Vivado/2016.2/data/ip'.
-INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'toplevel_ap_faddfsub_3_full_dsp_32'...
-INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'toplevel_ap_faddfsub_3_full_dsp_32'...
-INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'toplevel_ap_fadd_3_full_dsp_32'...
-INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'toplevel_ap_fadd_3_full_dsp_32'...
-INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'toplevel_ap_fmul_2_max_dsp_32'...
-INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'toplevel_ap_fmul_2_max_dsp_32'...
-INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'toplevel_ap_fdiv_14_no_dsp_32'...
-INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'toplevel_ap_fdiv_14_no_dsp_32'...
-INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'toplevel_ap_fcmp_0_no_dsp_32'...
-INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'toplevel_ap_fcmp_0_no_dsp_32'...
-INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'toplevel_ap_fsqrt_10_no_dsp_32'...
-INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'toplevel_ap_fsqrt_10_no_dsp_32'...
-****** Webtalk v2016.2 (64-bit)
-  **** SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
-  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
-
-source /home/userfs/m/ms1516/w2k/embs_open2/particle_sim_hls/solution1/impl/ip/tmp.hw/webtalk/labtool_webtalk.tcl -notrace
-INFO: [Common 17-206] Exiting Webtalk at Tue May  8 14:39:56 2018...
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/york/cs/net/xilinx_vivado-2016.2_ise-14.7_x86-64-1/Vivado/2016.2/data/ip'.
-INFO: [Common 17-206] Exiting Vivado at Tue May  8 14:39:57 2018...
+INFO: [HLS 200-10] Analyzing design file 'particle_sim_hls/toplevel.cpp' ... 
+INFO: [HLS 200-10] Validating synthesis directives ...
+WARNING: [HLS 200-40] Directive 'INLINE' cannot be applied: Function 'updateParticlePositions' does not exist in any synthesis source file.
+WARNING: [HLS 200-40] Directive 'UNROLL' cannot be applied: Function 'updateParticlePositions' does not exist in any synthesis source file.
+WARNING: [HLS 200-40] Directive 'PIPELINE' cannot be applied: Label 'toplevel_label0' does not exist in function 'toplevel'. 
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'updateParticleLoop' (particle_sim_hls/toplevel.cpp:23) in function 'toplevel' for pipelining.
+WARNING: [XFORM 203-503] Cannot unroll loop 'calculateVelocityLoop' (particle_sim_hls/toplevel.cpp:54) in function 'toplevel' completely: variable loop bound.
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'updateParticleLoop' (particle_sim_hls/toplevel.cpp:23:62) in function 'toplevel' : 
+WARNING: [XFORM 203-542] the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+INFO: [HLS 200-111] Elapsed time: 9.031 seconds; current memory usage: 82.1 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'toplevel' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Scheduling module 'toplevel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-65] Unable to satisfy pipeline directive: Loop contains subloop(s) not being unrolled or flattened.
+INFO: [SCHED 204-61] Pipelining loop 'calculateVelocityLoop'.
+WARNING: [SCHED 204-68] Unable to enforce a carried dependency constraint (II = 1, distance = 1)
+   between 'phi' operation ('tmp_39', particle_sim_hls/toplevel.cpp:83) with incoming values : ('pvy_read', particle_sim_hls/toplevel.cpp:32) ('tmp_38', particle_sim_hls/toplevel.cpp:83) and 'fadd' operation ('tmp_38', particle_sim_hls/toplevel.cpp:83).
+WARNING: [SCHED 204-68] Unable to enforce a carried dependency constraint (II = 2, distance = 1)
+   between 'phi' operation ('tmp_39', particle_sim_hls/toplevel.cpp:83) with incoming values : ('pvy_read', particle_sim_hls/toplevel.cpp:32) ('tmp_38', particle_sim_hls/toplevel.cpp:83) and 'fadd' operation ('tmp_38', particle_sim_hls/toplevel.cpp:83).
+WARNING: [SCHED 204-68] Unable to enforce a carried dependency constraint (II = 3, distance = 1)
+   between 'phi' operation ('tmp_39', particle_sim_hls/toplevel.cpp:83) with incoming values : ('pvy_read', particle_sim_hls/toplevel.cpp:32) ('tmp_38', particle_sim_hls/toplevel.cpp:83) and 'fadd' operation ('tmp_38', particle_sim_hls/toplevel.cpp:83).
+INFO: [SCHED 204-61] Pipelining result: Target II: 1, Final II: 4, Depth: 77.
+WARNING: [SCHED 204-21] Estimated clock period (9.53ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns).
+WARNING: [SCHED 204-21] The critical path consists of the following:
+	'fcmp' operation ('tmp_55', particle_sim_hls/toplevel.cpp:70) (6.79 ns)
+	'and' operation ('tmp_56', particle_sim_hls/toplevel.cpp:70) (1.37 ns)
+	blocking operation 1.37 ns on control path)
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Elapsed time: 0.147 seconds; current memory usage: 87.1 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Exploring micro-architecture for module 'toplevel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Elapsed time: 0.151 seconds; current memory usage: 87 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'toplevel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'toplevel/MAXI' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'toplevel/ram' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'toplevel/numP' to 's_axilite & ap_none' (register).
+INFO: [RTGEN 206-500] Setting interface mode on port 'toplevel/numA' to 's_axilite & ap_none' (register).
+INFO: [RTGEN 206-500] Setting interface mode on function 'toplevel' to 's_axilite & ap_ctrl_hs' (register).
+WARNING: [RTGEN 206-101] Global scalar 'numberParticles' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'numberAttractors' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'numberAttractors' will not be exposed as RTL port.
+INFO: [RTGEN 206-100] Bundling port 'return', 'ram', 'numP' and 'numA' to AXI-Lite port AXILiteS.
+INFO: [RTGEN 206-100] Generating core module 'toplevel_fadd_32ns_32ns_32_5_full_dsp': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'toplevel_faddfsub_32ns_32ns_32_5_full_dsp': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'toplevel_fcmp_32ns_32ns_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'toplevel_fdiv_32ns_32ns_32_16': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'toplevel_fmul_32ns_32ns_32_4_max_dsp': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'toplevel_fsqrt_32ns_32ns_32_12': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'toplevel'.
+INFO: [HLS 200-111] Elapsed time: 0.226 seconds; current memory usage: 89.3 MB.
+INFO: [HLS 200-10] Finished generating all RTL models.
+INFO: [SYSC 207-301] Generating SystemC RTL for toplevel.
+INFO: [VHDL 208-304] Generating VHDL RTL for toplevel.
+INFO: [VLOG 209-307] Generating Verilog RTL for toplevel.
+INFO: [HLS 200-112] Total elapsed time: 10.822 seconds; peak memory usage: 89.3 MB.

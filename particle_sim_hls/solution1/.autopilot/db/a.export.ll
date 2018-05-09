@@ -1,6 +1,6 @@
-; ModuleID = '/home/userfs/m/ms1516/w2k/embs_open2/particle_sim_hls/solution1/.autopilot/db/a.o.2.bc'
+; ModuleID = 'C:/Users/Matthew/Desktop/embs_open2/particle_sim_hls/solution1/.autopilot/db/a.o.2.bc'
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64-S128"
-target triple = "x86_64-unknown-linux-gnu"
+target triple = "x86_64-w64-mingw32"
 
 @toplevel_str = internal unnamed_addr constant [9 x i8] c"toplevel\00"
 @numberParticles = global i32 0, align 4
@@ -22,9 +22,9 @@ define void @toplevel(float* %MAXI, i32 %ram, i32* %numP, i32* %numA) {
   %ram_read = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %ram)
   %tmp_1 = call i30 @_ssdm_op_PartSelect.i30.i32.i32.i32(i32 %ram_read, i32 2, i32 31)
   %tmp_62_cast = zext i30 %tmp_1 to i33
-  call void (...)* @_ssdm_op_SpecBitsMap(float* %MAXI), !map !26
-  call void (...)* @_ssdm_op_SpecBitsMap(i32* %numP) nounwind, !map !30
-  call void (...)* @_ssdm_op_SpecBitsMap(i32* %numA) nounwind, !map !34
+  call void (...)* @_ssdm_op_SpecBitsMap(float* %MAXI), !map !19
+  call void (...)* @_ssdm_op_SpecBitsMap(i32* %numP) nounwind, !map !23
+  call void (...)* @_ssdm_op_SpecBitsMap(i32* %numA) nounwind, !map !27
   call void (...)* @_ssdm_op_SpecTopModule([9 x i8]* @toplevel_str) nounwind
   call void (...)* @_ssdm_op_SpecInterface(float* %MAXI, [6 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [5 x i8]* @p_str1, [6 x i8]* @p_str2, [1 x i8]* @p_str3, i32 16, i32 16, i32 16, i32 16, [1 x i8]* @p_str3) nounwind
   call void (...)* @_ssdm_op_SpecInterface(i32 %ram, [10 x i8]* @mode, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @bundle, [6 x i8]* @p_str2, [1 x i8]* @p_str3, i32 16, i32 16, i32 16, i32 16, [1 x i8]* @p_str3) nounwind
@@ -46,6 +46,7 @@ define void @toplevel(float* %MAXI, i32 %ram, i32* %numP, i32* %numA) {
 ; <label>:2                                       ; preds = %1
   call void (...)* @_ssdm_op_SpecLoopName([19 x i8]* @p_str6) nounwind
   %tmp_s = call i32 (...)* @_ssdm_op_SpecRegionBegin([19 x i8]* @p_str6) nounwind
+  call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str3) nounwind
   call void (...)* @_ssdm_op_SpecLoopTripCount(i32 0, i32 12000, i32 12000, [1 x i8]* @p_str3) nounwind
   %tmp_1_cast = zext i32 %i to i33
   %ram2_sum = add i33 %tmp_62_cast, %tmp_1_cast
@@ -368,49 +369,41 @@ declare i23 @_ssdm_op_PartSelect.i23.i32.i32.i32(i32, i32, i32) nounwind readnon
 
 declare i32 @_ssdm_op_BitConcatenate.i32.i30.i2(i30, i2) nounwind readnone
 
-declare void @_GLOBAL__I_a() nounwind section ".text.startup"
+declare void @_GLOBAL__I_a() nounwind
 
-!opencl.kernels = !{!0}
 !hls.encrypted.func = !{}
-!llvm.map.gv = !{!7, !14, !19}
-!axi4.master.portmap = !{!24}
-!axi4.slave.bundlemap = !{!25}
+!llvm.map.gv = !{!0, !7, !12}
+!axi4.master.portmap = !{!17}
+!axi4.slave.bundlemap = !{!18}
 
-!0 = metadata !{null, metadata !1, metadata !2, metadata !3, metadata !4, metadata !5, metadata !6}
-!1 = metadata !{metadata !"kernel_arg_addr_space", i32 1, i32 1, i32 1}
-!2 = metadata !{metadata !"kernel_arg_access_qual", metadata !"none", metadata !"none", metadata !"none"}
-!3 = metadata !{metadata !"kernel_arg_type", metadata !"float*", metadata !"uint32*", metadata !"uint32*"}
-!4 = metadata !{metadata !"kernel_arg_type_qual", metadata !"", metadata !"", metadata !""}
-!5 = metadata !{metadata !"kernel_arg_name", metadata !"ram", metadata !"numP", metadata !"numA"}
-!6 = metadata !{metadata !"reqd_work_group_size", i32 1, i32 1, i32 1}
-!7 = metadata !{metadata !8, i32* @numberParticles}
+!0 = metadata !{metadata !1, i32* @numberParticles}
+!1 = metadata !{metadata !2}
+!2 = metadata !{i32 0, i32 31, metadata !3}
+!3 = metadata !{metadata !4}
+!4 = metadata !{metadata !"numberParticles", metadata !5, metadata !"unsigned int", i32 0, i32 31}
+!5 = metadata !{metadata !6}
+!6 = metadata !{i32 0, i32 0, i32 1}
+!7 = metadata !{metadata !8, i32* @numberAttractors}
 !8 = metadata !{metadata !9}
 !9 = metadata !{i32 0, i32 31, metadata !10}
 !10 = metadata !{metadata !11}
-!11 = metadata !{metadata !"numberParticles", metadata !12, metadata !"unsigned int", i32 0, i32 31}
-!12 = metadata !{metadata !13}
-!13 = metadata !{i32 0, i32 0, i32 1}
-!14 = metadata !{metadata !15, i32* @numberAttractors}
+!11 = metadata !{metadata !"numberAttractors", metadata !5, metadata !"unsigned int", i32 0, i32 31}
+!12 = metadata !{metadata !13, [1 x i32]* @llvm_global_ctors_0}
+!13 = metadata !{metadata !14}
+!14 = metadata !{i32 0, i32 31, metadata !15}
 !15 = metadata !{metadata !16}
-!16 = metadata !{i32 0, i32 31, metadata !17}
-!17 = metadata !{metadata !18}
-!18 = metadata !{metadata !"numberAttractors", metadata !12, metadata !"unsigned int", i32 0, i32 31}
-!19 = metadata !{metadata !20, [1 x i32]* @llvm_global_ctors_0}
-!20 = metadata !{metadata !21}
-!21 = metadata !{i32 0, i32 31, metadata !22}
-!22 = metadata !{metadata !23}
-!23 = metadata !{metadata !"llvm.global_ctors.0", metadata !12, metadata !"", i32 0, i32 31}
-!24 = metadata !{metadata !"MAXI", metadata !"ram", metadata !"READWRITE"}
-!25 = metadata !{metadata !"ram", metadata !""}
-!26 = metadata !{metadata !27}
-!27 = metadata !{i32 0, i32 31, metadata !28}
-!28 = metadata !{metadata !29}
-!29 = metadata !{metadata !"ram", metadata !12, metadata !"float", i32 0, i32 31}
-!30 = metadata !{metadata !31}
-!31 = metadata !{i32 0, i32 31, metadata !32}
-!32 = metadata !{metadata !33}
-!33 = metadata !{metadata !"numP", metadata !12, metadata !"unsigned int", i32 0, i32 31}
-!34 = metadata !{metadata !35}
-!35 = metadata !{i32 0, i32 31, metadata !36}
-!36 = metadata !{metadata !37}
-!37 = metadata !{metadata !"numA", metadata !12, metadata !"unsigned int", i32 0, i32 31}
+!16 = metadata !{metadata !"llvm.global_ctors.0", metadata !5, metadata !"", i32 0, i32 31}
+!17 = metadata !{metadata !"MAXI", metadata !"ram", metadata !"READWRITE"}
+!18 = metadata !{metadata !"ram", metadata !""}
+!19 = metadata !{metadata !20}
+!20 = metadata !{i32 0, i32 31, metadata !21}
+!21 = metadata !{metadata !22}
+!22 = metadata !{metadata !"ram", metadata !5, metadata !"float", i32 0, i32 31}
+!23 = metadata !{metadata !24}
+!24 = metadata !{i32 0, i32 31, metadata !25}
+!25 = metadata !{metadata !26}
+!26 = metadata !{metadata !"numP", metadata !5, metadata !"unsigned int", i32 0, i32 31}
+!27 = metadata !{metadata !28}
+!28 = metadata !{i32 0, i32 31, metadata !29}
+!29 = metadata !{metadata !30}
+!30 = metadata !{metadata !"numA", metadata !5, metadata !"unsigned int", i32 0, i32 31}

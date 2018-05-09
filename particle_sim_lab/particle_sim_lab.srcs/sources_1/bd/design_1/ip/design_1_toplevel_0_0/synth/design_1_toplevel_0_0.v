@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:hls:toplevel:1.0
-// IP Revision: 1805081439
+// IP Revision: 1805082238
 
 (* X_CORE_INFO = "toplevel,Vivado 2016.2" *)
 (* CHECK_LICENSE_TYPE = "design_1_toplevel_0_0,toplevel,{}" *)
-(* CORE_GENERATION_INFO = "design_1_toplevel_0_0,toplevel,{x_ipProduct=Vivado 2016.2,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=toplevel,x_ipVersion=1.0,x_ipCoreRevision=1805081439,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_S_AXI_AXILITES_ADDR_WIDTH=6,C_S_AXI_AXILITES_DATA_WIDTH=32,C_M_AXI_MAXI_ID_WIDTH=1,C_M_AXI_MAXI_ADDR_WIDTH=32,C_M_AXI_MAXI_DATA_WIDTH=32,C_M_AXI_MAXI_AWUSER_WIDTH=1,C_M_AXI_MAXI_ARUSER_WIDTH=1,C_M_AXI_MAXI_WUSER_WIDTH=1,C_M_AXI_MAXI_RUSER_WIDTH=1,C_M_AXI_MAXI_BUSER_WIDTH=1,C_M_AXI_MAXI_USER_VALUE\
+(* CORE_GENERATION_INFO = "design_1_toplevel_0_0,toplevel,{x_ipProduct=Vivado 2016.2,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=toplevel,x_ipVersion=1.0,x_ipCoreRevision=1805082238,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_S_AXI_AXILITES_ADDR_WIDTH=6,C_S_AXI_AXILITES_DATA_WIDTH=32,C_M_AXI_MAXI_ID_WIDTH=1,C_M_AXI_MAXI_ADDR_WIDTH=32,C_M_AXI_MAXI_DATA_WIDTH=32,C_M_AXI_MAXI_AWUSER_WIDTH=1,C_M_AXI_MAXI_ARUSER_WIDTH=1,C_M_AXI_MAXI_WUSER_WIDTH=1,C_M_AXI_MAXI_RUSER_WIDTH=1,C_M_AXI_MAXI_BUSER_WIDTH=1,C_M_AXI_MAXI_USER_VALUE\
 =0x00000000,C_M_AXI_MAXI_PROT_VALUE=000,C_M_AXI_MAXI_CACHE_VALUE=0011}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module design_1_toplevel_0_0 (

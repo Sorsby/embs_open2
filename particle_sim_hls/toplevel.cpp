@@ -4,6 +4,8 @@
 uint32 numberParticles;
 uint32 numberAttractors;
 
+float Q_rsqrt( float number );
+
 void toplevel(float *ram, uint32 *numP, uint32 *numA) {
 #pragma HLS INTERFACE m_axi port=ram offset=slave bundle=MAXI
 #pragma HLS INTERFACE s_axilite port=numP bundle=AXILiteS register
@@ -59,6 +61,8 @@ void toplevel(float *ram, uint32 *numP, uint32 *numA) {
 			float exp1 = (ax - *px);
 			float exp2 = (ay - *py);
 			float exp = exp1 * exp1 + exp2 * exp2;
+//			float inv_sqrt = Q_rsqrt(exp);
+//			float d = 1/inv_sqrt;
 			float d = sqrt(exp);
 
 			float x_norm;
@@ -81,3 +85,21 @@ void toplevel(float *ram, uint32 *numP, uint32 *numA) {
 		}
 	}
 }
+
+//float Q_rsqrt( float number )
+//{
+//#pragma HLS INLINE
+//	long i;
+//	float x2, y;
+//	const float threehalfs = 1.5F;
+//
+//	x2 = number * 0.5F;
+//	y  = number;
+//	i  = * ( long * ) &y;                       // evil floating point bit level hacking
+//	i  = 0x5f3759df - ( i >> 1 );               // what the fuck?
+//	y  = * ( float * ) &i;
+//	y  = y * ( threehalfs - ( x2 * y * y ) );   // 1st iteration
+////	y  = y * ( threehalfs - ( x2 * y * y ) );   // 2nd iteration, this can be removed
+//
+//	return y;
+//}

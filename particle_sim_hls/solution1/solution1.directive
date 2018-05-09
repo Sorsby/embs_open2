@@ -9,14 +9,11 @@
         <directive functionName="toplevel" label="toplevel_label0" functionLabel="">
             <pragma name="PIPELINE"/>
         </directive>
-        <directive functionName="toplevel" label="calculateVelocityLoop" functionLabel="">
+        <directive functionName="toplevel" label="updateParticleLoop" functionLabel="">
             <pragma name="PIPELINE"/>
         </directive>
-        <directive functionName="toplevel" label="updateParticleLoop" functionLabel="">
-            <pragma name="UNROLL"/>
-        </directive>
         <directive functionName="toplevel" label="calculateVelocityLoop" functionLabel="">
-            <pragma name="LOOP_FLATTEN"/>
+            <pragma name="PIPELINE"/>
         </directive>
     </sourceFile>
 </AutoPilot:ProjectResources>

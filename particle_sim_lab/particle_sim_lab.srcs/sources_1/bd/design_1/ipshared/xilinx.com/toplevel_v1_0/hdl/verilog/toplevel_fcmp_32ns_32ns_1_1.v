@@ -10,7 +10,7 @@
 
 module toplevel_fcmp_32ns_32ns_1_1
 #(parameter
-    ID         = 6,
+    ID         = 7,
     NUM_STAGE  = 1,
     din0_WIDTH = 32,
     din1_WIDTH = 32,

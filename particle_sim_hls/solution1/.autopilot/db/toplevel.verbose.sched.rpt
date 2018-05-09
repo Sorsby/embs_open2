@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'toplevel'
 ================================================================
-* Date:           Tue May  8 14:37:59 2018
+* Date:           Wed May 09 02:41:27 2018
 
 * Version:        2016.2 (Build 1577090 on Thu Jun 02 16:59:10 MDT 2016)
 * Project:        particle_sim_hls
@@ -384,13 +384,13 @@ ST_2: tmp_62_cast [1/1] 0.00ns
 :2  %tmp_62_cast = zext i30 %tmp_1 to i33
 
 ST_2: stg_145 [1/1] 0.00ns
-:3  call void (...)* @_ssdm_op_SpecBitsMap(float* %MAXI), !map !26
+:3  call void (...)* @_ssdm_op_SpecBitsMap(float* %MAXI), !map !19
 
 ST_2: stg_146 [1/1] 0.00ns
-:4  call void (...)* @_ssdm_op_SpecBitsMap(i32* %numP) nounwind, !map !30
+:4  call void (...)* @_ssdm_op_SpecBitsMap(i32* %numP) nounwind, !map !23
 
 ST_2: stg_147 [1/1] 0.00ns
-:5  call void (...)* @_ssdm_op_SpecBitsMap(i32* %numA) nounwind, !map !34
+:5  call void (...)* @_ssdm_op_SpecBitsMap(i32* %numA) nounwind, !map !27
 
 ST_2: stg_148 [1/1] 0.00ns
 :6  call void (...)* @_ssdm_op_SpecTopModule([9 x i8]* @toplevel_str) nounwind
@@ -440,19 +440,19 @@ ST_3: stg_162 [1/1] 0.00ns
 :2  br i1 %tmp, label %2, label %12
 
 ST_3: tmp_4 [1/1] 0.00ns (grouped into LUT with out node ram2_sum4)
-:12  %tmp_4 = or i32 %i, 2
+:13  %tmp_4 = or i32 %i, 2
 
 ST_3: tmp_5_cast [1/1] 0.00ns (grouped into LUT with out node ram2_sum4)
-:13  %tmp_5_cast = zext i32 %tmp_4 to i33
+:14  %tmp_5_cast = zext i32 %tmp_4 to i33
 
 ST_3: ram2_sum4 [1/1] 2.44ns (out node of the LUT)
-:14  %ram2_sum4 = add i33 %tmp_62_cast, %tmp_5_cast
+:15  %ram2_sum4 = add i33 %tmp_62_cast, %tmp_5_cast
 
 ST_3: ram2_sum4_cast [1/1] 0.00ns
-:15  %ram2_sum4_cast = zext i33 %ram2_sum4 to i64
+:16  %ram2_sum4_cast = zext i33 %ram2_sum4 to i64
 
 ST_3: pvx [1/1] 0.00ns
-:16  %pvx = getelementptr inbounds float* %MAXI, i64 %ram2_sum4_cast
+:17  %pvx = getelementptr inbounds float* %MAXI, i64 %ram2_sum4_cast
 
 ST_3: stg_168 [2/2] 0.00ns
 :0  ret void
@@ -460,254 +460,254 @@ ST_3: stg_168 [2/2] 0.00ns
 
  <State 4>: 8.75ns
 ST_4: tmp_1_cast [1/1] 0.00ns
-:3  %tmp_1_cast = zext i32 %i to i33
+:4  %tmp_1_cast = zext i32 %i to i33
 
 ST_4: ram2_sum [1/1] 2.44ns
-:4  %ram2_sum = add i33 %tmp_62_cast, %tmp_1_cast
+:5  %ram2_sum = add i33 %tmp_62_cast, %tmp_1_cast
 
 ST_4: ram2_sum_cast [1/1] 0.00ns
-:5  %ram2_sum_cast = zext i33 %ram2_sum to i64
+:6  %ram2_sum_cast = zext i33 %ram2_sum to i64
 
 ST_4: px [1/1] 0.00ns
-:6  %px = getelementptr inbounds float* %MAXI, i64 %ram2_sum_cast
+:7  %px = getelementptr inbounds float* %MAXI, i64 %ram2_sum_cast
 
 ST_4: pvx_load_req [7/7] 8.75ns
-:22  %pvx_load_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %pvx, i32 1)
+:23  %pvx_load_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %pvx, i32 1)
 
 
  <State 5>: 8.75ns
 ST_5: tmp_6 [1/1] 0.00ns (grouped into LUT with out node ram2_sum5)
-:17  %tmp_6 = or i32 %i, 3
+:18  %tmp_6 = or i32 %i, 3
 
 ST_5: tmp_7_cast [1/1] 0.00ns (grouped into LUT with out node ram2_sum5)
-:18  %tmp_7_cast = zext i32 %tmp_6 to i33
+:19  %tmp_7_cast = zext i32 %tmp_6 to i33
 
 ST_5: ram2_sum5 [1/1] 2.44ns (out node of the LUT)
-:19  %ram2_sum5 = add i33 %tmp_62_cast, %tmp_7_cast
+:20  %ram2_sum5 = add i33 %tmp_62_cast, %tmp_7_cast
 
 ST_5: ram2_sum5_cast [1/1] 0.00ns
-:20  %ram2_sum5_cast = zext i33 %ram2_sum5 to i64
+:21  %ram2_sum5_cast = zext i33 %ram2_sum5 to i64
 
 ST_5: pvy [1/1] 0.00ns
-:21  %pvy = getelementptr inbounds float* %MAXI, i64 %ram2_sum5_cast
+:22  %pvy = getelementptr inbounds float* %MAXI, i64 %ram2_sum5_cast
 
 ST_5: pvx_load_req [6/7] 8.75ns
-:22  %pvx_load_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %pvx, i32 1)
+:23  %pvx_load_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %pvx, i32 1)
 
 ST_5: px_load_req [7/7] 8.75ns
-:24  %px_load_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %px, i32 1)
+:25  %px_load_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %px, i32 1)
 
 
  <State 6>: 8.75ns
 ST_6: tmp_2 [1/1] 0.00ns (grouped into LUT with out node ram2_sum3)
-:7  %tmp_2 = or i32 %i, 1
+:8  %tmp_2 = or i32 %i, 1
 
 ST_6: tmp_3_cast [1/1] 0.00ns (grouped into LUT with out node ram2_sum3)
-:8  %tmp_3_cast = zext i32 %tmp_2 to i33
+:9  %tmp_3_cast = zext i32 %tmp_2 to i33
 
 ST_6: ram2_sum3 [1/1] 2.44ns (out node of the LUT)
-:9  %ram2_sum3 = add i33 %tmp_62_cast, %tmp_3_cast
+:10  %ram2_sum3 = add i33 %tmp_62_cast, %tmp_3_cast
 
 ST_6: ram2_sum3_cast [1/1] 0.00ns
-:10  %ram2_sum3_cast = zext i33 %ram2_sum3 to i64
+:11  %ram2_sum3_cast = zext i33 %ram2_sum3 to i64
 
 ST_6: py [1/1] 0.00ns
-:11  %py = getelementptr inbounds float* %MAXI, i64 %ram2_sum3_cast
+:12  %py = getelementptr inbounds float* %MAXI, i64 %ram2_sum3_cast
 
 ST_6: pvx_load_req [5/7] 8.75ns
-:22  %pvx_load_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %pvx, i32 1)
+:23  %pvx_load_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %pvx, i32 1)
 
 ST_6: px_load_req [6/7] 8.75ns
-:24  %px_load_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %px, i32 1)
+:25  %px_load_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %px, i32 1)
 
 ST_6: pvy_load_req [7/7] 8.75ns
-:30  %pvy_load_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %pvy, i32 1)
+:31  %pvy_load_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %pvy, i32 1)
 
 
  <State 7>: 8.75ns
 ST_7: pvx_load_req [4/7] 8.75ns
-:22  %pvx_load_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %pvx, i32 1)
+:23  %pvx_load_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %pvx, i32 1)
 
 ST_7: px_load_req [5/7] 8.75ns
-:24  %px_load_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %px, i32 1)
+:25  %px_load_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %px, i32 1)
 
 ST_7: pvy_load_req [6/7] 8.75ns
-:30  %pvy_load_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %pvy, i32 1)
+:31  %pvy_load_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %pvy, i32 1)
 
 ST_7: py_load_req [7/7] 8.75ns
-:32  %py_load_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %py, i32 1)
+:33  %py_load_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %py, i32 1)
 
 
  <State 8>: 8.75ns
 ST_8: pvx_load_req [3/7] 8.75ns
-:22  %pvx_load_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %pvx, i32 1)
+:23  %pvx_load_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %pvx, i32 1)
 
 ST_8: px_load_req [4/7] 8.75ns
-:24  %px_load_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %px, i32 1)
+:25  %px_load_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %px, i32 1)
 
 ST_8: pvy_load_req [5/7] 8.75ns
-:30  %pvy_load_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %pvy, i32 1)
+:31  %pvy_load_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %pvy, i32 1)
 
 ST_8: py_load_req [6/7] 8.75ns
-:32  %py_load_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %py, i32 1)
+:33  %py_load_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %py, i32 1)
 
 
  <State 9>: 8.75ns
 ST_9: pvx_load_req [2/7] 8.75ns
-:22  %pvx_load_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %pvx, i32 1)
+:23  %pvx_load_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %pvx, i32 1)
 
 ST_9: px_load_req [3/7] 8.75ns
-:24  %px_load_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %px, i32 1)
+:25  %px_load_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %px, i32 1)
 
 ST_9: pvy_load_req [4/7] 8.75ns
-:30  %pvy_load_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %pvy, i32 1)
+:31  %pvy_load_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %pvy, i32 1)
 
 ST_9: py_load_req [5/7] 8.75ns
-:32  %py_load_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %py, i32 1)
+:33  %py_load_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %py, i32 1)
 
 
  <State 10>: 8.75ns
 ST_10: pvx_load_req [1/7] 8.75ns
-:22  %pvx_load_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %pvx, i32 1)
+:23  %pvx_load_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %pvx, i32 1)
 
 ST_10: px_load_req [2/7] 8.75ns
-:24  %px_load_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %px, i32 1)
+:25  %px_load_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %px, i32 1)
 
 ST_10: pvy_load_req [3/7] 8.75ns
-:30  %pvy_load_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %pvy, i32 1)
+:31  %pvy_load_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %pvy, i32 1)
 
 ST_10: py_load_req [4/7] 8.75ns
-:32  %py_load_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %py, i32 1)
+:33  %py_load_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %py, i32 1)
 
 
  <State 11>: 8.75ns
 ST_11: pvx_read [1/1] 8.75ns
-:23  %pvx_read = call float @_ssdm_op_Read.m_axi.floatP(float* %pvx)
+:24  %pvx_read = call float @_ssdm_op_Read.m_axi.floatP(float* %pvx)
 
 ST_11: px_load_req [1/7] 8.75ns
-:24  %px_load_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %px, i32 1)
+:25  %px_load_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %px, i32 1)
 
 ST_11: pvy_load_req [2/7] 8.75ns
-:30  %pvy_load_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %pvy, i32 1)
+:31  %pvy_load_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %pvy, i32 1)
 
 ST_11: py_load_req [3/7] 8.75ns
-:32  %py_load_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %py, i32 1)
+:33  %py_load_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %py, i32 1)
 
 
  <State 12>: 8.75ns
 ST_12: px_read [1/1] 8.75ns
-:25  %px_read = call float @_ssdm_op_Read.m_axi.floatP(float* %px)
+:26  %px_read = call float @_ssdm_op_Read.m_axi.floatP(float* %px)
 
 ST_12: pvy_load_req [1/7] 8.75ns
-:30  %pvy_load_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %pvy, i32 1)
+:31  %pvy_load_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %pvy, i32 1)
 
 ST_12: py_load_req [2/7] 8.75ns
-:32  %py_load_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %py, i32 1)
+:33  %py_load_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %py, i32 1)
 
 
  <State 13>: 8.75ns
 ST_13: tmp_8 [5/5] 7.26ns
-:26  %tmp_8 = fadd float %px_read, %pvx_read
+:27  %tmp_8 = fadd float %px_read, %pvx_read
 
 ST_13: pvy_read [1/1] 8.75ns
-:31  %pvy_read = call float @_ssdm_op_Read.m_axi.floatP(float* %pvy)
+:32  %pvy_read = call float @_ssdm_op_Read.m_axi.floatP(float* %pvy)
 
 ST_13: py_load_req [1/7] 8.75ns
-:32  %py_load_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %py, i32 1)
+:33  %py_load_req = call i1 @_ssdm_op_ReadReq.m_axi.floatP(float* %py, i32 1)
 
 
  <State 14>: 8.75ns
 ST_14: tmp_8 [4/5] 7.26ns
-:26  %tmp_8 = fadd float %px_read, %pvx_read
+:27  %tmp_8 = fadd float %px_read, %pvx_read
 
 ST_14: py_read [1/1] 8.75ns
-:33  %py_read = call float @_ssdm_op_Read.m_axi.floatP(float* %py)
+:34  %py_read = call float @_ssdm_op_Read.m_axi.floatP(float* %py)
 
 
  <State 15>: 7.26ns
 ST_15: tmp_8 [3/5] 7.26ns
-:26  %tmp_8 = fadd float %px_read, %pvx_read
+:27  %tmp_8 = fadd float %px_read, %pvx_read
 
 ST_15: tmp_9 [5/5] 7.26ns
-:34  %tmp_9 = fadd float %py_read, %pvy_read
+:35  %tmp_9 = fadd float %py_read, %pvy_read
 
 
  <State 16>: 7.26ns
 ST_16: tmp_8 [2/5] 7.26ns
-:26  %tmp_8 = fadd float %px_read, %pvx_read
+:27  %tmp_8 = fadd float %px_read, %pvx_read
 
 ST_16: tmp_9 [4/5] 7.26ns
-:34  %tmp_9 = fadd float %py_read, %pvy_read
+:35  %tmp_9 = fadd float %py_read, %pvy_read
 
 
  <State 17>: 8.75ns
 ST_17: tmp_8 [1/5] 7.26ns
-:26  %tmp_8 = fadd float %px_read, %pvx_read
+:27  %tmp_8 = fadd float %px_read, %pvx_read
 
 ST_17: px_req24 [1/1] 8.75ns
-:27  %px_req24 = call i1 @_ssdm_op_WriteReq.m_axi.floatP(float* %px, i32 1)
+:28  %px_req24 = call i1 @_ssdm_op_WriteReq.m_axi.floatP(float* %px, i32 1)
 
 ST_17: tmp_9 [3/5] 7.26ns
-:34  %tmp_9 = fadd float %py_read, %pvy_read
+:35  %tmp_9 = fadd float %py_read, %pvy_read
 
 
  <State 18>: 8.75ns
 ST_18: stg_224 [1/1] 8.75ns
-:28  call void @_ssdm_op_Write.m_axi.floatP(float* %px, float %tmp_8, i4 -1)
+:29  call void @_ssdm_op_Write.m_axi.floatP(float* %px, float %tmp_8, i4 -1)
 
 ST_18: tmp_9 [2/5] 7.26ns
-:34  %tmp_9 = fadd float %py_read, %pvy_read
+:35  %tmp_9 = fadd float %py_read, %pvy_read
 
 
  <State 19>: 8.75ns
 ST_19: tmp_9 [1/5] 7.26ns
-:34  %tmp_9 = fadd float %py_read, %pvy_read
+:35  %tmp_9 = fadd float %py_read, %pvy_read
 
 ST_19: py_req20 [1/1] 8.75ns
-:35  %py_req20 = call i1 @_ssdm_op_WriteReq.m_axi.floatP(float* %py, i32 1)
+:36  %py_req20 = call i1 @_ssdm_op_WriteReq.m_axi.floatP(float* %py, i32 1)
 
 
  <State 20>: 8.75ns
 ST_20: px_resp25 [5/5] 8.75ns
-:29  %px_resp25 = call i1 @_ssdm_op_WriteResp.m_axi.floatP(float* %px)
+:30  %px_resp25 = call i1 @_ssdm_op_WriteResp.m_axi.floatP(float* %px)
 
 ST_20: stg_229 [1/1] 8.75ns
-:36  call void @_ssdm_op_Write.m_axi.floatP(float* %py, float %tmp_9, i4 -1)
+:37  call void @_ssdm_op_Write.m_axi.floatP(float* %py, float %tmp_9, i4 -1)
 
 
  <State 21>: 8.75ns
 ST_21: px_resp25 [4/5] 8.75ns
-:29  %px_resp25 = call i1 @_ssdm_op_WriteResp.m_axi.floatP(float* %px)
+:30  %px_resp25 = call i1 @_ssdm_op_WriteResp.m_axi.floatP(float* %px)
 
 ST_21: py_resp21 [5/5] 8.75ns
-:37  %py_resp21 = call i1 @_ssdm_op_WriteResp.m_axi.floatP(float* %py)
+:38  %py_resp21 = call i1 @_ssdm_op_WriteResp.m_axi.floatP(float* %py)
 
 
  <State 22>: 8.75ns
 ST_22: px_resp25 [3/5] 8.75ns
-:29  %px_resp25 = call i1 @_ssdm_op_WriteResp.m_axi.floatP(float* %px)
+:30  %px_resp25 = call i1 @_ssdm_op_WriteResp.m_axi.floatP(float* %px)
 
 ST_22: py_resp21 [4/5] 8.75ns
-:37  %py_resp21 = call i1 @_ssdm_op_WriteResp.m_axi.floatP(float* %py)
+:38  %py_resp21 = call i1 @_ssdm_op_WriteResp.m_axi.floatP(float* %py)
 
 
  <State 23>: 8.75ns
 ST_23: px_resp25 [2/5] 8.75ns
-:29  %px_resp25 = call i1 @_ssdm_op_WriteResp.m_axi.floatP(float* %px)
+:30  %px_resp25 = call i1 @_ssdm_op_WriteResp.m_axi.floatP(float* %px)
 
 ST_23: py_resp21 [3/5] 8.75ns
-:37  %py_resp21 = call i1 @_ssdm_op_WriteResp.m_axi.floatP(float* %py)
+:38  %py_resp21 = call i1 @_ssdm_op_WriteResp.m_axi.floatP(float* %py)
 
 
  <State 24>: 8.75ns
 ST_24: px_resp25 [1/5] 8.75ns
-:29  %px_resp25 = call i1 @_ssdm_op_WriteResp.m_axi.floatP(float* %px)
+:30  %px_resp25 = call i1 @_ssdm_op_WriteResp.m_axi.floatP(float* %px)
 
 ST_24: py_resp21 [2/5] 8.75ns
-:37  %py_resp21 = call i1 @_ssdm_op_WriteResp.m_axi.floatP(float* %py)
+:38  %py_resp21 = call i1 @_ssdm_op_WriteResp.m_axi.floatP(float* %py)
 
 ST_24: tmp_12 [1/1] 6.79ns
-:44  %tmp_12 = fcmp ole float %tmp_8, 0.000000e+00
+:45  %tmp_12 = fcmp ole float %tmp_8, 0.000000e+00
 
 
  <State 25>: 8.75ns
@@ -718,41 +718,44 @@ ST_25: tmp_s [1/1] 0.00ns
 :1  %tmp_s = call i32 (...)* @_ssdm_op_SpecRegionBegin([19 x i8]* @p_str6) nounwind
 
 ST_25: stg_241 [1/1] 0.00ns
-:2  call void (...)* @_ssdm_op_SpecLoopTripCount(i32 0, i32 12000, i32 12000, [1 x i8]* @p_str3) nounwind
+:2  call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str3) nounwind
+
+ST_25: stg_242 [1/1] 0.00ns
+:3  call void (...)* @_ssdm_op_SpecLoopTripCount(i32 0, i32 12000, i32 12000, [1 x i8]* @p_str3) nounwind
 
 ST_25: py_resp21 [1/5] 8.75ns
-:37  %py_resp21 = call i1 @_ssdm_op_WriteResp.m_axi.floatP(float* %py)
+:38  %py_resp21 = call i1 @_ssdm_op_WriteResp.m_axi.floatP(float* %py)
 
 ST_25: tmp_8_to_int [1/1] 0.00ns
-:38  %tmp_8_to_int = bitcast float %tmp_8 to i32
+:39  %tmp_8_to_int = bitcast float %tmp_8 to i32
 
 ST_25: tmp_3 [1/1] 0.00ns
-:39  %tmp_3 = call i8 @_ssdm_op_PartSelect.i8.i32.i32.i32(i32 %tmp_8_to_int, i32 23, i32 30)
+:40  %tmp_3 = call i8 @_ssdm_op_PartSelect.i8.i32.i32.i32(i32 %tmp_8_to_int, i32 23, i32 30)
 
 ST_25: tmp_5 [1/1] 0.00ns
-:40  %tmp_5 = trunc i32 %tmp_8_to_int to i23
+:41  %tmp_5 = trunc i32 %tmp_8_to_int to i23
 
 ST_25: notlhs [1/1] 2.00ns
-:41  %notlhs = icmp ne i8 %tmp_3, -1
+:42  %notlhs = icmp ne i8 %tmp_3, -1
 
 ST_25: notrhs [1/1] 2.39ns
-:42  %notrhs = icmp eq i23 %tmp_5, 0
+:43  %notrhs = icmp eq i23 %tmp_5, 0
 
 ST_25: tmp_7 [1/1] 0.00ns (grouped into LUT with out node tmp_15)
-:43  %tmp_7 = or i1 %notrhs, %notlhs
+:44  %tmp_7 = or i1 %notrhs, %notlhs
 
 ST_25: tmp_15 [1/1] 1.37ns (out node of the LUT)
-:45  %tmp_15 = and i1 %tmp_7, %tmp_12
+:46  %tmp_15 = and i1 %tmp_7, %tmp_12
 
-ST_25: stg_250 [1/1] 1.57ns
-:46  br i1 %tmp_15, label %3, label %._crit_edge
+ST_25: stg_251 [1/1] 1.57ns
+:47  br i1 %tmp_15, label %3, label %._crit_edge
 
 ST_25: px_req22 [1/1] 8.75ns
 :0  %px_req22 = call i1 @_ssdm_op_WriteReq.m_axi.floatP(float* %px, i32 1)
 
 
  <State 26>: 8.75ns
-ST_26: stg_252 [1/1] 8.75ns
+ST_26: stg_253 [1/1] 8.75ns
 :1  call void @_ssdm_op_Write.m_axi.floatP(float* %px, float 0.000000e+00, i4 -1)
 
 
@@ -765,7 +768,7 @@ ST_27: pvx_req16 [1/1] 8.75ns
 ST_28: px_resp23 [5/5] 8.75ns
 :2  %px_resp23 = call i1 @_ssdm_op_WriteResp.m_axi.floatP(float* %px)
 
-ST_28: stg_255 [1/1] 8.75ns
+ST_28: stg_256 [1/1] 8.75ns
 :4  call void @_ssdm_op_Write.m_axi.floatP(float* %pvx, float 0.000000e+00, i4 -1)
 
 
@@ -805,7 +808,7 @@ ST_32: pvx_resp17 [2/5] 8.75ns
 ST_33: pvx_resp17 [1/5] 8.75ns
 :5  %pvx_resp17 = call i1 @_ssdm_op_WriteResp.m_axi.floatP(float* %pvx)
 
-ST_33: stg_265 [1/1] 1.57ns
+ST_33: stg_266 [1/1] 1.57ns
 :6  br label %._crit_edge
 
 ST_33: tmp_29 [1/1] 6.79ns
@@ -840,7 +843,7 @@ ST_34: tmp_28 [1/1] 0.00ns (grouped into LUT with out node tmp_32)
 ST_34: tmp_32 [1/1] 1.37ns (out node of the LUT)
 ._crit_edge:9  %tmp_32 = and i1 %tmp_28, %tmp_29
 
-ST_34: stg_276 [1/1] 1.57ns
+ST_34: stg_277 [1/1] 1.57ns
 ._crit_edge:10  br i1 %tmp_32, label %4, label %._crit_edge2
 
 ST_34: py_req18 [1/1] 8.75ns
@@ -848,7 +851,7 @@ ST_34: py_req18 [1/1] 8.75ns
 
 
  <State 35>: 8.75ns
-ST_35: stg_278 [1/1] 8.75ns
+ST_35: stg_279 [1/1] 8.75ns
 :1  call void @_ssdm_op_Write.m_axi.floatP(float* %py, float 0.000000e+00, i4 -1)
 
 
@@ -861,7 +864,7 @@ ST_36: pvy_req12 [1/1] 8.75ns
 ST_37: py_resp19 [5/5] 8.75ns
 :2  %py_resp19 = call i1 @_ssdm_op_WriteResp.m_axi.floatP(float* %py)
 
-ST_37: stg_281 [1/1] 8.75ns
+ST_37: stg_282 [1/1] 8.75ns
 :4  call void @_ssdm_op_Write.m_axi.floatP(float* %pvy, float 0.000000e+00, i4 -1)
 
 
@@ -901,7 +904,7 @@ ST_41: pvy_resp13 [2/5] 8.75ns
 ST_42: pvy_resp13 [1/5] 8.75ns
 :5  %pvy_resp13 = call i1 @_ssdm_op_WriteResp.m_axi.floatP(float* %pvy)
 
-ST_42: stg_291 [1/1] 1.57ns
+ST_42: stg_292 [1/1] 1.57ns
 :6  br label %._crit_edge2
 
 ST_42: tmp_44 [1/1] 6.79ns
@@ -936,7 +939,7 @@ ST_43: tmp_43 [1/1] 0.00ns (grouped into LUT with out node tmp_45)
 ST_43: tmp_45 [1/1] 1.37ns (out node of the LUT)
 ._crit_edge2:9  %tmp_45 = and i1 %tmp_43, %tmp_44
 
-ST_43: stg_302 [1/1] 1.57ns
+ST_43: stg_303 [1/1] 1.57ns
 ._crit_edge2:10  br i1 %tmp_45, label %5, label %._crit_edge3
 
 ST_43: px_req [1/1] 8.75ns
@@ -944,7 +947,7 @@ ST_43: px_req [1/1] 8.75ns
 
 
  <State 44>: 8.75ns
-ST_44: stg_304 [1/1] 8.75ns
+ST_44: stg_305 [1/1] 8.75ns
 :1  call void @_ssdm_op_Write.m_axi.floatP(float* %px, float 1.440000e+03, i4 -1)
 
 
@@ -960,7 +963,7 @@ ST_45: pvx_req14 [1/1] 8.75ns
 ST_46: px_resp [4/5] 8.75ns
 :2  %px_resp = call i1 @_ssdm_op_WriteResp.m_axi.floatP(float* %px)
 
-ST_46: stg_308 [1/1] 8.75ns
+ST_46: stg_309 [1/1] 8.75ns
 :4  call void @_ssdm_op_Write.m_axi.floatP(float* %pvx, float 0.000000e+00, i4 -1)
 
 
@@ -997,7 +1000,7 @@ ST_50: pvx_resp15 [2/5] 8.75ns
 ST_51: pvx_resp15 [1/5] 8.75ns
 :5  %pvx_resp15 = call i1 @_ssdm_op_WriteResp.m_axi.floatP(float* %pvx)
 
-ST_51: stg_317 [1/1] 1.57ns
+ST_51: stg_318 [1/1] 1.57ns
 :6  br label %._crit_edge3
 
 ST_51: tmp_49 [1/1] 6.79ns
@@ -1032,7 +1035,7 @@ ST_52: tmp_48 [1/1] 0.00ns (grouped into LUT with out node tmp_50)
 ST_52: tmp_50 [1/1] 1.37ns (out node of the LUT)
 ._crit_edge3:9  %tmp_50 = and i1 %tmp_48, %tmp_49
 
-ST_52: stg_328 [1/1] 1.57ns
+ST_52: stg_329 [1/1] 1.57ns
 ._crit_edge3:10  br i1 %tmp_50, label %6, label %._crit_edge4
 
 ST_52: py_req [1/1] 8.75ns
@@ -1040,7 +1043,7 @@ ST_52: py_req [1/1] 8.75ns
 
 
  <State 53>: 8.75ns
-ST_53: stg_330 [1/1] 8.75ns
+ST_53: stg_331 [1/1] 8.75ns
 :1  call void @_ssdm_op_Write.m_axi.floatP(float* %py, float 9.000000e+02, i4 -1)
 
 
@@ -1056,7 +1059,7 @@ ST_54: pvy_req10 [1/1] 8.75ns
 ST_55: py_resp [4/5] 8.75ns
 :2  %py_resp = call i1 @_ssdm_op_WriteResp.m_axi.floatP(float* %py)
 
-ST_55: stg_334 [1/1] 8.75ns
+ST_55: stg_335 [1/1] 8.75ns
 :4  call void @_ssdm_op_Write.m_axi.floatP(float* %pvy, float 0.000000e+00, i4 -1)
 
 
@@ -1093,7 +1096,7 @@ ST_59: pvy_resp11 [2/5] 8.75ns
 ST_60: pvy_resp11 [1/5] 8.75ns
 :5  %pvy_resp11 = call i1 @_ssdm_op_WriteResp.m_axi.floatP(float* %pvy)
 
-ST_60: stg_343 [1/1] 1.57ns
+ST_60: stg_344 [1/1] 1.57ns
 :6  br label %._crit_edge4
 
 ST_60: tmp_19 [1/1] 0.00ns
@@ -1114,7 +1117,7 @@ ST_60: tmp_21 [1/1] 1.97ns
 ST_60: loopend_1 [1/1] 1.97ns
 ._crit_edge4:5  %loopend_1 = add i32 48000, %tmp_21
 
-ST_60: stg_350 [1/1] 1.57ns
+ST_60: stg_351 [1/1] 1.57ns
 ._crit_edge4:6  br label %7
 
 
@@ -1616,7 +1619,7 @@ ST_112: tmp_34 [3/16] 6.08ns
 ST_113: y_norm [1/16] 6.08ns
 :1  %y_norm = fdiv float %exp2, %d
 
-ST_113: stg_482 [1/1] 1.57ns
+ST_113: stg_483 [1/1] 1.57ns
 :3  br i1 %tmp_57, label %._crit_edge6, label %10
 
 ST_113: tmp_34 [2/16] 6.08ns
@@ -1661,7 +1664,7 @@ ST_118: tmp_36 [2/4] 5.70ns
 ST_119: tmp_36 [1/4] 5.70ns
 :2  %tmp_36 = fmul float %y_norm, %tmp_34
 
-ST_119: stg_493 [1/1] 1.57ns
+ST_119: stg_494 [1/1] 1.57ns
 :3  br label %._crit_edge6
 
 
@@ -1712,7 +1715,7 @@ ST_125: tmp_22 [1/1] 0.00ns
 ST_125: tmp_23 [1/1] 0.00ns
 :1  %tmp_23 = phi float [ %tmp_16, %._crit_edge4 ], [ %tmp_40, %._crit_edge5 ]
 
-ST_125: stg_506 [1/1] 0.00ns
+ST_125: stg_507 [1/1] 0.00ns
 :4  br i1 %tmp_24, label %8, label %11
 
 ST_125: tmp_37 [5/5] 7.26ns
@@ -1723,19 +1726,19 @@ ST_125: tmp_38 [5/5] 7.26ns
 
 
  <State 126>: 7.26ns
-ST_126: stg_509 [1/1] 0.00ns
+ST_126: stg_510 [1/1] 0.00ns
 :0  call void (...)* @_ssdm_op_SpecLoopName([22 x i8]* @p_str7) nounwind
 
 ST_126: tmp_42 [1/1] 0.00ns
 :1  %tmp_42 = call i32 (...)* @_ssdm_op_SpecRegionBegin([22 x i8]* @p_str7) nounwind
 
-ST_126: stg_511 [1/1] 0.00ns
+ST_126: stg_512 [1/1] 0.00ns
 :2  call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str3) nounwind
 
-ST_126: stg_512 [1/1] 0.00ns
+ST_126: stg_513 [1/1] 0.00ns
 :3  call void (...)* @_ssdm_op_SpecLoopTripCount(i32 0, i32 104, i32 104, [1 x i8]* @p_str3) nounwind
 
-ST_126: stg_513 [1/1] 1.57ns
+ST_126: stg_514 [1/1] 1.57ns
 :39  br i1 %tmp_56, label %9, label %._crit_edge5
 
 ST_126: tmp_37 [4/5] 7.26ns
@@ -1771,7 +1774,7 @@ ST_129: pvx_req [1/1] 8.75ns
 ST_129: tmp_38 [1/5] 7.26ns
 ._crit_edge6:8  %tmp_38 = fadd float %tmp_22, %y_norm_1
 
-ST_129: stg_523 [1/1] 1.57ns
+ST_129: stg_524 [1/1] 1.57ns
 ._crit_edge6:12  br label %._crit_edge5
 
 ST_129: tmp_39 [1/1] 0.00ns
@@ -1783,12 +1786,12 @@ ST_129: tmp_40 [1/1] 0.00ns
 ST_129: empty [1/1] 0.00ns
 ._crit_edge5:2  %empty = call i32 (...)* @_ssdm_op_SpecRegionEnd([22 x i8]* @p_str7, i32 %tmp_42) nounwind
 
-ST_129: stg_527 [1/1] 0.00ns
+ST_129: stg_528 [1/1] 0.00ns
 ._crit_edge5:3  br label %7
 
 
  <State 130>: 8.75ns
-ST_130: stg_528 [1/1] 8.75ns
+ST_130: stg_529 [1/1] 8.75ns
 ._crit_edge6:6  call void @_ssdm_op_Write.m_axi.floatP(float* %pvx, float %tmp_37, i4 -1)
 
 
@@ -1804,7 +1807,7 @@ ST_131: pvy_req [1/1] 8.75ns
 ST_132: pvx_resp [4/5] 8.75ns
 ._crit_edge6:7  %pvx_resp = call i1 @_ssdm_op_WriteResp.m_axi.floatP(float* %pvx)
 
-ST_132: stg_532 [1/1] 8.75ns
+ST_132: stg_533 [1/1] 8.75ns
 ._crit_edge6:10  call void @_ssdm_op_Write.m_axi.floatP(float* %pvy, float %tmp_38, i4 -1)
 
 
@@ -1849,12 +1852,12 @@ ST_138: empty_4 [1/1] 0.00ns
 ST_138: i_1 [1/1] 2.44ns
 :1  %i_1 = add i32 %i, 4
 
-ST_138: stg_543 [1/1] 0.00ns
+ST_138: stg_544 [1/1] 0.00ns
 :2  br label %1
 
 
  <State 139>: 0.00ns
-ST_139: stg_544 [1/2] 0.00ns
+ST_139: stg_545 [1/2] 0.00ns
 :0  ret void
 
 
@@ -1866,14 +1869,14 @@ Target clock period: 10ns, clock uncertainty: 1.25ns.
 
  <State 97>: 9.53ns
 The critical path consists of the following:
-	'fcmp' operation ('tmp_55', particle_sim_hls/toplevel.cpp:66) (6.79 ns)
-	'and' operation ('tmp_56', particle_sim_hls/toplevel.cpp:66) (1.37 ns)
+	'fcmp' operation ('tmp_55', particle_sim_hls/toplevel.cpp:70) (6.79 ns)
+	'and' operation ('tmp_56', particle_sim_hls/toplevel.cpp:70) (1.37 ns)
 	blocking operation 1.37 ns on control path)
 
  <State 129>: 8.83ns
 The critical path consists of the following:
-	'fadd' operation ('tmp_37', particle_sim_hls/toplevel.cpp:78) (7.26 ns)
-	multiplexor before 'phi' operation ('tmp_39', particle_sim_hls/toplevel.cpp:79) with incoming values : ('pvy_read', particle_sim_hls/toplevel.cpp:30) ('tmp_38', particle_sim_hls/toplevel.cpp:79) (1.57 ns)
+	'fadd' operation ('tmp_37', particle_sim_hls/toplevel.cpp:82) (7.26 ns)
+	multiplexor before 'phi' operation ('tmp_39', particle_sim_hls/toplevel.cpp:83) with incoming values : ('pvy_read', particle_sim_hls/toplevel.cpp:32) ('tmp_38', particle_sim_hls/toplevel.cpp:83) (1.57 ns)
 
 
 ============================================================

@@ -3,10 +3,10 @@
 <!--                                                         -->
 <!-- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="14" Path="/home/userfs/m/ms1516/w2k/embs_open2/particle_sim_hls/solution1/impl/ip/tmp.xpr">
+<Project Version="7" Minor="14" Path="C:/Users/Matthew/Desktop/embs_open2/particle_sim_hls/solution1/impl/ip/tmp.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="b9854ebd9636468ca985e2ee5b46e844"/>
+    <Option Name="Id" Val="9d65e738446945c9899611af0bf06c23"/>
     <Option Name="Part" Val="xc7vx485tffg1157-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -57,7 +57,7 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/ip/toplevel_ap_fmul_2_max_dsp_32/toplevel_ap_fmul_2_max_dsp_32.xci">
+      <File Path="$PSRCDIR/sources_1/ip/toplevel_ap_fcmp_0_no_dsp_32/toplevel_ap_fcmp_0_no_dsp_32.xci">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -71,14 +71,7 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/ip/toplevel_ap_fcmp_0_no_dsp_32/toplevel_ap_fcmp_0_no_dsp_32.xci">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/ip/toplevel_ap_fsqrt_10_no_dsp_32/toplevel_ap_fsqrt_10_no_dsp_32.xci">
+      <File Path="$PSRCDIR/sources_1/ip/toplevel_ap_fmul_2_max_dsp_32/toplevel_ap_fmul_2_max_dsp_32.xci">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -125,6 +118,9 @@
     </Simulator>
     <Simulator Name="Riviera">
       <Option Name="Description" Val="Riviera-PRO Simulator"/>
+    </Simulator>
+    <Simulator Name="ActiveHDL">
+      <Option Name="Description" Val="Active-HDL Simulator"/>
     </Simulator>
   </Simulators>
   <Runs Version="1" Minor="10">

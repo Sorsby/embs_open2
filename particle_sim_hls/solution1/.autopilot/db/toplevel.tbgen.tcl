@@ -178,13 +178,13 @@ set RtlHierarchyInfo {[
 		"SubBlockPort" : []},
 	{"Level" : "1", "Path" : "`AUTOTB_DUT_INST.toplevel_AXILiteS_s_axi_U", "Parent" : "0", "Child" : []},
 	{"Level" : "1", "Path" : "`AUTOTB_DUT_INST.toplevel_MAXI_m_axi_U", "Parent" : "0", "Child" : []},
-	{"Level" : "1", "Path" : "`AUTOTB_DUT_INST.toplevel_faddfsub_32ns_32ns_32_5_full_dsp_U1", "Parent" : "0", "Child" : []},
-	{"Level" : "1", "Path" : "`AUTOTB_DUT_INST.toplevel_fadd_32ns_32ns_32_5_full_dsp_U2", "Parent" : "0", "Child" : []},
+	{"Level" : "1", "Path" : "`AUTOTB_DUT_INST.toplevel_faddfsub_32ns_32ns_32_5_full_dsp_U0", "Parent" : "0", "Child" : []},
+	{"Level" : "1", "Path" : "`AUTOTB_DUT_INST.toplevel_fadd_32ns_32ns_32_5_full_dsp_U1", "Parent" : "0", "Child" : []},
+	{"Level" : "1", "Path" : "`AUTOTB_DUT_INST.toplevel_fmul_32ns_32ns_32_4_max_dsp_U2", "Parent" : "0", "Child" : []},
 	{"Level" : "1", "Path" : "`AUTOTB_DUT_INST.toplevel_fmul_32ns_32ns_32_4_max_dsp_U3", "Parent" : "0", "Child" : []},
-	{"Level" : "1", "Path" : "`AUTOTB_DUT_INST.toplevel_fmul_32ns_32ns_32_4_max_dsp_U4", "Parent" : "0", "Child" : []},
-	{"Level" : "1", "Path" : "`AUTOTB_DUT_INST.toplevel_fdiv_32ns_32ns_32_16_U5", "Parent" : "0", "Child" : []},
-	{"Level" : "1", "Path" : "`AUTOTB_DUT_INST.toplevel_fcmp_32ns_32ns_1_1_U6", "Parent" : "0", "Child" : []},
-	{"Level" : "1", "Path" : "`AUTOTB_DUT_INST.toplevel_fsqrt_32ns_32ns_32_12_U7", "Parent" : "0", "Child" : []}]}
+	{"Level" : "1", "Path" : "`AUTOTB_DUT_INST.toplevel_fdiv_32ns_32ns_32_16_U4", "Parent" : "0", "Child" : []},
+	{"Level" : "1", "Path" : "`AUTOTB_DUT_INST.toplevel_fcmp_32ns_32ns_1_1_U5", "Parent" : "0", "Child" : []},
+	{"Level" : "1", "Path" : "`AUTOTB_DUT_INST.toplevel_fsqrt_32ns_32ns_32_12_U6", "Parent" : "0", "Child" : []}]}
 
 set PerformanceInfo {[
 	{"Name" : "Latency", "Min" : "3", "Max" : "6576003"}

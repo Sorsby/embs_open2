@@ -5084,3 +5084,19 @@ Design is not opened in the current session.
 22:28:05 INFO  : FPGA configured successfully with bitstream "C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
 22:28:31 INFO  : ps7_init is completed.
 22:28:32 INFO  : ps7_post_config is completed.
+22:55:27 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1525816447802,  Project:1525803177283
+22:55:27 INFO  : Project design_1_wrapper_hw_platform_1's source hardware specification located at C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+22:56:56 INFO  : Copied contents of C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_1\system.hdf.
+22:57:00 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+22:57:00 INFO  : Clearing existing target manager status.
+22:57:00 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+22:57:00 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+22:57:25 INFO  : System reset is completed.
+22:57:27 INFO  : FPGA configured successfully with bitstream "C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+22:57:53 INFO  : ps7_init is completed.
+22:57:53 INFO  : ps7_post_config is completed.
+23:04:38 INFO  : System reset is completed.
+23:04:39 INFO  : FPGA configured successfully with bitstream "C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+23:05:05 INFO  : ps7_init is completed.
+23:05:06 INFO  : ps7_post_config is completed.

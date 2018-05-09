@@ -21,9 +21,9 @@ generic (
     C_M_AXI_MAXI_BUSER_WIDTH : INTEGER := 1;
     C_S_AXI_AXILITES_ADDR_WIDTH : INTEGER := 6;
     C_S_AXI_AXILITES_DATA_WIDTH : INTEGER := 32;
-    C_M_AXI_MAXI_USER_VALUE : INTEGER := 0;
+    C_M_AXI_MAXI_PROT_VALUE : INTEGER := 0;
     C_M_AXI_MAXI_CACHE_VALUE : INTEGER := 3;
-    C_M_AXI_MAXI_PROT_VALUE : INTEGER := 0 );
+    C_M_AXI_MAXI_USER_VALUE : INTEGER := 0 );
 port (
     ap_clk : IN STD_LOGIC;
     ap_rst_n : IN STD_LOGIC;
@@ -1039,7 +1039,7 @@ begin
         I_BID => MAXI_BID,
         I_BUSER => MAXI_BUSER);
 
-    toplevel_faddfsub_32ns_32ns_32_5_full_dsp_U1 : component toplevel_faddfsub_32ns_32ns_32_5_full_dsp
+    toplevel_faddfsub_32ns_32ns_32_5_full_dsp_U0 : component toplevel_faddfsub_32ns_32ns_32_5_full_dsp
     generic map (
         ID => 1,
         NUM_STAGE => 5,
@@ -1055,7 +1055,7 @@ begin
         ce => grp_fu_338_ce,
         dout => grp_fu_338_p2);
 
-    toplevel_fadd_32ns_32ns_32_5_full_dsp_U2 : component toplevel_fadd_32ns_32ns_32_5_full_dsp
+    toplevel_fadd_32ns_32ns_32_5_full_dsp_U1 : component toplevel_fadd_32ns_32ns_32_5_full_dsp
     generic map (
         ID => 1,
         NUM_STAGE => 5,
@@ -1070,7 +1070,7 @@ begin
         ce => grp_fu_346_ce,
         dout => grp_fu_346_p2);
 
-    toplevel_fmul_32ns_32ns_32_4_max_dsp_U3 : component toplevel_fmul_32ns_32ns_32_4_max_dsp
+    toplevel_fmul_32ns_32ns_32_4_max_dsp_U2 : component toplevel_fmul_32ns_32ns_32_4_max_dsp
     generic map (
         ID => 1,
         NUM_STAGE => 4,
@@ -1085,7 +1085,7 @@ begin
         ce => grp_fu_352_ce,
         dout => grp_fu_352_p2);
 
-    toplevel_fmul_32ns_32ns_32_4_max_dsp_U4 : component toplevel_fmul_32ns_32ns_32_4_max_dsp
+    toplevel_fmul_32ns_32ns_32_4_max_dsp_U3 : component toplevel_fmul_32ns_32ns_32_4_max_dsp
     generic map (
         ID => 1,
         NUM_STAGE => 4,
@@ -1100,7 +1100,7 @@ begin
         ce => grp_fu_356_ce,
         dout => grp_fu_356_p2);
 
-    toplevel_fdiv_32ns_32ns_32_16_U5 : component toplevel_fdiv_32ns_32ns_32_16
+    toplevel_fdiv_32ns_32ns_32_16_U4 : component toplevel_fdiv_32ns_32ns_32_16
     generic map (
         ID => 1,
         NUM_STAGE => 16,
@@ -1115,7 +1115,7 @@ begin
         ce => grp_fu_362_ce,
         dout => grp_fu_362_p2);
 
-    toplevel_fcmp_32ns_32ns_1_1_U6 : component toplevel_fcmp_32ns_32ns_1_1
+    toplevel_fcmp_32ns_32ns_1_1_U5 : component toplevel_fcmp_32ns_32ns_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -1128,7 +1128,7 @@ begin
         opcode => grp_fu_367_opcode,
         dout => grp_fu_367_p2);
 
-    toplevel_fsqrt_32ns_32ns_32_12_U7 : component toplevel_fsqrt_32ns_32ns_32_12
+    toplevel_fsqrt_32ns_32ns_32_12_U6 : component toplevel_fsqrt_32ns_32ns_32_12
     generic map (
         ID => 1,
         NUM_STAGE => 12,

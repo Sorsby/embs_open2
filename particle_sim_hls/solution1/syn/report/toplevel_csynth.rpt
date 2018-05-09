@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'toplevel'
 ================================================================
-* Date:           Tue May  8 14:37:59 2018
+* Date:           Wed May 09 02:41:27 2018
 
 * Version:        2016.2 (Build 1577090 on Thu Jun 02 16:59:10 MDT 2016)
 * Project:        particle_sim_hls
@@ -76,13 +76,13 @@
     +----------------------------------------------+-------------------------------------------+---------+-------+-----+-----+
     |toplevel_AXILiteS_s_axi_U                     |toplevel_AXILiteS_s_axi                    |        0|      0|  150|  232|
     |toplevel_MAXI_m_axi_U                         |toplevel_MAXI_m_axi                        |        2|      0|  512|  580|
-    |toplevel_fadd_32ns_32ns_32_5_full_dsp_U2      |toplevel_fadd_32ns_32ns_32_5_full_dsp      |        0|      2|  205|  390|
-    |toplevel_faddfsub_32ns_32ns_32_5_full_dsp_U1  |toplevel_faddfsub_32ns_32ns_32_5_full_dsp  |        0|      2|  205|  390|
-    |toplevel_fcmp_32ns_32ns_1_1_U6                |toplevel_fcmp_32ns_32ns_1_1                |        0|      0|   66|  239|
-    |toplevel_fdiv_32ns_32ns_32_16_U5              |toplevel_fdiv_32ns_32ns_32_16              |        0|      0|  761|  994|
+    |toplevel_fadd_32ns_32ns_32_5_full_dsp_U1      |toplevel_fadd_32ns_32ns_32_5_full_dsp      |        0|      2|  205|  390|
+    |toplevel_faddfsub_32ns_32ns_32_5_full_dsp_U0  |toplevel_faddfsub_32ns_32ns_32_5_full_dsp  |        0|      2|  205|  390|
+    |toplevel_fcmp_32ns_32ns_1_1_U5                |toplevel_fcmp_32ns_32ns_1_1                |        0|      0|   66|  239|
+    |toplevel_fdiv_32ns_32ns_32_16_U4              |toplevel_fdiv_32ns_32ns_32_16              |        0|      0|  761|  994|
+    |toplevel_fmul_32ns_32ns_32_4_max_dsp_U2       |toplevel_fmul_32ns_32ns_32_4_max_dsp       |        0|      3|  143|  321|
     |toplevel_fmul_32ns_32ns_32_4_max_dsp_U3       |toplevel_fmul_32ns_32ns_32_4_max_dsp       |        0|      3|  143|  321|
-    |toplevel_fmul_32ns_32ns_32_4_max_dsp_U4       |toplevel_fmul_32ns_32ns_32_4_max_dsp       |        0|      3|  143|  321|
-    |toplevel_fsqrt_32ns_32ns_32_12_U7             |toplevel_fsqrt_32ns_32ns_32_12             |        0|      0|  405|  615|
+    |toplevel_fsqrt_32ns_32ns_32_12_U6             |toplevel_fsqrt_32ns_32ns_32_12             |        0|      0|  405|  615|
     +----------------------------------------------+-------------------------------------------+---------+-------+-----+-----+
     |Total                                         |                                           |        2|     10| 2590| 4082|
     +----------------------------------------------+-------------------------------------------+---------+-------+-----+-----+

@@ -3092,3 +3092,21 @@ Note: Frame Delay must be less than or equal to Frame Buffers or an undefined re
 "index": "1",
 },
 }]. Thread: Worker-13
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-05-08 22:56:56.530
+!MESSAGE XSDB Command: [::hsi::utils::closehw C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_1/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-05-08 22:56:56.566
+!MESSAGE XSDB command with result: [::hsi::utils::closehw C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_1/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-05-08 22:56:56.567
+!MESSAGE XSDB Command: [::hsi::utils::openhw C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_1/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-05-08 22:56:58.421
+!MESSAGE XSDB command with result: [::hsi::utils::openhw C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_1/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-05-08 22:56:58.423
+!MESSAGE XSDB Command: [::hsi::utils::openhw C:/Users/Matthew/AppData/Local/Temp/system6033261981715288748.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-05-08 22:57:00.532
+!MESSAGE XSDB command with result: [::hsi::utils::openhw C:/Users/Matthew/AppData/Local/Temp/system6033261981715288748.hdf], Result: [null, ]. Thread: main

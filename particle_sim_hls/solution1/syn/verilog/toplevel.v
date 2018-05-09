@@ -881,7 +881,7 @@ toplevel_faddfsub_32ns_32ns_32_5_full_dsp #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 32 ))
-toplevel_faddfsub_32ns_32ns_32_5_full_dsp_U1(
+toplevel_faddfsub_32ns_32ns_32_5_full_dsp_U0(
     .clk(ap_clk),
     .reset(ap_rst_n_inv),
     .din0(grp_fu_338_p0),
@@ -897,7 +897,7 @@ toplevel_fadd_32ns_32ns_32_5_full_dsp #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 32 ))
-toplevel_fadd_32ns_32ns_32_5_full_dsp_U2(
+toplevel_fadd_32ns_32ns_32_5_full_dsp_U1(
     .clk(ap_clk),
     .reset(ap_rst_n_inv),
     .din0(tmp_22_phi_fu_295_p4),
@@ -912,7 +912,7 @@ toplevel_fmul_32ns_32ns_32_4_max_dsp #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 32 ))
-toplevel_fmul_32ns_32ns_32_4_max_dsp_U3(
+toplevel_fmul_32ns_32ns_32_4_max_dsp_U2(
     .clk(ap_clk),
     .reset(ap_rst_n_inv),
     .din0(grp_fu_352_p0),
@@ -927,7 +927,7 @@ toplevel_fmul_32ns_32ns_32_4_max_dsp #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 32 ))
-toplevel_fmul_32ns_32ns_32_4_max_dsp_U4(
+toplevel_fmul_32ns_32ns_32_4_max_dsp_U3(
     .clk(ap_clk),
     .reset(ap_rst_n_inv),
     .din0(grp_fu_356_p0),
@@ -942,7 +942,7 @@ toplevel_fdiv_32ns_32ns_32_16 #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 32 ))
-toplevel_fdiv_32ns_32ns_32_16_U5(
+toplevel_fdiv_32ns_32ns_32_16_U4(
     .clk(ap_clk),
     .reset(ap_rst_n_inv),
     .din0(grp_fu_362_p0),
@@ -957,7 +957,7 @@ toplevel_fcmp_32ns_32ns_1_1 #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 1 ))
-toplevel_fcmp_32ns_32ns_1_1_U6(
+toplevel_fcmp_32ns_32ns_1_1_U5(
     .din0(grp_fu_367_p0),
     .din1(grp_fu_367_p1),
     .opcode(grp_fu_367_opcode),
@@ -970,7 +970,7 @@ toplevel_fsqrt_32ns_32ns_32_12 #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 32 ))
-toplevel_fsqrt_32ns_32ns_32_12_U7(
+toplevel_fsqrt_32ns_32ns_32_12_U6(
     .clk(ap_clk),
     .reset(ap_rst_n_inv),
     .din0(ap_const_lv32_0),
