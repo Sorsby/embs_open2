@@ -55,7 +55,13 @@ void populateSimulationArray() {
 		float random_x = rand() % 1440;
 		float random_y = rand() % 900;
 
-		float random_g = 2;
+		//generate some pseudo random floats between range given
+		float random_g;
+		if (i > (PARTICLE_END + (num_attractors * ATTRACTOR_SIZE)) / 2) {
+			random_g = ((rand() % (2000+1-1000)) + 1000)/1000.0;
+		} else {
+			random_g = ((rand() % (5000+1-10000)) - 10000)/10000.0;
+		}
 
 		ram[i + 1] = random_x;
 		ram[i + 2] = random_y;
