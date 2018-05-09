@@ -628,3 +628,274 @@ make pre-build main-build
 a9-linaro-pre-build-step
  
 make: Nothing to be done for 'main-build'.
+10:13:49 **** Incremental Build of configuration Release for project particle_sim_array ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+10:15:30 **** Auto Build of configuration Release for project particle_sim_array ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: particle_sim_array.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim_array.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: particle_sim_array.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size particle_sim_array.elf  |tee "particle_sim_array.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 194736	   4460	12638496	12837692	 c3e33c	particle_sim_array.elf
+Finished building: particle_sim_array.elf.size
+ 
+10:17:03 **** Incremental Build of configuration Release for project particle_sim_array ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+10:18:32 **** Auto Build of configuration Release for project particle_sim_array ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: particle_sim_array.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim_array.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: particle_sim_array.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size particle_sim_array.elf  |tee "particle_sim_array.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 197744	   4468	12638496	12840708	 c3ef04	particle_sim_array.elf
+Finished building: particle_sim_array.elf.size
+ 
+10:18:35 **** Incremental Build of configuration Release for project particle_sim_array ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+10:19:00 **** Auto Build of configuration Release for project particle_sim_array ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function ‘main’:
+../src/main.c:130:29: warning: passing argument 2 of ‘XToplevel_Set_ram’ makes integer from pointer without a cast
+     XToplevel_Set_ram(&hls, &ram);
+                             ^
+In file included from ../src/main.c:18:0:
+../../particle_sim_bsp/ps7_cortexa9_0/include/xtoplevel.h:90:6: note: expected ‘u32’ but argument is of type ‘float (*)[50000]’
+ void XToplevel_Set_ram(XToplevel *InstancePtr, u32 Data);
+      ^
+Finished building: ../src/main.c
+ 
+Building target: particle_sim_array.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim_array.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: particle_sim_array.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size particle_sim_array.elf  |tee "particle_sim_array.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 197732	   4468	12638496	12840696	 c3eef8	particle_sim_array.elf
+Finished building: particle_sim_array.elf.size
+ 
+10:19:02 **** Incremental Build of configuration Release for project particle_sim_array ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+10:20:14 **** Auto Build of configuration Release for project particle_sim_array ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: particle_sim_array.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim_array.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: particle_sim_array.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size particle_sim_array.elf  |tee "particle_sim_array.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 194736	   4460	12638496	12837692	 c3e33c	particle_sim_array.elf
+Finished building: particle_sim_array.elf.size
+ 
+10:20:27 **** Auto Build of configuration Release for project particle_sim_array ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: particle_sim_array.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim_array.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: particle_sim_array.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size particle_sim_array.elf  |tee "particle_sim_array.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 194736	   4460	12638496	12837692	 c3e33c	particle_sim_array.elf
+Finished building: particle_sim_array.elf.size
+ 
+10:21:23 **** Incremental Build of configuration Release for project particle_sim_array ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+10:23:18 **** Auto Build of configuration Release for project particle_sim_array ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: particle_sim_array.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim_array.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: particle_sim_array.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size particle_sim_array.elf  |tee "particle_sim_array.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 194736	   4460	12638496	12837692	 c3e33c	particle_sim_array.elf
+Finished building: particle_sim_array.elf.size
+ 
+10:23:23 **** Auto Build of configuration Release for project particle_sim_array ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/simulation/simulation.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/simulation/simulation.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/simulation/simulation.d" -MT"src/simulation/simulation.o" -o "src/simulation/simulation.o" "../src/simulation/simulation.c"
+../src/simulation/simulation.c: In function ‘Q_rsqrt’:
+../src/simulation/simulation.c:18:2: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  i  = * ( long * ) &y;                       // evil floating point bit level hacking
+  ^
+../src/simulation/simulation.c:20:2: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+  y  = * ( float * ) &i;
+  ^
+Finished building: ../src/simulation/simulation.c
+ 
+Building target: particle_sim_array.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim_array.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: particle_sim_array.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size particle_sim_array.elf  |tee "particle_sim_array.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 194736	   4460	12638496	12837692	 c3e33c	particle_sim_array.elf
+Finished building: particle_sim_array.elf.size
+ 
+10:23:39 **** Auto Build of configuration Release for project particle_sim_array ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/ethernet/ethernet.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+In file included from ../src/ethernet/ethernet.c:12:0:
+../src/ethernet/../main.h:5:41: warning: ‘struct Attractor’ declared inside parameter list
+   struct Particle *newParticles, struct Attractor *newAttractors);
+                                         ^
+../src/ethernet/../main.h:5:41: warning: its scope is only this definition or declaration, which is probably not what you want
+../src/ethernet/../main.h:5:41: warning: ‘struct Particle’ declared inside parameter list
+Finished building: ../src/ethernet/ethernet.c
+ 
+Building target: particle_sim_array.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim_array.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: particle_sim_array.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size particle_sim_array.elf  |tee "particle_sim_array.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 194736	   4460	12638496	12837692	 c3e33c	particle_sim_array.elf
+Finished building: particle_sim_array.elf.size
+ 
+10:23:53 **** Auto Build of configuration Release for project particle_sim_array ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/vga/vga.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/vga/vga.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/vga/vga.d" -MT"src/vga/vga.o" -o "src/vga/vga.o" "../src/vga/vga.c"
+Finished building: ../src/vga/vga.c
+ 
+Building target: particle_sim_array.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim_array.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: particle_sim_array.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size particle_sim_array.elf  |tee "particle_sim_array.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 194736	   4460	12638496	12837692	 c3e33c	particle_sim_array.elf
+Finished building: particle_sim_array.elf.size
+ 
+10:24:00 **** Auto Build of configuration Release for project particle_sim_array ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/util/util.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/util/util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/util/util.d" -MT"src/util/util.o" -o "src/util/util.o" "../src/util/util.c"
+Finished building: ../src/util/util.c
+ 
+Building target: particle_sim_array.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim_array.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: particle_sim_array.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size particle_sim_array.elf  |tee "particle_sim_array.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 194736	   4460	12638496	12837692	 c3e33c	particle_sim_array.elf
+Finished building: particle_sim_array.elf.size
+ 
+10:24:07 **** Auto Build of configuration Release for project particle_sim_array ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/uart/input.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/uart/input.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/uart/input.d" -MT"src/uart/input.o" -o "src/uart/input.o" "../src/uart/input.c"
+Finished building: ../src/uart/input.c
+ 
+Building target: particle_sim_array.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim_array.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: particle_sim_array.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size particle_sim_array.elf  |tee "particle_sim_array.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 194736	   4460	12638496	12837692	 c3e33c	particle_sim_array.elf
+Finished building: particle_sim_array.elf.size
+ 
+10:24:37 **** Incremental Build of configuration Release for project particle_sim_array ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.

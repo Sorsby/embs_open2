@@ -5,8 +5,8 @@
 ############################################################
 open_project particle_sim_hls
 set_top toplevel
-add_files particle_sim_hls/toplevel.cpp
 add_files particle_sim_hls/toplevel.h
+add_files particle_sim_hls/toplevel.cpp
 add_files -tb particle_sim_hls/testbench.cpp
 open_solution "solution1"
 set_part {xc7z010clg400-1} -tool vivado

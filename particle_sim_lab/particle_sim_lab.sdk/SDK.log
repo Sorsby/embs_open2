@@ -5411,3 +5411,30 @@ Reason: ERROR: [Common 17-39] 'hsi::open_sw_design' failed due to earlier errors
 10:10:55 INFO  : FPGA configured successfully with bitstream "/home/userfs/m/ms1516/w2k/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
 10:10:55 INFO  : ps7_init is completed.
 10:10:55 INFO  : ps7_post_config is completed.
+10:13:50 INFO  : System reset is completed.
+10:13:52 INFO  : FPGA configured successfully with bitstream "/home/userfs/m/ms1516/w2k/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:13:52 INFO  : ps7_init is completed.
+10:13:52 INFO  : ps7_post_config is completed.
+10:17:04 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+10:17:06 INFO  : System reset is completed.
+10:17:07 INFO  : FPGA configured successfully with bitstream "/home/userfs/m/ms1516/w2k/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:17:08 INFO  : ps7_init is completed.
+10:17:08 INFO  : ps7_post_config is completed.
+10:18:37 INFO  : System reset is completed.
+10:18:38 INFO  : FPGA configured successfully with bitstream "/home/userfs/m/ms1516/w2k/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:18:39 INFO  : ps7_init is completed.
+10:18:39 INFO  : ps7_post_config is completed.
+10:19:03 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+10:19:05 INFO  : System reset is completed.
+10:19:06 INFO  : FPGA configured successfully with bitstream "/home/userfs/m/ms1516/w2k/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:19:07 INFO  : ps7_init is completed.
+10:19:07 INFO  : ps7_post_config is completed.
+10:21:25 INFO  : System reset is completed.
+10:21:26 INFO  : FPGA configured successfully with bitstream "/home/userfs/m/ms1516/w2k/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:21:27 INFO  : ps7_init is completed.
+10:21:27 INFO  : ps7_post_config is completed.
+10:24:38 INFO  : System reset is completed.
+10:24:40 INFO  : FPGA configured successfully with bitstream "/home/userfs/m/ms1516/w2k/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:24:40 INFO  : ps7_init is completed.
+10:24:40 INFO  : ps7_post_config is completed.
+10:45:06 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

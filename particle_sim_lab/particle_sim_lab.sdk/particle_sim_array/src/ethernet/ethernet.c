@@ -1,13 +1,17 @@
+#include <arch/cc.h>
+#include <lwip/ip_addr.h>
+#include <lwip/pbuf.h>
+#include <lwip/udp.h>
 #include <stdio.h>
-#include "xparameters.h"
-#include "xil_printf.h"
-#include "xil_cache.h"
-#include "ethernet_platform.h"
-#include "../util/util.h"
-#include "xtime_l.h"
-#include "../simulation/simulation.h"
-#include "../main.h"
+#include <stdlib.h>
+#include <string.h>
+#include <xil_types.h>
+#include <xtime_l.h>
+
 #include "../def.h"
+#include "../main.h"
+#include "../util/util.h"
+#include "ethernet_platform.h"
 
 #define TIMEOUT_SECS 5.0
 

@@ -1,22 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "xil_types.h"
-#include "xil_cache.h"
-#include "xparameters.h"
-#include "zybo_vga/display_ctrl.h"
-#include "xuartps_hw.h"
+#include <string.h>
+#include <xil_types.h>
+#include <xparameters.h>
+#include <xtoplevel.h>
+#include <xuartps_hw.h>
 
+#include "def.h"
+#include "ethernet/ethernet.h"
+#include "ethernet/ethernet_platform.h"
 #include "fps/fps.h"
 #include "simulation/simulation.h"
 #include "uart/input.h"
 #include "vga/vga.h"
-#include "ethernet/ethernet.h"
-#include "ethernet/ethernet_platform.h"
-#include "def.h"
-#include "util/util.h"
-
-#include "xtoplevel.h"
-#include "xil_cache.h"
 
 float ram[RAM_SIZE];
 XToplevel hls;
@@ -69,8 +65,6 @@ void populateSimulationArray() {
 		} else {
 			random_g = ((rand() % (5000+1-10000)) - 10000)/10000.0;
 		}
-
-		printf("g: %f\n", random_g);
 
 		ram[i + 1] = random_x;
 		ram[i + 2] = random_y;
@@ -129,7 +123,7 @@ int main(void) {
 	setupEthernet();
 	populateSimulationArray();
 //    XToplevel_Initialize(&hls, XPAR_TOPLEVEL_0_DEVICE_ID);
-//    XToplevel_Set_ram(&hls, *ram);
+//    XToplevel_Set_ram(&hls, &ram);
 
 	while (1) {
 		handleInput();
@@ -142,7 +136,7 @@ int main(void) {
 //		    XToplevel_Start(&hls);
 //		    while(!XToplevel_IsDone(&hls));
 //			Xil_DCacheFlush();
-//My HLS implementation was slower than in software ????!!!! I lost time due to using structs so didn't manage to fix
+//My HLS implementation was slower than in software ????!!!! I lost time due to using structs originally so didn't manage to fix
 
 			updateSimulationArray(ram, num_particles, num_attractors);
 			updateFrameFromArray(ram, num_particles, num_attractors);

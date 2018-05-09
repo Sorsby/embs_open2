@@ -1,6 +1,11 @@
-#include "../simulation/simulation.h"
-#include "../zybo_vga/display_ctrl.h"
+#include <string.h>
+#include <xil_cache.h>
+#include <xil_types.h>
+#include <xparameters.h>
+
 #include "../def.h"
+#include "../zybo_vga/display_ctrl.h"
+#include "../zybo_vga/vga_modes.h"
 
 #define RED 0x00FF0000
 #define GREEN 0x000000FF

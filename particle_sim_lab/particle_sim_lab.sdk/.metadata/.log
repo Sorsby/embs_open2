@@ -26567,3 +26567,29 @@ java.lang.NullPointerException
 	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
 	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.ui.ide 4 4 2018-05-09 10:45:06.328
+!MESSAGE Problems saving workspace
+
+!ENTRY org.eclipse.ui.ide 4 1 2018-05-09 10:45:06.330
+!MESSAGE Problems occurred while trying to save the state of the workbench.
+!SUBENTRY 1 org.eclipse.core.resources 4 568 2018-05-09 10:45:06.330
+!MESSAGE Could not write workspace metadata '/home/userfs/m/ms1516/w2k/embs_open2/particle_sim_lab/particle_sim_lab.sdk/.metadata/.plugins/org.eclipse.core.resources/.root/32.tree'.
+!STACK 0
+java.io.IOException: Disk quota exceeded
+	at java.io.FileOutputStream.close0(Native Method)
+	at java.io.FileOutputStream.access$000(FileOutputStream.java:53)
+	at java.io.FileOutputStream$1.close(FileOutputStream.java:356)
+	at java.io.FileDescriptor.closeAll(FileDescriptor.java:212)
+	at java.io.FileOutputStream.close(FileOutputStream.java:354)
+	at java.io.FilterOutputStream.close(FilterOutputStream.java:159)
+	at org.eclipse.core.internal.localstore.SafeFileOutputStream.close(SafeFileOutputStream.java:65)
+	at java.io.FilterOutputStream.close(FilterOutputStream.java:159)
+	at org.eclipse.core.internal.resources.SaveManager.saveTree(SaveManager.java:1410)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1188)
+	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2270)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor$4.run(IDEWorkbenchAdvisor.java:453)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+
+!ENTRY org.eclipse.core.resources 2 10035 2018-05-09 10:45:07.077
+!MESSAGE The workspace will exit with unsaved changes in this session.

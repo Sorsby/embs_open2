@@ -1,6 +1,5 @@
 #include "simulation.h"
 
-#include "stdio.h"
 #include "../def.h"
 
 int i, j;

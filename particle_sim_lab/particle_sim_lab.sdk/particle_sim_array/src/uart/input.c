@@ -1,5 +1,6 @@
-#include "xuartps_hw.h"
-#include "stdio.h"
+#include <stdio.h>
+#include <xparameters.h>
+#include <xuartps_hw.h>
 
 /*
  * Read uart input byte by byte and convert to number
