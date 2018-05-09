@@ -5100,3 +5100,24 @@ Design is not opened in the current session.
 23:04:39 INFO  : FPGA configured successfully with bitstream "C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
 23:05:05 INFO  : ps7_init is completed.
 23:05:06 INFO  : ps7_post_config is completed.
+03:19:02 INFO  : System reset is completed.
+03:19:04 INFO  : FPGA configured successfully with bitstream "C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+03:19:29 INFO  : ps7_init is completed.
+03:19:29 INFO  : ps7_post_config is completed.
+03:22:08 INFO  : System reset is completed.
+03:22:10 INFO  : FPGA configured successfully with bitstream "C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+03:22:34 INFO  : ps7_init is completed.
+03:22:35 INFO  : ps7_post_config is completed.
+03:24:12 INFO  : System reset is completed.
+03:24:14 INFO  : FPGA configured successfully with bitstream "C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+03:24:39 INFO  : ps7_init is completed.
+03:24:40 INFO  : ps7_post_config is completed.
+03:26:53 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+03:26:56 INFO  : System reset is completed.
+03:26:58 INFO  : FPGA configured successfully with bitstream "C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+03:27:23 INFO  : ps7_init is completed.
+03:27:23 INFO  : ps7_post_config is completed.
+03:29:56 INFO  : System reset is completed.
+03:29:58 INFO  : FPGA configured successfully with bitstream "C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+03:30:22 INFO  : ps7_init is completed.
+03:30:22 INFO  : ps7_post_config is completed.

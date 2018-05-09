@@ -90,7 +90,7 @@ void requestScenario(int id) {
 	sendMessage(message);
 }
 
-void requestPart(int partId) {
+int requestPart(int partId) {
 	printf("Getting part: %d\n", partId);
 	char buffera[5];
 	char bufferb[5];
@@ -101,6 +101,7 @@ void requestPart(int partId) {
 	sprintf(message, "GETPART,%s,%s", buffera, bufferb);
 
 	sendMessage(message);
+	return nextPart + 1;
 }
 
 //void udp_numparts_get_handler(void *arg, struct udp_pcb *pcb, struct pbuf *p,
@@ -135,7 +136,7 @@ void udp_part_get_handler(void *arg, struct udp_pcb *pcb, struct pbuf *p,
 		puts(type);
 		if (strcmp(type, "NUMP") == 0) {
 			numParts = strToInt(getNumParts(response));
-			requestPart(0);
+			nextPart = requestPart(0);
 			return;
 		} else {
 
@@ -220,7 +221,7 @@ void udp_part_get_handler(void *arg, struct udp_pcb *pcb, struct pbuf *p,
 
 			pbuf_free(p);
 
-			if (nextPart == numParts - 1) {
+			if (nextPart == numParts + 1) {
 				printf("num particles: %d\n", numParticles);
 				printf("num attractor: %d\n", numAttractors);
 				populateSimulationFromNetworkArray(ram, numParticles,
@@ -229,11 +230,8 @@ void udp_part_get_handler(void *arg, struct udp_pcb *pcb, struct pbuf *p,
 				resetEthernet();
 				//all parts received
 				//populate simulation
-			} else if (nextPart == 0) {
-				nextPart += 1;
 			} else {
-				nextPart += 1;
-				requestPart(nextPart);
+				nextPart = requestPart(nextPart);
 			}
 		}
 	}
