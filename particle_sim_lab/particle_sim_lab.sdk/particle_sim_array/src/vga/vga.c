@@ -74,7 +74,7 @@ void updateFrameFromArray(float* ram, int num_particles, int num_attractors) {
 		drawCircle(ram[i], ram[i + 1], BLUE);
 	}
 	for (i = PARTICLE_END; i < PARTICLE_END + (num_attractors * ATTRACTOR_SIZE); i += ATTRACTOR_SIZE) {
-		int colour = ram[i + 3] > 0 ? GREEN : RED;
+		int colour = ram[i + 3] > 0.0 ? GREEN : RED;
 		drawCircle(ram[i + 1], ram[i + 2], colour);
 	}
 

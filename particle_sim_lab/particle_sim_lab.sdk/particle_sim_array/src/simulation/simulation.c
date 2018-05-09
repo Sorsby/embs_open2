@@ -76,7 +76,7 @@ void updateSimulationArray(float* ram, int num_particles, int num_attractors) {
 			float x_norm;
 			float y_norm;
 			if (d < 500) {
-				x_norm = (ax - *px) * d;
+				x_norm = (ax - *px) / d;
 				y_norm = (ay - *py) / d;
 
 				if (d < 1.0) {

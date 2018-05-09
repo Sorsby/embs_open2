@@ -51,33 +51,33 @@ set rc [catch {
   set_param xicom.use_bs_reader 1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.cache/wt [current_project]
-  set_property parent.project_path C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.xpr [current_project]
+  set_property webtalk.parent_dir /home/userfs/m/ms1516/w2k/embs_open2/particle_sim_lab/particle_sim_lab.cache/wt [current_project]
+  set_property parent.project_path /home/userfs/m/ms1516/w2k/embs_open2/particle_sim_lab/particle_sim_lab.xpr [current_project]
   set_property ip_repo_paths {
-  c:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.cache/ip
-  C:/Users/Matthew/Desktop/embs_open2/zybo-vga-master/hardware/zybo_vga_repo
-  C:/Users/Matthew/Desktop/embs_open2/particle_sim_hls
+  /home/userfs/m/ms1516/w2k/embs_open2/particle_sim_lab/particle_sim_lab.cache/ip
+  /home/userfs/m/ms1516/w2k/embs_open2/zybo-vga-master/hardware/zybo_vga_repo
+  /home/userfs/m/ms1516/w2k/embs_open2/particle_sim_hls
 } [current_project]
-  set_property ip_output_repo c:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.cache/ip [current_project]
+  set_property ip_output_repo /home/userfs/m/ms1516/w2k/embs_open2/particle_sim_lab/particle_sim_lab.cache/ip [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
-  add_files -quiet C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.runs/synth_1/design_1_wrapper.dcp
-  read_xdc -ref design_1_processing_system7_0_0 -cells inst c:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc
-  set_property processing_order EARLY [get_files c:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc]
-  read_xdc -prop_thru_buffers -ref design_1_rst_processing_system7_0_50M_0 -cells U0 c:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_50M_0/design_1_rst_processing_system7_0_50M_0_board.xdc
-  set_property processing_order EARLY [get_files c:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_50M_0/design_1_rst_processing_system7_0_50M_0_board.xdc]
-  read_xdc -ref design_1_rst_processing_system7_0_50M_0 -cells U0 c:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_50M_0/design_1_rst_processing_system7_0_50M_0.xdc
-  set_property processing_order EARLY [get_files c:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_50M_0/design_1_rst_processing_system7_0_50M_0.xdc]
-  read_xdc -ref design_1_axi_vdma_0_0 -cells U0 c:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0.xdc
-  set_property processing_order EARLY [get_files c:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0.xdc]
-  read_xdc C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.srcs/constrs_1/imports/hardware/zybo_vga.xdc
-  read_xdc -ref design_1_axi_vdma_0_0 -cells U0 c:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0_clocks.xdc
-  set_property processing_order LATE [get_files c:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0_clocks.xdc]
-  read_xdc -ref design_1_v_axi4s_vid_out_0_0 -cells inst c:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.srcs/sources_1/bd/design_1/ip/design_1_v_axi4s_vid_out_0_0/design_1_v_axi4s_vid_out_0_0_clocks.xdc
-  set_property processing_order LATE [get_files c:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.srcs/sources_1/bd/design_1/ip/design_1_v_axi4s_vid_out_0_0/design_1_v_axi4s_vid_out_0_0_clocks.xdc]
-  read_xdc -ref design_1_v_tc_0_0 -cells U0 c:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.srcs/sources_1/bd/design_1/ip/design_1_v_tc_0_0/design_1_v_tc_0_0_clocks.xdc
-  set_property processing_order LATE [get_files c:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.srcs/sources_1/bd/design_1/ip/design_1_v_tc_0_0/design_1_v_tc_0_0_clocks.xdc]
-  read_xdc -ref design_1_auto_us_0 -cells inst c:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.srcs/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0_clocks.xdc
-  set_property processing_order LATE [get_files c:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.srcs/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0_clocks.xdc]
+  add_files -quiet /home/userfs/m/ms1516/w2k/embs_open2/particle_sim_lab/particle_sim_lab.runs/synth_1/design_1_wrapper.dcp
+  read_xdc -ref design_1_processing_system7_0_0 -cells inst /home/userfs/m/ms1516/w2k/embs_open2/particle_sim_lab/particle_sim_lab.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc
+  set_property processing_order EARLY [get_files /home/userfs/m/ms1516/w2k/embs_open2/particle_sim_lab/particle_sim_lab.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc]
+  read_xdc -prop_thru_buffers -ref design_1_rst_processing_system7_0_50M_0 -cells U0 /home/userfs/m/ms1516/w2k/embs_open2/particle_sim_lab/particle_sim_lab.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_50M_0/design_1_rst_processing_system7_0_50M_0_board.xdc
+  set_property processing_order EARLY [get_files /home/userfs/m/ms1516/w2k/embs_open2/particle_sim_lab/particle_sim_lab.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_50M_0/design_1_rst_processing_system7_0_50M_0_board.xdc]
+  read_xdc -ref design_1_rst_processing_system7_0_50M_0 -cells U0 /home/userfs/m/ms1516/w2k/embs_open2/particle_sim_lab/particle_sim_lab.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_50M_0/design_1_rst_processing_system7_0_50M_0.xdc
+  set_property processing_order EARLY [get_files /home/userfs/m/ms1516/w2k/embs_open2/particle_sim_lab/particle_sim_lab.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_50M_0/design_1_rst_processing_system7_0_50M_0.xdc]
+  read_xdc -ref design_1_axi_vdma_0_0 -cells U0 /home/userfs/m/ms1516/w2k/embs_open2/particle_sim_lab/particle_sim_lab.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0.xdc
+  set_property processing_order EARLY [get_files /home/userfs/m/ms1516/w2k/embs_open2/particle_sim_lab/particle_sim_lab.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0.xdc]
+  read_xdc /home/userfs/m/ms1516/w2k/embs_open2/particle_sim_lab/particle_sim_lab.srcs/constrs_1/imports/hardware/zybo_vga.xdc
+  read_xdc -ref design_1_axi_vdma_0_0 -cells U0 /home/userfs/m/ms1516/w2k/embs_open2/particle_sim_lab/particle_sim_lab.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0_clocks.xdc
+  set_property processing_order LATE [get_files /home/userfs/m/ms1516/w2k/embs_open2/particle_sim_lab/particle_sim_lab.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0_clocks.xdc]
+  read_xdc -ref design_1_v_axi4s_vid_out_0_0 -cells inst /home/userfs/m/ms1516/w2k/embs_open2/particle_sim_lab/particle_sim_lab.srcs/sources_1/bd/design_1/ip/design_1_v_axi4s_vid_out_0_0/design_1_v_axi4s_vid_out_0_0_clocks.xdc
+  set_property processing_order LATE [get_files /home/userfs/m/ms1516/w2k/embs_open2/particle_sim_lab/particle_sim_lab.srcs/sources_1/bd/design_1/ip/design_1_v_axi4s_vid_out_0_0/design_1_v_axi4s_vid_out_0_0_clocks.xdc]
+  read_xdc -ref design_1_v_tc_0_0 -cells U0 /home/userfs/m/ms1516/w2k/embs_open2/particle_sim_lab/particle_sim_lab.srcs/sources_1/bd/design_1/ip/design_1_v_tc_0_0/design_1_v_tc_0_0_clocks.xdc
+  set_property processing_order LATE [get_files /home/userfs/m/ms1516/w2k/embs_open2/particle_sim_lab/particle_sim_lab.srcs/sources_1/bd/design_1/ip/design_1_v_tc_0_0/design_1_v_tc_0_0_clocks.xdc]
+  read_xdc -ref design_1_auto_us_0 -cells inst /home/userfs/m/ms1516/w2k/embs_open2/particle_sim_lab/particle_sim_lab.srcs/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0_clocks.xdc
+  set_property processing_order LATE [get_files /home/userfs/m/ms1516/w2k/embs_open2/particle_sim_lab/particle_sim_lab.srcs/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0_clocks.xdc]
   link_design -top design_1_wrapper -part xc7z010clg400-1
   write_hwdef -file design_1_wrapper.hwdef
   close_msg_db -file init_design.pb

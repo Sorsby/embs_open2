@@ -57,17 +57,20 @@ void populateSimulationArray() {
 		ram[i + 3] = 0;
 	}
 
-	for (i = PARTICLE_END; i < PARTICLE_END + (num_attractors * ATTRACTOR_SIZE); i += ATTRACTOR_SIZE) {
+	int loopEnd = PARTICLE_END + (num_attractors * ATTRACTOR_SIZE);
+	for (i = PARTICLE_END; i < loopEnd; i += ATTRACTOR_SIZE) {
 		float random_x = rand() % 1440;
 		float random_y = rand() % 900;
 
 		//generate some pseudo random floats between range given
 		float random_g;
-		if (i > (PARTICLE_END + (num_attractors * ATTRACTOR_SIZE)) / 2) {
+		if (i % 2) {
 			random_g = ((rand() % (2000+1-1000)) + 1000)/1000.0;
 		} else {
 			random_g = ((rand() % (5000+1-10000)) - 10000)/10000.0;
 		}
+
+		printf("g: %f\n", random_g);
 
 		ram[i + 1] = random_x;
 		ram[i + 2] = random_y;

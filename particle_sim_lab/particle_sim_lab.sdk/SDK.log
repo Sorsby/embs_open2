@@ -5328,3 +5328,86 @@ com.xilinx.sdk.targetmanager.TMException:
 07:32:51 INFO  : FPGA configured successfully with bitstream "C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
 07:33:18 INFO  : ps7_init is completed.
 07:33:19 INFO  : ps7_post_config is completed.
+09:42:38 INFO  : Launching XSDB server: xsdb -n -interactive /home/userfs/m/ms1516/w2k/embs_open2/particle_sim_lab/particle_sim_lab.sdk/temp_xsdb_launch_script.tcl
+09:42:39 INFO  : XSDB server has started successfully.
+09:42:40 INFO  : Processing command line option -hwspec /home/userfs/m/ms1516/w2k/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper.hdf.
+09:44:17 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1525855442000,  Project:1525853743000
+09:44:17 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at /home/userfs/m/ms1516/w2k/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+09:44:19 INFO  : Copied contents of /home/userfs/m/ms1516/w2k/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper.hdf into /design_1_wrapper_hw_platform_0/system.hdf.
+09:44:24 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+09:44:25 ERROR : (XSDB Server)ERROR: [Hsi 55-1433] Error boost::filesystem::directory_iterator::construct: Permission denied: "/tmp/systemd-private-9a89eb2d292244a7aafe8b31c514ccfe-colord.service-ybWd3D"
+
+09:44:25 ERROR : (XSDB Server)ERROR: [Hsi 55-1433] Error boost::filesystem::directory_iterator::construct: Permission denied: "/tmp/systemd-private-9a89eb2d292244a7aafe8b31c514ccfe-fwupd.service-wSB4VV"
+ERROR: [Hsi 55-1433] Error boost::filesystem::directory_iterator::construct: Permission denied: "/tmp/systemd-private-9a89eb2d292244a7aafe8b31c514ccfe-rtkit-daemon.service-dgCv5l"
+
+09:44:25 ERROR : Failed to call sync_sw_with_hw_change
+Reason: ERROR: [Common 17-39] 'hsi::open_sw_design' failed due to earlier errors.
+
+09:44:25 ERROR : Error updating BSP project MSS files.
+09:44:25 INFO  : Clearing existing target manager status.
+09:44:27 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+09:44:28 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+09:45:27 INFO  : System reset is completed.
+09:45:28 INFO  : FPGA configured successfully with bitstream "/home/userfs/m/ms1516/w2k/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+09:45:29 INFO  : ps7_init is completed.
+09:45:29 INFO  : ps7_post_config is completed.
+09:47:38 INFO  : System reset is completed.
+09:47:39 INFO  : FPGA configured successfully with bitstream "/home/userfs/m/ms1516/w2k/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+09:47:40 INFO  : ps7_init is completed.
+09:47:40 INFO  : ps7_post_config is completed.
+09:48:44 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+09:48:48 INFO  : System reset is completed.
+09:48:49 INFO  : FPGA configured successfully with bitstream "/home/userfs/m/ms1516/w2k/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+09:48:50 INFO  : ps7_init is completed.
+09:48:50 INFO  : ps7_post_config is completed.
+09:50:12 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+09:51:13 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+09:51:16 INFO  : System reset is completed.
+09:51:17 INFO  : FPGA configured successfully with bitstream "/home/userfs/m/ms1516/w2k/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+09:51:18 INFO  : ps7_init is completed.
+09:51:18 INFO  : ps7_post_config is completed.
+09:52:37 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+09:52:38 INFO  : System reset is completed.
+09:52:40 INFO  : FPGA configured successfully with bitstream "/home/userfs/m/ms1516/w2k/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+09:52:40 INFO  : ps7_init is completed.
+09:52:41 INFO  : ps7_post_config is completed.
+09:53:20 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+09:53:22 INFO  : System reset is completed.
+09:53:24 INFO  : FPGA configured successfully with bitstream "/home/userfs/m/ms1516/w2k/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+09:53:24 INFO  : ps7_init is completed.
+09:53:24 INFO  : ps7_post_config is completed.
+09:58:48 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+09:58:52 INFO  : System reset is completed.
+09:58:54 INFO  : FPGA configured successfully with bitstream "/home/userfs/m/ms1516/w2k/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+09:58:54 INFO  : ps7_init is completed.
+09:58:54 INFO  : ps7_post_config is completed.
+10:01:05 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+10:01:06 INFO  : System reset is completed.
+10:01:08 INFO  : FPGA configured successfully with bitstream "/home/userfs/m/ms1516/w2k/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:01:08 INFO  : ps7_init is completed.
+10:01:09 INFO  : ps7_post_config is completed.
+10:02:05 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+10:02:07 INFO  : System reset is completed.
+10:02:08 INFO  : FPGA configured successfully with bitstream "/home/userfs/m/ms1516/w2k/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:02:09 INFO  : ps7_init is completed.
+10:02:09 INFO  : ps7_post_config is completed.
+10:03:50 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+10:03:52 INFO  : System reset is completed.
+10:03:53 INFO  : FPGA configured successfully with bitstream "/home/userfs/m/ms1516/w2k/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:03:54 INFO  : ps7_init is completed.
+10:03:54 INFO  : ps7_post_config is completed.
+10:06:45 INFO  : System reset is completed.
+10:06:47 INFO  : FPGA configured successfully with bitstream "/home/userfs/m/ms1516/w2k/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:06:47 INFO  : ps7_init is completed.
+10:06:47 INFO  : ps7_post_config is completed.
+10:09:17 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+10:09:19 INFO  : System reset is completed.
+10:09:21 INFO  : FPGA configured successfully with bitstream "/home/userfs/m/ms1516/w2k/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:09:21 INFO  : ps7_init is completed.
+10:09:21 INFO  : ps7_post_config is completed.
+10:10:52 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+10:10:53 INFO  : System reset is completed.
+10:10:55 INFO  : FPGA configured successfully with bitstream "/home/userfs/m/ms1516/w2k/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:10:55 INFO  : ps7_init is completed.
+10:10:55 INFO  : ps7_post_config is completed.

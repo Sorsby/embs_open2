@@ -5,8 +5,8 @@
 
 void setupVGA();
 
-void updateFrame(struct Particle *particles, struct Attractor *attractors,
-		int num_particles, int num_attractors);
+//void updateFrame(struct Particle *particles, struct Attractor *attractors,
+//		int num_particles, int num_attractors);
 void updateFrameFromArray(float* ram, int num_particles, int num_attractors);
 
 #endif /* SRC_VGA_H_ */

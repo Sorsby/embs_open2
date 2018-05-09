@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version     : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
-| Date             : Tue May 08 22:52:19 2018
-| Host             : MATTHEW-PC running 64-bit major release  (build 9200)
+| Tool Version     : Vivado v.2016.2 (lin64) Build 1577090 Thu Jun  2 16:32:35 MDT 2016
+| Date             : Wed May  9 09:43:49 2018
+| Host             : pc820s.cs.york.ac.uk running 64-bit Ubuntu 16.04.4 LTS
 | Command          : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
 | Design           : design_1_wrapper
 | Device           : xc7z010clg400-1
@@ -30,7 +30,7 @@ Table of Contents
 ----------
 
 +--------------------------+--------+
-| Total On-Chip Power (W)  | 1.932  |
+| Total On-Chip Power (W)  | 1.933  |
 | Dynamic (W)              | 1.794  |
 | Device Static (W)        | 0.138  |
 | Effective TJA (C/W)      | 11.5   |
@@ -51,21 +51,21 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.031 |        6 |       --- |             --- |
 | Slice Logic              |     0.030 |    20510 |       --- |             --- |
-|   LUT as Logic           |     0.025 |     6627 |     17600 |           37.65 |
+|   LUT as Logic           |     0.025 |     6616 |     17600 |           37.59 |
 |   Register               |     0.002 |    10409 |     35200 |           29.57 |
 |   CARRY4                 |     0.002 |      543 |      4400 |           12.34 |
 |   LUT as Shift Register  |    <0.001 |      380 |      6000 |            6.33 |
 |   F7/F8 Muxes            |    <0.001 |      172 |     17600 |            0.98 |
 |   LUT as Distributed RAM |    <0.001 |       12 |      6000 |            0.20 |
 |   Others                 |     0.000 |     1026 |       --- |             --- |
-| Signals                  |     0.042 |    15650 |       --- |             --- |
+| Signals                  |     0.043 |    15641 |       --- |             --- |
 | Block RAM                |     0.005 |      6.5 |        60 |           10.83 |
 | MMCM                     |     0.107 |        1 |         2 |           50.00 |
 | DSPs                     |     0.012 |       15 |        80 |           18.75 |
 | I/O                      |     0.001 |       18 |       100 |           18.00 |
 | PS7                      |     1.565 |        1 |       --- |             --- |
 | Static Power             |     0.138 |          |           |                 |
-| Total                    |     1.932 |          |           |                 |
+| Total                    |     1.933 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -155,7 +155,7 @@ Table of Contents
 | Name                                                                                       | Power (W) |
 +--------------------------------------------------------------------------------------------+-----------+
 | design_1_wrapper                                                                           |     1.794 |
-|   design_1_i                                                                               |     1.792 |
+|   design_1_i                                                                               |     1.793 |
 |     axi_mem_intercon                                                                       |     0.004 |
 |       s00_couplers                                                                         |     0.004 |
 |         auto_pc                                                                            |     0.001 |
@@ -300,8 +300,8 @@ Table of Contents
 |                       i_pipe                                                               |    <0.001 |
 |                     B_IP_DELAY                                                             |    <0.001 |
 |                       i_pipe                                                               |    <0.001 |
-|                     DSP48E1_BODY.ALIGN_ADD                                                 |     0.002 |
-|                       DSP2                                                                 |     0.002 |
+|                     DSP48E1_BODY.ALIGN_ADD                                                 |     0.001 |
+|                       DSP2                                                                 |     0.001 |
 |                       ZERO_14_DET.CARRY_MUX                                                |     0.000 |
 |                       ZERO_14_DET.ZERO_DET                                                 |    <0.001 |
 |                         CARRY_ZERO_DET                                                     |    <0.001 |
@@ -356,12 +356,12 @@ Table of Contents
 |                       FULL_USAGE_DSP.ROUND_BIT_DELAY                                       |    <0.001 |
 |                         i_pipe                                                             |    <0.001 |
 |                       FULL_USAGE_DSP.SHIFT_RND                                             |     0.001 |
-|         toplevel_fadd_32ns_32ns_32_5_full_dsp_U2                                           |     0.007 |
+|         toplevel_fadd_32ns_32ns_32_5_full_dsp_U2                                           |     0.008 |
 |           toplevel_ap_fadd_3_full_dsp_32_u                                                 |     0.007 |
-|             U0                                                                             |     0.006 |
-|               i_synth                                                                      |     0.006 |
-|                 ADDSUB_OP.ADDSUB                                                           |     0.006 |
-|                   SPEED_OP.DSP.OP                                                          |     0.006 |
+|             U0                                                                             |     0.007 |
+|               i_synth                                                                      |     0.007 |
+|                 ADDSUB_OP.ADDSUB                                                           |     0.007 |
+|                   SPEED_OP.DSP.OP                                                          |     0.007 |
 |                     A_IP_DELAY                                                             |    <0.001 |
 |                       i_pipe                                                               |    <0.001 |
 |                     B_IP_DELAY                                                             |    <0.001 |
@@ -373,7 +373,7 @@ Table of Contents
 |                         CARRY_ZERO_DET                                                     |    <0.001 |
 |                       Z_14_LZD_DELAY                                                       |    <0.001 |
 |                         i_pipe                                                             |    <0.001 |
-|                     DSP48E1_BODY.EXP                                                       |     0.002 |
+|                     DSP48E1_BODY.EXP                                                       |     0.003 |
 |                       A_EXP_DELAY                                                          |    <0.001 |
 |                         i_pipe                                                             |    <0.001 |
 |                       A_SIGN_DELAY                                                         |    <0.001 |
@@ -508,10 +508,10 @@ Table of Contents
 |                   STRUCT_CMP.EXP_ALL_ZERO_DET                                              |    <0.001 |
 |                     CARRY_ZERO_DET                                                         |    <0.001 |
 |         toplevel_fdiv_32ns_32ns_32_16_U6                                                   |     0.024 |
-|           toplevel_ap_fdiv_14_no_dsp_32_u                                                  |     0.023 |
-|             U0                                                                             |     0.023 |
-|               i_synth                                                                      |     0.023 |
-|                 DIV_OP.SPD.OP                                                              |     0.023 |
+|           toplevel_ap_fdiv_14_no_dsp_32_u                                                  |     0.024 |
+|             U0                                                                             |     0.024 |
+|               i_synth                                                                      |     0.024 |
+|                 DIV_OP.SPD.OP                                                              |     0.024 |
 |                   EXP                                                                      |    <0.001 |
 |                     DIV_BY_ZERO_DEL                                                        |    <0.001 |
 |                       i_pipe                                                               |    <0.001 |
@@ -531,7 +531,7 @@ Table of Contents
 |                       i_pipe                                                               |    <0.001 |
 |                     STATE_UP_DELAY                                                         |    <0.001 |
 |                       i_pipe                                                               |    <0.001 |
-|                   MANT_DIV                                                                 |     0.021 |
+|                   MANT_DIV                                                                 |     0.022 |
 |                     RT[0].ADDSUB                                                           |    <0.001 |
 |                       ADDSUB                                                               |    <0.001 |
 |                     RT[10].ADDSUB                                                          |    <0.001 |
@@ -673,9 +673,9 @@ Table of Contents
 |                       DSP1                                                                 |     0.001 |
 |                       DSP2                                                                 |     0.002 |
 |                   OP                                                                       |    <0.001 |
-|                   R_AND_R                                                                  |     0.001 |
-|                     LAT_OPT.FULL.R_AND_R                                                   |     0.001 |
-|                       DSP48E1_SGL_EXP_IP.OLD_ADD.ADD                                       |     0.001 |
+|                   R_AND_R                                                                  |    <0.001 |
+|                     LAT_OPT.FULL.R_AND_R                                                   |    <0.001 |
+|                       DSP48E1_SGL_EXP_IP.OLD_ADD.ADD                                       |    <0.001 |
 |         toplevel_fmul_32ns_32ns_32_4_max_dsp_U4                                            |     0.006 |
 |           toplevel_ap_fmul_2_max_dsp_32_u                                                  |     0.005 |
 |             U0                                                                             |     0.005 |
@@ -705,7 +705,7 @@ Table of Contents
 |                   R_AND_R                                                                  |    <0.001 |
 |                     LAT_OPT.FULL.R_AND_R                                                   |    <0.001 |
 |                       DSP48E1_SGL_EXP_IP.OLD_ADD.ADD                                       |    <0.001 |
-|         toplevel_fmul_32ns_32ns_32_4_max_dsp_U5                                            |     0.006 |
+|         toplevel_fmul_32ns_32ns_32_4_max_dsp_U5                                            |     0.007 |
 |           toplevel_ap_fmul_2_max_dsp_32_u                                                  |     0.005 |
 |             U0                                                                             |     0.005 |
 |               i_synth                                                                      |     0.005 |
@@ -731,9 +731,9 @@ Table of Contents
 |                       DSP1                                                                 |     0.001 |
 |                       DSP2                                                                 |     0.002 |
 |                   OP                                                                       |    <0.001 |
-|                   R_AND_R                                                                  |    <0.001 |
-|                     LAT_OPT.FULL.R_AND_R                                                   |    <0.001 |
-|                       DSP48E1_SGL_EXP_IP.OLD_ADD.ADD                                       |    <0.001 |
+|                   R_AND_R                                                                  |     0.001 |
+|                     LAT_OPT.FULL.R_AND_R                                                   |     0.001 |
+|                       DSP48E1_SGL_EXP_IP.OLD_ADD.ADD                                       |     0.001 |
 |     vga                                                                                    |     0.134 |
 |       axi_dynclk_0                                                                         |     0.109 |
 |         U0                                                                                 |     0.109 |

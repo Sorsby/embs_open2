@@ -216,7 +216,6 @@ void udp_part_get_handler(void *arg, struct udp_pcb *pcb, struct pbuf *p,
 				printf("num attractor: %d\n", numAttractors);
 				populateSimulationFromNetworkArray(ram, numParticles,
 						numAttractors);
-				memset(ram, 0, RAM_SIZE);
 				clearFlags();
 				//all parts received
 				//populate simulation
