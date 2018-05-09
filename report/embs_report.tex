@@ -100,13 +100,11 @@
 
 %------------------------------------------------
 
-The main feature of my design is to split the loops responsible for updating the particles into a piece of hardware using HLS. This loop is the main computation for the simulation and thus it makes sense to optimise it's calculation through custom hardware. Which is what I intended to do with my design iterations. I introduced pipe-lining directives to the loops in order to cut the number of clock cycles needed to perform the particle updates. I implemented the pipelined structure within HLS and the result was to cut the maximum latency by a factor of 16, as seen in \cref{Figure:default} and \cref{Figure:pipe-lining}.
+The main feature of my design is to split the loops responsible for updating the particles into a piece of hardware using HLS. This loop is the main computation for the simulation and thus it makes sense to optimise it's calculation through custom hardware. Which is what I intended to do with my design iterations. I introduced pipe-lining directives to the inner loop in order to cut the number of clock cycles needed to perform the particle updates. I implemented the pipelined structure within HLS and the result was to cut the maximum latency by a factor of 16, as seen in \cref{Figure:default} and \cref{Figure:pipe-lining}.
 	
 This design was exported to Vivado and used within the SDK but unfortunately I was unable to get the desired performance from the custom IP, software was outperforming it. Therefore I stuck with the software calculations for the particle updating as I could not put together a working hardware accelerator that actually made a difference in time.
 
-Due to my unsuccessful attempts to implement my designs, I don't have much functionality implemented in hardware. An initial problem was that my data was too large for the available BRAM on the board. To get around this I attempted a design which would process blocks of particle data for all the attractor data, thus ensuring that at any time there is enough BRAM to store the data being processed. I believe this design would have worked with the correct checks in place in the SDK to ensure the correct data is updated.
-
-The same principles of pipe-lining would be applied to the processing of the blocks with the aim to maximise the performance of the system.
+Another loop to optimise within the simulation would be the particle collisions with walls, which I haven't implemented. Again I would attempt to extract some parallelism from the loop by pipe-lining or unrolling.
 	
 Other design decisions intended to increase performance include: using a fast approximation of the square root function, optimising the length of my loops and other small optimisations.
 	
@@ -141,7 +139,7 @@ Further from this, if we have enough space on the hardware, we could introduce m
 
 \section{Testing}
 
-As far as testing the hardware goes, I implemented a simple testbench to verify that my code was performing as expected. I populate dummy arrays with dummy data to feed into the toplevel function, then checking that the results are as expected. That formed the majority of the testing with regards to the hardware elements of my system.
+As far as testing the hardware goes, I implemented a simple testbench to verify that my code was performing as expected. In the test bench I populate dummy arrays with dummy data to feed into the toplevel function, then I check that the results are as expected. That formed the majority of the testing with regards to the hardware elements of my system, it is important to test the functionality of your toplevel function because the synthesis of the hardware takes a long time.
 
 To test the rest of the system, I implemented various short-cut keys which can be sent through the serial port to the processor. These short cuts perform the various functions of the particle accelerator \cref{Table:short-cuts}.
 
@@ -167,9 +165,9 @@ Char input & Program function \\
 
 The design decisions discussed and attempted in my implementation are focused on pure performance enhancements to the particle system, disregarding the usage of memory or hardware on the board in favour of performance.
 
-The utilisation of the board is shown in \cref{Figure:utilisation}, this is the utilisation for the above pipelined examples \cref{Figure:pipe-lining}. My data array was too big to be stored directly in BRAM so I was directly accessing the memory via the port, which was a poor performance decision overall. The other designs I have discussed were designed to avoid this occurrence.
+The utilisation of the board is shown in \cref{Figure:utilisation}, this is the utilisation for the above pipelined examples \cref{Figure:pipe-lining}. My data array was too big to be stored directly in BRAM so I was directly accessing the memory via the port, which results in slower performance overall. To avoid this I could feed in blocks of data at a time to process and return, but I didn't have the time to attempt this for the assessment.
 
-The LUT utilisation was low enough that I had a lot more room for moving functionality from software to hardware, or I could introduce some parallelism by using multiple IP of the same type of different parts of my particle system data.
+The LUT utilisation was low enough that I had a lot more room for moving functionality from software to hardware, such as wall collisions or perhaps drawing to the frame buffer for the VGA output. Or I could explore using multiple blocks of IP to extract more parallelism from my hardware. 
 
 \begin{figure}[h!]
   \centering
