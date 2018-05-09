@@ -31,7 +31,6 @@ int numParticles = 0;
 int numAttractors = 0;
 
 float ram[RAM_SIZE];
-
 int networkInUse = FALSE;
 
 void sendMessage(char *message);
@@ -55,30 +54,22 @@ void resetTimer() {
 }
 
 /*
- * Clears recv buffer and flags
+ * Clears flags
  */
-void resetEthernet() {
-	udp_remove(recv_pcb);
+void clearFlags() {
+	nextPart = 0;
+	numParts = 0;
+	numParticles = 0;
+	numAttractors = 0;
 	networkInUse = FALSE;
-	hasAllData = FALSE;
 }
 
 /*
  * Builds string and sends message for NUMPARTS request
  */
 void requestScenario(int id) {
-	recv_pcb = udp_new();
-	if (!recv_pcb) {
-		printf("Error creating PCB\n");
-	}
-	//Listen on port serverPort
-	udp_bind(recv_pcb, IP_ADDR_ANY, serverPort);
-	udp_recv(recv_pcb, udp_part_get_handler, NULL);
-
 	networkInUse = TRUE;
 	scenarioId = id;
-	nextPart = 0;
-	numParts = 0;
 
 	printf("Get ScenarioID: %d, from the server.\n", id);
 	char buffer[5];
@@ -208,13 +199,15 @@ void udp_part_get_handler(void *arg, struct udp_pcb *pcb, struct pbuf *p,
 
 			pbuf_free(p);
 
-			if (nextPart == numParts + 1) {
+			if (nextPart == numParts) {
+				nextPart = requestPart(nextPart);
+			} else if (nextPart > numParts) {
 				printf("num particles: %d\n", numParticles);
 				printf("num attractor: %d\n", numAttractors);
 				populateSimulationFromNetworkArray(ram, numParticles,
 						numAttractors);
-				hasAllData = TRUE;
-				resetEthernet();
+				memset(ram, 0, RAM_SIZE);
+				clearFlags();
 				//all parts received
 				//populate simulation
 			} else {
@@ -252,12 +245,6 @@ void sendMessage(char *message) {
 void handleEthernet() {
 	if (networkInUse == TRUE) {
 		handle_ethernet();
-		if (hasAllData == FALSE && getTimePassed() > 10.0) {
-			resetTimer();
-			puts("Request timed out after 10 seconds, retrying...");
-			puts(currentRequest);
-			sendMessage(currentRequest);
-		}
 	}
 }
 
@@ -268,4 +255,12 @@ void setupEthernet() {
 	init_ethernet_platform(ms1516_mac_address, NULL, NULL);
 	IP4_ADDR(&serverIP, 192, 168, 10, 1);
 	serverPort = 51200;
+
+	recv_pcb = udp_new();
+	if (!recv_pcb) {
+		printf("Error creating PCB\n");
+	}
+	//Listen on port serverPort
+	udp_bind(recv_pcb, IP_ADDR_ANY, serverPort);
+	udp_recv(recv_pcb, udp_part_get_handler, NULL);
 }

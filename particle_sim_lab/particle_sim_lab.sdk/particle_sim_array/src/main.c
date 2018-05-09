@@ -83,7 +83,6 @@ void populateSimulationFromNetworkArray(float* newRam, int newNumParticles,
 	num_particles = newNumParticles;
 	num_attractors = newNumAttractors;
 	memcpy(ram, newRam, RAM_SIZE);
-	resetEthernet();
 	readyToSimulate = TRUE;
 }
 
@@ -111,7 +110,6 @@ void handleInput() {
 			break;
 		case 'x':
 			puts("User interrupt request");
-			resetEthernet();
 			readyToSimulate = TRUE;
 			break;
 		}
@@ -128,7 +126,7 @@ int main(void) {
 	setupEthernet();
 	populateSimulationArray();
 //    XToplevel_Initialize(&hls, XPAR_TOPLEVEL_0_DEVICE_ID);
-//    XToplevel_Set_ram(&hls, &ram);
+//    XToplevel_Set_ram(&hls, *ram);
 
 	while (1) {
 		handleInput();

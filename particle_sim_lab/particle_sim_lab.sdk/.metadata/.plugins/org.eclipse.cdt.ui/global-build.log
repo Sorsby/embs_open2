@@ -95,3 +95,620 @@ arm-none-eabi-size particle_sim_array.elf  |tee "particle_sim_array.elf.size"
  194808	   4460	12638496	12837764	 c3e384	particle_sim_array.elf
 'Finished building: particle_sim_array.elf.size'
 ' '
+05:43:12 **** Incremental Build of configuration Release for project particle_sim_array ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+05:51:46 **** Auto Build of configuration Release for project particle_sim_array ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:12:0:
+../src/vga/vga.h:9:3: warning: 'struct Attractor' declared inside parameter list
+   int num_particles, int num_attractors);
+   ^
+../src/vga/vga.h:9:3: warning: its scope is only this definition or declaration, which is probably not what you want
+../src/vga/vga.h:9:3: warning: 'struct Particle' declared inside parameter list
+../src/main.c: In function 'main':
+../src/main.c:131:29: warning: passing argument 2 of 'XToplevel_Set_ram' makes integer from pointer without a cast
+     XToplevel_Set_ram(&hls, &ram);
+                             ^
+In file included from ../src/main.c:18:0:
+../../particle_sim_bsp/ps7_cortexa9_0/include/xtoplevel.h:90:6: note: expected 'u32' but argument is of type 'float (*)[50000]'
+ void XToplevel_Set_ram(XToplevel *InstancePtr, u32 Data);
+      ^
+'Finished building: ../src/main.c'
+' '
+'Building target: particle_sim_array.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim_array.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim_array.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim_array.elf  |tee "particle_sim_array.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 197740	   4468	12638496	12840704	 c3ef00	particle_sim_array.elf
+'Finished building: particle_sim_array.elf.size'
+' '
+05:52:22 **** Incremental Build of configuration Release for project particle_sim_array ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+05:55:17 **** Auto Build of configuration Release for project particle_sim_array ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:12:0:
+../src/vga/vga.h:9:3: warning: 'struct Attractor' declared inside parameter list
+   int num_particles, int num_attractors);
+   ^
+../src/vga/vga.h:9:3: warning: its scope is only this definition or declaration, which is probably not what you want
+../src/vga/vga.h:9:3: warning: 'struct Particle' declared inside parameter list
+../src/main.c: In function 'main':
+../src/main.c:131:29: warning: passing argument 2 of 'XToplevel_Set_ram' makes integer from pointer without a cast
+     XToplevel_Set_ram(&hls, &ram);
+                             ^
+In file included from ../src/main.c:18:0:
+../../particle_sim_bsp/ps7_cortexa9_0/include/xtoplevel.h:90:6: note: expected 'u32' but argument is of type 'float (*)[50000]'
+ void XToplevel_Set_ram(XToplevel *InstancePtr, u32 Data);
+      ^
+'Finished building: ../src/main.c'
+' '
+'Building target: particle_sim_array.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim_array.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim_array.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim_array.elf  |tee "particle_sim_array.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 197736	   4468	12638496	12840700	 c3eefc	particle_sim_array.elf
+'Finished building: particle_sim_array.elf.size'
+' '
+05:55:19 **** Incremental Build of configuration Release for project particle_sim_array ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+05:59:06 **** Incremental Build of configuration Release for project particle_sim_array ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+06:03:35 **** Auto Build of configuration Release for project particle_sim_array ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+In file included from ../src/ethernet/ethernet.c:9:0:
+../src/ethernet/../main.h:5:41: warning: 'struct Attractor' declared inside parameter list
+   struct Particle *newParticles, struct Attractor *newAttractors);
+                                         ^
+../src/ethernet/../main.h:5:41: warning: its scope is only this definition or declaration, which is probably not what you want
+../src/ethernet/../main.h:5:41: warning: 'struct Particle' declared inside parameter list
+'Finished building: ../src/ethernet/ethernet.c'
+' '
+'Building target: particle_sim_array.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim_array.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim_array.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim_array.elf  |tee "particle_sim_array.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 197560	   4468	12638496	12840524	 c3ee4c	particle_sim_array.elf
+'Finished building: particle_sim_array.elf.size'
+' '
+06:03:42 **** Incremental Build of configuration Release for project particle_sim_array ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+06:05:21 **** Auto Build of configuration Release for project particle_sim_array ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+In file included from ../src/ethernet/ethernet.c:9:0:
+../src/ethernet/../main.h:5:41: warning: 'struct Attractor' declared inside parameter list
+   struct Particle *newParticles, struct Attractor *newAttractors);
+                                         ^
+../src/ethernet/../main.h:5:41: warning: its scope is only this definition or declaration, which is probably not what you want
+../src/ethernet/../main.h:5:41: warning: 'struct Particle' declared inside parameter list
+'Finished building: ../src/ethernet/ethernet.c'
+' '
+'Building target: particle_sim_array.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim_array.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim_array.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim_array.elf  |tee "particle_sim_array.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 197560	   4468	12638496	12840524	 c3ee4c	particle_sim_array.elf
+'Finished building: particle_sim_array.elf.size'
+' '
+06:05:26 **** Incremental Build of configuration Release for project particle_sim_array ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+06:07:43 **** Auto Build of configuration Release for project particle_sim_array ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+In file included from ../src/ethernet/ethernet.c:9:0:
+../src/ethernet/../main.h:5:41: warning: 'struct Attractor' declared inside parameter list
+   struct Particle *newParticles, struct Attractor *newAttractors);
+                                         ^
+../src/ethernet/../main.h:5:41: warning: its scope is only this definition or declaration, which is probably not what you want
+../src/ethernet/../main.h:5:41: warning: 'struct Particle' declared inside parameter list
+'Finished building: ../src/ethernet/ethernet.c'
+' '
+'Building target: particle_sim_array.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim_array.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim_array.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim_array.elf  |tee "particle_sim_array.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 197560	   4468	12638496	12840524	 c3ee4c	particle_sim_array.elf
+'Finished building: particle_sim_array.elf.size'
+' '
+06:07:46 **** Incremental Build of configuration Release for project particle_sim_array ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+06:11:16 **** Auto Build of configuration Release for project particle_sim_array ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+In file included from ../src/ethernet/ethernet.c:9:0:
+../src/ethernet/../main.h:5:41: warning: 'struct Attractor' declared inside parameter list
+   struct Particle *newParticles, struct Attractor *newAttractors);
+                                         ^
+../src/ethernet/../main.h:5:41: warning: its scope is only this definition or declaration, which is probably not what you want
+../src/ethernet/../main.h:5:41: warning: 'struct Particle' declared inside parameter list
+'Finished building: ../src/ethernet/ethernet.c'
+' '
+'Building target: particle_sim_array.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim_array.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim_array.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim_array.elf  |tee "particle_sim_array.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 197560	   4468	12638496	12840524	 c3ee4c	particle_sim_array.elf
+'Finished building: particle_sim_array.elf.size'
+' '
+06:11:19 **** Incremental Build of configuration Release for project particle_sim_array ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+06:13:34 **** Auto Build of configuration Release for project particle_sim_array ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:12:0:
+../src/vga/vga.h:9:3: warning: 'struct Attractor' declared inside parameter list
+   int num_particles, int num_attractors);
+   ^
+../src/vga/vga.h:9:3: warning: its scope is only this definition or declaration, which is probably not what you want
+../src/vga/vga.h:9:3: warning: 'struct Particle' declared inside parameter list
+../src/main.c: In function 'main':
+../src/main.c:129:29: warning: passing argument 2 of 'XToplevel_Set_ram' makes integer from pointer without a cast
+     XToplevel_Set_ram(&hls, &ram);
+                             ^
+In file included from ../src/main.c:18:0:
+../../particle_sim_bsp/ps7_cortexa9_0/include/xtoplevel.h:90:6: note: expected 'u32' but argument is of type 'float (*)[50000]'
+ void XToplevel_Set_ram(XToplevel *InstancePtr, u32 Data);
+      ^
+'Finished building: ../src/main.c'
+' '
+'Building target: particle_sim_array.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim_array.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim_array.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim_array.elf  |tee "particle_sim_array.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 197560	   4468	12638496	12840524	 c3ee4c	particle_sim_array.elf
+'Finished building: particle_sim_array.elf.size'
+' '
+06:13:43 **** Auto Build of configuration Release for project particle_sim_array ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:12:0:
+../src/vga/vga.h:9:3: warning: 'struct Attractor' declared inside parameter list
+   int num_particles, int num_attractors);
+   ^
+../src/vga/vga.h:9:3: warning: its scope is only this definition or declaration, which is probably not what you want
+../src/vga/vga.h:9:3: warning: 'struct Particle' declared inside parameter list
+../src/main.c: In function 'main':
+../src/main.c:129:29: warning: passing argument 2 of 'XToplevel_Set_ram' makes integer from pointer without a cast
+     XToplevel_Set_ram(&hls, ram);
+                             ^
+In file included from ../src/main.c:18:0:
+../../particle_sim_bsp/ps7_cortexa9_0/include/xtoplevel.h:90:6: note: expected 'u32' but argument is of type 'float *'
+ void XToplevel_Set_ram(XToplevel *InstancePtr, u32 Data);
+      ^
+'Finished building: ../src/main.c'
+' '
+'Building target: particle_sim_array.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim_array.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim_array.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim_array.elf  |tee "particle_sim_array.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 197560	   4468	12638496	12840524	 c3ee4c	particle_sim_array.elf
+'Finished building: particle_sim_array.elf.size'
+' '
+06:13:48 **** Auto Build of configuration Release for project particle_sim_array ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:12:0:
+../src/vga/vga.h:9:3: warning: 'struct Attractor' declared inside parameter list
+   int num_particles, int num_attractors);
+   ^
+../src/vga/vga.h:9:3: warning: its scope is only this definition or declaration, which is probably not what you want
+../src/vga/vga.h:9:3: warning: 'struct Particle' declared inside parameter list
+'Finished building: ../src/main.c'
+' '
+'Building target: particle_sim_array.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim_array.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim_array.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim_array.elf  |tee "particle_sim_array.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 197572	   4468	12638496	12840536	 c3ee58	particle_sim_array.elf
+'Finished building: particle_sim_array.elf.size'
+' '
+06:14:49 **** Auto Build of configuration Release for project particle_sim_array ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+In file included from ../src/ethernet/ethernet.c:9:0:
+../src/ethernet/../main.h:5:41: warning: 'struct Attractor' declared inside parameter list
+   struct Particle *newParticles, struct Attractor *newAttractors);
+                                         ^
+../src/ethernet/../main.h:5:41: warning: its scope is only this definition or declaration, which is probably not what you want
+../src/ethernet/../main.h:5:41: warning: 'struct Particle' declared inside parameter list
+'Finished building: ../src/ethernet/ethernet.c'
+' '
+'Building target: particle_sim_array.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim_array.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim_array.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim_array.elf  |tee "particle_sim_array.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 197572	   4468	12638496	12840536	 c3ee58	particle_sim_array.elf
+'Finished building: particle_sim_array.elf.size'
+' '
+06:15:21 **** Auto Build of configuration Release for project particle_sim_array ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+In file included from ../src/ethernet/ethernet.c:9:0:
+../src/ethernet/../main.h:5:41: warning: 'struct Attractor' declared inside parameter list
+   struct Particle *newParticles, struct Attractor *newAttractors);
+                                         ^
+../src/ethernet/../main.h:5:41: warning: its scope is only this definition or declaration, which is probably not what you want
+../src/ethernet/../main.h:5:41: warning: 'struct Particle' declared inside parameter list
+'Finished building: ../src/ethernet/ethernet.c'
+' '
+'Building target: particle_sim_array.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim_array.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim_array.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim_array.elf  |tee "particle_sim_array.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 197508	   4468	12638496	12840472	 c3ee18	particle_sim_array.elf
+'Finished building: particle_sim_array.elf.size'
+' '
+06:16:00 **** Auto Build of configuration Release for project particle_sim_array ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+In file included from ../src/ethernet/ethernet.c:9:0:
+../src/ethernet/../main.h:5:41: warning: 'struct Attractor' declared inside parameter list
+   struct Particle *newParticles, struct Attractor *newAttractors);
+                                         ^
+../src/ethernet/../main.h:5:41: warning: its scope is only this definition or declaration, which is probably not what you want
+../src/ethernet/../main.h:5:41: warning: 'struct Particle' declared inside parameter list
+'Finished building: ../src/ethernet/ethernet.c'
+' '
+'Building target: particle_sim_array.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim_array.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim_array.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim_array.elf  |tee "particle_sim_array.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 197508	   4468	12638496	12840472	 c3ee18	particle_sim_array.elf
+'Finished building: particle_sim_array.elf.size'
+' '
+06:16:17 **** Auto Build of configuration Release for project particle_sim_array ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+In file included from ../src/ethernet/ethernet.c:9:0:
+../src/ethernet/../main.h:5:41: warning: 'struct Attractor' declared inside parameter list
+   struct Particle *newParticles, struct Attractor *newAttractors);
+                                         ^
+../src/ethernet/../main.h:5:41: warning: its scope is only this definition or declaration, which is probably not what you want
+../src/ethernet/../main.h:5:41: warning: 'struct Particle' declared inside parameter list
+'Finished building: ../src/ethernet/ethernet.c'
+' '
+'Building target: particle_sim_array.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim_array.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim_array.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim_array.elf  |tee "particle_sim_array.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 197508	   4468	12638496	12840472	 c3ee18	particle_sim_array.elf
+'Finished building: particle_sim_array.elf.size'
+' '
+06:16:22 **** Incremental Build of configuration Release for project particle_sim_array ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+06:19:31 **** Auto Build of configuration Release for project particle_sim_array ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+In file included from ../src/ethernet/ethernet.c:9:0:
+../src/ethernet/../main.h:5:41: warning: 'struct Attractor' declared inside parameter list
+   struct Particle *newParticles, struct Attractor *newAttractors);
+                                         ^
+../src/ethernet/../main.h:5:41: warning: its scope is only this definition or declaration, which is probably not what you want
+../src/ethernet/../main.h:5:41: warning: 'struct Particle' declared inside parameter list
+'Finished building: ../src/ethernet/ethernet.c'
+' '
+'Building target: particle_sim_array.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim_array.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim_array.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim_array.elf  |tee "particle_sim_array.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 197508	   4468	12638496	12840472	 c3ee18	particle_sim_array.elf
+'Finished building: particle_sim_array.elf.size'
+' '
+06:19:44 **** Auto Build of configuration Release for project particle_sim_array ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+In file included from ../src/ethernet/ethernet.c:9:0:
+../src/ethernet/../main.h:5:41: warning: 'struct Attractor' declared inside parameter list
+   struct Particle *newParticles, struct Attractor *newAttractors);
+                                         ^
+../src/ethernet/../main.h:5:41: warning: its scope is only this definition or declaration, which is probably not what you want
+../src/ethernet/../main.h:5:41: warning: 'struct Particle' declared inside parameter list
+'Finished building: ../src/ethernet/ethernet.c'
+' '
+'Building target: particle_sim_array.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim_array.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim_array.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim_array.elf  |tee "particle_sim_array.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 197508	   4468	12638496	12840472	 c3ee18	particle_sim_array.elf
+'Finished building: particle_sim_array.elf.size'
+' '
+06:19:52 **** Incremental Build of configuration Release for project particle_sim_array ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+06:21:47 **** Auto Build of configuration Release for project particle_sim_array ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+In file included from ../src/ethernet/ethernet.c:9:0:
+../src/ethernet/../main.h:5:41: warning: 'struct Attractor' declared inside parameter list
+   struct Particle *newParticles, struct Attractor *newAttractors);
+                                         ^
+../src/ethernet/../main.h:5:41: warning: its scope is only this definition or declaration, which is probably not what you want
+../src/ethernet/../main.h:5:41: warning: 'struct Particle' declared inside parameter list
+'Finished building: ../src/ethernet/ethernet.c'
+' '
+'Building target: particle_sim_array.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim_array.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim_array.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim_array.elf  |tee "particle_sim_array.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 197572	   4468	12638496	12840536	 c3ee58	particle_sim_array.elf
+'Finished building: particle_sim_array.elf.size'
+' '
+06:23:24 **** Auto Build of configuration Release for project particle_sim_array ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+In file included from ../src/ethernet/ethernet.c:9:0:
+../src/ethernet/../main.h:5:41: warning: 'struct Attractor' declared inside parameter list
+   struct Particle *newParticles, struct Attractor *newAttractors);
+                                         ^
+../src/ethernet/../main.h:5:41: warning: its scope is only this definition or declaration, which is probably not what you want
+../src/ethernet/../main.h:5:41: warning: 'struct Particle' declared inside parameter list
+'Finished building: ../src/ethernet/ethernet.c'
+' '
+'Building target: particle_sim_array.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim_array.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim_array.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim_array.elf  |tee "particle_sim_array.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 197572	   4468	12638496	12840536	 c3ee58	particle_sim_array.elf
+'Finished building: particle_sim_array.elf.size'
+' '
+06:23:27 **** Incremental Build of configuration Release for project particle_sim_array ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+06:26:33 **** Auto Build of configuration Release for project particle_sim_array ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+In file included from ../src/ethernet/ethernet.c:9:0:
+../src/ethernet/../main.h:5:41: warning: 'struct Attractor' declared inside parameter list
+   struct Particle *newParticles, struct Attractor *newAttractors);
+                                         ^
+../src/ethernet/../main.h:5:41: warning: its scope is only this definition or declaration, which is probably not what you want
+../src/ethernet/../main.h:5:41: warning: 'struct Particle' declared inside parameter list
+'Finished building: ../src/ethernet/ethernet.c'
+' '
+'Building target: particle_sim_array.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim_array.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim_array.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim_array.elf  |tee "particle_sim_array.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 197572	   4468	12638496	12840536	 c3ee58	particle_sim_array.elf
+'Finished building: particle_sim_array.elf.size'
+' '
+06:26:35 **** Incremental Build of configuration Release for project particle_sim_array ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+06:29:42 **** Auto Build of configuration Release for project particle_sim_array ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ethernet/ethernet.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/ethernet/ethernet.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ethernet/ethernet.d" -MT"src/ethernet/ethernet.o" -o "src/ethernet/ethernet.o" "../src/ethernet/ethernet.c"
+In file included from ../src/ethernet/ethernet.c:9:0:
+../src/ethernet/../main.h:5:41: warning: 'struct Attractor' declared inside parameter list
+   struct Particle *newParticles, struct Attractor *newAttractors);
+                                         ^
+../src/ethernet/../main.h:5:41: warning: its scope is only this definition or declaration, which is probably not what you want
+../src/ethernet/../main.h:5:41: warning: 'struct Particle' declared inside parameter list
+'Finished building: ../src/ethernet/ethernet.c'
+' '
+'Building target: particle_sim_array.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim_array.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim_array.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim_array.elf  |tee "particle_sim_array.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 197572	   4468	12638496	12840536	 c3ee58	particle_sim_array.elf
+'Finished building: particle_sim_array.elf.size'
+' '
+06:29:58 **** Incremental Build of configuration Release for project particle_sim_array ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+06:32:56 **** Auto Build of configuration Release for project particle_sim_array ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../particle_sim_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:12:0:
+../src/vga/vga.h:9:3: warning: 'struct Attractor' declared inside parameter list
+   int num_particles, int num_attractors);
+   ^
+../src/vga/vga.h:9:3: warning: its scope is only this definition or declaration, which is probably not what you want
+../src/vga/vga.h:9:3: warning: 'struct Particle' declared inside parameter list
+'Finished building: ../src/main.c'
+' '
+'Building target: particle_sim_array.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../particle_sim_bsp/ps7_cortexa9_0/lib -o "particle_sim_array.elf"  ./src/zybo_vga/display_ctrl.o ./src/zybo_vga/dynclk.o  ./src/vga/vga.o  ./src/util/util.o  ./src/uart/input.o  ./src/simulation/simulation.o  ./src/fps/fps.o  ./src/ethernet/ethernet.o ./src/ethernet/ethernet_platform.o  ./src/main.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: particle_sim_array.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size particle_sim_array.elf  |tee "particle_sim_array.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 194568	   4460	12638496	12837524	 c3e294	particle_sim_array.elf
+'Finished building: particle_sim_array.elf.size'
+' '

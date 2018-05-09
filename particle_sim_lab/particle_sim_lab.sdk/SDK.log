@@ -5169,3 +5169,64 @@ java.lang.RuntimeException: Error while sourcing C:/Users/Matthew/Desktop/embs_o
 04:25:12 INFO  : FPGA configured successfully with bitstream "C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
 04:25:37 INFO  : ps7_init is completed.
 04:25:38 INFO  : ps7_post_config is completed.
+05:43:16 INFO  : System reset is completed.
+05:43:18 INFO  : FPGA configured successfully with bitstream "C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+05:43:44 INFO  : ps7_init is completed.
+05:43:45 INFO  : ps7_post_config is completed.
+05:52:26 INFO  : System reset is completed.
+05:52:28 INFO  : FPGA configured successfully with bitstream "C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+05:52:53 INFO  : ps7_init is completed.
+05:52:53 INFO  : ps7_post_config is completed.
+05:55:19 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+05:55:23 INFO  : System reset is completed.
+05:55:25 INFO  : FPGA configured successfully with bitstream "C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+05:55:51 INFO  : ps7_init is completed.
+05:55:51 INFO  : ps7_post_config is completed.
+05:59:10 INFO  : System reset is completed.
+05:59:12 INFO  : FPGA configured successfully with bitstream "C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+05:59:36 INFO  : ps7_init is completed.
+05:59:37 INFO  : ps7_post_config is completed.
+06:03:42 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+06:03:47 INFO  : System reset is completed.
+06:03:48 INFO  : FPGA configured successfully with bitstream "C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+06:04:14 INFO  : ps7_init is completed.
+06:04:14 INFO  : ps7_post_config is completed.
+06:05:26 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+06:05:30 INFO  : System reset is completed.
+06:05:32 INFO  : FPGA configured successfully with bitstream "C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+06:05:58 INFO  : ps7_init is completed.
+06:05:58 INFO  : ps7_post_config is completed.
+06:07:47 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+06:07:51 INFO  : System reset is completed.
+06:07:53 INFO  : FPGA configured successfully with bitstream "C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+06:08:18 INFO  : ps7_init is completed.
+06:08:18 INFO  : ps7_post_config is completed.
+06:11:19 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+06:11:23 INFO  : System reset is completed.
+06:11:25 INFO  : FPGA configured successfully with bitstream "C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+06:11:50 INFO  : ps7_init is completed.
+06:11:51 INFO  : ps7_post_config is completed.
+06:16:26 INFO  : System reset is completed.
+06:16:27 INFO  : FPGA configured successfully with bitstream "C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+06:16:52 INFO  : ps7_init is completed.
+06:16:53 INFO  : ps7_post_config is completed.
+06:19:53 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+06:19:59 INFO  : System reset is completed.
+06:20:01 INFO  : FPGA configured successfully with bitstream "C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+06:20:26 INFO  : ps7_init is completed.
+06:20:26 INFO  : ps7_post_config is completed.
+06:23:27 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+06:23:31 INFO  : System reset is completed.
+06:23:33 INFO  : FPGA configured successfully with bitstream "C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+06:23:58 INFO  : ps7_init is completed.
+06:23:59 INFO  : ps7_post_config is completed.
+06:26:36 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+06:26:40 INFO  : System reset is completed.
+06:26:42 INFO  : FPGA configured successfully with bitstream "C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+06:27:07 INFO  : ps7_init is completed.
+06:27:08 INFO  : ps7_post_config is completed.
+06:29:58 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+06:30:02 INFO  : System reset is completed.
+06:30:04 INFO  : FPGA configured successfully with bitstream "C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+06:30:29 INFO  : ps7_init is completed.
+06:30:30 INFO  : ps7_post_config is completed.
