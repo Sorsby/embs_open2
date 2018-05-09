@@ -9,7 +9,7 @@
 #include "../main.h"
 #include "../def.h"
 
-#define TIMER_START 500000000
+#define TIMEOUT_SECS 5.0
 
 #define DATA_OBJECT_LENGTH 22
 
@@ -255,7 +255,7 @@ void sendMessage(char *message) {
 void handleEthernet() {
 	if (networkInUse == TRUE) {
 		handle_ethernet();
-		if (getTimePassed() > 5.0) {
+		if (getTimePassed() > TIMEOUT_SECS) {
 			puts("No response for 5 seconds, retrying...");
 			resetTimer();
 			isRetryRequest = TRUE;

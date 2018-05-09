@@ -1,0 +1,9 @@
+[0] Config.pm:302> INFO - This is Biber 2.10
+[0] Config.pm:305> INFO - Logfile is 'embs_report.blg'
+[21] biber-MSWIN64:313> INFO - === 
+[44] Biber.pm:371> INFO - Reading 'embs_report.bcf'
+[112] Biber.pm:857> INFO - Found 0 citekeys in bib section 0
+[121] Utils.pm:193> WARN - The file 'embs_report.bcf' does not contain any citations!
+[126] bbl.pm:617> INFO - Writing 'embs_report.bbl' with encoding 'ascii'
+[126] bbl.pm:720> INFO - Output to embs_report.bbl
+[127] Biber.pm:110> INFO - WARNINGS: 1

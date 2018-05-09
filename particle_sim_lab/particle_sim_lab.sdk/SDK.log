@@ -5323,3 +5323,8 @@ com.xilinx.sdk.targetmanager.TMException:
 07:28:15 INFO  : FPGA configured successfully with bitstream "C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
 07:28:41 INFO  : ps7_init is completed.
 07:28:42 INFO  : ps7_post_config is completed.
+07:32:45 INFO  : ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+07:32:50 INFO  : System reset is completed.
+07:32:51 INFO  : FPGA configured successfully with bitstream "C:/Users/Matthew/Desktop/embs_open2/particle_sim_lab/particle_sim_lab.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+07:33:18 INFO  : ps7_init is completed.
+07:33:19 INFO  : ps7_post_config is completed.
